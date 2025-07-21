@@ -1,41 +1,43 @@
-import { Search, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 z-50 glass-effect border-b">
-      <div className="container mx-auto px-4 py-4">
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border shadow-sm">
+      <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <div className="p-2 gradient-primary rounded-lg">
               <Sparkles className="h-6 w-6 text-white" />
             </div>
-            <span className="text-xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
-              AI Tools Hub
+            <span className="text-xl font-bold text-foreground">
+              aitoolsprime.com
             </span>
           </div>
           
-          <div className="hidden md:flex items-center space-x-6">
-            <nav className="flex space-x-6">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-smooth">
-                Browse
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-smooth">
-                Categories
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-smooth">
+          <nav className="hidden md:flex items-center space-x-8">
+            <a href="#" className="text-muted-foreground hover:text-foreground transition-smooth font-medium">
+              Full List
+            </a>
+            <a href="#" className="text-muted-foreground hover:text-foreground transition-smooth font-medium">
+              AI Categories
+            </a>
+            <a href="#" className="text-muted-foreground hover:text-foreground transition-smooth font-medium">
+              AI Tutorials
+            </a>
+            <Button 
+              asChild 
+              className="gradient-primary text-white font-semibold px-6 py-2 rounded-full hover:scale-105 transition-all"
+            >
+              <a href="https://aitoolsprime.com/submit-tool" target="_blank" rel="noopener noreferrer">
                 Submit Tool
               </a>
-            </nav>
-          </div>
-          
-          <div className="flex items-center space-x-3">
-            <Button variant="outline" size="sm">
-              Sign In
             </Button>
-            <Button size="sm" className="gradient-primary text-white border-0">
-              Get Started
+          </nav>
+          
+          <div className="md:hidden">
+            <Button variant="ghost" size="sm">
+              Menu
             </Button>
           </div>
         </div>

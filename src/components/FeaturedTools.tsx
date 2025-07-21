@@ -1,97 +1,137 @@
-import ToolCard from "./ToolCard";
+import { ExternalLink, Star, ArrowUp, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, TrendingUp } from "lucide-react";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 
 const FeaturedTools = () => {
-  const featuredTools = [
+  const tools = [
     {
+      id: 1,
+      name: "ThumbnailCreator.com",
+      description: "Quickly create eye-catching thumbnails for your videos on YouTube, Twitch and Facebook with AI. Attract more views and easily improve the click-through rate on your video clips.",
+      category: "Image Generators",
+      upvotes: 61,
+      verified: true,
+      icon: "🖼️"
+    },
+    {
+      id: 2,
       name: "ChatGPT",
-      description: "Advanced AI chatbot for conversations, writing, coding, and problem-solving with human-like responses.",
-      category: "Conversational AI",
-      rating: 4.8,
-      reviews: 15420,
-      pricing: "Free + Paid",
-      logo: "🤖",
-      featured: true
+      description: "Advanced AI chatbot for conversations, writing, and problem-solving with human-like responses across multiple domains and languages.",
+      category: "AI Chat & Assistant",
+      upvotes: 248,
+      verified: true,
+      icon: "🤖"
     },
     {
+      id: 3,
       name: "Midjourney",
-      description: "Create stunning, artistic images from text descriptions using state-of-the-art AI image generation.",
-      category: "Image Generation",
-      rating: 4.9,
-      reviews: 8750,
-      pricing: "$10/month",
-      logo: "🎨",
-      featured: true
+      description: "Create stunning, artistic images from text descriptions using advanced AI image generation with incredible detail and creativity.",
+      category: "Image Generators", 
+      upvotes: 195,
+      verified: true,
+      icon: "🎨"
     },
     {
-      name: "Notion AI",
-      description: "Enhance your productivity with AI-powered writing, brainstorming, and content organization.",
-      category: "Productivity",
-      rating: 4.7,
-      reviews: 5230,
-      pricing: "$10/month",
-      logo: "📝"
-    },
-    {
-      name: "GitHub Copilot",
-      description: "AI pair programmer that helps you write code faster with intelligent suggestions and completions.",
-      category: "Development",
-      rating: 4.6,
-      reviews: 12800,
-      pricing: "$10/month",
-      logo: "💻"
-    },
-    {
-      name: "Grammarly",
-      description: "AI writing assistant that checks grammar, spelling, and style to improve your writing quality.",
+      id: 4,
+      name: "Grammarly AI",
+      description: "AI-powered writing assistant that improves grammar, style, and clarity across all platforms with real-time suggestions.",
       category: "Writing",
-      rating: 4.5,
-      reviews: 25600,
-      pricing: "Free + Paid",
-      logo: "✍️"
+      upvotes: 127,
+      verified: true,
+      icon: "✍️"
     },
     {
+      id: 5,
+      name: "GitHub Copilot",
+      description: "AI pair programmer that suggests code and entire functions in real-time as you type, supporting dozens of programming languages.",
+      category: "Code Assistant",
+      upvotes: 156,
+      verified: true,
+      icon: "👨‍💻"
+    },
+    {
+      id: 6,
+      name: "Notion AI",
+      description: "Enhance your Notion workspace with AI-powered writing, summarizing, and brainstorming features for enhanced productivity.",
+      category: "Productivity",
+      upvotes: 98,
+      verified: true,
+      icon: "📝"
+    },
+    {
+      id: 7,
+      name: "ElevenLabs",
+      description: "Generate realistic voices and speech from text using advanced AI voice synthesis technology with natural intonation.",
+      category: "Text to Speech",
+      upvotes: 143,
+      verified: true,
+      icon: "🗣️"
+    },
+    {
+      id: 8,
       name: "Canva AI",
-      description: "Design beautiful graphics, presentations, and visual content with AI-powered design tools.",
+      description: "Create professional designs, presentations, and graphics with AI-powered design assistance and smart template suggestions.",
       category: "Design",
-      rating: 4.6,
-      reviews: 18900,
-      pricing: "Free + Paid",
-      logo: "🎨"
+      upvotes: 112,
+      verified: true,
+      icon: "🎨"
     }
   ];
 
   return (
-    <section className="py-16 bg-gradient-secondary">
+    <section className="py-16 bg-gradient-to-b from-background to-secondary/10">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary mb-4">
-            <TrendingUp className="h-4 w-4 mr-2" />
-            <span className="text-sm font-medium">Trending Now</span>
-          </div>
-          
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Featured AI Tools
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold mb-2 text-foreground flex items-center">
+            <Star className="h-8 w-8 text-yellow-500 mr-3" />
+            Featured
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Discover the most popular and powerful AI tools trusted by millions of users worldwide
-          </p>
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-          {featuredTools.map((tool, index) => (
-            <div key={tool.name} className="animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
-              <ToolCard {...tool} />
-            </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {tools.map((tool) => (
+            <Card 
+              key={tool.id} 
+              className="group hover:shadow-hover transition-all duration-300 hover:-translate-y-1 border bg-white/90 backdrop-blur-sm overflow-hidden"
+            >
+              <CardHeader className="pb-3">
+                <div className="flex items-start justify-between mb-3">
+                  <div className="text-3xl">{tool.icon}</div>
+                  {tool.verified && (
+                    <Badge className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-white border-0 text-xs">
+                      <Check className="h-3 w-3 mr-1" />
+                      Gold Verified
+                    </Badge>
+                  )}
+                </div>
+                
+                <CardTitle className="text-lg font-bold text-foreground group-hover:text-primary transition-colors leading-tight">
+                  {tool.name}
+                </CardTitle>
+              </CardHeader>
+              
+              <CardContent className="space-y-4">
+                <CardDescription className="text-sm text-muted-foreground leading-relaxed line-clamp-3">
+                  {tool.description}
+                </CardDescription>
+                
+                <div className="flex items-center justify-between pt-3 border-t">
+                  <div className="flex items-center space-x-1 text-sm text-muted-foreground">
+                    <ArrowUp className="h-4 w-4" />
+                    <span className="font-medium">Upvote: {tool.upvotes}</span>
+                  </div>
+                  
+                  <Button 
+                    size="sm" 
+                    className="gradient-primary text-white border-0 hover:scale-105 transition-transform text-xs px-4"
+                  >
+                    🔗 AI Visit
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
           ))}
-        </div>
-        
-        <div className="text-center">
-          <Button size="lg" className="gradient-primary text-white border-0 hover:shadow-hover transition-smooth">
-            Explore All Tools
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
         </div>
       </div>
     </section>
