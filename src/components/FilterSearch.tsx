@@ -1,7 +1,13 @@
-import { Search, Twitter, Linkedin } from "lucide-react";
+import { Search, Twitter, Linkedin, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const FilterSearch = () => {
   const categories = [
@@ -14,60 +20,57 @@ const FilterSearch = () => {
   const filterTags = ["Free AI", "Freemium", "Paid", "Free Trial"];
 
   return (
-    <section className="bg-gradient-to-b from-secondary/30 to-background py-12">
+    <section className="bg-gradient-to-b from-secondary/30 to-background py-8">
       <div className="container mx-auto px-4">
-        {/* Search Bar and Social */}
-        <div className="flex flex-col md:flex-row items-center gap-4 mb-8">
-          <div className="relative flex-1 max-w-2xl">
+        <div className="flex items-center gap-4 flex-wrap">
+          {/* Search Bar */}
+          <div className="relative flex-1 min-w-[300px]">
             <Input
               type="text"
               placeholder="Search over 5000+ AI tools..."
-              className="pl-12 pr-4 py-3 text-lg rounded-full border-2 border-muted bg-white/80 backdrop-blur-sm focus:border-primary shadow-sm"
+              className="pl-10 pr-4 py-2 rounded-full border border-muted bg-white/80 backdrop-blur-sm focus:border-primary"
             />
-            <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-muted-foreground h-5 w-5" />
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
           </div>
-          <Button className="gradient-primary text-white px-8 py-3 rounded-full font-semibold hover:scale-105 transition-all">
-            Search
-          </Button>
           
-          <div className="flex items-center gap-3 ml-4">
-            <Button variant="outline" size="icon" className="rounded-full w-10 h-10">
-              <Twitter className="h-4 w-4" />
+          {/* Social Media Icons */}
+          <div className="flex items-center gap-2">
+            <Button variant="outline" size="icon" className="rounded-full w-8 h-8">
+              <Twitter className="h-3 w-3" />
             </Button>
-            <Button variant="outline" size="icon" className="rounded-full w-10 h-10">
-              <Linkedin className="h-4 w-4" />
+            <Button variant="outline" size="icon" className="rounded-full w-8 h-8">
+              <Linkedin className="h-3 w-3" />
             </Button>
-            <Button variant="outline" size="icon" className="rounded-full w-10 h-10">
-              <span className="text-sm font-bold">R</span>
+            <Button variant="outline" size="icon" className="rounded-full w-8 h-8">
+              <span className="text-xs font-bold">R</span>
             </Button>
           </div>
-        </div>
 
-        {/* Category Buttons */}
-        <div className="mb-6">
-          <h3 className="text-lg font-semibold mb-4 text-foreground">Categories</h3>
-          <div className="flex flex-wrap gap-2">
-            {categories.map((category, index) => (
-              <Badge
-                key={index}
-                variant="secondary"
-                className="px-4 py-2 rounded-full cursor-pointer hover:bg-primary hover:text-primary-foreground transition-colors bg-white/80 backdrop-blur-sm border text-sm"
-              >
-                {category}
-              </Badge>
-            ))}
-          </div>
-        </div>
+          {/* Categories Dropdown */}
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="outline" className="rounded-full px-4 py-2 bg-white/80 backdrop-blur-sm">
+                Select a category
+                <ChevronDown className="ml-2 h-4 w-4" />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="w-56 max-h-64 overflow-y-auto">
+              {categories.map((category, index) => (
+                <DropdownMenuItem key={index} className="cursor-pointer">
+                  {category}
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
 
-        {/* Filter Tags */}
-        <div>
-          <h3 className="text-lg font-semibold mb-4 text-foreground">Pricing</h3>
-          <div className="flex flex-wrap gap-3">
+          {/* Pricing Filter Tags */}
+          <div className="flex gap-2">
             {filterTags.map((tag, index) => (
               <Button
                 key={index}
                 variant="outline"
-                className="rounded-full px-6 py-2 bg-white/80 backdrop-blur-sm hover:bg-primary hover:text-primary-foreground transition-colors"
+                size="sm"
+                className="rounded-full px-4 py-1 bg-white/80 backdrop-blur-sm hover:bg-primary hover:text-primary-foreground transition-colors text-sm"
               >
                 {tag}
               </Button>
