@@ -674,66 +674,175 @@ const FeaturedTools = () => {
   const currentTools = toolCategories[selectedCategory as keyof typeof toolCategories] || [];
 
   return (
-    <section className="py-16 bg-gradient-to-b from-background to-secondary/10">
-      <div className="container mx-auto px-4">
-        <div className="mb-12 flex items-center justify-between">
-          <h2 className="text-3xl font-bold mb-2 text-foreground flex items-center">
-            <Star className="h-8 w-8 text-yellow-500 mr-3" />
-            Featured
-          </h2>
-          
-          <Select value={selectedCategory} onValueChange={setSelectedCategory}>
-            <SelectTrigger className="w-64">
-              <SelectValue placeholder="Select a category" />
-            </SelectTrigger>
-            <SelectContent>
-              {Object.keys(toolCategories).map((category) => (
-                <SelectItem key={category} value={category}>
-                  {category}
-                </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
-        </div>
+    <>
+      <section className="py-16 bg-gradient-to-b from-background to-secondary/10">
+        <div className="container mx-auto px-4">
+          <div className="mb-12 flex items-center justify-between">
+            <h2 className="text-3xl font-bold mb-2 text-foreground flex items-center">
+              <Star className="h-8 w-8 text-yellow-500 mr-3" />
+              Featured
+            </h2>
+            
+            <Select value={selectedCategory} onValueChange={setSelectedCategory}>
+              <SelectTrigger className="w-64">
+                <SelectValue placeholder="Select a category" />
+              </SelectTrigger>
+              <SelectContent>
+                {Object.keys(toolCategories).map((category) => (
+                  <SelectItem key={category} value={category}>
+                    {category}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {currentTools.map((tool) => (
-            <Card 
-              key={tool.id} 
-              className="group hover:shadow-hover transition-all duration-300 hover:-translate-y-1 border bg-white/90 backdrop-blur-sm overflow-hidden"
-            >
-              <CardHeader className="pb-3">
-                <div className="flex items-start justify-between mb-3">
-                  <div className="text-3xl">{tool.icon}</div>
-                  {tool.verified && (
-                    <Badge className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-white border-0 text-xs">
-                      <Check className="h-3 w-3 mr-1" />
-                      Gold Verified
-                    </Badge>
-                  )}
-                </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {currentTools.map((tool) => (
+              <Card 
+                key={tool.id} 
+                className="group hover:shadow-hover transition-all duration-300 hover:-translate-y-1 border bg-white/90 backdrop-blur-sm overflow-hidden"
+              >
+                <CardHeader className="pb-3">
+                  <div className="flex items-start justify-between mb-3">
+                    <div className="text-3xl">{tool.icon}</div>
+                    {tool.verified && (
+                      <Badge className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-white border-0 text-xs">
+                        <Check className="h-3 w-3 mr-1" />
+                        Gold Verified
+                      </Badge>
+                    )}
+                  </div>
+                  
+                  <CardTitle className="text-lg font-bold text-foreground group-hover:text-primary transition-colors leading-tight">
+                    {tool.name}
+                  </CardTitle>
+                </CardHeader>
                 
-                <CardTitle className="text-lg font-bold text-foreground group-hover:text-primary transition-colors leading-tight">
+                <CardContent className="space-y-4">
+                  <CardDescription className="text-sm text-muted-foreground leading-relaxed line-clamp-3">
+                    {tool.description}
+                  </CardDescription>
+                  
+                  <div className="flex items-center justify-between pt-3 border-t">
+                    <div className="flex items-center space-x-1 text-sm text-muted-foreground">
+                      <ArrowUp className="h-4 w-4" />
+                      <span className="font-medium">Upvote: {tool.upvotes}</span>
+                    </div>
+                    
+                    <Button 
+                      size="sm" 
+                      className="gradient-primary text-white border-0 hover:scale-105 transition-transform text-xs px-4"
+                    >
+                      🔗 AI Visit
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Latest AI Tools Section */}
+      <section className="py-12 px-4">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-8">
+          <h2 className="text-3xl font-bold text-foreground mb-4">Latest AI Tools</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Discover the newest AI tools added to our platform
+          </p>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {[
+            {
+              name: "ThumbnailCreator.com",
+              description: "AI-powered thumbnail creator for YouTube and social media content",
+              upvotes: 234,
+              verified: true,
+              icon: "🖼️"
+            },
+            {
+              name: "ImgToImg.ai",
+              description: "Advanced AI image-to-image transformation and editing platform",
+              upvotes: 189,
+              verified: true,
+              icon: "🎨"
+            },
+            {
+              name: "Presentation Intelligence",
+              description: "AI assistant for creating smart and engaging presentations",
+              upvotes: 156,
+              verified: false,
+              icon: "📊"
+            },
+            {
+              name: "Astronomer",
+              description: "AI-powered space exploration and astronomy analysis tool",
+              upvotes: 123,
+              verified: true,
+              icon: "🌟"
+            },
+            {
+              name: "Mirage LSD Decart",
+              description: "Advanced AI for creative visual generation and transformation",
+              upvotes: 98,
+              verified: false,
+              icon: "✨"
+            },
+            {
+              name: "Pairaphrase",
+              description: "AI-powered paraphrasing and text rewriting assistant",
+              upvotes: 87,
+              verified: true,
+              icon: "📝"
+            },
+            {
+              name: "Image To Sketch AI",
+              description: "Convert photos to artistic sketches using AI technology",
+              upvotes: 76,
+              verified: true,
+              icon: "🎭"
+            },
+            {
+              name: "BrowserAct",
+              description: "AI automation tool for web browser tasks and workflows",
+              upvotes: 65,
+              verified: false,
+              icon: "🌐"
+            }
+          ].map((tool, index) => (
+            <Card key={index} className="group hover:shadow-hover transition-all duration-300 hover:-translate-y-1 bg-card/50 backdrop-blur-sm border-border/50">
+              <CardHeader className="pb-3">
+                <div className="flex items-start justify-between">
+                  <div className="text-2xl mb-2">{tool.icon}</div>
+                  <div className="flex items-center gap-2">
+                    {tool.verified && (
+                      <Check className="h-4 w-4 text-primary" />
+                    )}
+                    <Button variant="ghost" size="sm" className="h-8 px-2">
+                      <ArrowUp className="h-4 w-4 mr-1" />
+                      {tool.upvotes}
+                    </Button>
+                  </div>
+                </div>
+                <CardTitle className="text-lg leading-6 group-hover:text-primary transition-colors">
                   {tool.name}
                 </CardTitle>
               </CardHeader>
-              
-              <CardContent className="space-y-4">
-                <CardDescription className="text-sm text-muted-foreground leading-relaxed line-clamp-3">
+              <CardContent className="pt-0">
+                <CardDescription className="text-sm mb-4 line-clamp-3">
                   {tool.description}
                 </CardDescription>
-                
-                <div className="flex items-center justify-between pt-3 border-t">
-                  <div className="flex items-center space-x-1 text-sm text-muted-foreground">
-                    <ArrowUp className="h-4 w-4" />
-                    <span className="font-medium">Upvote: {tool.upvotes}</span>
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <Badge variant="secondary" className="text-xs">
+                      New
+                    </Badge>
                   </div>
-                  
-                  <Button 
-                    size="sm" 
-                    className="gradient-primary text-white border-0 hover:scale-105 transition-transform text-xs px-4"
-                  >
-                    🔗 AI Visit
+                  <Button variant="ghost" size="sm" className="h-8 w-8 p-0">
+                    <ExternalLink className="h-4 w-4" />
                   </Button>
                 </div>
               </CardContent>
@@ -742,6 +851,7 @@ const FeaturedTools = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 
