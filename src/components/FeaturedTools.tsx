@@ -671,76 +671,66 @@ const FeaturedTools = () => {
     ]
   };
 
-  const currentTools = toolCategories[selectedCategory as keyof typeof toolCategories] || [];
-
   return (
     <>
       <section className="py-16 bg-gradient-to-b from-background to-secondary/10">
         <div className="container mx-auto px-4">
-          <div className="mb-12 flex items-center justify-between">
-            <h2 className="text-3xl font-bold mb-2 text-foreground flex items-center">
-              <Star className="h-8 w-8 text-yellow-500 mr-3" />
-              Featured
-            </h2>
-            
-            <Select value={selectedCategory} onValueChange={setSelectedCategory}>
-              <SelectTrigger className="w-64">
-                <SelectValue placeholder="Select a category" />
-              </SelectTrigger>
-              <SelectContent>
-                {Object.keys(toolCategories).map((category) => (
-                  <SelectItem key={category} value={category}>
-                    {category}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
-          </div>
+          {/* Featured Tools Categories - All Categories Displayed */}
+          {Object.entries(toolCategories).map(([categoryName, tools]) => (
+            <div key={categoryName} className="mb-16">
+              <div className="mb-8">
+                <h2 className="text-3xl font-bold text-foreground mb-4 flex items-center">
+                  <Star className="h-8 w-8 text-yellow-500 mr-3" />
+                  {categoryName}
+                </h2>
+              </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {currentTools.map((tool) => (
-              <Card 
-                key={tool.id} 
-                className="group hover:shadow-hover transition-all duration-300 hover:-translate-y-1 border bg-white/90 backdrop-blur-sm overflow-hidden"
-              >
-                <CardHeader className="pb-3">
-                  <div className="flex items-start justify-between mb-3">
-                    <div className="text-3xl">{tool.icon}</div>
-                    {tool.verified && (
-                      <Badge className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-white border-0 text-xs">
-                        <Check className="h-3 w-3 mr-1" />
-                        Gold Verified
-                      </Badge>
-                    )}
-                  </div>
-                  
-                  <CardTitle className="text-lg font-bold text-foreground group-hover:text-primary transition-colors leading-tight">
-                    {tool.name}
-                  </CardTitle>
-                </CardHeader>
-                
-                <CardContent className="space-y-4">
-                  <CardDescription className="text-sm text-muted-foreground leading-relaxed line-clamp-3">
-                    {tool.description}
-                  </CardDescription>
-                  
-                  <div className="flex items-center justify-between pt-3 border-t">
-                    <div className="flex items-center space-x-1 text-sm text-muted-foreground">
-                      <ArrowUp className="h-4 w-4" />
-                      <span className="font-medium">Upvote: {tool.upvotes}</span>
-                    </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {tools.map((tool) => (
+                  <Card 
+                    key={tool.id} 
+                    className="group hover:shadow-hover transition-all duration-300 hover:-translate-y-1 border bg-white/90 backdrop-blur-sm overflow-hidden"
+                  >
+                    <CardHeader className="pb-3">
+                      <div className="flex items-start justify-between mb-3">
+                        <div className="text-3xl">{tool.icon}</div>
+                        {tool.verified && (
+                          <Badge className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-white border-0 text-xs">
+                            <Check className="h-3 w-3 mr-1" />
+                            Gold Verified
+                          </Badge>
+                        )}
+                      </div>
+                      
+                      <CardTitle className="text-lg font-bold text-foreground group-hover:text-primary transition-colors leading-tight">
+                        {tool.name}
+                      </CardTitle>
+                    </CardHeader>
                     
-                    <Button 
-                      size="sm" 
-                      className="gradient-primary text-white border-0 hover:scale-105 transition-transform text-xs px-4"
-                    >
-                      🔗 AI Visit
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+                    <CardContent className="space-y-4">
+                      <CardDescription className="text-sm text-muted-foreground leading-relaxed line-clamp-3">
+                        {tool.description}
+                      </CardDescription>
+                      
+                      <div className="flex items-center justify-between pt-3 border-t">
+                        <div className="flex items-center space-x-1 text-sm text-muted-foreground">
+                          <ArrowUp className="h-4 w-4" />
+                          <span className="font-medium">Upvote: {tool.upvotes}</span>
+                        </div>
+                        
+                        <Button 
+                          size="sm" 
+                          className="gradient-primary text-white border-0 hover:scale-105 transition-transform text-xs px-4"
+                        >
+                          🔗 AI Visit
+                        </Button>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
