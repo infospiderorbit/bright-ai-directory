@@ -13,7 +13,7 @@ const FeaturedTools = () => {
       {
         id: 1,
         name: "ChatGPT",
-        description: "A free-to-use AI system for conversations, insights, and task automation.",
+        description: "Conversational AI for writing, brainstorming, and automation.",
         upvotes: 1247,
         verified: true,
         icon: "🤖"
@@ -21,7 +21,7 @@ const FeaturedTools = () => {
       {
         id: 2,
         name: "DeepSeek",
-        description: "DeepSeek is an AI company providing foundation models and APIs for AI applications.",
+        description: "Foundation models and APIs for AI applications, including writing.",
         upvotes: 892,
         verified: true,
         icon: "🔍"
@@ -29,7 +29,7 @@ const FeaturedTools = () => {
       {
         id: 3,
         name: "DeepL",
-        description: "Accurate machine translation and AI-powered writing assistance for text and documents.",
+        description: "Translation and AI writing assistance.",
         upvotes: 734,
         verified: true,
         icon: "🌐"
@@ -37,7 +37,7 @@ const FeaturedTools = () => {
       {
         id: 4,
         name: "Notion",
-        description: "All-in-one workspace for notes, docs, projects, and AI-powered productivity.",
+        description: "AI-powered productivity and document editing.",
         upvotes: 1156,
         verified: true,
         icon: "📝"
@@ -45,7 +45,7 @@ const FeaturedTools = () => {
       {
         id: 5,
         name: "Grammarly",
-        description: "AI writing assistant for grammar, style, and tone correction and improvement.",
+        description: "Grammar, tone, and writing enhancement.",
         upvotes: 623,
         verified: true,
         icon: "✍️"
@@ -53,7 +53,7 @@ const FeaturedTools = () => {
       {
         id: 6,
         name: "QuillBot",
-        description: "AI-powered writing tool for paraphrasing, grammar checking, and more to improve writing.",
+        description: "Paraphrasing, grammar checking, and summarizing.",
         upvotes: 445,
         verified: true,
         icon: "🪶"
@@ -61,7 +61,7 @@ const FeaturedTools = () => {
       {
         id: 7,
         name: "Studocu",
-        description: "Studocu is a platform for students to share and access study materials globally.",
+        description: "Access and share study materials, document-based assistance.",
         upvotes: 567,
         verified: false,
         icon: "📚"
@@ -69,7 +69,7 @@ const FeaturedTools = () => {
       {
         id: 8,
         name: "Gamma",
-        description: "AI-powered platform for creating presentations, webpages, and documents.",
+        description: "Create presentations and documents with AI.",
         upvotes: 389,
         verified: true,
         icon: "🎨"
@@ -78,130 +78,130 @@ const FeaturedTools = () => {
     "Image Generation & Editing": [
       {
         id: 9,
-        name: "OpenAI",
-        description: "AI research and deployment company focused on building safe and beneficial AGI.",
-        upvotes: 1547,
-        verified: true,
-        icon: "🤖"
-      },
-      {
-        id: 10,
-        name: "Adobe",
-        description: "Adobe provides creative, marketing, and document management solutions.",
-        upvotes: 1892,
-        verified: true,
-        icon: "🎨"
-      },
-      {
-        id: 11,
-        name: "Grok",
-        description: "Grok is a free AI assistant by xAI for truth, objectivity, real-time search, and more.",
-        upvotes: 834,
-        verified: true,
-        icon: "🔍"
-      },
-      {
-        id: 12,
         name: "Freepik AI Image Generator",
-        description: "Free AI tool to generate images from text in real-time with various styles and options.",
+        description: "Text-to-image with various styles.",
         upvotes: 1256,
         verified: false,
         icon: "🖼️"
       },
       {
-        id: 13,
+        id: 10,
         name: "remove.bg",
-        description: "AI-powered background remover for images in 5 seconds.",
+        description: "AI background remover.",
         upvotes: 723,
         verified: true,
         icon: "🗑️"
       },
       {
-        id: 14,
+        id: 11,
         name: "Shutterstock",
-        description: "Shutterstock provides royalty-free stock images, videos, and music with AI-powered creative tools.",
+        description: "AI tools for stock media generation and editing.",
         upvotes: 545,
         verified: true,
         icon: "📸"
       },
       {
-        id: 15,
+        id: 12,
         name: "CapCut",
-        description: "CapCut is an AI-driven all-in-one video editor and graphic design tool.",
+        description: "AI-powered photo and video editor.",
         upvotes: 667,
         verified: true,
         icon: "✂️"
       },
       {
-        id: 16,
+        id: 13,
+        name: "Adobe",
+        description: "Full suite including Photoshop, Illustrator with AI.",
+        upvotes: 1892,
+        verified: true,
+        icon: "🎨"
+      },
+      {
+        id: 14,
         name: "PolyBuzz.ai",
-        description: "Free AI chatbot platform for creating and chatting with AI characters.",
+        description: "Free chatbot builder with media integrations.",
         upvotes: 289,
         verified: false,
         icon: "🤖"
+      },
+      {
+        id: 15,
+        name: "OpenAI (DALL·E)",
+        description: "Text-to-image generation.",
+        upvotes: 1547,
+        verified: true,
+        icon: "🤖"
+      },
+      {
+        id: 16,
+        name: "Grok",
+        description: "Real-time information assistant with multimedia capabilities.",
+        upvotes: 834,
+        verified: true,
+        icon: "🔍"
       }
     ],
     "Music & Audio": [
       {
         id: 17,
         name: "ElevenLabs",
-        description: "AI audio platform offering text-to-speech, voice cloning, and dubbing services.",
+        description: "AI voice cloning, dubbing, and TTS.",
         upvotes: 1347,
         verified: true,
         icon: "🎵"
       },
       {
         id: 18,
-        name: "Kling AI",
-        description: "AI creative platform for generating images and videos.",
-        upvotes: 792,
-        verified: true,
-        icon: "🎬"
-      },
-      {
-        id: 19,
-        name: "Wondershare",
-        description: "Software solutions for creativity, productivity, and utility, including video editing, PDF tools, and data management.",
-        upvotes: 634,
-        verified: true,
-        icon: "🛠️"
-      },
-      {
-        id: 20,
-        name: "EaseUS",
-        description: "EaseUS provides data recovery, backup, partition management, and multimedia software.",
-        upvotes: 456,
-        verified: true,
-        icon: "💾"
-      },
-      {
-        id: 21,
         name: "Adobe Podcast",
-        description: "AI-powered audio recording and editing platform by Adobe.",
+        description: "High-quality AI audio editing and cleanup.",
         upvotes: 523,
         verified: true,
         icon: "🎙️"
       },
       {
-        id: 22,
-        name: "PixVerse",
-        description: "AI video generator that transforms text and photos into stunning videos.",
-        upvotes: 345,
+        id: 19,
+        name: "Kling AI",
+        description: "Multimedia generation including music.",
+        upvotes: 792,
         verified: true,
-        icon: "📹"
+        icon: "🎬"
       },
       {
-        id: 23,
+        id: 20,
+        name: "Wondershare",
+        description: "Audio/video software with AI features.",
+        upvotes: 634,
+        verified: true,
+        icon: "🛠️"
+      },
+      {
+        id: 21,
+        name: "EaseUS",
+        description: "Multimedia toolkit with AI-driven functions.",
+        upvotes: 456,
+        verified: true,
+        icon: "💾"
+      },
+      {
+        id: 22,
         name: "Symphony Creative Studio",
-        description: "A creative studio for professional audio and music production.",
+        description: "Creative audio and music design.",
         upvotes: 267,
         verified: false,
         icon: "🎼"
       },
       {
+        id: 23,
+        name: "PixVerse",
+        description: "AI-generated videos with audio elements.",
+        upvotes: 345,
+        verified: true,
+        icon: "📹"
+      },
+      {
         id: 24,
         name: "Media AI Generator",
-        description: "Free online AI tools for video, image, and music generation.",
+        description: "Tools for generating music and sound effects.",
         upvotes: 189,
         verified: false,
         icon: "🎶"
@@ -210,74 +210,74 @@ const FeaturedTools = () => {
     "Voice Generation & Conversion": [
       {
         id: 25,
-        name: "CapCut",
-        description: "CapCut is an AI-driven all-in-one video editor and graphic design tool.",
-        upvotes: 1247,
-        verified: true,
-        icon: "✂️"
-      },
-      {
-        id: 26,
-        name: "Studocu",
-        description: "Studocu is a platform for students to share and access study materials globally.",
-        upvotes: 692,
-        verified: false,
-        icon: "📚"
-      },
-      {
-        id: 27,
         name: "ElevenLabs",
-        description: "AI audio platform offering text-to-speech, voice cloning, and dubbing services.",
+        description: "High-fidelity voice generation.",
         upvotes: 1434,
         verified: true,
         icon: "🎵"
       },
       {
-        id: 28,
+        id: 26,
         name: "TurboScribe",
-        description: "AI transcription service converting audio and video to text in 98+ languages.",
+        description: "Accurate AI transcription in 98+ languages.",
         upvotes: 856,
         verified: true,
         icon: "📝"
       },
       {
-        id: 29,
+        id: 27,
         name: "VEED.IO",
-        description: "Online video editor with AI tools for creating professional videos quickly and easily.",
+        description: "Voiceovers and editing with AI.",
         upvotes: 723,
         verified: true,
         icon: "🎬"
       },
       {
+        id: 28,
+        name: "Clipto.AI",
+        description: "Audio transcription and media management.",
+        upvotes: 367,
+        verified: true,
+        icon: "📎"
+      },
+      {
+        id: 29,
+        name: "Adobe Podcast",
+        description: "Audio recording/editing with AI enhancement.",
+        upvotes: 489,
+        verified: true,
+        icon: "🎙️"
+      },
+      {
         id: 30,
         name: "InVideo",
-        description: "Online video editor with 5000+ templates, AI tools, and stock media.",
+        description: "AI voiceovers for videos.",
         upvotes: 545,
         verified: true,
         icon: "📹"
       },
       {
         id: 31,
-        name: "Clipto.AI",
-        description: "AI-powered media management assistant with transcription, video editing, and asset management tools.",
-        upvotes: 367,
+        name: "CapCut",
+        description: "Voiceover and speech synthesis tools.",
+        upvotes: 1247,
         verified: true,
-        icon: "📎"
+        icon: "✂️"
       },
       {
         id: 32,
-        name: "Adobe Podcast",
-        description: "AI-powered audio recording and editing platform by Adobe.",
-        upvotes: 489,
-        verified: true,
-        icon: "🎙️"
+        name: "Studocu",
+        description: "For audio summaries and lecture transcription.",
+        upvotes: 692,
+        verified: false,
+        icon: "📚"
       }
     ],
     "Social Media": [
       {
         id: 33,
         name: "Adobe",
-        description: "Adobe provides creative, marketing, and document management solutions.",
+        description: "Create AI-designed content for social media.",
         upvotes: 1892,
         verified: true,
         icon: "🎨"
@@ -285,113 +285,113 @@ const FeaturedTools = () => {
       {
         id: 34,
         name: "Beacons",
-        description: "All-in-one platform for content creators with link-in-bio, store, email marketing, and media kits.",
+        description: "Content creator platform with AI support.",
         upvotes: 792,
         verified: true,
         icon: "🔗"
       },
       {
         id: 35,
-        name: "Uhmegle",
-        description: "Uhmegle is an Omegle alternative for chatting with strangers via text or video.",
-        upvotes: 434,
-        verified: false,
-        icon: "💬"
-      },
-      {
-        id: 36,
         name: "PixVerse",
-        description: "AI video generator that transforms text and photos into stunning videos.",
+        description: "Text/image to video generator for posts.",
         upvotes: 1156,
         verified: true,
         icon: "📹"
       },
       {
-        id: 37,
+        id: 36,
         name: "Sider",
-        description: "AI assistant integrating ChatGPT, Claude, and Gemini for reading, writing, and more on any webpage.",
+        description: "AI overlay tools for content creation.",
         upvotes: 623,
         verified: true,
         icon: "🧠"
       },
       {
-        id: 38,
+        id: 37,
         name: "Transkriptor",
-        description: "AI transcription service for audio and video to text conversion with high accuracy.",
+        description: "Convert speech to social media captions and text.",
         upvotes: 445,
         verified: true,
         icon: "📝"
       },
       {
-        id: 39,
+        id: 38,
         name: "Microsoft Designer",
-        description: "AI-powered graphic design app for creating social media posts, invitations, and more.",
+        description: "AI designs for posts and promotions.",
         upvotes: 567,
         verified: false,
         icon: "🎨"
       },
       {
-        id: 40,
+        id: 39,
         name: "Glasp",
-        description: "Social web highlighter to organize ideas, build AI clone, and share knowledge.",
+        description: "Highlight content and share insights with AI.",
         upvotes: 289,
         verified: true,
         icon: "🔍"
+      },
+      {
+        id: 40,
+        name: "Uhmegle",
+        description: "Video-based AI engagement platform.",
+        upvotes: 434,
+        verified: false,
+        icon: "💬"
       }
     ],
     "AI Detection & Anti-Detection": [
       {
         id: 41,
-        name: "QuillBot",
-        description: "AI-powered writing tool for paraphrasing, grammar checking, and more to improve writing.",
-        upvotes: 1247,
-        verified: true,
-        icon: "🪶"
-      },
-      {
-        id: 42,
         name: "ZeroGPT",
-        description: "ZeroGPT is an AI content detector and offers various writing tools.",
+        description: "AI content detection tool.",
         upvotes: 892,
         verified: true,
         icon: "🔍"
       },
       {
-        id: 43,
+        id: 42,
         name: "GPTZero",
-        description: "AI detector for identifying text generated by AI models like ChatGPT.",
+        description: "Detects AI-generated text.",
         upvotes: 734,
         verified: true,
         icon: "🕵️"
       },
       {
+        id: 43,
+        name: "Undetectable AI",
+        description: "Converts AI text to human-like writing.",
+        upvotes: 445,
+        verified: true,
+        icon: "🥷"
+      },
+      {
         id: 44,
-        name: "Uhmegle",
-        description: "Uhmegle is an Omegle alternative for chatting with strangers via text or video.",
-        upvotes: 456,
-        verified: false,
-        icon: "💬"
+        name: "QuillBot",
+        description: "Used as a humanizer and paraphraser.",
+        upvotes: 1247,
+        verified: true,
+        icon: "🪶"
       },
       {
         id: 45,
         name: "Scribbr",
-        description: "Scribbr offers proofreading, plagiarism checking, citation generation, and academic resources for students.",
+        description: "AI plagiarism detection and academic support.",
         upvotes: 623,
         verified: true,
         icon: "📚"
       },
       {
         id: 46,
-        name: "Undetectable AI",
-        description: "Transforms AI content into undetectable, human-like writing.",
-        upvotes: 445,
-        verified: true,
-        icon: "🥷"
+        name: "Uhmegle",
+        description: "Platform with some anti-AI moderation.",
+        upvotes: 456,
+        verified: false,
+        icon: "💬"
       },
       {
         id: 47,
         name: "Branded",
-        description: "Branded connects businesses with research participants, offering AI-driven insights and custom audience targeting.",
+        description: "AI audience analysis and content verification.",
         upvotes: 367,
         verified: true,
         icon: "🏷️"
@@ -399,7 +399,7 @@ const FeaturedTools = () => {
       {
         id: 48,
         name: "hCaptcha",
-        description: "AI security platform stopping bots and human abuse with a privacy focus.",
+        description: "Detects bots and AI-based spam.",
         upvotes: 289,
         verified: true,
         icon: "🛡️"
@@ -409,7 +409,7 @@ const FeaturedTools = () => {
       {
         id: 49,
         name: "ChatGPT",
-        description: "A free-to-use AI system for conversations, insights, and task automation.",
+        description: "Code generation and debugging help.",
         upvotes: 1547,
         verified: true,
         icon: "🤖"
@@ -417,7 +417,7 @@ const FeaturedTools = () => {
       {
         id: 50,
         name: "OpenAI",
-        description: "AI research and deployment company focused on building safe and beneficial AGI.",
+        description: "API for coding and AI dev tools.",
         upvotes: 1892,
         verified: true,
         icon: "🤖"
@@ -425,47 +425,47 @@ const FeaturedTools = () => {
       {
         id: 51,
         name: "DeepSeek",
-        description: "DeepSeek is an AI company providing foundation models and APIs for AI applications.",
+        description: "Code generation models and APIs.",
         upvotes: 834,
         verified: true,
         icon: "🔍"
       },
       {
         id: 52,
-        name: "DeepL",
-        description: "Accurate machine translation and AI-powered writing assistance for text and documents.",
-        upvotes: 1256,
-        verified: true,
-        icon: "🌐"
-      },
-      {
-        id: 53,
-        name: "Salesforce Platform",
-        description: "A unified platform for data, AI, CRM, development, and security.",
-        upvotes: 723,
-        verified: true,
-        icon: "☁️"
-      },
-      {
-        id: 54,
         name: "Claude",
-        description: "Claude is an AI assistant from Anthropic that helps with tasks via natural language.",
+        description: "Code assistant by Anthropic.",
         upvotes: 545,
         verified: true,
         icon: "🧠"
       },
       {
-        id: 55,
+        id: 53,
         name: "Google AI Studio",
-        description: "Platform for building with Google's Gemini AI models.",
+        description: "Gemini-based code and app builder.",
         upvotes: 667,
         verified: false,
         icon: "🔬"
       },
       {
+        id: 54,
+        name: "Salesforce Platform",
+        description: "CRM and low-code development.",
+        upvotes: 723,
+        verified: true,
+        icon: "☁️"
+      },
+      {
+        id: 55,
+        name: "DeepL",
+        description: "Translation APIs for developers.",
+        upvotes: 1256,
+        verified: true,
+        icon: "🌐"
+      },
+      {
         id: 56,
         name: "Lovable",
-        description: "Lovable: Build software products from idea to app using a chat interface.",
+        description: "No-code builder from chat to full app.",
         upvotes: 389,
         verified: true,
         icon: "💖"
@@ -474,32 +474,32 @@ const FeaturedTools = () => {
     "Video & Animation": [
       {
         id: 57,
-        name: "OpenAI",
-        description: "AI research and deployment company focused on building safe and beneficial AGI.",
-        upvotes: 1347,
-        verified: true,
-        icon: "🤖"
-      },
-      {
-        id: 58,
         name: "Sora",
-        description: "AI model creating realistic videos from text, images, or existing videos.",
+        description: "AI video generation from text/images.",
         upvotes: 1792,
         verified: true,
         icon: "🎬"
       },
       {
-        id: 59,
+        id: 58,
         name: "CapCut",
-        description: "CapCut is an AI-driven all-in-one video editor and graphic design tool.",
+        description: "All-in-one AI video editor.",
         upvotes: 634,
         verified: true,
         icon: "✂️"
       },
       {
+        id: 59,
+        name: "PixVerse",
+        description: "Text to animated video platform.",
+        upvotes: 345,
+        verified: true,
+        icon: "📹"
+      },
+      {
         id: 60,
         name: "VSCO",
-        description: "Photography and video editing app with creative community and professional tools.",
+        description: "Creative video and animation tools.",
         upvotes: 1056,
         verified: true,
         icon: "📸"
@@ -507,7 +507,7 @@ const FeaturedTools = () => {
       {
         id: 61,
         name: "Kling AI",
-        description: "AI creative platform for generating images and videos.",
+        description: "Generates videos and animations from prompts.",
         upvotes: 823,
         verified: true,
         icon: "🎬"
@@ -515,7 +515,7 @@ const FeaturedTools = () => {
       {
         id: 62,
         name: "Cutout.Pro",
-        description: "AI-powered visual design platform for photo and video editing and content generation.",
+        description: "AI tools for video background, effects, and animation.",
         upvotes: 445,
         verified: true,
         icon: "✂️"
@@ -523,7 +523,7 @@ const FeaturedTools = () => {
       {
         id: 63,
         name: "Picsart",
-        description: "AI-powered creative platform for photo and video editing and graphic design.",
+        description: "AI-powered video and image editing.",
         upvotes: 567,
         verified: true,
         icon: "🎨"
@@ -531,7 +531,7 @@ const FeaturedTools = () => {
       {
         id: 64,
         name: "Pixlr",
-        description: "Cloud-based photo editing and design tools with AI-powered features.",
+        description: "AI-enhanced photo/video design tools.",
         upvotes: 389,
         verified: true,
         icon: "🖼️"
