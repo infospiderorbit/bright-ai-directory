@@ -1,9 +1,10 @@
-import { ExternalLink, Star, ArrowUp, Check } from "lucide-react";
+import { ExternalLink, Star, ArrowUp, Check, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const FeaturedTools = () => {
   const [selectedCategory, setSelectedCategory] = useState("Writing & Editing");
@@ -679,10 +680,18 @@ const FeaturedTools = () => {
           {Object.entries(toolCategories).map(([categoryName, tools]) => (
             <div key={categoryName} className="mb-16">
               <div className="mb-8">
-                <h2 className="text-3xl font-bold text-foreground mb-4 flex items-center">
-                  <Star className="h-8 w-8 text-yellow-500 mr-3" />
-                  {categoryName}
-                </h2>
+                <div className="flex items-center justify-between">
+                  <h2 className="text-3xl font-bold text-foreground mb-4 flex items-center">
+                    <Star className="h-8 w-8 text-yellow-500 mr-3" />
+                    {categoryName}
+                  </h2>
+                  <Link to={`/category/${categoryName.toLowerCase().replace(/\s+/g, '-').replace(/&/g, '')}`}>
+                    <Button variant="outline" className="mb-4">
+                      More
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </Link>
+                </div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
