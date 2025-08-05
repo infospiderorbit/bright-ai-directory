@@ -1,5 +1,6 @@
 import { Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -19,9 +20,9 @@ const Header = () => {
             <a href="#" className="text-muted-foreground hover:text-foreground transition-smooth font-medium">
               Full List
             </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-smooth font-medium">
+            <Link to="/categories" className="text-muted-foreground hover:text-foreground transition-smooth font-medium">
               AI Categories
-            </a>
+            </Link>
             <a href="#" className="text-muted-foreground hover:text-foreground transition-smooth font-medium">
               AI Tutorials
             </a>
