@@ -225,6 +225,299 @@ export const categoriesData = {
       "bio-link": { title: "Bio Link", count: 44 },
       "youtube-tags-generator": { title: "Youtube Tags Generator", count: 34 }
     }
+  },
+  "ai-detection-anti-detection": {
+    title: "AI Detection & Anti-Detection",
+    totalCount: 1734,
+    subcategories: {
+      "ai-content-detector": { title: "AI Content Detector", count: 412 },
+      "ai-detector": { title: "AI Detector", count: 390 },
+      "ai-checker": { title: "AI Checker", count: 162 },
+      "undetectable-ai": { title: "Undetectable AI", count: 140 },
+      "ai-bypasser": { title: "AI Bypasser", count: 138 },
+      "humanizer-ai": { title: "Humanizer AI", count: 173 },
+      "ai-plagiarism-checker": { title: "AI Plagiarism Checker", count: 131 },
+      "bypass-ai": { title: "Bypass AI", count: 74 },
+      "ai-image-detector": { title: "AI Image Detector", count: 64 },
+      "ai-checker-essay": { title: "AI Checker Essay", count: 38 },
+      "ai-art-detector": { title: "AI Art Detector", count: 12 }
+    }
+  },
+  "coding-development": {
+    title: "Coding & Development",
+    totalCount: 7296,
+    subcategories: {
+      "ai-api": { title: "AI API", count: 1846 },
+      "ai-developer-tools": { title: "AI Developer Tools", count: 1698 },
+      "no-code-low-code": { title: "No-Code & Low-Code", count: 1188 },
+      "ai-browsers": { title: "AI Browsers", count: 689 },
+      "ai-code-generator": { title: "AI Code Generator", count: 661 },
+      "ai-code-assistant": { title: "AI Code Assistant", count: 599 },
+      "ai-app-builder": { title: "AI App Builder", count: 448 },
+      "ai-website-builder": { title: "AI Website Builder", count: 393 },
+      "ai-testing": { title: "AI Testing", count: 243 },
+      "ai-web-scraping": { title: "AI Web Scraping", count: 240 },
+      "ai-landing-page-builder": { title: "AI Landing Page Builder", count: 185 },
+      "ai-github": { title: "AI Github", count: 116 },
+      "ai-code-review": { title: "AI Code Review", count: 113 },
+      "sql-query-builder": { title: "SQL Query Builder", count: 73 },
+      "log-management": { title: "Log Management", count: 14 }
+    }
+  },
+  "video-animation": {
+    title: "Video & Animation",
+    totalCount: 3464,
+    subcategories: {
+      "ai-video-generator": { title: "AI Video Generator", count: 1004 },
+      "text-to-video": { title: "Text to Video", count: 406 },
+      "ai-video-editor": { title: "AI Video Editor", count: 372 },
+      "ai-video-summarizer": { title: "AI Video Summarizer", count: 323 },
+      "ai-short-video-generator": { title: "AI Short Video Generator", count: 286 },
+      "image-to-video": { title: "Image to Video", count: 269 },
+      "ai-animation-generator": { title: "AI Animation Generator", count: 212 },
+      "ai-avatar-video-generator": { title: "AI Avatar Video Generator", count: 113 },
+      "ai-video-enhancer": { title: "AI Video Enhancer", count: 108 },
+      "long-video-to-short-video-ai": { title: "Long Video to Short Video AI", count: 106 },
+      "ai-tiktok-video-generator": { title: "AI Tiktok Video Generator", count: 96 },
+      "ai-youtube-video-maker": { title: "AI Youtube Video Maker", count: 94 },
+      "ai-lip-sync-generator": { title: "AI Lip Sync Generator", count: 89 },
+      "ai-face-swap-video": { title: "AI Face Swap Video", count: 76 },
+      "ai-animated-video": { title: "AI Animated Video", count: 74 },
+      "script-to-video-ai-generator": { title: "Script to Video AI Generator", count: 72 },
+      "ai-video-recording": { title: "AI Video Recording", count: 68 },
+      "ai-ugc-video-generator": { title: "AI UGC Video Generator", count: 54 },
+      "ai-reel-generator": { title: "AI Reel Generator", count: 52 },
+      "ai-video-search": { title: "AI Video Search", count: 51 },
+      "ai-music-video-generator": { title: "AI Music Video Generator", count: 37 },
+      "ai-commercial-generator": { title: "AI Commercial Generator", count: 36 },
+      "ai-movie-generator": { title: "AI Movie Generator", count: 34 },
+      "ai-gif-generator": { title: "AI GIF Generator", count: 30 },
+      "ai-video-upscaler": { title: "AI Video Upscaler", count: 28 },
+      "video-to-video": { title: "Video to Video", count: 28 },
+      "ai-vtuber": { title: "AI Vtuber", count: 17 },
+      "ai-cartoon-video-generator": { title: "AI Cartoon Video Generator", count: 15 }
+    }
+  },
+  "daily-life": {
+    title: "Daily Life",
+    totalCount: 1956,
+    subcategories: {
+      "ai-shopping-assistant": { title: "AI Shopping Assistant", count: 311 },
+      "ai-news": { title: "AI News", count: 277 },
+      "ai-fitness": { title: "AI Fitness", count: 228 },
+      "ai-travel": { title: "AI Travel", count: 207 },
+      "ai-portrait-generator": { title: "AI Portrait Generator", count: 200 },
+      "ai-trip-planner": { title: "AI Trip Planner", count: 190 },
+      "ai-recipe": { title: "AI Recipe", count: 164 },
+      "ai-cooking-assistant": { title: "AI Cooking Assistant", count: 159 },
+      "ai-outfit-generator": { title: "AI Outfit Generator", count: 105 },
+      "ai-sports": { title: "AI Sports", count: 88 },
+      "ai-newsletter": { title: "AI Newsletter", count: 80 },
+      "ai-gift-ideas": { title: "AI Gift Ideas", count: 73 },
+      "ai-parenting": { title: "AI Parenting", count: 57 },
+      "ai-selfie-generator": { title: "AI Selfie Generator", count: 56 },
+      "ai-religion": { title: "AI Religion", count: 54 },
+      "ai-dream-interpreter": { title: "AI Dream Interpreter", count: 36 },
+      "ai-bible": { title: "AI Bible", count: 28 },
+      "ai-baby-generator": { title: "AI Baby Generator", count: 28 },
+      "ai-pickup-lines": { title: "AI Pickup Lines", count: 13 },
+      "ai-god": { title: "AI God", count: 8 }
+    }
+  },
+  "legal-finance": {
+    title: "Legal & Finance",
+    totalCount: 2201,
+    subcategories: {
+      "ai-for-finance": { title: "AI For Finance", count: 679 },
+      "ai-investing": { title: "AI Investing", count: 322 },
+      "ai-legal-assistant": { title: "AI Legal Assistant", count: 257 },
+      "ai-real-estate": { title: "AI Real Estate", count: 232 },
+      "ai-accounting": { title: "AI Accounting", count: 190 },
+      "ai-stock-trading": { title: "AI Stock Trading", count: 133 },
+      "ai-contract-review": { title: "AI Contract Review", count: 105 },
+      "ai-trading-bot": { title: "AI Trading Bot", count: 78 },
+      "ai-contract-management": { title: "AI Contract Management", count: 65 },
+      "ai-contract-generator": { title: "AI Contract Generator", count: 56 },
+      "ai-tax-assistant": { title: "AI Tax Assistant", count: 43 }
+    }
+  },
+  "business-management": {
+    title: "Business Management",
+    totalCount: 3897,
+    subcategories: {
+      "ai-customer-service": { title: "AI Customer Service", count: 1216 },
+      "ai-workflow": { title: "AI Workflow", count: 1072 },
+      "ai-recruiting": { title: "AI Recruiting", count: 626 },
+      "ai-interview-assistant": { title: "AI Interview Assistant", count: 437 },
+      "ai-crm": { title: "AI CRM", count: 404 },
+      "ai-project-management": { title: "AI Project Management", count: 293 },
+      "ai-call-center": { title: "AI Call Center", count: 189 },
+      "ai-product-manager": { title: "AI Product Manager", count: 83 },
+      "ai-roadmap": { title: "AI Roadmap", count: 41 },
+      "ai-erp": { title: "AI ERP", count: 33 }
+    }
+  },
+  "marketing-advertising": {
+    title: "Marketing & Advertising",
+    totalCount: 7263,
+    subcategories: {
+      "ai-marketing": { title: "AI Marketing", count: 1887 },
+      "ai-lead-generation": { title: "AI Lead Generation", count: 1070 },
+      "ai-seo-tools": { title: "AI SEO Tools", count: 940 },
+      "ai-sales-assistant": { title: "AI Sales Assistant", count: 912 },
+      "ai-sales": { title: "AI Sales", count: 821 },
+      "ai-email-generator": { title: "AI Email Generator", count: 675 },
+      "ai-response-generator": { title: "AI Response Generator", count: 570 },
+      "ai-ad-generator": { title: "AI Ad Generator", count: 466 },
+      "ai-advertising": { title: "AI Advertising", count: 424 },
+      "ai-digital-marketing": { title: "AI Digital Marketing", count: 382 },
+      "ai-reply": { title: "AI Reply", count: 362 },
+      "ai-email-marketing": { title: "AI Email Marketing", count: 262 },
+      "seo-writing-ai": { title: "SEO Writing AI", count: 247 },
+      "ai-ad-creative": { title: "AI Ad Creative", count: 136 },
+      "ai-reviews": { title: "AI Reviews", count: 133 },
+      "ai-affiliate-marketing": { title: "AI Affiliate Marketing", count: 90 },
+      "ai-marketing-plan-generator": { title: "AI Marketing Plan Generator", count: 70 },
+      "ai-cold-calling": { title: "AI Cold Calling", count: 59 },
+      "ai-website-designer": { title: "AI Website Designer", count: 50 },
+      "ai-pitch-deck-generator": { title: "AI Pitch Deck Generator", count: 47 },
+      "ad-copy": { title: "Ad Copy", count: 39 },
+      "google-ads-ai": { title: "Google Ads AI", count: 33 },
+      "ai-shopify-store-builder": { title: "AI Shopify Store Builder", count: 29 },
+      "ai-flyer-generator": { title: "AI Flyer Generator", count: 12 }
+    }
+  },
+  "health-wellness": {
+    title: "Health & Wellness",
+    totalCount: 1048,
+    subcategories: {
+      "ai-healthcare": { title: "AI Healthcare", count: 464 },
+      "ai-mental-health": { title: "AI Mental Health", count: 329 },
+      "ai-therapist": { title: "AI Therapist", count: 112 },
+      "ai-medical-diagnosis": { title: "AI Medical Diagnosis", count: 72 },
+      "ai-symptom-checker": { title: "AI Symptom Checker", count: 55 },
+      "ai-dermatology": { title: "AI Dermatology", count: 16 }
+    }
+  },
+  "business-research": {
+    title: "Business Research",
+    totalCount: 1038,
+    subcategories: {
+      "ai-crypto": { title: "AI Crypto", count: 232 },
+      "ai-consulting": { title: "AI Consulting", count: 221 },
+      "blockchain": { title: "Blockchain", count: 171 },
+      "ai-business-ideas-generator": { title: "AI Business Ideas Generator", count: 148 },
+      "web3": { title: "Web3", count: 136 },
+      "nfts": { title: "NFTs", count: 68 },
+      "ai-business-name-generator": { title: "AI Business Name Generator", count: 60 },
+      "ai-domain-name-generator": { title: "AI Domain Name Generator", count: 53 },
+      "ai-company-name-generator": { title: "AI Company Name Generator", count: 15 }
+    }
+  },
+  "education-translation": {
+    title: "Education & Translation",
+    totalCount: 6938,
+    subcategories: {
+      "ai-translate": { title: "AI Translate", count: 1086 },
+      "ai-answer": { title: "AI Answer", count: 1004 },
+      "ai-coaching": { title: "AI Coaching", count: 630 },
+      "ai-knowledge-base": { title: "AI Knowledge Base", count: 621 },
+      "ai-knowledge-management": { title: "AI Knowledge Management", count: 572 },
+      "ai-homework-helper": { title: "AI Homework Helper", count: 474 },
+      "ai-language-learning": { title: "AI Language Learning", count: 421 },
+      "ai-article-summarizer": { title: "AI Article Summarizer", count: 412 },
+      "ai-course": { title: "AI Course", count: 337 },
+      "ai-quiz-generator": { title: "AI Quiz Generator", count: 320 },
+      "ai-question-generator": { title: "AI Question Generator", count: 291 },
+      "ai-teachers": { title: "AI Teachers", count: 273 },
+      "ai-reader": { title: "AI Reader", count: 205 },
+      "ai-flashcard-maker": { title: "AI Flashcard Maker", count: 196 },
+      "ai-quizzes": { title: "AI Quizzes", count: 179 },
+      "ai-video-translator": { title: "AI Video Translator", count: 153 },
+      "ai-math": { title: "AI Math", count: 145 },
+      "ai-mind-mapping": { title: "AI Mind Mapping", count: 138 },
+      "ai-tutorial": { title: "AI Tutorial", count: 109 },
+      "ai-lesson-plan-generator": { title: "AI Lesson Plan Generator", count: 92 },
+      "ai-voice-translator": { title: "AI Voice Translator", count: 65 },
+      "ai-image-translator": { title: "AI Image Translator", count: 58 },
+      "ai-knowledge-graph": { title: "AI Knowledge Graph", count: 53 },
+      "ai-book-summarizer": { title: "AI Book Summarizer", count: 50 }
+    }
+  },
+  "office-productivity": {
+    title: "Office & Productivity",
+    totalCount: 22094,
+    subcategories: {
+      "ai-assistant": { title: "AI Assistant", count: 6246 },
+      "ai-productivity-tools": { title: "AI Productivity Tools", count: 3676 },
+      "ai-agent": { title: "AI Agent", count: 1824 },
+      "ai-copilot": { title: "AI Copilot", count: 1593 },
+      "ai-search-engine": { title: "AI Search Engine", count: 997 },
+      "ai-email-assistant": { title: "AI Email Assistant", count: 756 },
+      "ai-report-generator": { title: "AI Report Generator", count: 600 },
+      "ai-document-extraction": { title: "AI Document Extraction", count: 493 },
+      "ai-pdf": { title: "AI PDF", count: 491 },
+      "ai-task-management": { title: "AI Task Management", count: 483 },
+      "ai-meeting-assistant": { title: "AI Meeting Assistant", count: 474 },
+      "ai-note-taker": { title: "AI Note Taker", count: 454 },
+      "ai-scheduling": { title: "AI Scheduling", count: 444 },
+      "ai-documents-generator": { title: "AI Documents Generator", count: 419 },
+      "ai-resume-builder": { title: "AI Resume Builder", count: 377 },
+      "ai-monitor": { title: "AI Monitor", count: 318 },
+      "ai-notes-generator": { title: "AI Notes Generator", count: 290 },
+      "ai-pdf-summarizer": { title: "AI PDF Summarizer", count: 261 },
+      "ai-jobs": { title: "AI Jobs", count: 242 },
+      "ai-resume-checker": { title: "AI Resume Checker", count: 201 },
+      "ai-presentation-generator": { title: "AI Presentation Generator", count: 190 },
+      "ai-charting": { title: "AI Charting", count: 162 },
+      "ai-forms": { title: "AI Forms", count: 158 },
+      "ai-calendar": { title: "AI Calendar", count: 131 },
+      "ai-ppt-maker": { title: "AI PPT Maker", count: 112 },
+      "ai-spreadsheet": { title: "AI Spreadsheet", count: 112 },
+      "ai-schedule-maker": { title: "AI Schedule Maker", count: 110 },
+      "ai-diagram-generator": { title: "AI Diagram Generator", count: 101 },
+      "ai-scanner": { title: "AI Scanner", count: 95 },
+      "ai-files": { title: "AI Files", count: 87 },
+      "ai-excel-formula-generator": { title: "AI Excel Formula Generator", count: 54 },
+      "ai-life": { title: "AI Life", count: 52 },
+      "excel-ai": { title: "Excel AI", count: 50 },
+      "ai-sop": { title: "AI SOP", count: 37 },
+      "ai-pdf-editor": { title: "AI PDF Editor", count: 26 },
+      "whiteboard-ai": { title: "Whiteboard AI", count: 25 },
+      "graph-ai": { title: "Graph AI", count: 21 },
+      "ai-word": { title: "AI WORD", count: 20 }
+    }
+  },
+  "research-data-analysis": {
+    title: "Research & Data Analysis",
+    totalCount: 2434,
+    subcategories: {
+      "ai-for-data-analytics": { title: "AI For Data Analytics", count: 1448 },
+      "ai-research-tool": { title: "AI Research Tool", count: 1123 },
+      "ai-predictions": { title: "AI Predictions", count: 488 },
+      "ai-data-mining": { title: "AI Data Mining", count: 268 },
+      "ai-research-papers": { title: "AI Research Papers", count: 83 },
+      "ai-papers": { title: "AI Papers", count: 41 },
+      "ai-sports-predictions": { title: "AI Sports Predictions", count: 36 },
+      "ai-sports-betting": { title: "AI Sports Betting", count: 35 }
+    }
+  },
+  "other": {
+    title: "Other",
+    totalCount: 4994,
+    subcategories: {
+      "large-language-models": { title: "Large Language Models (LLMs)", count: 2675 },
+      "ai-models": { title: "AI Models", count: 795 },
+      "other": { title: "Other", count: 717 },
+      "ai-tools-directory": { title: "AI Tools Directory", count: 453 },
+      "open-source-ai-models": { title: "Open Source AI Models", count: 411 },
+      "ai-games": { title: "AI Games", count: 284 },
+      "nsfw": { title: "NSFW", count: 243 },
+      "ai-game-generator": { title: "AI Game Generator", count: 49 },
+      "ai-robot": { title: "AI Robot", count: 42 },
+      "ai-poker": { title: "AI Poker", count: 9 },
+      "minecraft-ai": { title: "Minecraft AI", count: 7 }
+    }
   }
 };
 
@@ -234,7 +527,20 @@ export const getCategoryIcon = (categoryKey: string): string => {
     "image-generation-editing": "🖼️",
     "voice-generation-conversion": "🎙️",
     "art-creative-design": "🎨",
-    "social-media": "📱"
+    "social-media": "📱",
+    "ai-detection-anti-detection": "🔍",
+    "coding-development": "💻",
+    "video-animation": "🎬",
+    "daily-life": "🏠",
+    "legal-finance": "⚖️",
+    "business-management": "📊",
+    "marketing-advertising": "📢",
+    "health-wellness": "🏥",
+    "business-research": "📈",
+    "education-translation": "🎓",
+    "office-productivity": "📁",
+    "research-data-analysis": "🔬",
+    "other": "🔧"
   };
   return icons[categoryKey] || "🔧";
 };
