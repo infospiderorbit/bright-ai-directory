@@ -6,61 +6,14 @@ import { Badge } from "@/components/ui/badge";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { categoriesData, getCategoryIcon } from "@/data/categoriesData";
-
-// Sample tools data for subcategories
-const sampleTools = [
-  {
-    id: 1,
-    name: "ChatGPT",
-    description: "Advanced AI writing assistant for content creation and editing.",
-    upvotes: 1247,
-    verified: true,
-    rating: 4.8,
-    icon: "🤖"
-  },
-  {
-    id: 2,
-    name: "Jasper AI",
-    description: "AI copywriting tool for marketing and business content.",
-    upvotes: 892,
-    verified: true,
-    rating: 4.6,
-    icon: "✨"
-  },
-  {
-    id: 3,
-    name: "Copy.ai",
-    description: "AI-powered copywriting platform for various content types.",
-    upvotes: 734,
-    verified: true,
-    rating: 4.5,
-    icon: "📝"
-  },
-  {
-    id: 4,
-    name: "Writesonic",
-    description: "AI writing tool for articles, ads, and marketing copy.",
-    upvotes: 623,
-    verified: true,
-    rating: 4.4,
-    icon: "🚀"
-  },
-  {
-    id: 5,
-    name: "ContentBot",
-    description: "AI content generator for blogs and social media.",
-    upvotes: 445,
-    verified: false,
-    rating: 4.2,
-    icon: "🤖"
-  }
-];
+import { getToolsBySubcategory } from "@/data/toolsData";
 
 const SubcategoryPage = () => {
   const { category, subcategory } = useParams();
   
   const categoryData = categoriesData[category as keyof typeof categoriesData];
   const subcategoryData = categoryData?.subcategories?.[subcategory as string];
+  const tools = getToolsBySubcategory(category || "", subcategory || "");
 
   if (!categoryData || !subcategoryData) {
     return (
@@ -115,7 +68,7 @@ const SubcategoryPage = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {sampleTools.map((tool) => (
+          {tools.length > 0 ? tools.map((tool) => (
             <Card key={tool.id} className="group hover:shadow-lg transition-shadow duration-300">
               <CardHeader className="pb-3">
                 <div className="flex items-start justify-between">
@@ -158,7 +111,12 @@ const SubcategoryPage = () => {
                 </div>
               </CardContent>
             </Card>
-          ))}
+          )) : (
+            <div className="col-span-full text-center py-12">
+              <p className="text-muted-foreground text-lg">No tools available for this subcategory yet.</p>
+              <p className="text-sm text-muted-foreground mt-2">Check back soon for updates!</p>
+            </div>
+          )}
         </div>
       </div>
       <Footer />
