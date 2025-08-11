@@ -12,6 +12,309 @@ export interface Tool {
 }
 
 export const toolsData: { [key: string]: { [key: string]: Tool[] } } = {
+  "image-generation-editing": {
+    "ai-age-progression": [
+      { id: "heyphoto", name: "HeyPhoto", description: "AI photo editing and age progression tool", url: "", upvotes: 567, verified: true, rating: 4.5, icon: "👴", category: "image-generation-editing", subcategory: "ai-age-progression" },
+      { id: "extrapolate", name: "Extrapolate", description: "See how you'll age with AI technology", url: "", upvotes: 432, verified: true, rating: 4.4, icon: "📅", category: "image-generation-editing", subcategory: "ai-age-progression" },
+      { id: "ourbabyai", name: "OurBabyAI", description: "AI-generated baby photos from parents", url: "", upvotes: 345, verified: true, rating: 4.3, icon: "👶", category: "image-generation-editing", subcategory: "ai-age-progression" },
+      { id: "ager-fun", name: "Ager.fun", description: "Fun AI aging and face transformation app", url: "", upvotes: 234, verified: false, rating: 4.2, icon: "🎭", category: "image-generation-editing", subcategory: "ai-age-progression" },
+      { id: "ai-face-ager", name: "AI Face Ager", description: "Professional AI age progression technology", url: "", upvotes: 189, verified: true, rating: 4.1, icon: "⏰", category: "image-generation-editing", subcategory: "ai-age-progression" }
+    ],
+    "ai-avatar-generator": [
+      { id: "heygen", name: "HeyGen", description: "AI avatar and video generation platform", url: "", upvotes: 1234, verified: true, rating: 4.8, icon: "🎭", category: "image-generation-editing", subcategory: "ai-avatar-generator" },
+      { id: "vidnoz-ai", name: "Vidnoz AI", description: "AI video and avatar creation tool", url: "", upvotes: 789, verified: true, rating: 4.6, icon: "🎬", category: "image-generation-editing", subcategory: "ai-avatar-generator" },
+      { id: "live3d", name: "Live3D", description: "3D avatar creation and animation platform", url: "", upvotes: 567, verified: true, rating: 4.5, icon: "🎮", category: "image-generation-editing", subcategory: "ai-avatar-generator" },
+      { id: "d-id", name: "D-ID", description: "AI-powered talking avatar generator", url: "", upvotes: 456, verified: true, rating: 4.4, icon: "🗣️", category: "image-generation-editing", subcategory: "ai-avatar-generator" },
+      { id: "vidyard", name: "Vidyard", description: "Video messaging with AI avatar features", url: "", upvotes: 345, verified: true, rating: 4.3, icon: "📹", category: "image-generation-editing", subcategory: "ai-avatar-generator" }
+    ],
+    "ai-background-generator": [
+      { id: "pacdora-bg", name: "Pacdora AI Background Generator", description: "AI-powered background generation tool", url: "", upvotes: 678, verified: true, rating: 4.6, icon: "🎨", category: "image-generation-editing", subcategory: "ai-background-generator" },
+      { id: "insmind", name: "insMind", description: "AI photo editing with background generation", url: "", upvotes: 567, verified: true, rating: 4.5, icon: "🖼️", category: "image-generation-editing", subcategory: "ai-background-generator" },
+      { id: "pixelcut", name: "Pixelcut", description: "AI background removal and generation", url: "", upvotes: 456, verified: true, rating: 4.4, icon: "✂️", category: "image-generation-editing", subcategory: "ai-background-generator" },
+      { id: "ghibli-ai", name: "Ghibli AI", description: "Studio Ghibli style background generator", url: "", upvotes: 345, verified: true, rating: 4.3, icon: "🌿", category: "image-generation-editing", subcategory: "ai-background-generator" },
+      { id: "pic-copilot", name: "Pic Copilot", description: "AI-assisted photo background creation", url: "", upvotes: 234, verified: false, rating: 4.2, icon: "🧑‍✈️", category: "image-generation-editing", subcategory: "ai-background-generator" }
+    ],
+    "ai-background-remover": [
+      { id: "remove-bg", name: "remove.bg", description: "Automatic background removal tool", url: "", upvotes: 2345, verified: true, rating: 4.8, icon: "🔍", category: "image-generation-editing", subcategory: "ai-background-remover" },
+      { id: "photoroom", name: "Photoroom", description: "AI photo editor with background removal", url: "", upvotes: 1567, verified: true, rating: 4.7, icon: "📸", category: "image-generation-editing", subcategory: "ai-background-remover" },
+      { id: "erase-bg", name: "Erase.bg", description: "Free background removal with AI", url: "", upvotes: 789, verified: true, rating: 4.5, icon: "🧹", category: "image-generation-editing", subcategory: "ai-background-remover" },
+      { id: "befunky", name: "BeFunky", description: "Photo editing suite with background removal", url: "", upvotes: 567, verified: true, rating: 4.4, icon: "🎨", category: "image-generation-editing", subcategory: "ai-background-remover" },
+      { id: "insmind-bg", name: "insMind", description: "Professional AI background removal tool", url: "", upvotes: 456, verified: true, rating: 4.3, icon: "🖼️", category: "image-generation-editing", subcategory: "ai-background-remover" }
+    ],
+    "ai-clothing-removal": [
+      { id: "nero", name: "Nero", description: "Advanced photo editing and enhancement", url: "", upvotes: 456, verified: true, rating: 4.3, icon: "🖼️", category: "image-generation-editing", subcategory: "ai-clothing-removal" },
+      { id: "palette-app", name: "Palette App", description: "AI-powered photo colorization tool", url: "", upvotes: 345, verified: true, rating: 4.2, icon: "🎨", category: "image-generation-editing", subcategory: "ai-clothing-removal" },
+      { id: "imagecolorizer", name: "ImageColorizer", description: "AI photo colorization and restoration", url: "", upvotes: 234, verified: true, rating: 4.1, icon: "🌈", category: "image-generation-editing", subcategory: "ai-clothing-removal" },
+      { id: "avclabs", name: "AVCLabs", description: "AI video and photo enhancement suite", url: "", upvotes: 189, verified: true, rating: 4.0, icon: "🔬", category: "image-generation-editing", subcategory: "ai-clothing-removal" },
+      { id: "photorestore", name: "PhotoRestore.io", description: "AI photo restoration and enhancement", url: "", upvotes: 156, verified: false, rating: 3.9, icon: "🔧", category: "image-generation-editing", subcategory: "ai-clothing-removal" }
+    ],
+    "ai-colorize": [
+      { id: "undress-app", name: "Undress.app", description: "AI image manipulation tool", url: "", upvotes: 123, verified: false, rating: 3.5, icon: "🔞", category: "image-generation-editing", subcategory: "ai-colorize" },
+      { id: "clothoff", name: "ClothOff.net", description: "AI clothing removal application", url: "", upvotes: 98, verified: false, rating: 3.4, icon: "🔞", category: "image-generation-editing", subcategory: "ai-colorize" },
+      { id: "anieraser", name: "AniEraser", description: "AI-powered object removal tool", url: "", upvotes: 234, verified: true, rating: 4.2, icon: "🧹", category: "image-generation-editing", subcategory: "ai-colorize" },
+      { id: "undress-ai", name: "Undress AI", description: "AI image processing tool", url: "", upvotes: 87, verified: false, rating: 3.3, icon: "🔞", category: "image-generation-editing", subcategory: "ai-colorize" },
+      { id: "nudify-online", name: "Nudify.Online", description: "AI image manipulation service", url: "", upvotes: 76, verified: false, rating: 3.2, icon: "🔞", category: "image-generation-editing", subcategory: "ai-colorize" }
+    ],
+    "ai-cosplay-generator": [
+      { id: "facehi", name: "FaceHi", description: "AI face transformation and cosplay generator", url: "", upvotes: 456, verified: true, rating: 4.4, icon: "🎭", category: "image-generation-editing", subcategory: "ai-cosplay-generator" },
+      { id: "sharesome-ai-cosplay", name: "Sharesome AI", description: "AI cosplay and character generation", url: "", upvotes: 345, verified: true, rating: 4.3, icon: "🦸", category: "image-generation-editing", subcategory: "ai-cosplay-generator" },
+      { id: "empai", name: "Empai", description: "AI-powered cosplay photo generator", url: "", upvotes: 234, verified: false, rating: 4.1, icon: "🎨", category: "image-generation-editing", subcategory: "ai-cosplay-generator" },
+      { id: "free-ai-art", name: "Free AI Art Platforms", description: "Free AI art and cosplay generation", url: "", upvotes: 189, verified: true, rating: 4.0, icon: "🎨", category: "image-generation-editing", subcategory: "ai-cosplay-generator" },
+      { id: "costumeplay-ai", name: "CostumePlayAI", description: "Specialized AI cosplay generator", url: "", upvotes: 156, verified: false, rating: 3.9, icon: "👗", category: "image-generation-editing", subcategory: "ai-cosplay-generator" }
+    ],
+    "ai-crop-image": [
+      { id: "autocropper", name: "AutoCropper", description: "Automatic AI image cropping tool", url: "", upvotes: 567, verified: true, rating: 4.5, icon: "✂️", category: "image-generation-editing", subcategory: "ai-crop-image" },
+      { id: "batch-cropper", name: "Batch Cropper", description: "Bulk image cropping with AI", url: "", upvotes: 432, verified: true, rating: 4.4, icon: "📦", category: "image-generation-editing", subcategory: "ai-crop-image" },
+      { id: "cropandgrade", name: "CropandGrade", description: "AI cropping and image grading tool", url: "", upvotes: 345, verified: true, rating: 4.3, icon: "📐", category: "image-generation-editing", subcategory: "ai-crop-image" },
+      { id: "face-crop-jet", name: "Face Crop Jet", description: "AI face detection and cropping", url: "", upvotes: 234, verified: true, rating: 4.2, icon: "👤", category: "image-generation-editing", subcategory: "ai-crop-image" },
+      { id: "instantedit-ai", name: "InstantEditAI", description: "Instant AI photo editing and cropping", url: "", upvotes: 189, verified: false, rating: 4.1, icon: "⚡", category: "image-generation-editing", subcategory: "ai-crop-image" }
+    ],
+    "ai-eraser": [
+      { id: "recraft", name: "Recraft", description: "AI-powered design and object removal", url: "", upvotes: 789, verified: true, rating: 4.6, icon: "🎨", category: "image-generation-editing", subcategory: "ai-eraser" },
+      { id: "insmind-eraser", name: "insMind", description: "AI object removal and photo editing", url: "", upvotes: 567, verified: true, rating: 4.5, icon: "🧹", category: "image-generation-editing", subcategory: "ai-eraser" },
+      { id: "pipiads-remover", name: "Pipiads AI Image Text Remover", description: "AI text removal from images", url: "", upvotes: 432, verified: true, rating: 4.4, icon: "📝", category: "image-generation-editing", subcategory: "ai-eraser" },
+      { id: "autodraft-ai", name: "Autodraft AI", description: "AI drafting and object removal tool", url: "", upvotes: 345, verified: true, rating: 4.3, icon: "✏️", category: "image-generation-editing", subcategory: "ai-eraser" },
+      { id: "photiu-ai", name: "Photiu.ai", description: "AI photo editing and object eraser", url: "", upvotes: 234, verified: false, rating: 4.2, icon: "🖼️", category: "image-generation-editing", subcategory: "ai-eraser" }
+    ],
+    "ai-expand-image": [
+      { id: "ai-image-extender", name: "AI Image Extender", description: "Expand images with AI generation", url: "", upvotes: 678, verified: true, rating: 4.6, icon: "🔍", category: "image-generation-editing", subcategory: "ai-expand-image" },
+      { id: "ai-expand-image", name: "AI Expand Image", description: "Professional image expansion tool", url: "", upvotes: 567, verified: true, rating: 4.5, icon: "📐", category: "image-generation-editing", subcategory: "ai-expand-image" },
+      { id: "hippist-ai", name: "hippist AI", description: "AI image enhancement and expansion", url: "", upvotes: 432, verified: true, rating: 4.4, icon: "🦛", category: "image-generation-editing", subcategory: "ai-expand-image" },
+      { id: "virtualfit", name: "VirtualFit", description: "AI image fitting and expansion", url: "", upvotes: 345, verified: true, rating: 4.3, icon: "👕", category: "image-generation-editing", subcategory: "ai-expand-image" },
+      { id: "krut-ai", name: "Krut AI", description: "AI-powered image expansion service", url: "", upvotes: 234, verified: false, rating: 4.2, icon: "🚀", category: "image-generation-editing", subcategory: "ai-expand-image" }
+    ],
+    "ai-face-swap-generator": [
+      { id: "ai-face-swap", name: "AI Face Swap", description: "Professional AI face swapping tool", url: "", upvotes: 1234, verified: true, rating: 4.7, icon: "🔄", category: "image-generation-editing", subcategory: "ai-face-swap-generator" },
+      { id: "pixnova-ai", name: "PixNova AI", description: "Advanced AI image generation and face swap", url: "", upvotes: 789, verified: true, rating: 4.6, icon: "✨", category: "image-generation-editing", subcategory: "ai-face-swap-generator" },
+      { id: "faceswapper", name: "FaceSwapper", description: "Easy-to-use face swapping application", url: "", upvotes: 567, verified: true, rating: 4.5, icon: "👥", category: "image-generation-editing", subcategory: "ai-face-swap-generator" },
+      { id: "dreamvid", name: "DreamVid", description: "AI video and face swap generation", url: "", upvotes: 432, verified: true, rating: 4.4, icon: "🎬", category: "image-generation-editing", subcategory: "ai-face-swap-generator" },
+      { id: "deepfake-maker", name: "Deepfake Maker", description: "AI deepfake and face swap creator", url: "", upvotes: 345, verified: false, rating: 4.3, icon: "🎭", category: "image-generation-editing", subcategory: "ai-face-swap-generator" }
+    ],
+    "ai-headshot-generator": [
+      { id: "vidnoz-ai-headshot", name: "Vidnoz AI", description: "Professional AI headshot generator", url: "", upvotes: 987, verified: true, rating: 4.7, icon: "📸", category: "image-generation-editing", subcategory: "ai-headshot-generator" },
+      { id: "supawork-ai", name: "Supawork AI", description: "AI headshots for professionals", url: "", upvotes: 678, verified: true, rating: 4.6, icon: "💼", category: "image-generation-editing", subcategory: "ai-headshot-generator" },
+      { id: "pixelbin-io", name: "PixelBin.io", description: "AI image processing and headshot generation", url: "", upvotes: 567, verified: true, rating: 4.5, icon: "🎯", category: "image-generation-editing", subcategory: "ai-headshot-generator" },
+      { id: "ai-ease", name: "AI Ease", description: "Easy AI headshot and portrait generator", url: "", upvotes: 432, verified: true, rating: 4.4, icon: "😊", category: "image-generation-editing", subcategory: "ai-headshot-generator" },
+      { id: "artguru-ai", name: "Artguru AI", description: "AI art and headshot generation platform", url: "", upvotes: 345, verified: true, rating: 4.3, icon: "🎨", category: "image-generation-editing", subcategory: "ai-headshot-generator" }
+    ],
+    "ai-image-combiner": [
+      { id: "emoji-combiner", name: "Emoji Combiner", description: "Combine emojis with AI creativity", url: "", upvotes: 456, verified: true, rating: 4.4, icon: "😊", category: "image-generation-editing", subcategory: "ai-image-combiner" },
+      { id: "imagefusion", name: "ImageFusion", description: "AI-powered image blending and combination", url: "", upvotes: 567, verified: true, rating: 4.5, icon: "🔀", category: "image-generation-editing", subcategory: "ai-image-combiner" },
+      { id: "pixnova-ai-combiner", name: "PixNova AI", description: "Advanced AI image combination tool", url: "", upvotes: 432, verified: true, rating: 4.3, icon: "✨", category: "image-generation-editing", subcategory: "ai-image-combiner" },
+      { id: "dzine-ai", name: "Dzine AI", description: "AI design and image combination platform", url: "", upvotes: 345, verified: true, rating: 4.2, icon: "🎨", category: "image-generation-editing", subcategory: "ai-image-combiner" },
+      { id: "ai-face-swap-combiner", name: "AI Face Swap", description: "Face swap and image combination tool", url: "", upvotes: 234, verified: true, rating: 4.1, icon: "🔄", category: "image-generation-editing", subcategory: "ai-image-combiner" }
+    ],
+    "ai-image-enhancer": [
+      { id: "letsenhance-io", name: "LetsEnhance.io", description: "AI image upscaling and enhancement", url: "", upvotes: 1567, verified: true, rating: 4.8, icon: "🚀", category: "image-generation-editing", subcategory: "ai-image-enhancer" },
+      { id: "wondershare-uniconverter", name: "Wondershare UniConverter", description: "All-in-one media tool with AI enhancement", url: "", upvotes: 987, verified: true, rating: 4.6, icon: "🔧", category: "image-generation-editing", subcategory: "ai-image-enhancer" },
+      { id: "imglarger", name: "ImgLarger", description: "AI image enlargement and enhancement", url: "", upvotes: 678, verified: true, rating: 4.5, icon: "📈", category: "image-generation-editing", subcategory: "ai-image-enhancer" },
+      { id: "krea-ai", name: "Krea AI", description: "Creative AI image generation and enhancement", url: "", upvotes: 567, verified: true, rating: 4.4, icon: "🎨", category: "image-generation-editing", subcategory: "ai-image-enhancer" },
+      { id: "upscale-media", name: "Upscale.media", description: "Free AI image upscaling service", url: "", upvotes: 432, verified: true, rating: 4.3, icon: "⬆️", category: "image-generation-editing", subcategory: "ai-image-enhancer" }
+    ],
+    "ai-image-generator": [
+      { id: "freepik-ai", name: "Freepik AI Image Generator", description: "AI image generation from Freepik", url: "", upvotes: 2134, verified: true, rating: 4.8, icon: "🎨", category: "image-generation-editing", subcategory: "ai-image-generator" },
+      { id: "shutterstock-ai", name: "Shutterstock", description: "AI image generation by Shutterstock", url: "", upvotes: 1789, verified: true, rating: 4.7, icon: "📸", category: "image-generation-editing", subcategory: "ai-image-generator" },
+      { id: "depositphotos-ai", name: "Depositphotos AI Image Generator", description: "Professional AI image creation", url: "", upvotes: 1234, verified: true, rating: 4.6, icon: "🖼️", category: "image-generation-editing", subcategory: "ai-image-generator" },
+      { id: "openart", name: "OpenArt", description: "Open AI art generation platform", url: "", upvotes: 987, verified: true, rating: 4.5, icon: "🎭", category: "image-generation-editing", subcategory: "ai-image-generator" },
+      { id: "deepai", name: "DeepAI", description: "Deep learning AI image generator", url: "", upvotes: 756, verified: true, rating: 4.4, icon: "🧠", category: "image-generation-editing", subcategory: "ai-image-generator" }
+    ],
+    "ai-image-sharpening": [
+      { id: "unblurimage-ai", name: "Unblurimage AI", description: "AI-powered image sharpening and deblurring", url: "", upvotes: 678, verified: true, rating: 4.6, icon: "🔍", category: "image-generation-editing", subcategory: "ai-image-sharpening" },
+      { id: "fix-blur", name: "Fix Blur", description: "Professional blur removal and sharpening", url: "", upvotes: 567, verified: true, rating: 4.5, icon: "🔧", category: "image-generation-editing", subcategory: "ai-image-sharpening" },
+      { id: "deblur-ai", name: "Deblur AI", description: "Advanced AI deblurring technology", url: "", upvotes: 432, verified: true, rating: 4.4, icon: "✨", category: "image-generation-editing", subcategory: "ai-image-sharpening" },
+      { id: "topaz-labs", name: "Topaz Labs", description: "Professional AI image enhancement suite", url: "", upvotes: 1234, verified: true, rating: 4.7, icon: "💎", category: "image-generation-editing", subcategory: "ai-image-sharpening" },
+      { id: "letsenhance-sharp", name: "LetsEnhance.io", description: "AI upscaling with sharpening features", url: "", upvotes: 789, verified: true, rating: 4.5, icon: "🚀", category: "image-generation-editing", subcategory: "ai-image-sharpening" }
+    ],
+    "ai-image-upscaler": [
+      { id: "upscale-media-up", name: "Upscale.media", description: "Free AI image upscaling service", url: "", upvotes: 1567, verified: true, rating: 4.7, icon: "⬆️", category: "image-generation-editing", subcategory: "ai-image-upscaler" },
+      { id: "imgupscaler", name: "ImgUpscaler", description: "AI image upscaling tool", url: "", upvotes: 987, verified: true, rating: 4.6, icon: "📈", category: "image-generation-editing", subcategory: "ai-image-upscaler" },
+      { id: "icons8-upscaler", name: "Icons8 Smart Upscaler", description: "Smart AI upscaling technology", url: "", upvotes: 678, verified: true, rating: 4.5, icon: "🎯", category: "image-generation-editing", subcategory: "ai-image-upscaler" },
+      { id: "nero-upscaler", name: "Nero", description: "Professional media suite with AI upscaling", url: "", upvotes: 567, verified: true, rating: 4.4, icon: "🔥", category: "image-generation-editing", subcategory: "ai-image-upscaler" },
+      { id: "bigjpg", name: "Bigjpg", description: "AI image enlargement for anime and photos", url: "", upvotes: 432, verified: true, rating: 4.3, icon: "📷", category: "image-generation-editing", subcategory: "ai-image-upscaler" }
+    ],
+    "ai-inpainting": [
+      { id: "cleanup-pictures", name: "Cleanup.pictures & Clipdrop", description: "AI object removal and inpainting", url: "", upvotes: 1234, verified: true, rating: 4.7, icon: "🧹", category: "image-generation-editing", subcategory: "ai-inpainting" },
+      { id: "deepany-ai", name: "DeepAny.AI", description: "Deep AI inpainting and restoration", url: "", upvotes: 789, verified: true, rating: 4.6, icon: "🎨", category: "image-generation-editing", subcategory: "ai-inpainting" },
+      { id: "pixel-art-ai", name: "Pixel-Art.ai", description: "AI pixel art creation and inpainting", url: "", upvotes: 567, verified: true, rating: 4.5, icon: "🎮", category: "image-generation-editing", subcategory: "ai-inpainting" },
+      { id: "pixelfox-ai", name: "Pixelfox AI", description: "AI image generation and inpainting", url: "", upvotes: 432, verified: true, rating: 4.4, icon: "🦊", category: "image-generation-editing", subcategory: "ai-inpainting" },
+      { id: "sih-ai", name: "Sih.Ai", description: "AI image processing and inpainting", url: "", upvotes: 345, verified: false, rating: 4.3, icon: "🧠", category: "image-generation-editing", subcategory: "ai-inpainting" }
+    ],
+    "ai-map-generator": [
+      { id: "mappedin", name: "Mappedin", description: "AI-powered indoor mapping platform", url: "", upvotes: 567, verified: true, rating: 4.5, icon: "🗺️", category: "image-generation-editing", subcategory: "ai-map-generator" },
+      { id: "open-knowledge-maps", name: "Open Knowledge Maps", description: "Visual knowledge mapping with AI", url: "", upvotes: 432, verified: true, rating: 4.4, icon: "🧠", category: "image-generation-editing", subcategory: "ai-map-generator" },
+      { id: "conceptmap-ai", name: "ConceptMap AI", description: "AI-powered concept mapping tool", url: "", upvotes: 345, verified: true, rating: 4.3, icon: "💡", category: "image-generation-editing", subcategory: "ai-map-generator" },
+      { id: "ultimaps", name: "Ultimaps", description: "Ultimate mapping solution with AI", url: "", upvotes: 234, verified: true, rating: 4.2, icon: "🌍", category: "image-generation-editing", subcategory: "ai-map-generator" },
+      { id: "mapsgpt", name: "MapsGPT", description: "GPT-powered map generation tool", url: "", upvotes: 189, verified: false, rating: 4.1, icon: "🤖", category: "image-generation-editing", subcategory: "ai-map-generator" }
+    ],
+    "ai-outpainting": [
+      { id: "insmind-outpaint", name: "insMind", description: "AI outpainting and image extension", url: "", upvotes: 678, verified: true, rating: 4.6, icon: "🖼️", category: "image-generation-editing", subcategory: "ai-outpainting" },
+      { id: "artbreeder", name: "Artbreeder", description: "Collaborative AI art creation platform", url: "", upvotes: 567, verified: true, rating: 4.5, icon: "🎨", category: "image-generation-editing", subcategory: "ai-outpainting" },
+      { id: "retouch-ai", name: "RetouchAI", description: "AI photo retouching and outpainting", url: "", upvotes: 432, verified: true, rating: 4.4, icon: "✨", category: "image-generation-editing", subcategory: "ai-outpainting" },
+      { id: "ai-image-extender-out", name: "AI Image Extender", description: "Professional image extension tool", url: "", upvotes: 345, verified: true, rating: 4.3, icon: "🔍", category: "image-generation-editing", subcategory: "ai-outpainting" },
+      { id: "ai-expand-image-out", name: "AI Expand Image", description: "AI-powered image expansion service", url: "", upvotes: 234, verified: true, rating: 4.2, icon: "📐", category: "image-generation-editing", subcategory: "ai-outpainting" }
+    ],
+    "ai-passport-photo": [
+      { id: "photogov", name: "PhotoGov", description: "Official passport photo generator", url: "", upvotes: 789, verified: true, rating: 4.6, icon: "📷", category: "image-generation-editing", subcategory: "ai-passport-photo" },
+      { id: "aipassportphotos", name: "AiPassportPhotos", description: "AI passport and ID photo creator", url: "", upvotes: 567, verified: true, rating: 4.5, icon: "🆔", category: "image-generation-editing", subcategory: "ai-passport-photo" },
+      { id: "snap2pass", name: "Snap2Pass", description: "Instant passport photo generation", url: "", upvotes: 432, verified: true, rating: 4.4, icon: "📸", category: "image-generation-editing", subcategory: "ai-passport-photo" },
+      { id: "passport-photo-maker", name: "Passport Photo Maker", description: "Professional passport photo tool", url: "", upvotes: 345, verified: true, rating: 4.3, icon: "🖼️", category: "image-generation-editing", subcategory: "ai-passport-photo" },
+      { id: "passport-maker-ai", name: "Passport Maker AI", description: "AI-powered passport photo service", url: "", upvotes: 234, verified: false, rating: 4.2, icon: "🤖", category: "image-generation-editing", subcategory: "ai-passport-photo" }
+    ],
+    "ai-person-generator": [
+      { id: "icons8-person", name: "Icons8", description: "AI person and avatar generation", url: "", upvotes: 1234, verified: true, rating: 4.7, icon: "👤", category: "image-generation-editing", subcategory: "ai-person-generator" },
+      { id: "generated-photos", name: "Generated Photos", description: "Diverse AI-generated human faces", url: "", upvotes: 987, verified: true, rating: 4.6, icon: "👥", category: "image-generation-editing", subcategory: "ai-person-generator" },
+      { id: "this-person-not-exist", name: "This Person Does Not Exist", description: "Random AI-generated faces", url: "", upvotes: 2345, verified: true, rating: 4.8, icon: "🎭", category: "image-generation-editing", subcategory: "ai-person-generator" },
+      { id: "generated-photos-2", name: "Generated Photos", description: "High-quality AI person generator", url: "", upvotes: 789, verified: true, rating: 4.5, icon: "📸", category: "image-generation-editing", subcategory: "ai-person-generator" },
+      { id: "thispersonnotexist", name: "ThisPersonNotExist.org", description: "AI-generated people that don't exist", url: "", upvotes: 1567, verified: true, rating: 4.7, icon: "🌐", category: "image-generation-editing", subcategory: "ai-person-generator" }
+    ],
+    "ai-photo-editor": [
+      { id: "cutout-pro", name: "Cutout.Pro", description: "AI-powered photo editing suite", url: "", upvotes: 1567, verified: true, rating: 4.7, icon: "✂️", category: "image-generation-editing", subcategory: "ai-photo-editor" },
+      { id: "vsco", name: "VSCO", description: "Creative photo editing with AI features", url: "", upvotes: 2345, verified: true, rating: 4.8, icon: "📸", category: "image-generation-editing", subcategory: "ai-photo-editor" },
+      { id: "pixelcut-editor", name: "Pixelcut", description: "AI background removal and photo editing", url: "", upvotes: 987, verified: true, rating: 4.6, icon: "🎨", category: "image-generation-editing", subcategory: "ai-photo-editor" },
+      { id: "fotor-pixlr", name: "FotorPixlr", description: "Online photo editor with AI tools", url: "", upvotes: 789, verified: true, rating: 4.5, icon: "🖼️", category: "image-generation-editing", subcategory: "ai-photo-editor" },
+      { id: "picsart", name: "Picsart", description: "Creative photo editing and design app", url: "", upvotes: 1234, verified: true, rating: 4.6, icon: "🎭", category: "image-generation-editing", subcategory: "ai-photo-editor" }
+    ],
+    "ai-photo-enhancer": [
+      { id: "hitpaw-fotorpea", name: "HitPaw FotorPea", description: "AI photo enhancement software", url: "", upvotes: 789, verified: true, rating: 4.6, icon: "🌟", category: "image-generation-editing", subcategory: "ai-photo-enhancer" },
+      { id: "remini", name: "Remini", description: "AI photo and video enhancer", url: "", upvotes: 1567, verified: true, rating: 4.7, icon: "✨", category: "image-generation-editing", subcategory: "ai-photo-enhancer" },
+      { id: "upscale-media-enhance", name: "Upscale.media", description: "AI image upscaling and enhancement", url: "", upvotes: 987, verified: true, rating: 4.6, icon: "⬆️", category: "image-generation-editing", subcategory: "ai-photo-enhancer" },
+      { id: "vanceai", name: "VanceAI", description: "Professional AI photo enhancement suite", url: "", upvotes: 678, verified: true, rating: 4.5, icon: "🚀", category: "image-generation-editing", subcategory: "ai-photo-enhancer" },
+      { id: "ai-ease-enhance", name: "AI Ease", description: "Easy AI photo enhancement tool", url: "", upvotes: 432, verified: true, rating: 4.4, icon: "😊", category: "image-generation-editing", subcategory: "ai-photo-enhancer" }
+    ],
+    "ai-photo-filter": [
+      { id: "beautyplus", name: "BeautyPlus", description: "AI beauty filters and photo editing", url: "", upvotes: 1789, verified: true, rating: 4.7, icon: "💄", category: "image-generation-editing", subcategory: "ai-photo-filter" },
+      { id: "filterly", name: "Filterly", description: "AI-powered photo filters", url: "", upvotes: 567, verified: true, rating: 4.5, icon: "🎨", category: "image-generation-editing", subcategory: "ai-photo-filter" },
+      { id: "max-studio", name: "Max Studio", description: "Professional AI photo filters", url: "", upvotes: 432, verified: true, rating: 4.4, icon: "🎬", category: "image-generation-editing", subcategory: "ai-photo-filter" },
+      { id: "palette-app-filter", name: "Palette App", description: "AI colorization and filter tool", url: "", upvotes: 345, verified: true, rating: 4.3, icon: "🎨", category: "image-generation-editing", subcategory: "ai-photo-filter" },
+      { id: "a1-art", name: "a1.art", description: "AI art filters and style transfer", url: "", upvotes: 234, verified: false, rating: 4.2, icon: "🎭", category: "image-generation-editing", subcategory: "ai-photo-filter" }
+    ],
+    "ai-photo-restoration": [
+      { id: "nero-restore", name: "Nero", description: "Professional photo restoration suite", url: "", upvotes: 789, verified: true, rating: 4.6, icon: "🔧", category: "image-generation-editing", subcategory: "ai-photo-restoration" },
+      { id: "imagecolorizer-restore", name: "ImageColorizer", description: "AI photo colorization and restoration", url: "", upvotes: 567, verified: true, rating: 4.5, icon: "🌈", category: "image-generation-editing", subcategory: "ai-photo-restoration" },
+      { id: "photorestore-io", name: "PhotoRestore.io", description: "AI-powered photo restoration service", url: "", upvotes: 1234, verified: true, rating: 4.7, icon: "🔄", category: "image-generation-editing", subcategory: "ai-photo-restoration" },
+      { id: "restorephotos-io", name: "restorePhotos.io", description: "Free AI photo restoration tool", url: "", upvotes: 432, verified: true, rating: 4.4, icon: "📸", category: "image-generation-editing", subcategory: "ai-photo-restoration" },
+      { id: "restorephotos-pro", name: "restorePhotos.Pro", description: "Professional AI photo restoration", url: "", upvotes: 345, verified: true, rating: 4.3, icon: "⭐", category: "image-generation-editing", subcategory: "ai-photo-restoration" }
+    ],
+    "ai-product-photography": [
+      { id: "insmind-product", name: "insMind", description: "AI product photography and editing", url: "", upvotes: 987, verified: true, rating: 4.6, icon: "📦", category: "image-generation-editing", subcategory: "ai-product-photography" },
+      { id: "ifoto", name: "iFoto", description: "AI product photo generator", url: "", upvotes: 678, verified: true, rating: 4.5, icon: "📸", category: "image-generation-editing", subcategory: "ai-product-photography" },
+      { id: "claid-ai", name: "Claid.ai", description: "AI product image enhancement", url: "", upvotes: 567, verified: true, rating: 4.4, icon: "✨", category: "image-generation-editing", subcategory: "ai-product-photography" },
+      { id: "flair-ai", name: "Flair AI", description: "AI product photography platform", url: "", upvotes: 432, verified: true, rating: 4.3, icon: "💫", category: "image-generation-editing", subcategory: "ai-product-photography" },
+      { id: "pebblely", name: "Pebblely", description: "AI product photography for e-commerce", url: "", upvotes: 345, verified: true, rating: 4.2, icon: "🛍️", category: "image-generation-editing", subcategory: "ai-product-photography" }
+    ],
+    "ai-profile-picture-generator": [
+      { id: "vidnoz-ai-profile", name: "Vidnoz AI", description: "AI profile picture generator", url: "", upvotes: 1234, verified: true, rating: 4.7, icon: "👤", category: "image-generation-editing", subcategory: "ai-profile-picture-generator" },
+      { id: "pfpmaker", name: "PFPMaker", description: "Professional profile picture maker", url: "", upvotes: 987, verified: true, rating: 4.6, icon: "🖼️", category: "image-generation-editing", subcategory: "ai-profile-picture-generator" },
+      { id: "supawork-ai-profile", name: "Supawork AI", description: "AI headshots and profile pictures", url: "", upvotes: 789, verified: true, rating: 4.5, icon: "💼", category: "image-generation-editing", subcategory: "ai-profile-picture-generator" },
+      { id: "genyou", name: "GenYOU", description: "Personalized AI avatar generator", url: "", upvotes: 567, verified: true, rating: 4.4, icon: "🎭", category: "image-generation-editing", subcategory: "ai-profile-picture-generator" },
+      { id: "photoai-me", name: "PhotoAI.me", description: "AI-powered photo generation", url: "", upvotes: 432, verified: false, rating: 4.3, icon: "📸", category: "image-generation-editing", subcategory: "ai-profile-picture-generator" }
+    ],
+    "ai-qr-code-generator": [
+      { id: "my-qr-code", name: "My QR Code", description: "Simple QR code generator", url: "", upvotes: 789, verified: true, rating: 4.5, icon: "📱", category: "image-generation-editing", subcategory: "ai-qr-code-generator" },
+      { id: "qr-code-ai", name: "QR Code AI", description: "AI-enhanced QR code creation", url: "", upvotes: 567, verified: true, rating: 4.4, icon: "🤖", category: "image-generation-editing", subcategory: "ai-qr-code-generator" },
+      { id: "quick-qr-art", name: "Quick QR Art", description: "Artistic QR code generator", url: "", upvotes: 432, verified: true, rating: 4.3, icon: "🎨", category: "image-generation-editing", subcategory: "ai-qr-code-generator" },
+      { id: "viralqr", name: "ViralQR", description: "Viral QR code creation tool", url: "", upvotes: 345, verified: true, rating: 4.2, icon: "🔥", category: "image-generation-editing", subcategory: "ai-qr-code-generator" },
+      { id: "qrbtf", name: "QRBTF", description: "Beautiful QR code generator", url: "", upvotes: 234, verified: false, rating: 4.1, icon: "✨", category: "image-generation-editing", subcategory: "ai-qr-code-generator" }
+    ],
+    "ai-realistic-image-generator": [
+      { id: "deep-nudes", name: "Deep-nudes.com", description: "AI realistic image generation", url: "", upvotes: 123, verified: false, rating: 3.5, icon: "🔞", category: "image-generation-editing", subcategory: "ai-realistic-image-generator" },
+      { id: "vizcom", name: "Vizcom", description: "AI design and visualization tool", url: "", upvotes: 789, verified: true, rating: 4.6, icon: "🎨", category: "image-generation-editing", subcategory: "ai-realistic-image-generator" },
+      { id: "zmo-ai", name: "ZMO.AI", description: "AI image generation platform", url: "", upvotes: 567, verified: true, rating: 4.5, icon: "🚀", category: "image-generation-editing", subcategory: "ai-realistic-image-generator" },
+      { id: "rendair", name: "Rendair", description: "AI rendering and image generation", url: "", upvotes: 432, verified: true, rating: 4.4, icon: "🌟", category: "image-generation-editing", subcategory: "ai-realistic-image-generator" },
+      { id: "try9-ai", name: "try9.ai", description: "Advanced AI image generation", url: "", upvotes: 345, verified: false, rating: 4.3, icon: "🎯", category: "image-generation-editing", subcategory: "ai-realistic-image-generator" }
+    ],
+    "ai-signature-generator": [
+      { id: "dropbox-sign", name: "Dropbox Sign", description: "Electronic signature platform", url: "", upvotes: 1567, verified: true, rating: 4.7, icon: "✍️", category: "image-generation-editing", subcategory: "ai-signature-generator" },
+      { id: "fillout", name: "Fillout", description: "Form builder with signature features", url: "", upvotes: 789, verified: true, rating: 4.5, icon: "📝", category: "image-generation-editing", subcategory: "ai-signature-generator" },
+      { id: "ctrly-co", name: "Ctrly.co", description: "Digital signature solution", url: "", upvotes: 432, verified: true, rating: 4.3, icon: "🖊️", category: "image-generation-editing", subcategory: "ai-signature-generator" },
+      { id: "make-a-sign", name: "Make a Sign", description: "Custom signature creator", url: "", upvotes: 345, verified: true, rating: 4.2, icon: "📋", category: "image-generation-editing", subcategory: "ai-signature-generator" },
+      { id: "sealdigital", name: "SealDigital", description: "Digital seal and signature tool", url: "", upvotes: 234, verified: false, rating: 4.1, icon: "🏷️", category: "image-generation-editing", subcategory: "ai-signature-generator" }
+    ],
+    "ai-style-transfer": [
+      { id: "spline", name: "Spline", description: "3D design tool with AI style transfer", url: "", upvotes: 1234, verified: true, rating: 4.7, icon: "🎨", category: "image-generation-editing", subcategory: "ai-style-transfer" },
+      { id: "lensgo", name: "LensGo", description: "AI-powered style transfer tool", url: "", upvotes: 789, verified: true, rating: 4.6, icon: "📸", category: "image-generation-editing", subcategory: "ai-style-transfer" },
+      { id: "ebsynth", name: "EbSynth", description: "Video stylization with AI", url: "", upvotes: 567, verified: true, rating: 4.5, icon: "🎬", category: "image-generation-editing", subcategory: "ai-style-transfer" },
+      { id: "midjourney-sref", name: "Midjourney Sref Codes Library", description: "Style reference codes for Midjourney", url: "", upvotes: 432, verified: true, rating: 4.4, icon: "🎭", category: "image-generation-editing", subcategory: "ai-style-transfer" },
+      { id: "flux-context", name: "flux context", description: "AI context-aware style transfer", url: "", upvotes: 345, verified: false, rating: 4.3, icon: "⚡", category: "image-generation-editing", subcategory: "ai-style-transfer" }
+    ],
+    "ai-texture-generator": [
+      { id: "ai-mc-texture", name: "AI MC Texture", description: "AI Minecraft texture generator", url: "", upvotes: 567, verified: true, rating: 4.5, icon: "🎮", category: "image-generation-editing", subcategory: "ai-texture-generator" },
+      { id: "pixela-ai", name: "Pixela.ai", description: "AI pixel art and texture generator", url: "", upvotes: 432, verified: true, rating: 4.4, icon: "🎯", category: "image-generation-editing", subcategory: "ai-texture-generator" },
+      { id: "tilemaker", name: "TileMaker", description: "Seamless texture and tile generator", url: "", upvotes: 345, verified: true, rating: 4.3, icon: "🧩", category: "image-generation-editing", subcategory: "ai-texture-generator" },
+      { id: "scenario", name: "Scenario", description: "Game asset and texture generation", url: "", upvotes: 789, verified: true, rating: 4.6, icon: "🎲", category: "image-generation-editing", subcategory: "ai-texture-generator" },
+      { id: "charmed-ai", name: "Charmed AI", description: "AI game asset creation platform", url: "", upvotes: 234, verified: false, rating: 4.2, icon: "✨", category: "image-generation-editing", subcategory: "ai-texture-generator" }
+    ],
+    "ai-unblur-image": [
+      { id: "fotor", name: "Fotor", description: "Online photo editor with unblur features", url: "", upvotes: 1234, verified: true, rating: 4.6, icon: "📸", category: "image-generation-editing", subcategory: "ai-unblur-image" },
+      { id: "unblurimage-ai-unblur", name: "Unblurimage AI", description: "Specialized AI image deblurring", url: "", upvotes: 789, verified: true, rating: 4.5, icon: "🔍", category: "image-generation-editing", subcategory: "ai-unblur-image" },
+      { id: "restorephotos-io-unblur", name: "restorePhotos.io", description: "Photo restoration with deblurring", url: "", upvotes: 567, verified: true, rating: 4.4, icon: "🔄", category: "image-generation-editing", subcategory: "ai-unblur-image" },
+      { id: "fix-blur-unblur", name: "Fix Blur", description: "Professional blur removal tool", url: "", upvotes: 432, verified: true, rating: 4.3, icon: "🔧", category: "image-generation-editing", subcategory: "ai-unblur-image" },
+      { id: "deblur-ai-unblur", name: "Deblur AI", description: "Advanced AI deblurring technology", url: "", upvotes: 345, verified: true, rating: 4.2, icon: "✨", category: "image-generation-editing", subcategory: "ai-unblur-image" }
+    ],
+    "ai-waifu-generator": [
+      { id: "waifu-labs", name: "Waifu Labs", description: "AI anime character generator", url: "", upvotes: 1567, verified: true, rating: 4.7, icon: "🎭", category: "image-generation-editing", subcategory: "ai-waifu-generator" },
+      { id: "ai-hentai-generator", name: "AI Hentai Generator", description: "Adult anime art generator", url: "", upvotes: 789, verified: false, rating: 4.2, icon: "🔞", category: "image-generation-editing", subcategory: "ai-waifu-generator" },
+      { id: "pinkcatgirls", name: "PinkCatgirls", description: "Anime catgirl character generator", url: "", upvotes: 456, verified: false, rating: 4.1, icon: "🐱", category: "image-generation-editing", subcategory: "ai-waifu-generator" },
+      { id: "sorapix", name: "SoraPix", description: "AI anime art creation platform", url: "", upvotes: 567, verified: true, rating: 4.3, icon: "🌸", category: "image-generation-editing", subcategory: "ai-waifu-generator" },
+      { id: "spicy-chat-ai", name: "Spicy Chat AI", description: "AI chat with anime characters", url: "", upvotes: 234, verified: false, rating: 3.9, icon: "🌶️", category: "image-generation-editing", subcategory: "ai-waifu-generator" }
+    ],
+    "ai-wallpaper-generator": [
+      { id: "wallpapers-ai", name: "Wallpapers AI", description: "AI-generated wallpapers", url: "", upvotes: 1234, verified: true, rating: 4.6, icon: "🖼️", category: "image-generation-editing", subcategory: "ai-wallpaper-generator" },
+      { id: "dreampix", name: "Dreampix", description: "Dream-like AI wallpaper creator", url: "", upvotes: 789, verified: true, rating: 4.5, icon: "💭", category: "image-generation-editing", subcategory: "ai-wallpaper-generator" },
+      { id: "labubu-wallpaper", name: "Labubu live wallpaper", description: "Animated wallpaper generator", url: "", upvotes: 432, verified: true, rating: 4.3, icon: "🎬", category: "image-generation-editing", subcategory: "ai-wallpaper-generator" },
+      { id: "ohmywall", name: "Ohmywall", description: "Custom wallpaper creation tool", url: "", upvotes: 567, verified: true, rating: 4.4, icon: "🎨", category: "image-generation-editing", subcategory: "ai-wallpaper-generator" },
+      { id: "aesthetic-wallpaper-ai", name: "Aesthetic Wallpaper AI", description: "Aesthetic AI wallpaper generator", url: "", upvotes: 345, verified: false, rating: 4.2, icon: "✨", category: "image-generation-editing", subcategory: "ai-wallpaper-generator" }
+    ],
+    "ai-watermark-remover": [
+      { id: "watermarkremover-io", name: "WatermarkRemover.io", description: "AI watermark removal tool", url: "", upvotes: 1567, verified: true, rating: 4.7, icon: "🧹", category: "image-generation-editing", subcategory: "ai-watermark-remover" },
+      { id: "dewatermark-ai", name: "Dewatermark.AI", description: "Professional watermark removal", url: "", upvotes: 789, verified: true, rating: 4.5, icon: "💧", category: "image-generation-editing", subcategory: "ai-watermark-remover" },
+      { id: "unwatermark-ai", name: "Unwatermark AI", description: "AI-powered watermark eraser", url: "", upvotes: 567, verified: true, rating: 4.4, icon: "🔄", category: "image-generation-editing", subcategory: "ai-watermark-remover" },
+      { id: "snapedit", name: "SnapEdit", description: "Photo editing with watermark removal", url: "", upvotes: 432, verified: true, rating: 4.3, icon: "📸", category: "image-generation-editing", subcategory: "ai-watermark-remover" },
+      { id: "photogrid", name: "PhotoGrid", description: "Photo collage with watermark removal", url: "", upvotes: 345, verified: true, rating: 4.2, icon: "📷", category: "image-generation-editing", subcategory: "ai-watermark-remover" }
+    ],
+    "ai-yearbook": [
+      { id: "yearbookphotos", name: "YearbookPhotos", description: "AI yearbook photo generator", url: "", upvotes: 789, verified: true, rating: 4.5, icon: "📚", category: "image-generation-editing", subcategory: "ai-yearbook" },
+      { id: "imgkits", name: "Imgkits - Top AI Image & Video Processing Tools Online", description: "Comprehensive AI image processing", url: "", upvotes: 567, verified: true, rating: 4.4, icon: "🛠️", category: "image-generation-editing", subcategory: "ai-yearbook" },
+      { id: "ai-face-swap-yearbook", name: "AI Face Swap", description: "Face swap for yearbook photos", url: "", upvotes: 432, verified: true, rating: 4.3, icon: "🔄", category: "image-generation-editing", subcategory: "ai-yearbook" },
+      { id: "ai-shots", name: "AI Shots", description: "Professional AI photo generation", url: "", upvotes: 345, verified: true, rating: 4.2, icon: "📸", category: "image-generation-editing", subcategory: "ai-yearbook" },
+      { id: "photoguruai", name: "PhotoGuruAI", description: "AI photo enhancement and styling", url: "", upvotes: 234, verified: false, rating: 4.1, icon: "🎯", category: "image-generation-editing", subcategory: "ai-yearbook" }
+    ],
+    "gender-swap-ai": [
+      { id: "faceswapper-gender", name: "FaceSwapper", description: "Gender swap with AI face technology", url: "", upvotes: 1234, verified: true, rating: 4.6, icon: "🔄", category: "image-generation-editing", subcategory: "gender-swap-ai" },
+      { id: "deepfake-maker-gender", name: "Deepfake Maker", description: "AI deepfake and gender transformation", url: "", upvotes: 789, verified: false, rating: 4.3, icon: "🎭", category: "image-generation-editing", subcategory: "gender-swap-ai" },
+      { id: "heyphoto-gender", name: "HeyPhoto", description: "AI photo editing with gender swap", url: "", upvotes: 567, verified: true, rating: 4.4, icon: "📸", category: "image-generation-editing", subcategory: "gender-swap-ai" },
+      { id: "face-swapper-gender", name: "Face Swapper", description: "Professional face and gender swapping", url: "", upvotes: 432, verified: true, rating: 4.2, icon: "👥", category: "image-generation-editing", subcategory: "gender-swap-ai" },
+      { id: "ai-face-swap-gender", name: "AI Face Swap", description: "Advanced AI face and gender swap", url: "", upvotes: 345, verified: true, rating: 4.1, icon: "🤖", category: "image-generation-editing", subcategory: "gender-swap-ai" }
+    ],
+    "image-to-image": [
+      { id: "artguru-ai-img2img", name: "Artguru AI", description: "AI image-to-image transformation", url: "", upvotes: 1234, verified: true, rating: 4.7, icon: "🎨", category: "image-generation-editing", subcategory: "image-to-image" },
+      { id: "image-to-image-ai", name: "Image To Image AI", description: "Professional image transformation", url: "", upvotes: 789, verified: true, rating: 4.6, icon: "🔄", category: "image-generation-editing", subcategory: "image-to-image" },
+      { id: "piclumen", name: "PicLumen", description: "AI-powered image enhancement", url: "", upvotes: 567, verified: true, rating: 4.5, icon: "💡", category: "image-generation-editing", subcategory: "image-to-image" },
+      { id: "flux-ai", name: "Flux AI", description: "Advanced AI image generation", url: "", upvotes: 432, verified: true, rating: 4.4, icon: "⚡", category: "image-generation-editing", subcategory: "image-to-image" },
+      { id: "vivago-ai", name: "VIVAGO AI", description: "Creative AI image transformation", url: "", upvotes: 345, verified: false, rating: 4.3, icon: "🌟", category: "image-generation-editing", subcategory: "image-to-image" }
+    ],
+    "object-remover-ai": [
+      { id: "snapedit-remover", name: "SnapEdit", description: "AI object removal from photos", url: "", upvotes: 1567, verified: true, rating: 4.7, icon: "📸", category: "image-generation-editing", subcategory: "object-remover-ai" },
+      { id: "cleanup-pictures-remover", name: "Cleanup.pictures & Clipdrop", description: "Professional object removal tool", url: "", upvotes: 1234, verified: true, rating: 4.6, icon: "🧹", category: "image-generation-editing", subcategory: "object-remover-ai" },
+      { id: "watermarkremover-io-obj", name: "WatermarkRemover.io", description: "Remove objects and watermarks", url: "", upvotes: 789, verified: true, rating: 4.5, icon: "🔧", category: "image-generation-editing", subcategory: "object-remover-ai" },
+      { id: "kittl", name: "Kittl", description: "Design tool with object removal", url: "", upvotes: 567, verified: true, rating: 4.4, icon: "🎨", category: "image-generation-editing", subcategory: "object-remover-ai" },
+      { id: "beautyplus-remover", name: "BeautyPlus", description: "Beauty app with object removal", url: "", upvotes: 432, verified: true, rating: 4.3, icon: "💄", category: "image-generation-editing", subcategory: "object-remover-ai" }
+    ],
+    "text-to-handwriting": [
+      { id: "handtext-ai", name: "HandtextAI", description: "Convert text to handwriting", url: "", upvotes: 789, verified: true, rating: 4.5, icon: "✍️", category: "image-generation-editing", subcategory: "text-to-handwriting" },
+      { id: "imgkits-handwriting", name: "Imgkits - Top AI Image & Video Processing Tools Online", description: "Text to handwriting conversion", url: "", upvotes: 567, verified: true, rating: 4.4, icon: "🛠️", category: "image-generation-editing", subcategory: "text-to-handwriting" },
+      { id: "wishgram", name: "Wishgram", description: "Handwritten message generator", url: "", upvotes: 432, verified: true, rating: 4.3, icon: "💌", category: "image-generation-editing", subcategory: "text-to-handwriting" },
+      { id: "xx-video-downloader", name: "XX Video Downloader All Social - indownio, instafinsta", description: "Multi-purpose tool with handwriting", url: "", upvotes: 234, verified: false, rating: 4.1, icon: "⬇️", category: "image-generation-editing", subcategory: "text-to-handwriting" },
+      { id: "dear-ai-handwriting", name: "Dear Ai", description: "AI letter writing with handwriting", url: "", upvotes: 345, verified: true, rating: 4.2, icon: "💌", category: "image-generation-editing", subcategory: "text-to-handwriting" }
+    ],
+    "text-to-image": [
+      { id: "kittl-text2img", name: "Kittl", description: "Design tool with text-to-image AI", url: "", upvotes: 1567, verified: true, rating: 4.7, icon: "🎨", category: "image-generation-editing", subcategory: "text-to-image" },
+      { id: "artguru-ai-text2img", name: "Artguru AI", description: "Professional text-to-image generator", url: "", upvotes: 1234, verified: true, rating: 4.6, icon: "🖼️", category: "image-generation-editing", subcategory: "text-to-image" },
+      { id: "leonardo-ai", name: "Leonardo.Ai", description: "Advanced AI image generation", url: "", upvotes: 2345, verified: true, rating: 4.8, icon: "🎭", category: "image-generation-editing", subcategory: "text-to-image" },
+      { id: "pollo-ai", name: "Pollo AI", description: "Creative AI image generation", url: "", upvotes: 789, verified: true, rating: 4.5, icon: "🐔", category: "image-generation-editing", subcategory: "text-to-image" },
+      { id: "pica-ai", name: "Pica AI", description: "AI-powered image creation", url: "", upvotes: 567, verified: false, rating: 4.4, icon: "🖼️", category: "image-generation-editing", subcategory: "text-to-image" }
+    ]
+  },
   "writing-editing": {
     "ai-blog-generator": [
       { id: "junia-ai", name: "Junia AI", description: "AI-powered blog content generator with SEO optimization", url: "", upvotes: 245, verified: true, rating: 4.6, icon: "📝", category: "writing-editing", subcategory: "ai-blog-generator" },
