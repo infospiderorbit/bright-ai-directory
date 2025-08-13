@@ -900,6 +900,13 @@ export const toolsData: { [key: string]: { [key: string]: Tool[] } } = {
       { id: "logoai", name: "LogoAI", description: "Smart logo generation platform", url: "", upvotes: 1234, verified: true, rating: 4.6, icon: "🤖", category: "art-creative-design", subcategory: "ai-logo-generator" },
       { id: "kittl-logo", name: "Kittl", description: "Creative AI logo maker", url: "", upvotes: 1098, verified: true, rating: 4.5, icon: "🎨", category: "art-creative-design", subcategory: "ai-logo-generator" },
       { id: "creative-fabrica-font", name: "Creative Fabrica Font Generator", description: "Logo with custom fonts", url: "", upvotes: 876, verified: true, rating: 4.4, icon: "✍️", category: "art-creative-design", subcategory: "ai-logo-generator" }
+    ],
+    "ai-infographic-generator": [
+      { id: "venngage", name: "Venngage", description: "Professional infographic design platform", url: "", upvotes: 1456, verified: true, rating: 4.8, icon: "📊", category: "art-creative-design", subcategory: "ai-infographic-generator" },
+      { id: "piktochart", name: "Piktochart", description: "Easy infographic and visual storytelling", url: "", upvotes: 1234, verified: true, rating: 4.7, icon: "📈", category: "art-creative-design", subcategory: "ai-infographic-generator" },
+      { id: "napkin-ai", name: "Napkin AI", description: "AI-powered visual storytelling", url: "", upvotes: 876, verified: true, rating: 4.6, icon: "🎨", category: "art-creative-design", subcategory: "ai-infographic-generator" },
+      { id: "infografix", name: "Infografix", description: "Quick infographic generator", url: "", upvotes: 654, verified: true, rating: 4.5, icon: "⚡", category: "art-creative-design", subcategory: "ai-infographic-generator" },
+      { id: "infography", name: "Infography", description: "Data visualization and infographics", url: "", upvotes: 543, verified: false, rating: 4.4, icon: "📋", category: "art-creative-design", subcategory: "ai-infographic-generator" }
     ]
   },
   "social-media": {
