@@ -907,6 +907,94 @@ export const toolsData: { [key: string]: { [key: string]: Tool[] } } = {
       { id: "napkin-ai", name: "Napkin AI", description: "AI-powered visual storytelling", url: "", upvotes: 876, verified: true, rating: 4.6, icon: "🎨", category: "art-creative-design", subcategory: "ai-infographic-generator" },
       { id: "infografix", name: "Infografix", description: "Quick infographic generator", url: "", upvotes: 654, verified: true, rating: 4.5, icon: "⚡", category: "art-creative-design", subcategory: "ai-infographic-generator" },
       { id: "infography", name: "Infography", description: "Data visualization and infographics", url: "", upvotes: 543, verified: false, rating: 4.4, icon: "📋", category: "art-creative-design", subcategory: "ai-infographic-generator" }
+    ],
+    "ai-bikini": [
+      { id: "insmind-bikini", name: "insMind", description: "AI bikini and swimwear generation", url: "", upvotes: 876, verified: true, rating: 4.5, icon: "👙", category: "art-creative-design", subcategory: "ai-bikini" },
+      { id: "imagemover", name: "ImageMover", description: "AI clothing transformation", url: "", upvotes: 654, verified: false, rating: 4.4, icon: "📸", category: "art-creative-design", subcategory: "ai-bikini" },
+      { id: "nudify-online", name: "Nudify.Online", description: "AI image modification tool", url: "", upvotes: 543, verified: false, rating: 4.3, icon: "🔞", category: "art-creative-design", subcategory: "ai-bikini" },
+      { id: "funy-ai", name: "Funy AI: AI Video, AI Image, Face Swap", description: "Multi-purpose AI image tool", url: "", upvotes: 432, verified: false, rating: 4.2, icon: "🎭", category: "art-creative-design", subcategory: "ai-bikini" },
+      { id: "videofaceswap", name: "VideoFaceSwap", description: "AI video and image face swap", url: "", upvotes: 321, verified: false, rating: 4.1, icon: "🔄", category: "art-creative-design", subcategory: "ai-bikini" }
+    ],
+    "ai-book-cover-generator": [
+      { id: "coverdesignai", name: "CoverDesignAI", description: "AI book cover design platform", url: "", upvotes: 987, verified: true, rating: 4.6, icon: "📚", category: "art-creative-design", subcategory: "ai-book-cover-generator" },
+      { id: "book-ai-writer", name: "Book AI Writer", description: "AI book cover and writing tool", url: "", upvotes: 765, verified: true, rating: 4.5, icon: "✍️", category: "art-creative-design", subcategory: "ai-book-cover-generator" },
+      { id: "book-design-tool", name: "Book Design Tool", description: "Professional book cover designer", url: "", upvotes: 654, verified: true, rating: 4.4, icon: "🎨", category: "art-creative-design", subcategory: "ai-book-cover-generator" },
+      { id: "amazonkdp-click", name: "AmazonKDP.Click", description: "KDP book cover generator", url: "", upvotes: 543, verified: false, rating: 4.3, icon: "📖", category: "art-creative-design", subcategory: "ai-book-cover-generator" },
+      { id: "imgkits-book", name: "Imgkits - Top AI Image & Video Processing Tools", description: "Book cover AI generation", url: "", upvotes: 432, verified: false, rating: 4.2, icon: "🛠️", category: "art-creative-design", subcategory: "ai-book-cover-generator" }
+    ],
+    "ai-brochure-maker": [
+      { id: "real-estate-listing", name: "My Real Estate Listing", description: "AI real estate brochure maker", url: "", upvotes: 654, verified: true, rating: 4.5, icon: "🏠", category: "art-creative-design", subcategory: "ai-brochure-maker" },
+      { id: "storydoc", name: "Storydoc", description: "Interactive AI brochure creator", url: "", upvotes: 543, verified: true, rating: 4.4, icon: "📄", category: "art-creative-design", subcategory: "ai-brochure-maker" },
+      { id: "clevopyai", name: "ClevopyAI", description: "AI brochure and marketing material", url: "", upvotes: 432, verified: false, rating: 4.3, icon: "🎯", category: "art-creative-design", subcategory: "ai-brochure-maker" }
+    ],
+    "ai-business-card-generator": [
+      { id: "popl", name: "Popl", description: "Digital business card AI creator", url: "", upvotes: 1234, verified: true, rating: 4.7, icon: "💼", category: "art-creative-design", subcategory: "ai-business-card-generator" },
+      { id: "brandcrowd-card", name: "BrandCrowd", description: "AI business card design", url: "", upvotes: 876, verified: true, rating: 4.6, icon: "👑", category: "art-creative-design", subcategory: "ai-business-card-generator" },
+      { id: "brandmark-logo", name: "Brandmark Logo Maker", description: "Business card and logo AI", url: "", upvotes: 654, verified: true, rating: 4.5, icon: "🏷️", category: "art-creative-design", subcategory: "ai-business-card-generator" },
+      { id: "zoviz", name: "Zoviz", description: "Professional business card AI", url: "", upvotes: 543, verified: true, rating: 4.4, icon: "🎨", category: "art-creative-design", subcategory: "ai-business-card-generator" },
+      { id: "logome", name: "Logome", description: "Business card and branding AI", url: "", upvotes: 432, verified: false, rating: 4.3, icon: "📇", category: "art-creative-design", subcategory: "ai-business-card-generator" }
+    ],
+    "ai-cartoon-generator": [
+      { id: "myimg-ai", name: "Myimg AI", description: "AI cartoon and caricature creator", url: "", upvotes: 1567, verified: true, rating: 4.7, icon: "😄", category: "art-creative-design", subcategory: "ai-cartoon-generator" },
+      { id: "colorcinch", name: "Colorcinch", description: "Cartoon photo editor with AI", url: "", upvotes: 1098, verified: true, rating: 4.6, icon: "🎨", category: "art-creative-design", subcategory: "ai-cartoon-generator" },
+      { id: "neural-frames", name: "neural frames", description: "AI video and cartoon generation", url: "", upvotes: 876, verified: true, rating: 4.5, icon: "🎬", category: "art-creative-design", subcategory: "ai-cartoon-generator" },
+      { id: "autodraft-ai", name: "Autodraft AI", description: "Cartoon character AI designer", url: "", upvotes: 654, verified: true, rating: 4.4, icon: "✏️", category: "art-creative-design", subcategory: "ai-cartoon-generator" },
+      { id: "krikey-ai", name: "Krikey AI", description: "3D cartoon avatar creator", url: "", upvotes: 543, verified: false, rating: 4.3, icon: "🎭", category: "art-creative-design", subcategory: "ai-cartoon-generator" }
+    ],
+    "ai-cat": [
+      { id: "catting", name: "Catting", description: "AI cat image generator", url: "", upvotes: 876, verified: true, rating: 4.6, icon: "🐱", category: "art-creative-design", subcategory: "ai-cat" },
+      { id: "catsme", name: "CatsMe", description: "AI cat photo transformation", url: "", upvotes: 654, verified: true, rating: 4.5, icon: "😺", category: "art-creative-design", subcategory: "ai-cat" },
+      { id: "skeptical-tom", name: "Skeptical Tom", description: "AI cat meme generator", url: "", upvotes: 543, verified: false, rating: 4.4, icon: "🤨", category: "art-creative-design", subcategory: "ai-cat" },
+      { id: "cute-cat-ai", name: "Cute Cat Pictures AI Generator", description: "Adorable AI cat creator", url: "", upvotes: 432, verified: false, rating: 4.3, icon: "😻", category: "art-creative-design", subcategory: "ai-cat" },
+      { id: "cat-gpt", name: "Cat-GPT", description: "AI cat conversation and images", url: "", upvotes: 321, verified: false, rating: 4.2, icon: "🤖", category: "art-creative-design", subcategory: "ai-cat" }
+    ],
+    "ai-clothing-generator": [
+      { id: "ifoto-clothing", name: "iFoto", description: "AI clothing design and generation", url: "", upvotes: 1456, verified: true, rating: 4.7, icon: "👗", category: "art-creative-design", subcategory: "ai-clothing-generator" },
+      { id: "customuse", name: "Customuse", description: "Custom AI clothing designer", url: "", upvotes: 1098, verified: true, rating: 4.6, icon: "🎨", category: "art-creative-design", subcategory: "ai-clothing-generator" },
+      { id: "new-black-ai", name: "The New Black AI", description: "AI fashion design platform", url: "", upvotes: 876, verified: true, rating: 4.5, icon: "🖤", category: "art-creative-design", subcategory: "ai-clothing-generator" },
+      { id: "fashn-ai", name: "FASHN AI", description: "Fashion AI design tool", url: "", upvotes: 654, verified: true, rating: 4.4, icon: "✨", category: "art-creative-design", subcategory: "ai-clothing-generator" },
+      { id: "outfit-changer", name: "Outfit Changer", description: "AI outfit transformation", url: "", upvotes: 543, verified: false, rating: 4.3, icon: "👔", category: "art-creative-design", subcategory: "ai-clothing-generator" }
+    ],
+    "ai-color-palette-generator": [
+      { id: "colormagic", name: "ColorMagic", description: "AI color palette creation", url: "", upvotes: 1234, verified: true, rating: 4.7, icon: "🎨", category: "art-creative-design", subcategory: "ai-color-palette-generator" },
+      { id: "palettemaker", name: "PaletteMaker", description: "Smart color palette generator", url: "", upvotes: 876, verified: true, rating: 4.6, icon: "🎭", category: "art-creative-design", subcategory: "ai-color-palette-generator" },
+      { id: "color-analysis-ai-palette", name: "My Color Analysis AI", description: "Personal color palette AI", url: "", upvotes: 654, verified: true, rating: 4.5, icon: "💄", category: "art-creative-design", subcategory: "ai-color-palette-generator" },
+      { id: "huehive", name: "HueHive", description: "Collaborative color palette tool", url: "", upvotes: 543, verified: true, rating: 4.4, icon: "🍯", category: "art-creative-design", subcategory: "ai-color-palette-generator" },
+      { id: "perception", name: "Perception", description: "AI color perception analysis", url: "", upvotes: 432, verified: false, rating: 4.3, icon: "👁️", category: "art-creative-design", subcategory: "ai-color-palette-generator" }
+    ],
+    "ai-coloring-book-generator": [
+      { id: "coloringbook-ai", name: "ColoringBook AI", description: "AI coloring book page creator", url: "", upvotes: 987, verified: true, rating: 4.6, icon: "📚", category: "art-creative-design", subcategory: "ai-coloring-book-generator" },
+      { id: "colorify-ai", name: "Colorify AI", description: "Smart coloring book generator", url: "", upvotes: 765, verified: true, rating: 4.5, icon: "🖍️", category: "art-creative-design", subcategory: "ai-coloring-book-generator" },
+      { id: "colorin-ai", name: "Colorin AI", description: "Interactive coloring AI tool", url: "", upvotes: 654, verified: true, rating: 4.4, icon: "🎨", category: "art-creative-design", subcategory: "ai-coloring-book-generator" },
+      { id: "best-coloring-ai", name: "Best Coloring Pages AI", description: "Premium coloring page AI", url: "", upvotes: 543, verified: false, rating: 4.3, icon: "⭐", category: "art-creative-design", subcategory: "ai-coloring-book-generator" },
+      { id: "color-pop", name: "Color Pop", description: "Vibrant coloring book AI", url: "", upvotes: 432, verified: false, rating: 4.2, icon: "💥", category: "art-creative-design", subcategory: "ai-coloring-book-generator" }
+    ],
+    "ai-comic": [
+      { id: "omniparser", name: "OmniParser", description: "AI comic creation and parsing", url: "", upvotes: 876, verified: true, rating: 4.6, icon: "📖", category: "art-creative-design", subcategory: "ai-comic" },
+      { id: "octocomics", name: "OctoComics", description: "AI comic book generator", url: "", upvotes: 654, verified: true, rating: 4.5, icon: "🐙", category: "art-creative-design", subcategory: "ai-comic" },
+      { id: "prompttocomicai", name: "PromptToComicAI", description: "Text to comic AI converter", url: "", upvotes: 543, verified: true, rating: 4.4, icon: "💬", category: "art-creative-design", subcategory: "ai-comic" },
+      { id: "comicai", name: "Comicai", description: "Smart comic strip creator", url: "", upvotes: 432, verified: false, rating: 4.3, icon: "🎭", category: "art-creative-design", subcategory: "ai-comic" },
+      { id: "fantoons", name: "Fantoons", description: "Fantasy comic AI generator", url: "", upvotes: 321, verified: false, rating: 4.2, icon: "🧙‍♂️", category: "art-creative-design", subcategory: "ai-comic" }
+    ],
+    "ai-comic-factory": [
+      { id: "ai-comic-generator-factory", name: "AI Comic Generator", description: "Professional comic factory", url: "", upvotes: 765, verified: true, rating: 4.5, icon: "🏭", category: "art-creative-design", subcategory: "ai-comic-factory" },
+      { id: "ai-comic-factory-main", name: "AI Comic Factory", description: "Streamlined comic creation", url: "", upvotes: 654, verified: true, rating: 4.4, icon: "⚙️", category: "art-creative-design", subcategory: "ai-comic-factory" },
+      { id: "octocomics-factory", name: "OctoComics", description: "Batch comic production", url: "", upvotes: 543, verified: false, rating: 4.3, icon: "🐙", category: "art-creative-design", subcategory: "ai-comic-factory" },
+      { id: "labubu-wallpaper", name: "Labubu Wallpaper - 100+ Labubu Live Wallpapers & 4K Walls", description: "Comic-style wallpaper creator", url: "", upvotes: 432, verified: false, rating: 4.2, icon: "🎨", category: "art-creative-design", subcategory: "ai-comic-factory" }
+    ],
+    "ai-comic-generator": [
+      { id: "komiko-comic", name: "Komiko", description: "AI comic and manga generator", url: "", upvotes: 1234, verified: true, rating: 4.7, icon: "📚", category: "art-creative-design", subcategory: "ai-comic-generator" },
+      { id: "tooning", name: "Tooning", description: "Cartoon to comic AI converter", url: "", upvotes: 876, verified: true, rating: 4.6, icon: "🎨", category: "art-creative-design", subcategory: "ai-comic-generator" },
+      { id: "ai-comic-generator-main", name: "AI Comic Generator", description: "Comprehensive comic creation", url: "", upvotes: 654, verified: true, rating: 4.5, icon: "🎭", category: "art-creative-design", subcategory: "ai-comic-generator" },
+      { id: "anifusion", name: "Anifusion", description: "Animation and comic fusion AI", url: "", upvotes: 543, verified: true, rating: 4.4, icon: "🔄", category: "art-creative-design", subcategory: "ai-comic-generator" },
+      { id: "storynest-ai", name: "StoryNest.ai", description: "Story-driven comic generator", url: "", upvotes: 432, verified: false, rating: 4.3, icon: "🪺", category: "art-creative-design", subcategory: "ai-comic-generator" }
+    ],
+    "ai-cover-generator": [
+      { id: "topmediai-cover", name: "TopMediai", description: "AI cover art generation", url: "", upvotes: 1456, verified: true, rating: 4.7, icon: "🎵", category: "art-creative-design", subcategory: "ai-cover-generator" },
+      { id: "musicfy-ai", name: "Musicfy AI", description: "Music cover AI creator", url: "", upvotes: 1098, verified: true, rating: 4.6, icon: "🎶", category: "art-creative-design", subcategory: "ai-cover-generator" },
+      { id: "audimee", name: "Audimee", description: "AI audio cover generator", url: "", upvotes: 876, verified: true, rating: 4.5, icon: "🎤", category: "art-creative-design", subcategory: "ai-cover-generator" },
+      { id: "singify-ai", name: "Singify AI", description: "AI singing cover creator", url: "", upvotes: 654, verified: true, rating: 4.4, icon: "🎙️", category: "art-creative-design", subcategory: "ai-cover-generator" },
+      { id: "covers-ai", name: "Covers.ai", description: "Professional cover AI service", url: "", upvotes: 543, verified: false, rating: 4.3, icon: "🎨", category: "art-creative-design", subcategory: "ai-cover-generator" }
     ]
   },
   "social-media": {
