@@ -843,6 +843,150 @@ export const toolsData: { [key: string]: { [key: string]: Tool[] } } = {
       { id: "vmock", name: "VMock", description: "AI resume analysis and improvement", url: "", upvotes: 567, verified: true, rating: 4.4, icon: "🎯", category: "writing-editing", subcategory: "resume-ai" },
       { id: "swooped", name: "Swooped", description: "AI job search and resume optimization", url: "", upvotes: 432, verified: false, rating: 4.3, icon: "🚀", category: "writing-editing", subcategory: "resume-ai" }
     ]
+  },
+  "art-creative-design": {
+    "ai-3d-model-generator": [
+      { id: "meshy", name: "Meshy", description: "AI-powered 3D model generation", url: "", upvotes: 1567, verified: true, rating: 4.7, icon: "🎯", category: "art-creative-design", subcategory: "ai-3d-model-generator" },
+      { id: "luma-ai", name: "Luma AI", description: "3D model creation with AI", url: "", upvotes: 1234, verified: true, rating: 4.6, icon: "🌟", category: "art-creative-design", subcategory: "ai-3d-model-generator" },
+      { id: "iconscout", name: "IconScout", description: "3D icons and models generator", url: "", upvotes: 989, verified: true, rating: 4.5, icon: "🎨", category: "art-creative-design", subcategory: "ai-3d-model-generator" },
+      { id: "tripo-ai", name: "Tripo AI", description: "Advanced 3D model AI generation", url: "", upvotes: 876, verified: true, rating: 4.4, icon: "🔺", category: "art-creative-design", subcategory: "ai-3d-model-generator" },
+      { id: "hyper3d", name: "Hyper3D", description: "Professional 3D model creation", url: "", upvotes: 654, verified: false, rating: 4.3, icon: "🚀", category: "art-creative-design", subcategory: "ai-3d-model-generator" }
+    ],
+    "ai-album-cover-generator": [
+      { id: "brat-generator", name: "Brat Generator", description: "AI album cover creation tool", url: "", upvotes: 876, verified: true, rating: 4.6, icon: "🎵", category: "art-creative-design", subcategory: "ai-album-cover-generator" },
+      { id: "immersity-ai", name: "Immersity AI", description: "Immersive album cover designs", url: "", upvotes: 654, verified: true, rating: 4.5, icon: "🌍", category: "art-creative-design", subcategory: "ai-album-cover-generator" },
+      { id: "albumcover-ai", name: "AlbumCover AI", description: "Specialized album cover AI generator", url: "", upvotes: 543, verified: true, rating: 4.4, icon: "💿", category: "art-creative-design", subcategory: "ai-album-cover-generator" },
+      { id: "coverartist", name: "CoverArtist", description: "Professional album cover creation", url: "", upvotes: 432, verified: true, rating: 4.3, icon: "🎨", category: "art-creative-design", subcategory: "ai-album-cover-generator" },
+      { id: "daft-art", name: "Daft Art", description: "Creative album cover AI design", url: "", upvotes: 321, verified: false, rating: 4.2, icon: "🎭", category: "art-creative-design", subcategory: "ai-album-cover-generator" }
+    ],
+    "ai-anime-art": [
+      { id: "pixai", name: "PixAI", description: "AI anime art generation platform", url: "", upvotes: 1890, verified: true, rating: 4.8, icon: "🎌", category: "art-creative-design", subcategory: "ai-anime-art" },
+      { id: "yodayo", name: "Yodayo", description: "Anime-style AI art creator", url: "", upvotes: 1567, verified: true, rating: 4.7, icon: "🎨", category: "art-creative-design", subcategory: "ai-anime-art" },
+      { id: "animegenius", name: "AnimeGenius", description: "Professional anime art AI generator", url: "", upvotes: 1234, verified: true, rating: 4.6, icon: "⭐", category: "art-creative-design", subcategory: "ai-anime-art" },
+      { id: "niji-journey", name: "Niji・Journey", description: "Anime-focused AI art generation", url: "", upvotes: 1098, verified: true, rating: 4.5, icon: "🌸", category: "art-creative-design", subcategory: "ai-anime-art" },
+      { id: "dzine-ghibli-ai", name: "Dzine Ghibli AI", description: "Studio Ghibli style AI art", url: "", upvotes: 876, verified: true, rating: 4.4, icon: "🏰", category: "art-creative-design", subcategory: "ai-anime-art" }
+    ],
+    "ai-anime-generator": [
+      { id: "openart", name: "OpenArt", description: "Open-source anime AI generator", url: "", upvotes: 1456, verified: true, rating: 4.7, icon: "🎨", category: "art-creative-design", subcategory: "ai-anime-generator" },
+      { id: "animegenius-gen", name: "AnimeGenius", description: "Advanced anime character generator", url: "", upvotes: 1234, verified: true, rating: 4.6, icon: "⭐", category: "art-creative-design", subcategory: "ai-anime-generator" },
+      { id: "feetgen", name: "FeetGen", description: "Specialized anime generation tool", url: "", upvotes: 876, verified: false, rating: 4.5, icon: "🦶", category: "art-creative-design", subcategory: "ai-anime-generator" },
+      { id: "komiko", name: "Komiko", description: "Anime comic and art generator", url: "", upvotes: 654, verified: true, rating: 4.4, icon: "📚", category: "art-creative-design", subcategory: "ai-anime-generator" },
+      { id: "ai-hentai-generator", name: "AI Hentai Generator", description: "Adult anime content generator", url: "", upvotes: 543, verified: false, rating: 4.3, icon: "🔞", category: "art-creative-design", subcategory: "ai-anime-generator" }
+    ],
+    "ai-art-generator": [
+      { id: "midjourney", name: "Midjourney", description: "Leading AI art generation platform", url: "", upvotes: 2567, verified: true, rating: 4.9, icon: "🎨", category: "art-creative-design", subcategory: "ai-art-generator" },
+      { id: "pixai-art", name: "PixAI", description: "Versatile AI art creation tool", url: "", upvotes: 1890, verified: true, rating: 4.8, icon: "🎌", category: "art-creative-design", subcategory: "ai-art-generator" },
+      { id: "pica-ai", name: "Pica AI", description: "Professional AI art generator", url: "", upvotes: 1567, verified: true, rating: 4.7, icon: "🖼️", category: "art-creative-design", subcategory: "ai-art-generator" },
+      { id: "nightcafe-creator", name: "NightCafe Creator", description: "AI art creation community", url: "", upvotes: 1234, verified: true, rating: 4.6, icon: "🌙", category: "art-creative-design", subcategory: "ai-art-generator" },
+      { id: "artguru-ai", name: "Artguru AI", description: "Easy-to-use AI art generator", url: "", upvotes: 1098, verified: true, rating: 4.5, icon: "🎭", category: "art-creative-design", subcategory: "ai-art-generator" }
+    ],
+    "ai-banner-generator": [
+      { id: "creatopy", name: "Creatopy", description: "AI-powered banner design platform", url: "", upvotes: 1234, verified: true, rating: 4.7, icon: "🎨", category: "art-creative-design", subcategory: "ai-banner-generator" },
+      { id: "sivi-ai", name: "Sivi AI", description: "Intelligent banner creation tool", url: "", upvotes: 876, verified: true, rating: 4.6, icon: "📊", category: "art-creative-design", subcategory: "ai-banner-generator" },
+      { id: "ai-linkedin-banners", name: "AI LinkedIn Banners", description: "LinkedIn banner AI generator", url: "", upvotes: 654, verified: true, rating: 4.5, icon: "💼", category: "art-creative-design", subcategory: "ai-banner-generator" },
+      { id: "product-hero", name: "Product Hero", description: "Product banner AI creator", url: "", upvotes: 543, verified: true, rating: 4.4, icon: "🛍️", category: "art-creative-design", subcategory: "ai-banner-generator" },
+      { id: "bannerify", name: "Bannerify", description: "Simple AI banner generator", url: "", upvotes: 432, verified: false, rating: 4.3, icon: "🏷️", category: "art-creative-design", subcategory: "ai-banner-generator" }
+    ],
+    "ai-beauty": [
+      { id: "youcam-app", name: "YouCam App Provider", description: "AI beauty enhancement tools", url: "", upvotes: 1567, verified: true, rating: 4.7, icon: "💄", category: "art-creative-design", subcategory: "ai-beauty" },
+      { id: "spoiledchild", name: "SpoiledChild", description: "AI beauty product recommendations", url: "", upvotes: 876, verified: true, rating: 4.6, icon: "🧴", category: "art-creative-design", subcategory: "ai-beauty" },
+      { id: "good-face-project", name: "The Good Face Project", description: "AI face analysis and beauty tips", url: "", upvotes: 654, verified: true, rating: 4.5, icon: "😊", category: "art-creative-design", subcategory: "ai-beauty" },
+      { id: "color-analysis-ai", name: "My Color Analysis AI", description: "AI color palette for beauty", url: "", upvotes: 543, verified: true, rating: 4.4, icon: "🎨", category: "art-creative-design", subcategory: "ai-beauty" },
+      { id: "looksmaxx-report", name: "LooksMaxx Report", description: "AI appearance optimization", url: "", upvotes: 432, verified: false, rating: 4.3, icon: "💪", category: "art-creative-design", subcategory: "ai-beauty" }
+    ],
+    "ai-logo-generator": [
+      { id: "looka", name: "Looka", description: "Professional AI logo design", url: "", upvotes: 1890, verified: true, rating: 4.8, icon: "🏷️", category: "art-creative-design", subcategory: "ai-logo-generator" },
+      { id: "brandcrowd", name: "BrandCrowd", description: "AI logo and brand creation", url: "", upvotes: 1567, verified: true, rating: 4.7, icon: "👑", category: "art-creative-design", subcategory: "ai-logo-generator" },
+      { id: "logoai", name: "LogoAI", description: "Smart logo generation platform", url: "", upvotes: 1234, verified: true, rating: 4.6, icon: "🤖", category: "art-creative-design", subcategory: "ai-logo-generator" },
+      { id: "kittl-logo", name: "Kittl", description: "Creative AI logo maker", url: "", upvotes: 1098, verified: true, rating: 4.5, icon: "🎨", category: "art-creative-design", subcategory: "ai-logo-generator" },
+      { id: "creative-fabrica-font", name: "Creative Fabrica Font Generator", description: "Logo with custom fonts", url: "", upvotes: 876, verified: true, rating: 4.4, icon: "✍️", category: "art-creative-design", subcategory: "ai-logo-generator" }
+    ]
+  },
+  "social-media": {
+    "ai-bio-generator": [
+      { id: "styldod", name: "Styldod", description: "AI social media bio generator", url: "", upvotes: 876, verified: true, rating: 4.6, icon: "📝", category: "social-media", subcategory: "ai-bio-generator" },
+      { id: "biography-studio-ai", name: "Biography Studio AI", description: "Professional bio creation tool", url: "", upvotes: 654, verified: true, rating: 4.5, icon: "📖", category: "social-media", subcategory: "ai-bio-generator" },
+      { id: "lovegenius", name: "LoveGenius", description: "Dating profile bio generator", url: "", upvotes: 543, verified: true, rating: 4.4, icon: "💕", category: "social-media", subcategory: "ai-bio-generator" },
+      { id: "ai-social-bio", name: "AI Social Bio", description: "Smart social media bio creator", url: "", upvotes: 432, verified: true, rating: 4.3, icon: "👤", category: "social-media", subcategory: "ai-bio-generator" },
+      { id: "gpt-twitter-bot", name: "GPT Twitter Bot", description: "Automated Twitter bio generator", url: "", upvotes: 321, verified: false, rating: 4.2, icon: "🤖", category: "social-media", subcategory: "ai-bio-generator" }
+    ],
+    "ai-facebook": [
+      { id: "ginix", name: "GINIX", description: "AI Facebook marketing tool", url: "", upvotes: 789, verified: true, rating: 4.5, icon: "👥", category: "social-media", subcategory: "ai-facebook" },
+      { id: "friendflow", name: "FriendFlow", description: "Facebook friend management AI", url: "", upvotes: 567, verified: true, rating: 4.4, icon: "🤝", category: "social-media", subcategory: "ai-facebook" },
+      { id: "facebook-prospecting-ai", name: "Facebook Prospecting AI", description: "AI lead generation for Facebook", url: "", upvotes: 456, verified: true, rating: 4.3, icon: "🎯", category: "social-media", subcategory: "ai-facebook" },
+      { id: "gpt-for-facebook", name: "GPT-For-Facebook", description: "ChatGPT integration for Facebook", url: "", upvotes: 345, verified: false, rating: 4.2, icon: "💬", category: "social-media", subcategory: "ai-facebook" },
+      { id: "facebook-prospecting-ai-2", name: "Facebook Prospecting AI", description: "Advanced Facebook lead generation", url: "", upvotes: 234, verified: true, rating: 4.1, icon: "🔍", category: "social-media", subcategory: "ai-facebook" }
+    ],
+    "ai-hashtag": [
+      { id: "planable", name: "Planable", description: "AI hashtag optimization tool", url: "", upvotes: 1234, verified: true, rating: 4.7, icon: "#️⃣", category: "social-media", subcategory: "ai-hashtag" },
+      { id: "iq-hashtags", name: "IQ Hashtags", description: "Smart hashtag generation", url: "", upvotes: 876, verified: true, rating: 4.6, icon: "🧠", category: "social-media", subcategory: "ai-hashtag" },
+      { id: "reachifyme", name: "ReachifyMe", description: "Hashtag reach optimization", url: "", upvotes: 654, verified: true, rating: 4.5, icon: "📈", category: "social-media", subcategory: "ai-hashtag" },
+      { id: "hashtag-expert", name: "Hashtag Expert", description: "Professional hashtag strategy", url: "", upvotes: 543, verified: true, rating: 4.4, icon: "🎯", category: "social-media", subcategory: "ai-hashtag" },
+      { id: "wedding-hashtag-ai", name: "Free AI Wedding Hashtag Generator", description: "Wedding-specific hashtag creator", url: "", upvotes: 432, verified: false, rating: 4.3, icon: "💒", category: "social-media", subcategory: "ai-hashtag" }
+    ],
+    "ai-influencer": [
+      { id: "makeinfluencer-ai", name: "MakeInfluencer AI", description: "AI influencer creation platform", url: "", upvotes: 1567, verified: true, rating: 4.8, icon: "⭐", category: "social-media", subcategory: "ai-influencer" },
+      { id: "glambase", name: "Glambase", description: "Virtual influencer generator", url: "", upvotes: 1234, verified: true, rating: 4.7, icon: "💄", category: "social-media", subcategory: "ai-influencer" },
+      { id: "celebmakerai", name: "CelebMakerAI", description: "Celebrity-style AI influencer", url: "", upvotes: 876, verified: true, rating: 4.6, icon: "🌟", category: "social-media", subcategory: "ai-influencer" },
+      { id: "influencerfarm", name: "InfluencerFarm", description: "AI influencer management", url: "", upvotes: 654, verified: true, rating: 4.5, icon: "🚜", category: "social-media", subcategory: "ai-influencer" },
+      { id: "infludata", name: "influData", description: "AI influencer analytics", url: "", upvotes: 543, verified: false, rating: 4.4, icon: "📊", category: "social-media", subcategory: "ai-influencer" }
+    ],
+    "ai-instagram": [
+      { id: "upgrow", name: "UpGrow", description: "AI Instagram growth service", url: "", upvotes: 1456, verified: true, rating: 4.7, icon: "📸", category: "social-media", subcategory: "ai-instagram" },
+      { id: "grum", name: "Grum", description: "Instagram automation tool", url: "", upvotes: 1098, verified: true, rating: 4.6, icon: "🤖", category: "social-media", subcategory: "ai-instagram" },
+      { id: "gainsty", name: "Gainsty", description: "Instagram engagement AI", url: "", upvotes: 876, verified: true, rating: 4.5, icon: "💪", category: "social-media", subcategory: "ai-instagram" },
+      { id: "linktodm", name: "LinktoDM", description: "Instagram DM automation", url: "", upvotes: 654, verified: true, rating: 4.4, icon: "📩", category: "social-media", subcategory: "ai-instagram" },
+      { id: "inro", name: "Inrō", description: "Instagram analytics AI", url: "", upvotes: 543, verified: false, rating: 4.3, icon: "📈", category: "social-media", subcategory: "ai-instagram" }
+    ],
+    "ai-instagram-caption-generator": [
+      { id: "cool-caption-ideas", name: "Cool Caption Ideas", description: "Creative Instagram caption generator", url: "", upvotes: 1234, verified: true, rating: 4.7, icon: "💭", category: "social-media", subcategory: "ai-instagram-caption-generator" },
+      { id: "captionit", name: "captionit", description: "AI-powered caption creation", url: "", upvotes: 876, verified: true, rating: 4.6, icon: "📝", category: "social-media", subcategory: "ai-instagram-caption-generator" },
+      { id: "instacaptain", name: "InstaCaptain", description: "Instagram caption optimization", url: "", upvotes: 654, verified: true, rating: 4.5, icon: "👨‍✈️", category: "social-media", subcategory: "ai-instagram-caption-generator" },
+      { id: "captionmaster", name: "CaptionMaster", description: "Professional caption generator", url: "", upvotes: 543, verified: true, rating: 4.4, icon: "🎯", category: "social-media", subcategory: "ai-instagram-caption-generator" },
+      { id: "copywritergpt", name: "CopywriterGPT", description: "AI copywriting for captions", url: "", upvotes: 432, verified: false, rating: 4.3, icon: "✍️", category: "social-media", subcategory: "ai-instagram-caption-generator" }
+    ],
+    "ai-linkedin-headshot": [
+      { id: "photoai-me", name: "PhotoAI.me", description: "Professional AI headshot generator", url: "", upvotes: 1567, verified: true, rating: 4.8, icon: "👤", category: "social-media", subcategory: "ai-linkedin-headshot" },
+      { id: "betterpic", name: "BetterPic", description: "AI professional headshots", url: "", upvotes: 1234, verified: true, rating: 4.7, icon: "📷", category: "social-media", subcategory: "ai-linkedin-headshot" },
+      { id: "headshotpro", name: "HeadshotPro", description: "Professional headshot AI service", url: "", upvotes: 876, verified: true, rating: 4.6, icon: "💼", category: "social-media", subcategory: "ai-linkedin-headshot" },
+      { id: "instaheadshots", name: "InstaHeadshots", description: "Instant AI headshot generation", url: "", upvotes: 654, verified: true, rating: 4.5, icon: "⚡", category: "social-media", subcategory: "ai-linkedin-headshot" },
+      { id: "ai-suitup", name: "AI SuitUp", description: "Professional attire AI photos", url: "", upvotes: 543, verified: false, rating: 4.4, icon: "👔", category: "social-media", subcategory: "ai-linkedin-headshot" }
+    ],
+    "ai-meme-generator": [
+      { id: "kapwing", name: "Kapwing", description: "AI meme creation platform", url: "", upvotes: 1890, verified: true, rating: 4.8, icon: "😂", category: "social-media", subcategory: "ai-meme-generator" },
+      { id: "supermeme-ai", name: "Supermeme.ai", description: "AI-powered meme generator", url: "", upvotes: 1456, verified: true, rating: 4.7, icon: "🚀", category: "social-media", subcategory: "ai-meme-generator" },
+      { id: "memegen-ai", name: "MemeGen AI", description: "Smart meme creation tool", url: "", upvotes: 1098, verified: true, rating: 4.6, icon: "🎭", category: "social-media", subcategory: "ai-meme-generator" },
+      { id: "sludge-ai", name: "Sludge AI", description: "Viral meme generator", url: "", upvotes: 876, verified: true, rating: 4.5, icon: "🌊", category: "social-media", subcategory: "ai-meme-generator" },
+      { id: "misgif", name: "misgif", description: "GIF meme creation AI", url: "", upvotes: 654, verified: false, rating: 4.4, icon: "🎬", category: "social-media", subcategory: "ai-meme-generator" }
+    ],
+    "ai-social-media": [
+      { id: "simplified", name: "Simplified", description: "All-in-one AI social media tool", url: "", upvotes: 2345, verified: true, rating: 4.9, icon: "📱", category: "social-media", subcategory: "ai-social-media" },
+      { id: "quso-ai", name: "quso.ai", description: "AI social media management", url: "", upvotes: 1567, verified: true, rating: 4.8, icon: "🎯", category: "social-media", subcategory: "ai-social-media" },
+      { id: "contentstudio", name: "ContentStudio", description: "Social media content AI platform", url: "", upvotes: 1234, verified: true, rating: 4.7, icon: "🎬", category: "social-media", subcategory: "ai-social-media" },
+      { id: "planable-social", name: "Planable", description: "Social media planning with AI", url: "", upvotes: 1098, verified: true, rating: 4.6, icon: "📅", category: "social-media", subcategory: "ai-social-media" },
+      { id: "taplio", name: "Taplio", description: "LinkedIn AI automation", url: "", upvotes: 876, verified: true, rating: 4.5, icon: "💼", category: "social-media", subcategory: "ai-social-media" }
+    ],
+    "ai-tiktok": [
+      { id: "crayo-ai", name: "Crayo AI", description: "AI TikTok video creator", url: "", upvotes: 1678, verified: true, rating: 4.8, icon: "🎵", category: "social-media", subcategory: "ai-tiktok" },
+      { id: "reelfarm", name: "ReelFarm", description: "TikTok content generation", url: "", upvotes: 1234, verified: true, rating: 4.7, icon: "🚜", category: "social-media", subcategory: "ai-tiktok" },
+      { id: "gloda", name: "Gloda", description: "TikTok AI optimization", url: "", upvotes: 876, verified: true, rating: 4.6, icon: "✨", category: "social-media", subcategory: "ai-tiktok" },
+      { id: "topyappers", name: "topYappers", description: "TikTok trending content AI", url: "", upvotes: 654, verified: true, rating: 4.5, icon: "🗣️", category: "social-media", subcategory: "ai-tiktok" },
+      { id: "influensly", name: "Influensly", description: "TikTok influencer AI tools", url: "", upvotes: 543, verified: false, rating: 4.4, icon: "💫", category: "social-media", subcategory: "ai-tiktok" }
+    ],
+    "ai-twitter": [
+      { id: "tweet-hunter", name: "Tweet Hunter", description: "AI Twitter growth platform", url: "", upvotes: 1890, verified: true, rating: 4.8, icon: "🐦", category: "social-media", subcategory: "ai-twitter" },
+      { id: "owlead", name: "Owlead", description: "Twitter automation with AI", url: "", upvotes: 1234, verified: true, rating: 4.7, icon: "🦉", category: "social-media", subcategory: "ai-twitter" },
+      { id: "postwise", name: "Postwise", description: "AI Twitter content optimizer", url: "", upvotes: 876, verified: true, rating: 4.6, icon: "📝", category: "social-media", subcategory: "ai-twitter" },
+      { id: "drippi-ai", name: "Drippi.ai", description: "Twitter DM automation", url: "", upvotes: 654, verified: true, rating: 4.5, icon: "💧", category: "social-media", subcategory: "ai-twitter" },
+      { id: "xreacher", name: "Xreacher", description: "Twitter reach optimization", url: "", upvotes: 543, verified: false, rating: 4.4, icon: "📡", category: "social-media", subcategory: "ai-twitter" }
+    ],
+    "ai-youtube": [
+      { id: "vidiq", name: "VidIQ", description: "AI YouTube optimization platform", url: "", upvotes: 2456, verified: true, rating: 4.9, icon: "📺", category: "social-media", subcategory: "ai-youtube" },
+      { id: "tubebuddy", name: "TubeBuddy", description: "YouTube AI growth toolkit", url: "", upvotes: 1890, verified: true, rating: 4.8, icon: "🛠️", category: "social-media", subcategory: "ai-youtube" },
+      { id: "nexlev", name: "NexLev", description: "YouTube content AI analyzer", url: "", upvotes: 1234, verified: true, rating: 4.7, icon: "📊", category: "social-media", subcategory: "ai-youtube" },
+      { id: "futurepedia", name: "Futurepedia", description: "AI tools for YouTube creators", url: "", upvotes: 876, verified: true, rating: 4.6, icon: "🔮", category: "social-media", subcategory: "ai-youtube" },
+      { id: "subscribr", name: "Subscribr", description: "YouTube subscriber growth AI", url: "", upvotes: 654, verified: false, rating: 4.5, icon: "🎯", category: "social-media", subcategory: "ai-youtube" }
+    ]
   }
 };
 
