@@ -126,7 +126,7 @@ const ToolPage = () => {
               
               <CardContent className="space-y-6">
                 <Button asChild className="w-full gradient-primary text-white">
-                  <a href="https://junia.ai/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.aitoolsprime.com/tool/junia-ai" target="_blank" rel="noopener noreferrer">
                     Open Site
                     <ExternalLink className="ml-2 h-4 w-4" />
                   </a>
@@ -248,7 +248,7 @@ const ToolPage = () => {
                       variant="secondary"
                       className="backdrop-blur-sm"
                     >
-                      <a href="https://junia.ai/" target="_blank" rel="noopener noreferrer">
+                      <a href="https://www.aitoolsprime.com/tool/junia-ai" target="_blank" rel="noopener noreferrer">
                         Visit Website
                         <ExternalLink className="ml-2 h-4 w-4" />
                       </a>
