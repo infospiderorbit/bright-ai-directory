@@ -18,7 +18,7 @@ const ToolPage = () => {
 
   // Find the tool data
   const categoryData = categoriesData[category || ""];
-  const subcategoryData = categoryData?.subcategories.find(sub => sub.id === subcategory);
+  const subcategoryData = categoryData?.subcategories?.[subcategory || ""];
   const tools = toolsData[category || ""]?.[subcategory || ""] || [];
   const toolData = tools.find(t => t.id === tool);
 
@@ -74,7 +74,7 @@ const ToolPage = () => {
             <BreadcrumbItem>
               <BreadcrumbLink asChild>
                 <Link to={`/category/${category}/${subcategory}`}>
-                  {subcategoryData.name}
+                  {subcategoryData.title}
                 </Link>
               </BreadcrumbLink>
             </BreadcrumbItem>
