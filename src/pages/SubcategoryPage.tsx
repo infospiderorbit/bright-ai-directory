@@ -69,48 +69,50 @@ const SubcategoryPage = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {tools.length > 0 ? tools.map((tool) => (
-            <Card key={tool.id} className="group hover:shadow-lg transition-shadow duration-300">
-              <CardHeader className="pb-3">
-                <div className="flex items-start justify-between">
-                  <div className="flex items-center gap-3">
-                    <div className="text-2xl">{tool.icon}</div>
-                    <div>
-                      <CardTitle className="text-lg font-semibold flex items-center gap-2">
-                        {tool.name}
-                        {tool.verified && (
-                          <Check className="h-4 w-4 text-blue-500" />
-                        )}
-                      </CardTitle>
+            <Link key={tool.id} to={`/category/${category}/${subcategory}/${tool.id}`}>
+              <Card className="group hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                <CardHeader className="pb-3">
+                  <div className="flex items-start justify-between">
+                    <div className="flex items-center gap-3">
+                      <div className="text-2xl">{tool.icon}</div>
+                      <div>
+                        <CardTitle className="text-lg font-semibold flex items-center gap-2">
+                          {tool.name}
+                          {tool.verified && (
+                            <Check className="h-4 w-4 text-blue-500" />
+                          )}
+                        </CardTitle>
+                      </div>
+                    </div>
+                    <Button variant="ghost" size="icon" className="opacity-0 group-hover:opacity-100 transition-opacity">
+                      <ExternalLink className="h-4 w-4" />
+                    </Button>
+                  </div>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <CardDescription className="text-sm text-muted-foreground mb-4 line-clamp-2">
+                    {tool.description}
+                  </CardDescription>
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-2">
+                      <Button variant="ghost" size="sm" className="h-7 px-2">
+                        <ArrowUp className="h-3 w-3 mr-1" />
+                        {tool.upvotes}
+                      </Button>
+                      {tool.verified && (
+                        <Badge variant="secondary" className="text-xs">
+                          Verified
+                        </Badge>
+                      )}
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <Star className="h-3 w-3 fill-yellow-400 text-yellow-400" />
+                      <span className="text-xs text-muted-foreground">{tool.rating}</span>
                     </div>
                   </div>
-                  <Button variant="ghost" size="icon" className="opacity-0 group-hover:opacity-100 transition-opacity">
-                    <ExternalLink className="h-4 w-4" />
-                  </Button>
-                </div>
-              </CardHeader>
-              <CardContent className="pt-0">
-                <CardDescription className="text-sm text-muted-foreground mb-4 line-clamp-2">
-                  {tool.description}
-                </CardDescription>
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <Button variant="ghost" size="sm" className="h-7 px-2">
-                      <ArrowUp className="h-3 w-3 mr-1" />
-                      {tool.upvotes}
-                    </Button>
-                    {tool.verified && (
-                      <Badge variant="secondary" className="text-xs">
-                        Verified
-                      </Badge>
-                    )}
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <Star className="h-3 w-3 fill-yellow-400 text-yellow-400" />
-                    <span className="text-xs text-muted-foreground">{tool.rating}</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            </Link>
           )) : (
             <div className="col-span-full text-center py-12">
               <p className="text-muted-foreground text-lg">No tools available for this subcategory yet.</p>
