@@ -1475,6 +1475,113 @@ export const toolsData: { [key: string]: { [key: string]: Tool[] } } = {
       { id: "humanizer-org", name: "Humanizer.org", description: "Professional AI content humanization", url: "", upvotes: 987, verified: true, rating: 4.5, icon: "🌐", category: "ai-detection-anti-detection", subcategory: "undetectable-ai" },
       { id: "ai-undetect", name: "AI Undetect", description: "Advanced undetectable AI content", url: "", upvotes: 765, verified: true, rating: 4.4, icon: "🔍", category: "ai-detection-anti-detection", subcategory: "undetectable-ai" }
     ]
+  },
+  "coding-development": {
+    "ai-api": [
+      { id: "openrouter", name: "OpenRouter", description: "Universal API for AI models", url: "", upvotes: 1567, verified: true, rating: 4.8, icon: "🔌", category: "coding-development", subcategory: "ai-api" },
+      { id: "replicate", name: "Replicate", description: "Run AI models with a cloud API", url: "", upvotes: 1234, verified: true, rating: 4.7, icon: "🔄", category: "coding-development", subcategory: "ai-api" },
+      { id: "openai", name: "OpenAI", description: "Advanced AI models and API platform", url: "", upvotes: 2341, verified: true, rating: 4.9, icon: "🤖", category: "coding-development", subcategory: "ai-api" },
+      { id: "groq", name: "Groq", description: "Fast AI inference cloud platform", url: "", upvotes: 987, verified: true, rating: 4.6, icon: "⚡", category: "coding-development", subcategory: "ai-api" },
+      { id: "imagekit", name: "ImageKit.io", description: "Real-time image and video optimization API", url: "", upvotes: 765, verified: true, rating: 4.5, icon: "🖼️", category: "coding-development", subcategory: "ai-api" }
+    ],
+    "ai-app-builder": [
+      { id: "salesforce-platform", name: "Salesforce Platform", description: "Low-code app development platform", url: "", upvotes: 1890, verified: true, rating: 4.7, icon: "☁️", category: "coding-development", subcategory: "ai-app-builder" },
+      { id: "replit", name: "Replit", description: "Collaborative online IDE and app builder", url: "", upvotes: 1456, verified: true, rating: 4.6, icon: "💻", category: "coding-development", subcategory: "ai-app-builder" },
+      { id: "vondy", name: "Vondy", description: "AI-powered app building platform", url: "", upvotes: 876, verified: true, rating: 4.5, icon: "🛠️", category: "coding-development", subcategory: "ai-app-builder" },
+      { id: "firebase-studio", name: "Firebase Studio", description: "Google's app development platform", url: "", upvotes: 1234, verified: true, rating: 4.8, icon: "🔥", category: "coding-development", subcategory: "ai-app-builder" },
+      { id: "dify-ai", name: "Dify.AI", description: "AI application development platform", url: "", upvotes: 654, verified: true, rating: 4.4, icon: "🤖", category: "coding-development", subcategory: "ai-app-builder" }
+    ],
+    "ai-browsers": [
+      { id: "perplexity-comet", name: "Perplexity Comet", description: "AI-powered browsing experience", url: "", upvotes: 1098, verified: true, rating: 4.6, icon: "🌐", category: "coding-development", subcategory: "ai-browsers" },
+      { id: "dia-browser", name: "Dia Browser", description: "Smart browsing with AI assistance", url: "", upvotes: 789, verified: true, rating: 4.5, icon: "🔍", category: "coding-development", subcategory: "ai-browsers" },
+      { id: "dia-browser-company", name: "Dia from The Browser Company", description: "Revolutionary AI-first browser", url: "", upvotes: 876, verified: true, rating: 4.7, icon: "💎", category: "coding-development", subcategory: "ai-browsers" },
+      { id: "fellou", name: "Fellou", description: "AI-enhanced web browsing", url: "", upvotes: 543, verified: false, rating: 4.3, icon: "🌟", category: "coding-development", subcategory: "ai-browsers" },
+      { id: "browserbase", name: "Browserbase", description: "Headless browser automation platform", url: "", upvotes: 432, verified: true, rating: 4.4, icon: "🔧", category: "coding-development", subcategory: "ai-browsers" }
+    ],
+    "ai-code-assistant": [
+      { id: "cursor", name: "Cursor - The AI Code Editor", description: "AI-first code editor with intelligent assistance", url: "", upvotes: 2567, verified: true, rating: 4.9, icon: "✏️", category: "coding-development", subcategory: "ai-code-assistant" },
+      { id: "windsurf", name: "Windsurf", description: "AI-powered development environment", url: "", upvotes: 1890, verified: true, rating: 4.8, icon: "🏄", category: "coding-development", subcategory: "ai-code-assistant" },
+      { id: "kiro", name: "Kiro", description: "Intelligent code assistant and generator", url: "", upvotes: 1234, verified: true, rating: 4.6, icon: "🤖", category: "coding-development", subcategory: "ai-code-assistant" },
+      { id: "trae", name: "Trae", description: "AI-driven code completion and assistance", url: "", upvotes: 876, verified: true, rating: 4.5, icon: "🎯", category: "coding-development", subcategory: "ai-code-assistant" },
+      { id: "warp", name: "Warp", description: "Modern terminal with AI assistance", url: "", upvotes: 1567, verified: true, rating: 4.7, icon: "⚡", category: "coding-development", subcategory: "ai-code-assistant" }
+    ],
+    "ai-code-generator": [
+      { id: "builder-io", name: "Builder.io", description: "Visual development platform with AI", url: "", upvotes: 1456, verified: true, rating: 4.7, icon: "🏗️", category: "coding-development", subcategory: "ai-code-generator" },
+      { id: "venice-ai", name: "Venice AI", description: "AI-powered code generation platform", url: "", upvotes: 987, verified: true, rating: 4.5, icon: "🏛️", category: "coding-development", subcategory: "ai-code-generator" },
+      { id: "v0-dev", name: "v0.dev", description: "Generate UI with simple text prompts", url: "", upvotes: 2134, verified: true, rating: 4.8, icon: "🎨", category: "coding-development", subcategory: "ai-code-generator" },
+      { id: "windsurf-gen", name: "Windsurf", description: "AI code generation and development", url: "", upvotes: 1234, verified: true, rating: 4.6, icon: "🏄", category: "coding-development", subcategory: "ai-code-generator" },
+      { id: "kiro-gen", name: "Kiro", description: "Smart code generation assistant", url: "", upvotes: 876, verified: true, rating: 4.4, icon: "🤖", category: "coding-development", subcategory: "ai-code-generator" }
+    ],
+    "ai-code-review": [
+      { id: "bitbucket", name: "Bitbucket", description: "Git repository management with AI code review", url: "", upvotes: 1567, verified: true, rating: 4.6, icon: "🪣", category: "coding-development", subcategory: "ai-code-review" },
+      { id: "coderabbit", name: "CodeRabbit", description: "AI-powered code review automation", url: "", upvotes: 1234, verified: true, rating: 4.7, icon: "🐰", category: "coding-development", subcategory: "ai-code-review" },
+      { id: "refact-ai", name: "Refact.ai", description: "AI code refactoring and review tool", url: "", upvotes: 876, verified: true, rating: 4.5, icon: "🔧", category: "coding-development", subcategory: "ai-code-review" },
+      { id: "digma-ai", name: "Digma AI", description: "Continuous feedback for developers", url: "", upvotes: 654, verified: true, rating: 4.4, icon: "📊", category: "coding-development", subcategory: "ai-code-review" },
+      { id: "qodo", name: "Qodo (formerly Codium)", description: "AI-powered code integrity platform", url: "", upvotes: 987, verified: true, rating: 4.6, icon: "🛡️", category: "coding-development", subcategory: "ai-code-review" }
+    ],
+    "ai-developer-tools": [
+      { id: "google-ai-studio", name: "Google AI Studio", description: "AI development and experimentation platform", url: "", upvotes: 1890, verified: true, rating: 4.8, icon: "🎯", category: "coding-development", subcategory: "ai-developer-tools" },
+      { id: "bitbucket-dev", name: "Bitbucket", description: "Developer collaboration platform", url: "", upvotes: 1345, verified: true, rating: 4.6, icon: "🪣", category: "coding-development", subcategory: "ai-developer-tools" },
+      { id: "clickworker", name: "clickworker", description: "Crowdsourcing platform for developers", url: "", upvotes: 567, verified: true, rating: 4.3, icon: "👥", category: "coding-development", subcategory: "ai-developer-tools" },
+      { id: "weights-biases", name: "Weights & Biases", description: "ML experiment tracking and visualization", url: "", upvotes: 1456, verified: true, rating: 4.7, icon: "📈", category: "coding-development", subcategory: "ai-developer-tools" },
+      { id: "fal-ai", name: "fal.ai", description: "Fast AI model serving platform", url: "", upvotes: 876, verified: true, rating: 4.5, icon: "⚡", category: "coding-development", subcategory: "ai-developer-tools" }
+    ],
+    "ai-github": [
+      { id: "coderabbit-github", name: "CodeRabbit", description: "AI code review for GitHub repositories", url: "", upvotes: 1567, verified: true, rating: 4.7, icon: "🐰", category: "coding-development", subcategory: "ai-github" },
+      { id: "oss-insight", name: "OSS Insight", description: "GitHub repository analytics and insights", url: "", upvotes: 987, verified: true, rating: 4.5, icon: "📊", category: "coding-development", subcategory: "ai-github" },
+      { id: "packfiles", name: "Packfiles", description: "GitHub package and dependency management", url: "", upvotes: 654, verified: true, rating: 4.4, icon: "📦", category: "coding-development", subcategory: "ai-github" },
+      { id: "gitlights", name: "Gitlights", description: "GitHub activity visualization tool", url: "", upvotes: 543, verified: true, rating: 4.3, icon: "💡", category: "coding-development", subcategory: "ai-github" },
+      { id: "weekly-github-insights", name: "Weekly Github Insights", description: "Weekly GitHub activity summaries", url: "", upvotes: 432, verified: false, rating: 4.2, icon: "📅", category: "coding-development", subcategory: "ai-github" }
+    ],
+    "ai-landing-page-builder": [
+      { id: "unbounce", name: "Unbounce", description: "Landing page builder with AI optimization", url: "", upvotes: 1678, verified: true, rating: 4.7, icon: "🚀", category: "coding-development", subcategory: "ai-landing-page-builder" },
+      { id: "leadpages", name: "Leadpages", description: "High-converting landing page creator", url: "", upvotes: 1345, verified: true, rating: 4.6, icon: "📄", category: "coding-development", subcategory: "ai-landing-page-builder" },
+      { id: "plug-pay", name: "Plug&Pay", description: "Payment-focused landing page builder", url: "", upvotes: 789, verified: true, rating: 4.4, icon: "💳", category: "coding-development", subcategory: "ai-landing-page-builder" },
+      { id: "pagepilot-ai", name: "PagePilot.ai", description: "AI-powered landing page optimization", url: "", upvotes: 876, verified: true, rating: 4.5, icon: "✈️", category: "coding-development", subcategory: "ai-landing-page-builder" },
+      { id: "codedesign-ai", name: "CodeDesign.ai", description: "AI-driven web design and landing pages", url: "", upvotes: 654, verified: true, rating: 4.3, icon: "🎨", category: "coding-development", subcategory: "ai-landing-page-builder" }
+    ],
+    "ai-testing": [
+      { id: "pte-apeuni", name: "PTE APEUni", description: "AI-powered PTE test preparation", url: "", upvotes: 765, verified: true, rating: 4.4, icon: "📚", category: "coding-development", subcategory: "ai-testing" },
+      { id: "alfapte", name: "AlfaPTE", description: "Advanced PTE practice platform", url: "", upvotes: 543, verified: true, rating: 4.3, icon: "🎯", category: "coding-development", subcategory: "ai-testing" },
+      { id: "lambdatest", name: "LambdaTest", description: "Cross-browser testing platform", url: "", upvotes: 1456, verified: true, rating: 4.7, icon: "🧪", category: "coding-development", subcategory: "ai-testing" },
+      { id: "katalon", name: "Katalon", description: "Comprehensive test automation platform", url: "", upvotes: 1234, verified: true, rating: 4.6, icon: "⚙️", category: "coding-development", subcategory: "ai-testing" },
+      { id: "vwo", name: "VWO", description: "A/B testing and optimization platform", url: "", upvotes: 987, verified: true, rating: 4.5, icon: "📊", category: "coding-development", subcategory: "ai-testing" }
+    ],
+    "ai-web-scraping": [
+      { id: "apify", name: "Apify", description: "Web scraping and automation platform", url: "", upvotes: 1789, verified: true, rating: 4.8, icon: "🕷️", category: "coding-development", subcategory: "ai-web-scraping" },
+      { id: "922-s5-proxy", name: "922 S5 Proxy", description: "High-speed proxy service for web scraping", url: "", upvotes: 654, verified: true, rating: 4.3, icon: "🌐", category: "coding-development", subcategory: "ai-web-scraping" },
+      { id: "browse-ai", name: "Browse AI", description: "No-code web scraping and monitoring", url: "", upvotes: 1234, verified: true, rating: 4.6, icon: "🔍", category: "coding-development", subcategory: "ai-web-scraping" },
+      { id: "octoparse", name: "Octoparse", description: "Visual web scraping tool", url: "", upvotes: 987, verified: true, rating: 4.5, icon: "🐙", category: "coding-development", subcategory: "ai-web-scraping" },
+      { id: "thordata", name: "Thordata", description: "Enterprise web data extraction", url: "", upvotes: 765, verified: true, rating: 4.4, icon: "🔨", category: "coding-development", subcategory: "ai-web-scraping" }
+    ],
+    "ai-website-builder": [
+      { id: "lovable", name: "Lovable", description: "AI-powered web application builder", url: "", upvotes: 2345, verified: true, rating: 4.9, icon: "💖", category: "coding-development", subcategory: "ai-website-builder" },
+      { id: "framer", name: "Framer", description: "Design and ship websites with AI", url: "", upvotes: 1890, verified: true, rating: 4.8, icon: "🖼️", category: "coding-development", subcategory: "ai-website-builder" },
+      { id: "tilda", name: "Tilda", description: "Visual website builder platform", url: "", upvotes: 1234, verified: true, rating: 4.6, icon: "🎨", category: "coding-development", subcategory: "ai-website-builder" },
+      { id: "gamma", name: "Gamma", description: "AI-powered presentation and website creator", url: "", upvotes: 1567, verified: true, rating: 4.7, icon: "γ", category: "coding-development", subcategory: "ai-website-builder" },
+      { id: "prismic", name: "Prismic", description: "Headless CMS with website building", url: "", upvotes: 876, verified: true, rating: 4.5, icon: "💎", category: "coding-development", subcategory: "ai-website-builder" }
+    ],
+    "log-management": [
+      { id: "middleware", name: "Middleware", description: "Full-stack observability platform", url: "", upvotes: 1234, verified: true, rating: 4.6, icon: "📊", category: "coding-development", subcategory: "log-management" },
+      { id: "rerun", name: "Rerun", description: "Visualization engine for multimodal data", url: "", upvotes: 876, verified: true, rating: 4.5, icon: "🔄", category: "coding-development", subcategory: "log-management" },
+      { id: "instalog", name: "Instalog", description: "Real-time log analytics platform", url: "", upvotes: 654, verified: true, rating: 4.4, icon: "📝", category: "coding-development", subcategory: "log-management" },
+      { id: "logzen", name: "Logzen", description: "Centralized logging and monitoring", url: "", upvotes: 543, verified: true, rating: 4.3, icon: "🧘", category: "coding-development", subcategory: "log-management" },
+      { id: "hoop-dev", name: "Hoop.dev", description: "Developer-friendly log management", url: "", upvotes: 432, verified: false, rating: 4.2, icon: "🏀", category: "coding-development", subcategory: "log-management" }
+    ],
+    "no-code-low-code": [
+      { id: "mailerlite", name: "MailerLite", description: "Email marketing automation platform", url: "", upvotes: 1567, verified: true, rating: 4.7, icon: "📧", category: "coding-development", subcategory: "no-code-low-code" },
+      { id: "salesforce-platform-nocode", name: "Salesforce Platform", description: "Enterprise no-code development", url: "", upvotes: 1890, verified: true, rating: 4.8, icon: "☁️", category: "coding-development", subcategory: "no-code-low-code" },
+      { id: "softr", name: "Softr", description: "No-code app builder from Airtable", url: "", upvotes: 1234, verified: true, rating: 4.6, icon: "🛠️", category: "coding-development", subcategory: "no-code-low-code" },
+      { id: "n8n", name: "n8n", description: "Workflow automation for technical people", url: "", upvotes: 1456, verified: true, rating: 4.7, icon: "🔗", category: "coding-development", subcategory: "no-code-low-code" },
+      { id: "powtoon", name: "Powtoon", description: "Video creation platform with no-code tools", url: "", upvotes: 876, verified: true, rating: 4.4, icon: "🎬", category: "coding-development", subcategory: "no-code-low-code" }
+    ],
+    "sql-query-builder": [
+      { id: "gptexcel", name: "GPTExcel", description: "AI-powered Excel formula and SQL generation", url: "", upvotes: 1345, verified: true, rating: 4.6, icon: "📊", category: "coding-development", subcategory: "sql-query-builder" },
+      { id: "quadratic", name: "Quadratic", description: "Modern spreadsheet with code integration", url: "", upvotes: 987, verified: true, rating: 4.5, icon: "⬜", category: "coding-development", subcategory: "sql-query-builder" },
+      { id: "sourcetable", name: "Sourcetable", description: "Spreadsheet that connects to all data sources", url: "", upvotes: 765, verified: true, rating: 4.4, icon: "🔗", category: "coding-development", subcategory: "sql-query-builder" },
+      { id: "ai2sql", name: "AI2sql", description: "Convert natural language to SQL queries", url: "", upvotes: 1234, verified: true, rating: 4.7, icon: "🔤", category: "coding-development", subcategory: "sql-query-builder" },
+      { id: "vanna-ai", name: "Vanna.AI", description: "AI SQL assistant for complex queries", url: "", upvotes: 876, verified: true, rating: 4.5, icon: "🤖", category: "coding-development", subcategory: "sql-query-builder" }
+    ]
   }
 };
 
