@@ -17,10 +17,31 @@ const ToolPage = () => {
   const [likes, setLikes] = useState(false);
 
   // Find the tool data
-  const categoryData = categoriesData[category || ""];
-  const subcategoryData = categoryData?.subcategories?.[subcategory || ""];
-  const tools = toolsData[category || ""]?.[subcategory || ""] || [];
-  const toolData = tools.find(t => t.id === tool);
+  let categoryData, subcategoryData, toolData;
+  
+  if (category && subcategory && tool) {
+    // Full path route: /category/:category/:subcategory/:tool
+    categoryData = categoriesData[category];
+    subcategoryData = categoryData?.subcategories?.[subcategory];
+    const tools = toolsData[category]?.[subcategory] || [];
+    toolData = tools.find(t => t.id === tool);
+  } else if (tool) {
+    // Short path route: /:tool
+    // Search through all categories and subcategories to find the tool
+    const toolId = tool;
+    for (const [catKey, catData] of Object.entries(toolsData)) {
+      for (const [subKey, subTools] of Object.entries(catData)) {
+        const foundTool = subTools.find(t => t.id === toolId);
+        if (foundTool) {
+          toolData = foundTool;
+          categoryData = categoriesData[catKey];
+          subcategoryData = categoryData?.subcategories?.[subKey];
+          break;
+        }
+      }
+      if (toolData) break;
+    }
+  }
 
   if (!toolData || !categoryData || !subcategoryData) {
     return (
@@ -46,7 +67,7 @@ const ToolPage = () => {
   const handleSave = () => setSaved(!saved);
   const handleLike = () => setLikes(!likes);
 
-  const shareUrl = `https://your-domain.com/category/${category}/${subcategory}/${tool}`;
+  const shareUrl = `https://www.aitoolsprime.com/${toolData.id}`;
   const shareText = `Check out ${toolData.name} - ${toolData.description}`;
 
   const shareLinks = {
@@ -73,8 +94,8 @@ const ToolPage = () => {
             <BreadcrumbSeparator />
             <BreadcrumbItem>
               <BreadcrumbLink asChild>
-                <Link to={`/category/${category}/${subcategory}`}>
-                  {subcategoryData.title}
+                <Link to={`/category/${toolData.category}/${toolData.subcategory}`}>
+                  {subcategoryData?.title}
                 </Link>
               </BreadcrumbLink>
             </BreadcrumbItem>

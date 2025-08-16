@@ -24,6 +24,7 @@ const App = () => (
           <Route path="/category/:category" element={<CategoryPage />} />
           <Route path="/category/:category/:subcategory" element={<SubcategoryPage />} />
           <Route path="/category/:category/:subcategory/:tool" element={<ToolPage />} />
+          <Route path="/:tool" element={<ToolPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

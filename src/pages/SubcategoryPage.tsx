@@ -69,7 +69,7 @@ const SubcategoryPage = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {tools.length > 0 ? tools.map((tool) => (
-            <Link key={tool.id} to={`/category/${category}/${subcategory}/${tool.id}`}>
+            <Link key={tool.id} to={`/${tool.id}`}>
               <Card className="group hover:shadow-lg transition-shadow duration-300 cursor-pointer">
                 <CardHeader className="pb-3">
                   <div className="flex items-start justify-between">
