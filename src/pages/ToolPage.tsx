@@ -114,13 +114,21 @@ const ToolPage = () => {
                     <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-purple-100 to-blue-100 flex items-center justify-center text-3xl">
                       {toolData.icon}
                     </div>
-                    <div>
-                      <CardTitle className="text-3xl font-bold">{toolData.name}</CardTitle>
-                      {toolData.verified && (
-                        <Badge variant="secondary" className="mt-2">
-                          Verified
-                        </Badge>
-                      )}
+                    <div className="flex items-center space-x-4">
+                      <div>
+                        <CardTitle className="text-3xl font-bold">{toolData.name}</CardTitle>
+                        {toolData.verified && (
+                          <Badge variant="secondary" className="mt-2">
+                            Verified
+                          </Badge>
+                        )}
+                      </div>
+                      <Button asChild size="sm" className="gradient-primary text-white">
+                        <a href="https://www.aitoolsprime.com/tool/junia-ai" target="_blank" rel="noopener noreferrer">
+                          Open Site
+                          <ExternalLink className="ml-2 h-3 w-3" />
+                        </a>
+                      </Button>
                     </div>
                   </div>
                   
@@ -146,12 +154,6 @@ const ToolPage = () => {
               </CardHeader>
               
               <CardContent className="space-y-6">
-                <Button asChild className="w-full gradient-primary text-white">
-                  <a href="https://www.aitoolsprime.com/tool/junia-ai" target="_blank" rel="noopener noreferrer">
-                    Open Site
-                    <ExternalLink className="ml-2 h-4 w-4" />
-                  </a>
-                </Button>
 
                 {/* Rating & Reviews */}
                 <div className="flex items-center justify-between">
