@@ -1,5 +1,6 @@
-import { Sparkles } from "lucide-react";
+import { Sparkles, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -37,9 +38,31 @@ const Header = () => {
           </nav>
           
           <div className="md:hidden">
-            <Button variant="ghost" size="sm">
-              Menu
-            </Button>
+            <Sheet>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="sm" aria-label="Open menu">
+                  <Menu className="h-5 w-5" />
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="left" className="bg-background">
+                <SheetHeader>
+                  <SheetTitle className="text-left">Menu</SheetTitle>
+                </SheetHeader>
+                <nav className="mt-6 space-y-4">
+                  <a href="#" className="block text-foreground font-medium">Full List</a>
+                  <Link to="/categories" className="block text-foreground font-medium">AI Categories</Link>
+                  <a href="#" className="block text-foreground font-medium">AI Tutorials</a>
+                  <Button 
+                    asChild 
+                    className="w-full gradient-primary text-white font-semibold"
+                  >
+                    <a href="https://aitoolsprime.com/submit-tool" target="_blank" rel="noopener noreferrer">
+                      Submit Tool
+                    </a>
+                  </Button>
+                </nav>
+              </SheetContent>
+            </Sheet>
           </div>
         </div>
       </div>
