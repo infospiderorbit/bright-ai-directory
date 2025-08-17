@@ -16,6 +16,9 @@ const ToolPage = () => {
   const [saved, setSaved] = useState(false);
   const [likes, setLikes] = useState(false);
 
+  // Debug logging
+  console.log('ToolPage params:', { category, subcategory, tool });
+
   // Find the tool data
   let categoryData, subcategoryData, toolData;
   
@@ -29,10 +32,13 @@ const ToolPage = () => {
     // Short path route: /:tool
     // Search through all categories and subcategories to find the tool
     const toolId = tool;
+    console.log('Searching for tool ID:', toolId);
     for (const [catKey, catData] of Object.entries(toolsData)) {
       for (const [subKey, subTools] of Object.entries(catData)) {
         const foundTool = subTools.find(t => t.id === toolId);
         if (foundTool) {
+          console.log('Found tool:', foundTool);
+          console.log('In category:', catKey, 'subcategory:', subKey);
           toolData = foundTool;
           categoryData = categoriesData[catKey];
           subcategoryData = categoryData?.subcategories?.[subKey];
@@ -42,6 +48,8 @@ const ToolPage = () => {
       if (toolData) break;
     }
   }
+
+  console.log('Final result:', { toolData, categoryData, subcategoryData });
 
   if (!toolData || !categoryData || !subcategoryData) {
     return (
@@ -124,7 +132,7 @@ const ToolPage = () => {
                         )}
                       </div>
                       <Button asChild size="sm" className="gradient-primary text-white">
-                        <a href="https://www.aitoolsprime.com/tool/junia-ai" target="_blank" rel="noopener noreferrer">
+                        <a href={toolData.url || `https://www.aitoolsprime.com/tool/${toolData.id}`} target="_blank" rel="noopener noreferrer">
                           Open Site
                           <ExternalLink className="ml-2 h-3 w-3" />
                         </a>
@@ -271,7 +279,7 @@ const ToolPage = () => {
                       variant="secondary"
                       className="backdrop-blur-sm"
                     >
-                      <a href="https://www.aitoolsprime.com/tool/junia-ai" target="_blank" rel="noopener noreferrer">
+                      <a href={toolData.url || `https://www.aitoolsprime.com/tool/${toolData.id}`} target="_blank" rel="noopener noreferrer">
                         Visit Website
                         <ExternalLink className="ml-2 h-4 w-4" />
                       </a>
