@@ -115,9 +115,9 @@ const ToolPage = () => {
         {/* Boxed Layout Container */}
         <div className="max-w-6xl mx-auto bg-card rounded-lg shadow-lg border border-border p-6 mb-8">
           {/* Top Row - 2 Columns */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Left Sidebar - Tool Details (65% width) */}
-            <div className="lg:col-span-2 space-y-6">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+            {/* Left Sidebar - Tool Details (60% width) */}
+            <div className="lg:col-span-3 space-y-6">
               {/* Tool Name */}
               <div className="flex items-center space-x-4 mb-6">
                 <div className="w-16 h-16 rounded-xl bg-muted flex items-center justify-center text-3xl border border-border">
@@ -132,7 +132,7 @@ const ToolPage = () => {
               </div>
 
               {/* Open Site Button */}
-              <Button asChild size="lg" className="w-full gradient-primary text-white">
+              <Button asChild size="lg" className="w-auto px-8 gradient-primary text-white">
                 <a href={toolData.url || `https://www.aitoolsprime.com/tool/${toolData.id}`} target="_blank" rel="noopener noreferrer">
                   Open Site
                   <ExternalLink className="ml-2 h-4 w-4" />
@@ -198,8 +198,8 @@ const ToolPage = () => {
               </div>
             </div>
 
-            {/* Right Column - Snapshot/Preview (35% width) */}
-            <div className="lg:col-span-1">
+            {/* Right Column - Snapshot/Preview (40% width) */}
+            <div className="lg:col-span-2">
               <div className="relative group cursor-pointer">
                 <div className="aspect-[4/3] bg-muted rounded-lg border border-border overflow-hidden">
                   <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-background to-muted">
