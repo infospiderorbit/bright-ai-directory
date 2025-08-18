@@ -180,20 +180,160 @@ const ToolPage = () => {
 
                 <Separator />
 
-                {/* Tool Information */}
-                <div className="space-y-4">
-                  <div>
-                    <h3 className="font-semibold mb-2">Introduction</h3>
-                    <p className="text-muted-foreground">
-                      AI content creation platform for blogs, emails, ads, and SEO-friendly articles.
-                    </p>
+                {/* Junia AI Product Information */}
+                {toolData.id === 'junia-ai' ? (
+                  <div className="space-y-8">
+                    <div>
+                      <h2 className="text-2xl font-bold gradient-primary bg-clip-text text-transparent mb-6">
+                        Junia AI Product Information
+                      </h2>
+                    </div>
+                    
+                    {/* What is Junia AI */}
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-semibold text-foreground">What is Junia AI?</h3>
+                      <p className="text-muted-foreground leading-relaxed">
+                        Junia AI is an AI-powered content creation platform that enables users to quickly produce high-quality, original, SEO-optimized content in minutes. From blogs and emails to ad copy and social posts, Junia AI makes producing engaging copy easier with built-in AI image generation, SEO research tools, and a smart editor with summarization, paraphrasing, translation, and citation options.
+                      </p>
+                      
+                      <div className="mt-4">
+                        <h4 className="font-medium text-foreground mb-3">This product stands out with features such as:</h4>
+                        <ul className="space-y-2 text-muted-foreground">
+                          <li className="flex items-start">
+                            <span className="text-primary mr-2">•</span>
+                            Conversational dialogue generation
+                          </li>
+                          <li className="flex items-start">
+                            <span className="text-primary mr-2">•</span>
+                            Content Generation in Short Form (SCFG)
+                          </li>
+                          <li className="flex items-start">
+                            <span className="text-primary mr-2">•</span>
+                            Long-form article creation (3000+ words)
+                          </li>
+                          <li className="flex items-start">
+                            <span className="text-primary mr-2">•</span>
+                            Customized AI Brand Voice to mirror writing style and maintain brand consistency
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <Separator />
+
+                    {/* How Can Junia AI Help You */}
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-semibold text-foreground">How Can Junia AI Help You?</h3>
+                      <div className="grid gap-4">
+                        <div className="flex items-start space-x-3 p-4 rounded-lg bg-card border">
+                          <span className="font-semibold text-primary">1.</span>
+                          <div>
+                            <h4 className="font-medium text-foreground">Select Content Type</h4>
+                            <p className="text-muted-foreground text-sm mt-1">Pick from emails, blog posts, ads, or social media posts.</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start space-x-3 p-4 rounded-lg bg-card border">
+                          <span className="font-semibold text-primary">2.</span>
+                          <div>
+                            <h4 className="font-medium text-foreground">Customize Topic & Tone</h4>
+                            <p className="text-muted-foreground text-sm mt-1">Enter the subject and choose tone settings (professional, casual, persuasive, etc.).</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start space-x-3 p-4 rounded-lg bg-card border">
+                          <span className="font-semibold text-primary">3.</span>
+                          <div>
+                            <h4 className="font-medium text-foreground">Generate & Review</h4>
+                            <p className="text-muted-foreground text-sm mt-1">Use AI to generate multiple versions and review them.</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start space-x-3 p-4 rounded-lg bg-card border">
+                          <span className="font-semibold text-primary">4.</span>
+                          <div>
+                            <h4 className="font-medium text-foreground">Edit & Optimize</h4>
+                            <p className="text-muted-foreground text-sm mt-1">Refine with the built-in AI editor for paraphrasing, SEO research, and publishing-ready output.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <Separator />
+
+                    {/* Core Features */}
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-semibold text-foreground">Junia AI's Core Features in Detail (JuniaAI.net)</h3>
+                      <div className="grid gap-3">
+                        <div className="flex items-center space-x-3">
+                          <div className="w-2 h-2 bg-primary rounded-full"></div>
+                          <span className="text-muted-foreground">AI-generated images for blogs & posts</span>
+                        </div>
+                        <div className="flex items-center space-x-3">
+                          <div className="w-2 h-2 bg-primary rounded-full"></div>
+                          <span className="text-muted-foreground">Tools for SEO research & optimization</span>
+                        </div>
+                        <div className="flex items-center space-x-3">
+                          <div className="w-2 h-2 bg-primary rounded-full"></div>
+                          <span className="text-muted-foreground">Smart AI editor with summarization & paraphrasing</span>
+                        </div>
+                        <div className="flex items-center space-x-3">
+                          <div className="w-2 h-2 bg-primary rounded-full"></div>
+                          <span className="text-muted-foreground">Brand Voice personalization</span>
+                        </div>
+                        <div className="flex items-center space-x-3">
+                          <div className="w-2 h-2 bg-primary rounded-full"></div>
+                          <span className="text-muted-foreground">AI chatbot for writing support</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <Separator />
+
+                    {/* Use Cases */}
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-semibold text-foreground">Junia AI's Use Cases</h3>
+                      <div className="space-y-3">
+                        <div className="flex items-start space-x-3 p-3 rounded-lg border border-primary/20 bg-primary/5">
+                          <span className="font-bold text-primary">#1</span>
+                          <span className="text-muted-foreground">Generating SEO-friendly blog posts (3000+ words)</span>
+                        </div>
+                        <div className="flex items-start space-x-3 p-3 rounded-lg border border-primary/20 bg-primary/5">
+                          <span className="font-bold text-primary">#2</span>
+                          <span className="text-muted-foreground">Creating persuasive ad copy for campaigns</span>
+                        </div>
+                        <div className="flex items-start space-x-3 p-3 rounded-lg border border-primary/20 bg-primary/5">
+                          <span className="font-bold text-primary">#3</span>
+                          <span className="text-muted-foreground">Writing personalized sales emails</span>
+                        </div>
+                        <div className="flex items-start space-x-3 p-3 rounded-lg border border-primary/20 bg-primary/5">
+                          <span className="font-bold text-primary">#4</span>
+                          <span className="text-muted-foreground">Summarizing long documents/files</span>
+                        </div>
+                        <div className="flex items-start space-x-3 p-3 rounded-lg border border-primary/20 bg-primary/5">
+                          <span className="font-bold text-primary">#5</span>
+                          <span className="text-muted-foreground">Creating AI-generated images for articles</span>
+                        </div>
+                        <div className="flex items-start space-x-3 p-3 rounded-lg border border-primary/20 bg-primary/5">
+                          <span className="font-bold text-primary">#6</span>
+                          <span className="text-muted-foreground">Rewriting content into multiple languages</span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  
-                  <div>
-                    <h3 className="font-semibold mb-2">Added on</h3>
-                    <p className="text-muted-foreground">Aug 16, 2025</p>
+                ) : (
+                  /* Default Tool Information */
+                  <div className="space-y-4">
+                    <div>
+                      <h3 className="font-semibold mb-2">Introduction</h3>
+                      <p className="text-muted-foreground">
+                        {toolData.description}
+                      </p>
+                    </div>
+                    
+                    <div>
+                      <h3 className="font-semibold mb-2">Added on</h3>
+                      <p className="text-muted-foreground">Aug 16, 2025</p>
+                    </div>
                   </div>
-                </div>
+                )}
 
                 <Separator />
 
