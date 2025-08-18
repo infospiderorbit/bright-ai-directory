@@ -163,18 +163,53 @@ const ToolPage = () => {
               
               <CardContent className="space-y-6">
 
-                {/* Rating & Reviews */}
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center space-x-2">
-                    <div className="flex items-center">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
-                      ))}
+                {/* Tool Info Section */}
+                <div className="bg-gradient-to-r from-purple-50/50 to-blue-50/50 rounded-xl p-6 border border-purple-100/50">
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    {/* Rating & Reviews */}
+                    <div className="text-center">
+                      <div className="flex items-center justify-center mb-2">
+                        <div className="bg-gradient-to-r from-orange-400 to-orange-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg shadow-lg">
+                          11
+                        </div>
+                      </div>
+                      <div className="flex items-center justify-center mb-1">
+                        {[...Array(5)].map((_, i) => (
+                          <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                        ))}
+                      </div>
+                      <p className="text-sm text-muted-foreground">5 Reviews</p>
                     </div>
-                    <span className="text-sm text-muted-foreground">0 Reviews</span>
+
+                    {/* Saves */}
+                    <div className="text-center">
+                      <div className="flex items-center justify-center mb-2">
+                        <div className="bg-gradient-to-r from-blue-400 to-blue-500 text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg">
+                          <Bookmark className="h-6 w-6" />
+                        </div>
+                      </div>
+                      <p className="font-semibold text-foreground">11 Saved</p>
+                      <p className="text-sm text-muted-foreground">Bookmarks</p>
+                    </div>
+
+                    {/* Added Date */}
+                    <div className="text-center">
+                      <div className="flex items-center justify-center mb-2">
+                        <div className="bg-gradient-to-r from-green-400 to-green-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-sm shadow-lg">
+                          Jun
+                        </div>
+                      </div>
+                      <p className="font-semibold text-foreground">Added on</p>
+                      <p className="text-sm text-muted-foreground">Jun 03, 2023</p>
+                    </div>
                   </div>
-                  <div className="text-sm text-muted-foreground">
-                    11 Saved
+
+                  {/* Introduction */}
+                  <div className="mt-6 pt-6 border-t border-purple-200/50">
+                    <h4 className="font-semibold text-foreground mb-2">Introduction:</h4>
+                    <p className="text-muted-foreground leading-relaxed">
+                      AI content creation platform for blogs, emails, ads, and SEO-friendly articles.
+                    </p>
                   </div>
                 </div>
 
@@ -278,28 +313,66 @@ const ToolPage = () => {
                     <Separator />
 
                     {/* Core Features */}
-                    <div className="space-y-4">
-                      <h3 className="text-xl font-semibold text-foreground">Junia AI's Core Features in Detail (JuniaAI.net)</h3>
-                      <div className="grid gap-3">
-                        <div className="flex items-center space-x-3">
-                          <div className="w-2 h-2 bg-primary rounded-full"></div>
-                          <span className="text-muted-foreground">AI-generated images for blogs & posts</span>
+                    <div className="space-y-6">
+                      <div className="text-center">
+                        <h3 className="text-2xl font-bold gradient-primary bg-clip-text text-transparent mb-2">Junia AI's Core Features in Detail</h3>
+                        <p className="text-muted-foreground">Powerful features from JuniaAI.net</p>
+                      </div>
+                      <div className="grid gap-4">
+                        <div className="group p-4 rounded-xl bg-gradient-to-r from-purple-50/50 to-blue-50/50 border border-purple-100/50 hover:shadow-lg hover:border-purple-200 transition-all duration-300">
+                          <div className="flex items-center space-x-3">
+                            <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-blue-500 rounded-lg flex items-center justify-center shadow-md">
+                              <span className="text-white text-sm">🖼️</span>
+                            </div>
+                            <div>
+                              <h4 className="font-semibold text-foreground group-hover:text-primary transition-colors">AI-Generated Images</h4>
+                              <p className="text-sm text-muted-foreground">Create stunning visuals for blogs & posts automatically</p>
+                            </div>
+                          </div>
                         </div>
-                        <div className="flex items-center space-x-3">
-                          <div className="w-2 h-2 bg-primary rounded-full"></div>
-                          <span className="text-muted-foreground">Tools for SEO research & optimization</span>
+                        <div className="group p-4 rounded-xl bg-gradient-to-r from-blue-50/50 to-indigo-50/50 border border-blue-100/50 hover:shadow-lg hover:border-blue-200 transition-all duration-300">
+                          <div className="flex items-center space-x-3">
+                            <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-lg flex items-center justify-center shadow-md">
+                              <span className="text-white text-sm">🔍</span>
+                            </div>
+                            <div>
+                              <h4 className="font-semibold text-foreground group-hover:text-primary transition-colors">SEO Research & Optimization</h4>
+                              <p className="text-sm text-muted-foreground">Built-in tools to boost your content's search rankings</p>
+                            </div>
+                          </div>
                         </div>
-                        <div className="flex items-center space-x-3">
-                          <div className="w-2 h-2 bg-primary rounded-full"></div>
-                          <span className="text-muted-foreground">Smart AI editor with summarization & paraphrasing</span>
+                        <div className="group p-4 rounded-xl bg-gradient-to-r from-indigo-50/50 to-purple-50/50 border border-indigo-100/50 hover:shadow-lg hover:border-indigo-200 transition-all duration-300">
+                          <div className="flex items-center space-x-3">
+                            <div className="w-8 h-8 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-lg flex items-center justify-center shadow-md">
+                              <span className="text-white text-sm">✏️</span>
+                            </div>
+                            <div>
+                              <h4 className="font-semibold text-foreground group-hover:text-primary transition-colors">Smart AI Editor</h4>
+                              <p className="text-sm text-muted-foreground">Advanced summarization, paraphrasing & translation features</p>
+                            </div>
+                          </div>
                         </div>
-                        <div className="flex items-center space-x-3">
-                          <div className="w-2 h-2 bg-primary rounded-full"></div>
-                          <span className="text-muted-foreground">Brand Voice personalization</span>
+                        <div className="group p-4 rounded-xl bg-gradient-to-r from-purple-50/50 to-pink-50/50 border border-purple-100/50 hover:shadow-lg hover:border-purple-200 transition-all duration-300">
+                          <div className="flex items-center space-x-3">
+                            <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center shadow-md">
+                              <span className="text-white text-sm">🎯</span>
+                            </div>
+                            <div>
+                              <h4 className="font-semibold text-foreground group-hover:text-primary transition-colors">Brand Voice Personalization</h4>
+                              <p className="text-sm text-muted-foreground">Maintain consistent brand identity across all content</p>
+                            </div>
+                          </div>
                         </div>
-                        <div className="flex items-center space-x-3">
-                          <div className="w-2 h-2 bg-primary rounded-full"></div>
-                          <span className="text-muted-foreground">AI chatbot for writing support</span>
+                        <div className="group p-4 rounded-xl bg-gradient-to-r from-green-50/50 to-teal-50/50 border border-green-100/50 hover:shadow-lg hover:border-green-200 transition-all duration-300">
+                          <div className="flex items-center space-x-3">
+                            <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-teal-500 rounded-lg flex items-center justify-center shadow-md">
+                              <span className="text-white text-sm">🤖</span>
+                            </div>
+                            <div>
+                              <h4 className="font-semibold text-foreground group-hover:text-primary transition-colors">AI Writing Chatbot</h4>
+                              <p className="text-sm text-muted-foreground">Get instant support and guidance for your writing projects</p>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -307,32 +380,77 @@ const ToolPage = () => {
                     <Separator />
 
                     {/* Use Cases */}
-                    <div className="space-y-4">
-                      <h3 className="text-xl font-semibold text-foreground">Junia AI's Use Cases</h3>
-                      <div className="space-y-3">
-                        <div className="flex items-start space-x-3 p-3 rounded-lg border border-primary/20 bg-primary/5">
-                          <span className="font-bold text-primary">#1</span>
-                          <span className="text-muted-foreground">Generating SEO-friendly blog posts (3000+ words)</span>
+                    <div className="space-y-6">
+                      <div className="text-center">
+                        <h3 className="text-2xl font-bold gradient-primary bg-clip-text text-transparent mb-2">Junia AI's Use Cases</h3>
+                        <p className="text-muted-foreground">Real-world applications to transform your content strategy</p>
+                      </div>
+                      <div className="grid gap-4">
+                        <div className="group relative overflow-hidden p-5 rounded-xl bg-gradient-to-br from-purple-50 to-purple-100 border border-purple-200 hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
+                          <div className="flex items-start space-x-4">
+                            <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-purple-600 to-purple-700 rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                              1
+                            </div>
+                            <div>
+                              <h4 className="font-bold text-foreground mb-1 group-hover:text-purple-700 transition-colors">SEO Blog Post Generation</h4>
+                              <p className="text-muted-foreground">Create comprehensive, SEO-friendly blog posts (3000+ words) that rank higher in search results</p>
+                            </div>
+                          </div>
                         </div>
-                        <div className="flex items-start space-x-3 p-3 rounded-lg border border-primary/20 bg-primary/5">
-                          <span className="font-bold text-primary">#2</span>
-                          <span className="text-muted-foreground">Creating persuasive ad copy for campaigns</span>
+                        <div className="group relative overflow-hidden p-5 rounded-xl bg-gradient-to-br from-blue-50 to-blue-100 border border-blue-200 hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
+                          <div className="flex items-start space-x-4">
+                            <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                              2
+                            </div>
+                            <div>
+                              <h4 className="font-bold text-foreground mb-1 group-hover:text-blue-700 transition-colors">Persuasive Ad Copy Creation</h4>
+                              <p className="text-muted-foreground">Craft compelling advertisement copy that converts viewers into customers for your campaigns</p>
+                            </div>
+                          </div>
                         </div>
-                        <div className="flex items-start space-x-3 p-3 rounded-lg border border-primary/20 bg-primary/5">
-                          <span className="font-bold text-primary">#3</span>
-                          <span className="text-muted-foreground">Writing personalized sales emails</span>
+                        <div className="group relative overflow-hidden p-5 rounded-xl bg-gradient-to-br from-indigo-50 to-indigo-100 border border-indigo-200 hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
+                          <div className="flex items-start space-x-4">
+                            <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-indigo-600 to-indigo-700 rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                              3
+                            </div>
+                            <div>
+                              <h4 className="font-bold text-foreground mb-1 group-hover:text-indigo-700 transition-colors">Personalized Sales Emails</h4>
+                              <p className="text-muted-foreground">Generate tailored sales emails that resonate with your audience and drive engagement</p>
+                            </div>
+                          </div>
                         </div>
-                        <div className="flex items-start space-x-3 p-3 rounded-lg border border-primary/20 bg-primary/5">
-                          <span className="font-bold text-primary">#4</span>
-                          <span className="text-muted-foreground">Summarizing long documents/files</span>
+                        <div className="group relative overflow-hidden p-5 rounded-xl bg-gradient-to-br from-green-50 to-green-100 border border-green-200 hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
+                          <div className="flex items-start space-x-4">
+                            <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-green-600 to-green-700 rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                              4
+                            </div>
+                            <div>
+                              <h4 className="font-bold text-foreground mb-1 group-hover:text-green-700 transition-colors">Document Summarization</h4>
+                              <p className="text-muted-foreground">Quickly summarize long documents and files into digestible, actionable insights</p>
+                            </div>
+                          </div>
                         </div>
-                        <div className="flex items-start space-x-3 p-3 rounded-lg border border-primary/20 bg-primary/5">
-                          <span className="font-bold text-primary">#5</span>
-                          <span className="text-muted-foreground">Creating AI-generated images for articles</span>
+                        <div className="group relative overflow-hidden p-5 rounded-xl bg-gradient-to-br from-orange-50 to-orange-100 border border-orange-200 hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
+                          <div className="flex items-start space-x-4">
+                            <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-orange-600 to-orange-700 rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                              5
+                            </div>
+                            <div>
+                              <h4 className="font-bold text-foreground mb-1 group-hover:text-orange-700 transition-colors">AI Image Generation</h4>
+                              <p className="text-muted-foreground">Create stunning, relevant images for articles and content that enhance visual storytelling</p>
+                            </div>
+                          </div>
                         </div>
-                        <div className="flex items-start space-x-3 p-3 rounded-lg border border-primary/20 bg-primary/5">
-                          <span className="font-bold text-primary">#6</span>
-                          <span className="text-muted-foreground">Rewriting content into multiple languages</span>
+                        <div className="group relative overflow-hidden p-5 rounded-xl bg-gradient-to-br from-pink-50 to-pink-100 border border-pink-200 hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
+                          <div className="flex items-start space-x-4">
+                            <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-pink-600 to-pink-700 rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                              6
+                            </div>
+                            <div>
+                              <h4 className="font-bold text-foreground mb-1 group-hover:text-pink-700 transition-colors">Multi-Language Content</h4>
+                              <p className="text-muted-foreground">Effortlessly rewrite and translate content into multiple languages for global reach</p>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
