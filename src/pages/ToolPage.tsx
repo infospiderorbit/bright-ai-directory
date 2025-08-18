@@ -221,36 +221,55 @@ const ToolPage = () => {
 
                     <Separator />
 
-                    {/* How Can Junia AI Help You */}
-                    <div className="space-y-4">
-                      <h3 className="text-xl font-semibold text-foreground">How Can Junia AI Help You?</h3>
-                      <div className="grid gap-4">
-                        <div className="flex items-start space-x-3 p-4 rounded-lg bg-card border">
-                          <span className="font-semibold text-primary">1.</span>
-                          <div>
-                            <h4 className="font-medium text-foreground">Select Content Type</h4>
-                            <p className="text-muted-foreground text-sm mt-1">Pick from emails, blog posts, ads, or social media posts.</p>
+                    {/* How to Use Junia AI */}
+                    <div className="space-y-6">
+                      <div className="text-center">
+                        <h3 className="text-2xl font-bold gradient-primary bg-clip-text text-transparent mb-2">How to Use Junia AI?</h3>
+                        <p className="text-muted-foreground">Get started with Junia AI in 4 simple steps</p>
+                      </div>
+                      <div className="grid gap-6">
+                        <div className="relative">
+                          <div className="flex items-start space-x-4 p-6 rounded-xl bg-gradient-to-r from-purple-50 to-blue-50 border border-purple-100 hover:shadow-lg transition-all duration-300">
+                            <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                              1
+                            </div>
+                            <div className="flex-1">
+                              <h4 className="text-lg font-semibold text-foreground mb-2">Select Content Type</h4>
+                              <p className="text-muted-foreground">Pick from emails, blog posts, ads, or social media posts to match your content needs.</p>
+                            </div>
                           </div>
                         </div>
-                        <div className="flex items-start space-x-3 p-4 rounded-lg bg-card border">
-                          <span className="font-semibold text-primary">2.</span>
-                          <div>
-                            <h4 className="font-medium text-foreground">Customize Topic & Tone</h4>
-                            <p className="text-muted-foreground text-sm mt-1">Enter the subject and choose tone settings (professional, casual, persuasive, etc.).</p>
+                        <div className="relative">
+                          <div className="flex items-start space-x-4 p-6 rounded-xl bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-100 hover:shadow-lg transition-all duration-300">
+                            <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                              2
+                            </div>
+                            <div className="flex-1">
+                              <h4 className="text-lg font-semibold text-foreground mb-2">Customize Topic & Tone</h4>
+                              <p className="text-muted-foreground">Enter your subject and choose tone settings (professional, casual, persuasive, etc.) to match your brand voice.</p>
+                            </div>
                           </div>
                         </div>
-                        <div className="flex items-start space-x-3 p-4 rounded-lg bg-card border">
-                          <span className="font-semibold text-primary">3.</span>
-                          <div>
-                            <h4 className="font-medium text-foreground">Generate & Review</h4>
-                            <p className="text-muted-foreground text-sm mt-1">Use AI to generate multiple versions and review them.</p>
+                        <div className="relative">
+                          <div className="flex items-start space-x-4 p-6 rounded-xl bg-gradient-to-r from-indigo-50 to-purple-50 border border-indigo-100 hover:shadow-lg transition-all duration-300">
+                            <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                              3
+                            </div>
+                            <div className="flex-1">
+                              <h4 className="text-lg font-semibold text-foreground mb-2">Generate & Review</h4>
+                              <p className="text-muted-foreground">Let AI generate multiple high-quality versions and review them to find the perfect content.</p>
+                            </div>
                           </div>
                         </div>
-                        <div className="flex items-start space-x-3 p-4 rounded-lg bg-card border">
-                          <span className="font-semibold text-primary">4.</span>
-                          <div>
-                            <h4 className="font-medium text-foreground">Edit & Optimize</h4>
-                            <p className="text-muted-foreground text-sm mt-1">Refine with the built-in AI editor for paraphrasing, SEO research, and publishing-ready output.</p>
+                        <div className="relative">
+                          <div className="flex items-start space-x-4 p-6 rounded-xl bg-gradient-to-r from-purple-50 to-pink-50 border border-purple-100 hover:shadow-lg transition-all duration-300">
+                            <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                              4
+                            </div>
+                            <div className="flex-1">
+                              <h4 className="text-lg font-semibold text-foreground mb-2">Edit & Optimize</h4>
+                              <p className="text-muted-foreground">Refine with the built-in AI editor for paraphrasing, SEO research, and publishing-ready output.</p>
+                            </div>
                           </div>
                         </div>
                       </div>
