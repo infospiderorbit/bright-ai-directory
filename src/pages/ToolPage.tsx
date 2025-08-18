@@ -90,7 +90,7 @@ const ToolPage = () => {
     <div className="min-h-screen bg-background">
       <Header />
       
-      <main className="container mx-auto px-4 py-8">
+      <main className="container mx-auto px-4 py-8 max-w-7xl">
         {/* Breadcrumbs */}
         <Breadcrumb className="mb-6">
           <BreadcrumbList>
@@ -112,150 +112,122 @@ const ToolPage = () => {
           </BreadcrumbList>
         </Breadcrumb>
 
-        {/* Top Row - 2 Columns */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-          {/* Left Column - Tool Details */}
-          <div className="space-y-6">
-            <Card>
-              <CardHeader>
-                <div className="flex items-start justify-between">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-16 h-16 rounded-xl bg-muted flex items-center justify-center text-3xl border border-border">
-                      {toolData.icon}
-                    </div>
-                    <div>
-                      <CardTitle className="text-3xl font-bold">{toolData.name}</CardTitle>
-                      <div className="flex items-center space-x-4 mt-2">
-                        {toolData.verified && (
-                          <Badge variant="secondary">Verified</Badge>
-                        )}
-                        <Button asChild size="sm" className="gradient-primary text-white">
-                          <a href={toolData.url || `https://www.aitoolsprime.com/tool/${toolData.id}`} target="_blank" rel="noopener noreferrer">
-                            Open Site
-                            <ExternalLink className="ml-2 h-3 w-3" />
-                          </a>
-                        </Button>
+        {/* Boxed Layout Container */}
+        <div className="max-w-6xl mx-auto bg-card rounded-lg shadow-lg border border-border p-6 mb-8">
+          {/* Top Row - 2 Columns */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {/* Left Sidebar - Tool Details (65% width) */}
+            <div className="lg:col-span-2 space-y-6">
+              {/* Tool Name */}
+              <div className="flex items-center space-x-4 mb-6">
+                <div className="w-16 h-16 rounded-xl bg-muted flex items-center justify-center text-3xl border border-border">
+                  {toolData.icon}
+                </div>
+                <div>
+                  <h1 className="text-3xl font-bold text-foreground">{toolData.name}</h1>
+                  {toolData.verified && (
+                    <Badge variant="secondary" className="mt-2">Verified</Badge>
+                  )}
+                </div>
+              </div>
+
+              {/* Open Site Button */}
+              <Button asChild size="lg" className="w-full gradient-primary text-white">
+                <a href={toolData.url || `https://www.aitoolsprime.com/tool/${toolData.id}`} target="_blank" rel="noopener noreferrer">
+                  Open Site
+                  <ExternalLink className="ml-2 h-4 w-4" />
+                </a>
+              </Button>
+
+              {/* Rating Section */}
+              <div className="flex items-center space-x-6 py-4 border-y border-border">
+                <div className="flex items-center space-x-2">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-5 w-5 text-primary fill-current" />
+                  ))}
+                  <span className="text-sm text-muted-foreground ml-2">5.0</span>
+                </div>
+                <div className="text-sm text-muted-foreground">1 Reviews</div>
+                <div className="text-sm text-muted-foreground">11 Saved</div>
+              </div>
+
+              {/* Short Introduction */}
+              <div>
+                <h3 className="font-semibold text-foreground mb-2">Introduction</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  AI content creation platform for blogs, emails, ads, and SEO-friendly articles.
+                </p>
+              </div>
+
+              {/* Added Date */}
+              <div>
+                <span className="text-sm text-muted-foreground">Added on: </span>
+                <span className="text-sm font-medium text-foreground">Jun 03, 2023</span>
+              </div>
+
+              {/* Social Share Buttons */}
+              <div>
+                <h4 className="font-medium text-foreground mb-3">Share this tool</h4>
+                <div className="flex space-x-2">
+                  <Button variant="outline" size="sm" asChild>
+                    <a href={shareLinks.facebook} target="_blank" rel="noopener noreferrer">
+                      <Facebook className="h-4 w-4" />
+                    </a>
+                  </Button>
+                  <Button variant="outline" size="sm" asChild>
+                    <a href={shareLinks.linkedin} target="_blank" rel="noopener noreferrer">
+                      <Linkedin className="h-4 w-4" />
+                    </a>
+                  </Button>
+                  <Button variant="outline" size="sm" asChild>
+                    <a href={shareLinks.twitter} target="_blank" rel="noopener noreferrer">
+                      <Twitter className="h-4 w-4" />
+                    </a>
+                  </Button>
+                  <Button variant="outline" size="sm" asChild>
+                    <a href={shareLinks.whatsapp} target="_blank" rel="noopener noreferrer">
+                      <MessageCircle className="h-4 w-4" />
+                    </a>
+                  </Button>
+                  <Button variant="outline" size="sm" asChild>
+                    <a href={shareLinks.email} target="_blank" rel="noopener noreferrer">
+                      <Mail className="h-4 w-4" />
+                    </a>
+                  </Button>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Column - Snapshot/Preview (35% width) */}
+            <div className="lg:col-span-1">
+              <div className="relative group cursor-pointer">
+                <div className="aspect-[4/3] bg-muted rounded-lg border border-border overflow-hidden">
+                  <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-background to-muted">
+                    <div className="text-center space-y-2">
+                      <div className="w-12 h-12 bg-primary/20 rounded-lg mx-auto flex items-center justify-center">
+                        {toolData.icon}
                       </div>
+                      <p className="text-sm text-muted-foreground">Tool Snapshot</p>
                     </div>
                   </div>
                   
-                  <div className="flex space-x-2">
-                    <Button 
-                      variant="ghost" 
-                      size="sm"
-                      onClick={handleLike}
-                      className={likes ? "text-red-500" : ""}
-                    >
-                      <Heart className={`h-4 w-4 ${likes ? "fill-current" : ""}`} />
-                    </Button>
-                    <Button 
-                      variant="ghost" 
-                      size="sm"
-                      onClick={handleSave}
-                      className={saved ? "text-blue-500" : ""}
-                    >
-                      <Bookmark className={`h-4 w-4 ${saved ? "fill-current" : ""}`} />
+                  {/* Hover Overlay */}
+                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <Button asChild variant="secondary" size="lg">
+                      <a href={toolData.url || `https://www.aitoolsprime.com/tool/${toolData.id}`} target="_blank" rel="noopener noreferrer">
+                        Visit Website
+                        <ExternalLink className="ml-2 h-4 w-4" />
+                      </a>
                     </Button>
                   </div>
                 </div>
-              </CardHeader>
-              
-              <CardContent className="space-y-6">
-                {/* Tool Info Section */}
-                <div className="rounded-xl p-6 border border-border bg-card">
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    {/* Rating & Reviews */}
-                    <div className="text-center">
-                      <div className="flex items-center justify-center mb-2">
-                        {[...Array(5)].map((_, i) => (
-                          <Star key={i} className="h-4 w-4 text-primary" />
-                        ))}
-                      </div>
-                      <p className="text-sm text-muted-foreground">1 Review</p>
-                    </div>
-
-                    {/* Saves */}
-                    <div className="text-center">
-                      <div className="flex items-center justify-center mb-2">
-                        <Bookmark className="h-5 w-5 text-muted-foreground" />
-                      </div>
-                      <p className="font-medium text-foreground">11 Saved</p>
-                      <p className="text-sm text-muted-foreground">Bookmarks</p>
-                    </div>
-
-                    {/* Added Date */}
-                    <div className="text-center">
-                      <p className="font-medium text-foreground mb-1">Added on</p>
-                      <p className="text-sm text-muted-foreground">Jun 03, 2023</p>
-                    </div>
-                  </div>
-
-                  {/* Introduction */}
-                  <div className="mt-6 pt-6 border-t border-border">
-                    <h4 className="font-medium text-foreground mb-1">Introduction</h4>
-                    <p className="text-muted-foreground leading-relaxed">
-                      AI content creation platform for blogs, emails, ads, and SEO-friendly articles.
-                    </p>
-                  </div>
-
-                  {/* Social Share */}
-                  <div className="mt-6 pt-6 border-t border-border">
-                    <h4 className="font-medium text-foreground mb-3">Share this tool</h4>
-                    <div className="flex space-x-2">
-                      <Button variant="outline" size="sm" asChild>
-                        <a href={shareLinks.facebook} target="_blank" rel="noopener noreferrer">
-                          <Facebook className="h-4 w-4" />
-                        </a>
-                      </Button>
-                      <Button variant="outline" size="sm" asChild>
-                        <a href={shareLinks.linkedin} target="_blank" rel="noopener noreferrer">
-                          <Linkedin className="h-4 w-4" />
-                        </a>
-                      </Button>
-                      <Button variant="outline" size="sm" asChild>
-                        <a href={shareLinks.twitter} target="_blank" rel="noopener noreferrer">
-                          <Twitter className="h-4 w-4" />
-                        </a>
-                      </Button>
-                      <Button variant="outline" size="sm" asChild>
-                        <a href={shareLinks.whatsapp} target="_blank" rel="noopener noreferrer">
-                          <MessageCircle className="h-4 w-4" />
-                        </a>
-                      </Button>
-                      <Button variant="outline" size="sm" asChild>
-                        <a href={shareLinks.email} target="_blank" rel="noopener noreferrer">
-                          <Mail className="h-4 w-4" />
-                        </a>
-                      </Button>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Right Column - Snapshot/Preview */}
-          <div className="space-y-6">
-            <Card>
-              <CardHeader>
-                <CardTitle>Preview</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="aspect-video bg-muted rounded-lg border border-border flex items-center justify-center">
-                  <div className="text-center space-y-2">
-                    <div className="w-12 h-12 bg-primary/20 rounded-lg mx-auto flex items-center justify-center">
-                      {toolData.icon}
-                    </div>
-                    <p className="text-sm text-muted-foreground">Tool Preview</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           </div>
         </div>
 
-        {/* Product Information Section - Full Width Center Aligned */}
-        <div className="max-w-4xl mx-auto">
+        {/* Product Information Section - Full Width Boxed Container */}
+        <div className="max-w-6xl mx-auto bg-card rounded-lg shadow-lg border border-border p-8">
           {/* Junia AI Product Information */}
           {toolData.id === 'junia-ai' ? (
             <div className="space-y-8">
