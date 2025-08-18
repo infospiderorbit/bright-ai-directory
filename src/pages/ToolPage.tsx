@@ -119,7 +119,7 @@ const ToolPage = () => {
               <CardHeader>
                 <div className="flex items-start justify-between">
                   <div className="flex items-center space-x-4">
-                    <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-purple-100 to-blue-100 flex items-center justify-center text-3xl">
+                    <div className="w-16 h-16 rounded-xl bg-muted flex items-center justify-center text-3xl border border-border">
                       {toolData.icon}
                     </div>
                     <div className="flex items-center space-x-4">
@@ -164,49 +164,37 @@ const ToolPage = () => {
               <CardContent className="space-y-6">
 
                 {/* Tool Info Section */}
-                <div className="bg-gradient-to-r from-purple-50/50 to-blue-50/50 rounded-xl p-6 border border-purple-100/50">
+                <div className="rounded-xl p-6 border border-border bg-card">
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {/* Rating & Reviews */}
                     <div className="text-center">
                       <div className="flex items-center justify-center mb-2">
-                        <div className="bg-gradient-to-r from-orange-400 to-orange-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg shadow-lg">
-                          11
-                        </div>
-                      </div>
-                      <div className="flex items-center justify-center mb-1">
                         {[...Array(5)].map((_, i) => (
-                          <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                          <Star key={i} className="h-4 w-4 text-primary" />
                         ))}
                       </div>
-                      <p className="text-sm text-muted-foreground">5 Reviews</p>
+                      <p className="text-sm text-muted-foreground">1 Review</p>
                     </div>
 
                     {/* Saves */}
                     <div className="text-center">
                       <div className="flex items-center justify-center mb-2">
-                        <div className="bg-gradient-to-r from-blue-400 to-blue-500 text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg">
-                          <Bookmark className="h-6 w-6" />
-                        </div>
+                        <Bookmark className="h-5 w-5 text-muted-foreground" />
                       </div>
-                      <p className="font-semibold text-foreground">11 Saved</p>
+                      <p className="font-medium text-foreground">11 Saved</p>
                       <p className="text-sm text-muted-foreground">Bookmarks</p>
                     </div>
 
                     {/* Added Date */}
                     <div className="text-center">
-                      <div className="flex items-center justify-center mb-2">
-                        <div className="bg-gradient-to-r from-green-400 to-green-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-sm shadow-lg">
-                          Jun
-                        </div>
-                      </div>
-                      <p className="font-semibold text-foreground">Added on</p>
+                      <p className="font-medium text-foreground mb-1">Added on</p>
                       <p className="text-sm text-muted-foreground">Jun 03, 2023</p>
                     </div>
                   </div>
 
                   {/* Introduction */}
-                  <div className="mt-6 pt-6 border-t border-purple-200/50">
-                    <h4 className="font-semibold text-foreground mb-2">Introduction:</h4>
+                  <div className="mt-6 pt-6 border-t border-border">
+                    <h4 className="font-medium text-foreground mb-1">Introduction</h4>
                     <p className="text-muted-foreground leading-relaxed">
                       AI content creation platform for blogs, emails, ads, and SEO-friendly articles.
                     </p>
@@ -219,9 +207,9 @@ const ToolPage = () => {
                 {toolData.id === 'junia-ai' ? (
                   <div className="space-y-8">
                     <div>
-                      <h2 className="text-2xl font-bold gradient-primary bg-clip-text text-transparent mb-6">
-                        Junia AI Product Information
-                      </h2>
+                        <h2 className="text-2xl font-bold text-foreground mb-6">
+                          Junia AI Product Information
+                        </h2>
                     </div>
                     
                     {/* What is Junia AI */}
@@ -259,52 +247,36 @@ const ToolPage = () => {
                     {/* How to Use Junia AI */}
                     <div className="space-y-6">
                       <div className="text-center">
-                        <h3 className="text-2xl font-bold gradient-primary bg-clip-text text-transparent mb-2">How to Use Junia AI?</h3>
+                        <h3 className="text-2xl font-bold text-foreground mb-2">How to Use Junia AI?</h3>
                         <p className="text-muted-foreground">Get started with Junia AI in 4 simple steps</p>
                       </div>
-                      <div className="grid gap-6">
-                        <div className="relative">
-                          <div className="flex items-start space-x-4 p-6 rounded-xl bg-gradient-to-r from-purple-50 to-blue-50 border border-purple-100 hover:shadow-lg transition-all duration-300">
-                            <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
-                              1
-                            </div>
-                            <div className="flex-1">
-                              <h4 className="text-lg font-semibold text-foreground mb-2">Select Content Type</h4>
-                              <p className="text-muted-foreground">Pick from emails, blog posts, ads, or social media posts to match your content needs.</p>
-                            </div>
+                      <div className="grid gap-4">
+                        <div className="flex items-start space-x-4 p-4 rounded-lg border border-border bg-card">
+                          <div className="flex-shrink-0 w-8 h-8 rounded-full border border-border text-xs font-medium text-muted-foreground flex items-center justify-center">1</div>
+                          <div className="flex-1">
+                            <h4 className="text-base font-semibold text-foreground mb-1">Select Content Type</h4>
+                            <p className="text-muted-foreground">Pick from emails, blog posts, ads, or social media posts to match your content needs.</p>
                           </div>
                         </div>
-                        <div className="relative">
-                          <div className="flex items-start space-x-4 p-6 rounded-xl bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-100 hover:shadow-lg transition-all duration-300">
-                            <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
-                              2
-                            </div>
-                            <div className="flex-1">
-                              <h4 className="text-lg font-semibold text-foreground mb-2">Customize Topic & Tone</h4>
-                              <p className="text-muted-foreground">Enter your subject and choose tone settings (professional, casual, persuasive, etc.) to match your brand voice.</p>
-                            </div>
+                        <div className="flex items-start space-x-4 p-4 rounded-lg border border-border bg-card">
+                          <div className="flex-shrink-0 w-8 h-8 rounded-full border border-border text-xs font-medium text-muted-foreground flex items-center justify-center">2</div>
+                          <div className="flex-1">
+                            <h4 className="text-base font-semibold text-foreground mb-1">Customize Topic & Tone</h4>
+                            <p className="text-muted-foreground">Enter your subject and choose tone settings (professional, casual, persuasive, etc.) to match your brand voice.</p>
                           </div>
                         </div>
-                        <div className="relative">
-                          <div className="flex items-start space-x-4 p-6 rounded-xl bg-gradient-to-r from-indigo-50 to-purple-50 border border-indigo-100 hover:shadow-lg transition-all duration-300">
-                            <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
-                              3
-                            </div>
-                            <div className="flex-1">
-                              <h4 className="text-lg font-semibold text-foreground mb-2">Generate & Review</h4>
-                              <p className="text-muted-foreground">Let AI generate multiple high-quality versions and review them to find the perfect content.</p>
-                            </div>
+                        <div className="flex items-start space-x-4 p-4 rounded-lg border border-border bg-card">
+                          <div className="flex-shrink-0 w-8 h-8 rounded-full border border-border text-xs font-medium text-muted-foreground flex items-center justify-center">3</div>
+                          <div className="flex-1">
+                            <h4 className="text-base font-semibold text-foreground mb-1">Generate & Review</h4>
+                            <p className="text-muted-foreground">Let AI generate multiple high-quality versions and review them to find the perfect content.</p>
                           </div>
                         </div>
-                        <div className="relative">
-                          <div className="flex items-start space-x-4 p-6 rounded-xl bg-gradient-to-r from-purple-50 to-pink-50 border border-purple-100 hover:shadow-lg transition-all duration-300">
-                            <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
-                              4
-                            </div>
-                            <div className="flex-1">
-                              <h4 className="text-lg font-semibold text-foreground mb-2">Edit & Optimize</h4>
-                              <p className="text-muted-foreground">Refine with the built-in AI editor for paraphrasing, SEO research, and publishing-ready output.</p>
-                            </div>
+                        <div className="flex items-start space-x-4 p-4 rounded-lg border border-border bg-card">
+                          <div className="flex-shrink-0 w-8 h-8 rounded-full border border-border text-xs font-medium text-muted-foreground flex items-center justify-center">4</div>
+                          <div className="flex-1">
+                            <h4 className="text-base font-semibold text-foreground mb-1">Edit & Optimize</h4>
+                            <p className="text-muted-foreground">Refine with the built-in AI editor for paraphrasing, SEO research, and publishing-ready output.</p>
                           </div>
                         </div>
                       </div>
@@ -315,62 +287,52 @@ const ToolPage = () => {
                     {/* Core Features */}
                     <div className="space-y-6">
                       <div className="text-center">
-                        <h3 className="text-2xl font-bold gradient-primary bg-clip-text text-transparent mb-2">Junia AI's Core Features in Detail</h3>
+                        <h3 className="text-2xl font-bold text-foreground mb-2">Junia AI's Core Features in Detail</h3>
                         <p className="text-muted-foreground">Powerful features from JuniaAI.net</p>
                       </div>
-                      <div className="grid gap-4">
-                        <div className="group p-4 rounded-xl bg-gradient-to-r from-purple-50/50 to-blue-50/50 border border-purple-100/50 hover:shadow-lg hover:border-purple-200 transition-all duration-300">
+                      <div className="grid gap-3">
+                        <div className="p-3 rounded-lg border border-border bg-card">
                           <div className="flex items-center space-x-3">
-                            <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-blue-500 rounded-lg flex items-center justify-center shadow-md">
-                              <span className="text-white text-sm">🖼️</span>
-                            </div>
+                            <div className="w-2 h-2 rounded-full bg-primary/60" />
                             <div>
-                              <h4 className="font-semibold text-foreground group-hover:text-primary transition-colors">AI-Generated Images</h4>
-                              <p className="text-sm text-muted-foreground">Create stunning visuals for blogs & posts automatically</p>
+                              <h4 className="font-medium text-foreground">AI-Generated Images</h4>
+                              <p className="text-sm text-muted-foreground">Create visuals for blogs & posts automatically</p>
                             </div>
                           </div>
                         </div>
-                        <div className="group p-4 rounded-xl bg-gradient-to-r from-blue-50/50 to-indigo-50/50 border border-blue-100/50 hover:shadow-lg hover:border-blue-200 transition-all duration-300">
+                        <div className="p-3 rounded-lg border border-border bg-card">
                           <div className="flex items-center space-x-3">
-                            <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-lg flex items-center justify-center shadow-md">
-                              <span className="text-white text-sm">🔍</span>
-                            </div>
+                            <div className="w-2 h-2 rounded-full bg-primary/60" />
                             <div>
-                              <h4 className="font-semibold text-foreground group-hover:text-primary transition-colors">SEO Research & Optimization</h4>
-                              <p className="text-sm text-muted-foreground">Built-in tools to boost your content's search rankings</p>
+                              <h4 className="font-medium text-foreground">SEO Research & Optimization</h4>
+                              <p className="text-sm text-muted-foreground">Built-in tools to boost search rankings</p>
                             </div>
                           </div>
                         </div>
-                        <div className="group p-4 rounded-xl bg-gradient-to-r from-indigo-50/50 to-purple-50/50 border border-indigo-100/50 hover:shadow-lg hover:border-indigo-200 transition-all duration-300">
+                        <div className="p-3 rounded-lg border border-border bg-card">
                           <div className="flex items-center space-x-3">
-                            <div className="w-8 h-8 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-lg flex items-center justify-center shadow-md">
-                              <span className="text-white text-sm">✏️</span>
-                            </div>
+                            <div className="w-2 h-2 rounded-full bg-primary/60" />
                             <div>
-                              <h4 className="font-semibold text-foreground group-hover:text-primary transition-colors">Smart AI Editor</h4>
-                              <p className="text-sm text-muted-foreground">Advanced summarization, paraphrasing & translation features</p>
+                              <h4 className="font-medium text-foreground">Smart AI Editor</h4>
+                              <p className="text-sm text-muted-foreground">Summarization, paraphrasing & translation</p>
                             </div>
                           </div>
                         </div>
-                        <div className="group p-4 rounded-xl bg-gradient-to-r from-purple-50/50 to-pink-50/50 border border-purple-100/50 hover:shadow-lg hover:border-purple-200 transition-all duration-300">
+                        <div className="p-3 rounded-lg border border-border bg-card">
                           <div className="flex items-center space-x-3">
-                            <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center shadow-md">
-                              <span className="text-white text-sm">🎯</span>
-                            </div>
+                            <div className="w-2 h-2 rounded-full bg-primary/60" />
                             <div>
-                              <h4 className="font-semibold text-foreground group-hover:text-primary transition-colors">Brand Voice Personalization</h4>
-                              <p className="text-sm text-muted-foreground">Maintain consistent brand identity across all content</p>
+                              <h4 className="font-medium text-foreground">Brand Voice Personalization</h4>
+                              <p className="text-sm text-muted-foreground">Consistency across all content</p>
                             </div>
                           </div>
                         </div>
-                        <div className="group p-4 rounded-xl bg-gradient-to-r from-green-50/50 to-teal-50/50 border border-green-100/50 hover:shadow-lg hover:border-green-200 transition-all duration-300">
+                        <div className="p-3 rounded-lg border border-border bg-card">
                           <div className="flex items-center space-x-3">
-                            <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-teal-500 rounded-lg flex items-center justify-center shadow-md">
-                              <span className="text-white text-sm">🤖</span>
-                            </div>
+                            <div className="w-2 h-2 rounded-full bg-primary/60" />
                             <div>
-                              <h4 className="font-semibold text-foreground group-hover:text-primary transition-colors">AI Writing Chatbot</h4>
-                              <p className="text-sm text-muted-foreground">Get instant support and guidance for your writing projects</p>
+                              <h4 className="font-medium text-foreground">AI Writing Chatbot</h4>
+                              <p className="text-sm text-muted-foreground">Instant writing support & guidance</p>
                             </div>
                           </div>
                         </div>
@@ -382,73 +344,61 @@ const ToolPage = () => {
                     {/* Use Cases */}
                     <div className="space-y-6">
                       <div className="text-center">
-                        <h3 className="text-2xl font-bold gradient-primary bg-clip-text text-transparent mb-2">Junia AI's Use Cases</h3>
+                        <h3 className="text-2xl font-bold text-foreground mb-2">Junia AI's Use Cases</h3>
                         <p className="text-muted-foreground">Real-world applications to transform your content strategy</p>
                       </div>
-                      <div className="grid gap-4">
-                        <div className="group relative overflow-hidden p-5 rounded-xl bg-gradient-to-br from-purple-50 to-purple-100 border border-purple-200 hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
-                          <div className="flex items-start space-x-4">
-                            <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-purple-600 to-purple-700 rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-lg">
-                              1
-                            </div>
+                      <div className="grid gap-3">
+                        <div className="p-4 rounded-lg border border-border bg-card">
+                          <div className="flex items-start space-x-3">
+                            <div className="flex-shrink-0 w-8 h-8 rounded-full border border-border text-xs font-medium text-muted-foreground flex items-center justify-center">1</div>
                             <div>
-                              <h4 className="font-bold text-foreground mb-1 group-hover:text-purple-700 transition-colors">SEO Blog Post Generation</h4>
-                              <p className="text-muted-foreground">Create comprehensive, SEO-friendly blog posts (3000+ words) that rank higher in search results</p>
+                              <h4 className="font-semibold text-foreground mb-1">SEO Blog Post Generation</h4>
+                              <p className="text-muted-foreground">Create comprehensive, SEO-friendly blog posts (3000+ words)</p>
                             </div>
                           </div>
                         </div>
-                        <div className="group relative overflow-hidden p-5 rounded-xl bg-gradient-to-br from-blue-50 to-blue-100 border border-blue-200 hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
-                          <div className="flex items-start space-x-4">
-                            <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-lg">
-                              2
-                            </div>
+                        <div className="p-4 rounded-lg border border-border bg-card">
+                          <div className="flex items-start space-x-3">
+                            <div className="flex-shrink-0 w-8 h-8 rounded-full border border-border text-xs font-medium text-muted-foreground flex items-center justify-center">2</div>
                             <div>
-                              <h4 className="font-bold text-foreground mb-1 group-hover:text-blue-700 transition-colors">Persuasive Ad Copy Creation</h4>
-                              <p className="text-muted-foreground">Craft compelling advertisement copy that converts viewers into customers for your campaigns</p>
+                              <h4 className="font-semibold text-foreground mb-1">Persuasive Ad Copy Creation</h4>
+                              <p className="text-muted-foreground">Craft compelling advertisement copy for your campaigns</p>
                             </div>
                           </div>
                         </div>
-                        <div className="group relative overflow-hidden p-5 rounded-xl bg-gradient-to-br from-indigo-50 to-indigo-100 border border-indigo-200 hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
-                          <div className="flex items-start space-x-4">
-                            <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-indigo-600 to-indigo-700 rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-lg">
-                              3
-                            </div>
+                        <div className="p-4 rounded-lg border border-border bg-card">
+                          <div className="flex items-start space-x-3">
+                            <div className="flex-shrink-0 w-8 h-8 rounded-full border border-border text-xs font-medium text-muted-foreground flex items-center justify-center">3</div>
                             <div>
-                              <h4 className="font-bold text-foreground mb-1 group-hover:text-indigo-700 transition-colors">Personalized Sales Emails</h4>
-                              <p className="text-muted-foreground">Generate tailored sales emails that resonate with your audience and drive engagement</p>
+                              <h4 className="font-semibold text-foreground mb-1">Personalized Sales Emails</h4>
+                              <p className="text-muted-foreground">Generate tailored emails that resonate and drive engagement</p>
                             </div>
                           </div>
                         </div>
-                        <div className="group relative overflow-hidden p-5 rounded-xl bg-gradient-to-br from-green-50 to-green-100 border border-green-200 hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
-                          <div className="flex items-start space-x-4">
-                            <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-green-600 to-green-700 rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-lg">
-                              4
-                            </div>
+                        <div className="p-4 rounded-lg border border-border bg-card">
+                          <div className="flex items-start space-x-3">
+                            <div className="flex-shrink-0 w-8 h-8 rounded-full border border-border text-xs font-medium text-muted-foreground flex items-center justify-center">4</div>
                             <div>
-                              <h4 className="font-bold text-foreground mb-1 group-hover:text-green-700 transition-colors">Document Summarization</h4>
-                              <p className="text-muted-foreground">Quickly summarize long documents and files into digestible, actionable insights</p>
+                              <h4 className="font-semibold text-foreground mb-1">Document Summarization</h4>
+                              <p className="text-muted-foreground">Quickly summarize long documents into actionable insights</p>
                             </div>
                           </div>
                         </div>
-                        <div className="group relative overflow-hidden p-5 rounded-xl bg-gradient-to-br from-orange-50 to-orange-100 border border-orange-200 hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
-                          <div className="flex items-start space-x-4">
-                            <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-orange-600 to-orange-700 rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-lg">
-                              5
-                            </div>
+                        <div className="p-4 rounded-lg border border-border bg-card">
+                          <div className="flex items-start space-x-3">
+                            <div className="flex-shrink-0 w-8 h-8 rounded-full border border-border text-xs font-medium text-muted-foreground flex items-center justify-center">5</div>
                             <div>
-                              <h4 className="font-bold text-foreground mb-1 group-hover:text-orange-700 transition-colors">AI Image Generation</h4>
-                              <p className="text-muted-foreground">Create stunning, relevant images for articles and content that enhance visual storytelling</p>
+                              <h4 className="font-semibold text-foreground mb-1">AI Image Generation</h4>
+                              <p className="text-muted-foreground">Create relevant images for articles and content</p>
                             </div>
                           </div>
                         </div>
-                        <div className="group relative overflow-hidden p-5 rounded-xl bg-gradient-to-br from-pink-50 to-pink-100 border border-pink-200 hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
-                          <div className="flex items-start space-x-4">
-                            <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-pink-600 to-pink-700 rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-lg">
-                              6
-                            </div>
+                        <div className="p-4 rounded-lg border border-border bg-card">
+                          <div className="flex items-start space-x-3">
+                            <div className="flex-shrink-0 w-8 h-8 rounded-full border border-border text-xs font-medium text-muted-foreground flex items-center justify-center">6</div>
                             <div>
-                              <h4 className="font-bold text-foreground mb-1 group-hover:text-pink-700 transition-colors">Multi-Language Content</h4>
-                              <p className="text-muted-foreground">Effortlessly rewrite and translate content into multiple languages for global reach</p>
+                              <h4 className="font-semibold text-foreground mb-1">Multi-Language Content</h4>
+                              <p className="text-muted-foreground">Rewrite and translate content into multiple languages</p>
                             </div>
                           </div>
                         </div>
@@ -482,7 +432,6 @@ const ToolPage = () => {
                       variant="outline" 
                       size="sm" 
                       asChild
-                      className="text-blue-600 hover:bg-blue-50"
                     >
                       <a href={shareLinks.facebook} target="_blank" rel="noopener noreferrer">
                         <Facebook className="h-4 w-4" />
@@ -492,7 +441,6 @@ const ToolPage = () => {
                       variant="outline" 
                       size="sm" 
                       asChild
-                      className="text-blue-700 hover:bg-blue-50"
                     >
                       <a href={shareLinks.linkedin} target="_blank" rel="noopener noreferrer">
                         <Linkedin className="h-4 w-4" />
@@ -502,7 +450,6 @@ const ToolPage = () => {
                       variant="outline" 
                       size="sm" 
                       asChild
-                      className="text-sky-500 hover:bg-sky-50"
                     >
                       <a href={shareLinks.twitter} target="_blank" rel="noopener noreferrer">
                         <Twitter className="h-4 w-4" />
@@ -512,7 +459,6 @@ const ToolPage = () => {
                       variant="outline" 
                       size="sm" 
                       asChild
-                      className="text-green-600 hover:bg-green-50"
                     >
                       <a href={shareLinks.whatsapp} target="_blank" rel="noopener noreferrer">
                         <MessageCircle className="h-4 w-4" />
@@ -522,7 +468,6 @@ const ToolPage = () => {
                       variant="outline" 
                       size="sm" 
                       asChild
-                      className="text-gray-600 hover:bg-gray-50"
                     >
                       <a href={shareLinks.email}>
                         <Mail className="h-4 w-4" />
@@ -542,7 +487,7 @@ const ToolPage = () => {
               </CardHeader>
               <CardContent>
                 <div className="relative group cursor-pointer">
-                  <div className="aspect-video bg-gradient-to-br from-purple-100 to-blue-100 rounded-lg flex items-center justify-center">
+                  <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
                     <div className="text-center">
                       <div className="text-4xl mb-2">{toolData.icon}</div>
                       <p className="text-sm text-muted-foreground">Screenshot Preview</p>
