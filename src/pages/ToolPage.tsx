@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, ExternalLink, Star, Heart, Bookmark, Facebook, Linkedin, Twitter, MessageCircle, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -10,11 +10,115 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { toolsData } from "@/data/toolsData";
 import { categoriesData } from "@/data/categoriesData";
+import { toolsProductInfoData } from "@/data/toolsProductInfo";
+
+const ProductInformation = ({ toolData }: { toolData: any }) => {
+  const productInfo = toolsProductInfoData[toolData.id] || toolsProductInfoData.default;
+
+  return (
+    <div className="space-y-8">
+      <div>
+        <h2 className="text-2xl font-bold text-foreground mb-6">
+          {toolData.name} Product Information
+        </h2>
+      </div>
+      
+      {/* What is */}
+      <div className="space-y-4">
+        <h3 className="text-xl font-semibold text-foreground">What is {toolData.name}?</h3>
+        <p className="text-muted-foreground leading-relaxed">
+          {productInfo.whatIs}
+        </p>
+        
+        {productInfo.features && (
+          <div className="mt-4">
+            <h4 className="font-medium text-foreground mb-3">This product stands out with features such as:</h4>
+            <ul className="space-y-2 text-muted-foreground">
+              {productInfo.features.map((feature: string, index: number) => (
+                <li key={index} className="flex items-start">
+                  <span className="text-primary mr-2">•</span>
+                  {feature}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+
+      <Separator />
+
+      {/* How to Use */}
+      <div className="space-y-6">
+        <div className="text-center">
+          <h3 className="text-2xl font-bold text-foreground mb-2">{productInfo.howToUse.title}</h3>
+          <p className="text-muted-foreground">{productInfo.howToUse.description}</p>
+        </div>
+        <div className="grid gap-4">
+          {productInfo.howToUse.steps.map((step: any, index: number) => (
+            <div key={index} className="flex items-start space-x-4 p-4 rounded-lg border border-border bg-card">
+              <div className="flex-shrink-0 w-8 h-8 rounded-full border border-border text-xs font-medium text-muted-foreground flex items-center justify-center">
+                {index + 1}
+              </div>
+              <div className="flex-1">
+                <h4 className="text-base font-semibold text-foreground mb-1">{step.title}</h4>
+                <p className="text-muted-foreground">{step.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <Separator />
+
+      {/* Core Features */}
+      <div className="space-y-6">
+        <div className="text-center">
+          <h3 className="text-2xl font-bold text-foreground mb-2">{toolData.name}'s Core Features in Detail</h3>
+          <p className="text-muted-foreground">Powerful features from {toolData.name}</p>
+        </div>
+        <div className="grid gap-3">
+          {productInfo.coreFeatures.map((feature: any, index: number) => (
+            <div key={index} className="p-3 rounded-lg border border-border bg-card">
+              <div className="flex items-center space-x-3">
+                <div className="w-2 h-2 rounded-full bg-primary/60" />
+                <div>
+                  <h4 className="font-medium text-foreground">{feature.title}</h4>
+                  <p className="text-sm text-muted-foreground">{feature.description}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <Separator />
+
+      {/* Use Cases */}
+      <div className="space-y-6">
+        <div className="text-center">
+          <h3 className="text-2xl font-bold text-foreground mb-2">{toolData.name} Use Cases</h3>
+          <p className="text-muted-foreground">Discover how {toolData.name} can benefit different users</p>
+        </div>
+        <div className="grid gap-4 md:grid-cols-2">
+          {productInfo.useCases.map((useCase: any, index: number) => (
+            <div key={index} className="p-4 rounded-lg border border-border bg-card">
+              <h4 className="font-semibold text-foreground mb-2">{useCase.title}</h4>
+              <p className="text-sm text-muted-foreground">{useCase.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const ToolPage = () => {
   const { category, subcategory, tool } = useParams();
   const [saved, setSaved] = useState(false);
   const [likes, setLikes] = useState(false);
+  const [currentRating, setCurrentRating] = useState(0);
+  const [reviewsCount, setReviewsCount] = useState(0);
+  const [savedCount, setSavedCount] = useState(0);
 
   // Debug logging
   console.log('ToolPage params:', { category, subcategory, tool });
@@ -72,8 +176,26 @@ const ToolPage = () => {
     );
   }
 
-  const handleSave = () => setSaved(!saved);
+  // Initialize states with tool data
+  useEffect(() => {
+    if (toolData) {
+      setCurrentRating(toolData.rating || 4.5);
+      setReviewsCount(toolData.reviewsCount || 0);
+      setSavedCount(toolData.savedCount || Math.floor(Math.random() * 100) + 1);
+    }
+  }, [toolData]);
+
+  const handleSave = () => {
+    setSaved(!saved);
+    setSavedCount(prev => saved ? prev - 1 : prev + 1);
+  };
+  
   const handleLike = () => setLikes(!likes);
+
+  const handleRating = (rating: number) => {
+    setCurrentRating(rating);
+    // Here you could add API call to save rating
+  };
 
   const shareUrl = `https://www.aitoolsprime.com/${toolData.id}`;
   const shareText = `Check out ${toolData.name} - ${toolData.description}`;
@@ -143,26 +265,50 @@ const ToolPage = () => {
               <div className="flex items-center space-x-6 py-4 border-y border-border">
                 <div className="flex items-center space-x-2">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 text-primary fill-current" />
+                    <Star 
+                      key={i} 
+                      className={`h-5 w-5 cursor-pointer transition-colors ${
+                        i < Math.floor(currentRating) 
+                          ? 'text-primary fill-current' 
+                          : 'text-muted-foreground'
+                      }`}
+                      onClick={() => handleRating(i + 1)}
+                    />
                   ))}
-                  <span className="text-sm text-muted-foreground ml-2">5.0</span>
+                  <span className="text-sm text-muted-foreground ml-2">{currentRating.toFixed(1)}</span>
                 </div>
-                <div className="text-sm text-muted-foreground">1 Reviews</div>
-                <div className="text-sm text-muted-foreground">11 Saved</div>
+                <div className="text-sm text-muted-foreground">{reviewsCount} Reviews</div>
+                <div className="flex items-center space-x-2">
+                  <button
+                    onClick={handleSave}
+                    className={`flex items-center space-x-1 text-sm transition-colors ${
+                      saved ? 'text-primary' : 'text-muted-foreground hover:text-primary'
+                    }`}
+                  >
+                    <Bookmark className={`h-4 w-4 ${saved ? 'fill-current' : ''}`} />
+                    <span>{savedCount} Saved</span>
+                  </button>
+                </div>
               </div>
 
               {/* Short Introduction */}
               <div>
                 <h3 className="font-semibold text-foreground mb-2">Introduction</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  AI content creation platform for blogs, emails, ads, and SEO-friendly articles.
+                  {toolData.description}
                 </p>
               </div>
 
               {/* Added Date */}
               <div>
                 <span className="text-sm text-muted-foreground">Added on: </span>
-                <span className="text-sm font-medium text-foreground">Jun 03, 2023</span>
+                <span className="text-sm font-medium text-foreground">
+                  {toolData.addedDate ? new Date(toolData.addedDate).toLocaleDateString('en-US', { 
+                    year: 'numeric', 
+                    month: 'short', 
+                    day: '2-digit' 
+                  }) : 'Jun 03, 2023'}
+                </span>
               </div>
 
               {/* Social Share Buttons */}
@@ -228,214 +374,7 @@ const ToolPage = () => {
 
         {/* Product Information Section - Full Width Boxed Container */}
         <div className="max-w-6xl mx-auto bg-card rounded-lg shadow-lg border border-border p-8">
-          {/* Junia AI Product Information */}
-          {toolData.id === 'junia-ai' ? (
-            <div className="space-y-8">
-              <div>
-                <h2 className="text-2xl font-bold text-foreground mb-6">
-                  Junia AI Product Information
-                </h2>
-              </div>
-              
-              {/* What is Junia AI */}
-              <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-foreground">What is Junia AI?</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Junia AI is an AI-powered content creation platform that enables users to quickly produce high-quality, original, SEO-optimized content in minutes. From blogs and emails to ad copy and social posts, Junia AI makes producing engaging copy easier with built-in AI image generation, SEO research tools, and a smart editor with summarization, paraphrasing, translation, and citation options.
-                </p>
-                
-                <div className="mt-4">
-                  <h4 className="font-medium text-foreground mb-3">This product stands out with features such as:</h4>
-                  <ul className="space-y-2 text-muted-foreground">
-                    <li className="flex items-start">
-                      <span className="text-primary mr-2">•</span>
-                      Conversational dialogue generation
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-primary mr-2">•</span>
-                      Content Generation in Short Form (SCFG)
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-primary mr-2">•</span>
-                      Long-form article creation (3000+ words)
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-primary mr-2">•</span>
-                      Customized AI Brand Voice to mirror writing style and maintain brand consistency
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <Separator />
-
-              {/* How to Use Junia AI */}
-              <div className="space-y-6">
-                <div className="text-center">
-                  <h3 className="text-2xl font-bold text-foreground mb-2">How to Use Junia AI?</h3>
-                  <p className="text-muted-foreground">Get started with Junia AI in 4 simple steps</p>
-                </div>
-                <div className="grid gap-4">
-                  <div className="flex items-start space-x-4 p-4 rounded-lg border border-border bg-card">
-                    <div className="flex-shrink-0 w-8 h-8 rounded-full border border-border text-xs font-medium text-muted-foreground flex items-center justify-center">1</div>
-                    <div className="flex-1">
-                      <h4 className="text-base font-semibold text-foreground mb-1">Select Content Type</h4>
-                      <p className="text-muted-foreground">Pick from emails, blog posts, ads, or social media posts to match your content needs.</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-4 p-4 rounded-lg border border-border bg-card">
-                    <div className="flex-shrink-0 w-8 h-8 rounded-full border border-border text-xs font-medium text-muted-foreground flex items-center justify-center">2</div>
-                    <div className="flex-1">
-                      <h4 className="text-base font-semibold text-foreground mb-1">Customize Topic & Tone</h4>
-                      <p className="text-muted-foreground">Enter your subject and choose tone settings (professional, casual, persuasive, etc.) to match your brand voice.</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-4 p-4 rounded-lg border border-border bg-card">
-                    <div className="flex-shrink-0 w-8 h-8 rounded-full border border-border text-xs font-medium text-muted-foreground flex items-center justify-center">3</div>
-                    <div className="flex-1">
-                      <h4 className="text-base font-semibold text-foreground mb-1">Generate & Review</h4>
-                      <p className="text-muted-foreground">Let AI generate multiple high-quality versions and review them to find the perfect content.</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-4 p-4 rounded-lg border border-border bg-card">
-                    <div className="flex-shrink-0 w-8 h-8 rounded-full border border-border text-xs font-medium text-muted-foreground flex items-center justify-center">4</div>
-                    <div className="flex-1">
-                      <h4 className="text-base font-semibold text-foreground mb-1">Edit & Optimize</h4>
-                      <p className="text-muted-foreground">Refine with the built-in AI editor for paraphrasing, SEO research, and publishing-ready output.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <Separator />
-
-              {/* Core Features */}
-              <div className="space-y-6">
-                <div className="text-center">
-                  <h3 className="text-2xl font-bold text-foreground mb-2">Junia AI's Core Features in Detail</h3>
-                  <p className="text-muted-foreground">Powerful features from JuniaAI.net</p>
-                </div>
-                <div className="grid gap-3">
-                  <div className="p-3 rounded-lg border border-border bg-card">
-                    <div className="flex items-center space-x-3">
-                      <div className="w-2 h-2 rounded-full bg-primary/60" />
-                      <div>
-                        <h4 className="font-medium text-foreground">AI-Generated Images</h4>
-                        <p className="text-sm text-muted-foreground">Create visuals for blogs & posts automatically</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-3 rounded-lg border border-border bg-card">
-                    <div className="flex items-center space-x-3">
-                      <div className="w-2 h-2 rounded-full bg-primary/60" />
-                      <div>
-                        <h4 className="font-medium text-foreground">SEO Research & Optimization</h4>
-                        <p className="text-sm text-muted-foreground">Built-in tools to boost search rankings</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-3 rounded-lg border border-border bg-card">
-                    <div className="flex items-center space-x-3">
-                      <div className="w-2 h-2 rounded-full bg-primary/60" />
-                      <div>
-                        <h4 className="font-medium text-foreground">Smart AI Editor</h4>
-                        <p className="text-sm text-muted-foreground">Summarization, paraphrasing & translation</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-3 rounded-lg border border-border bg-card">
-                    <div className="flex items-center space-x-3">
-                      <div className="w-2 h-2 rounded-full bg-primary/60" />
-                      <div>
-                        <h4 className="font-medium text-foreground">Brand Voice Personalization</h4>
-                        <p className="text-sm text-muted-foreground">Consistency across all content</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-3 rounded-lg border border-border bg-card">
-                    <div className="flex items-center space-x-3">
-                      <div className="w-2 h-2 rounded-full bg-primary/60" />
-                      <div>
-                        <h4 className="font-medium text-foreground">AI Writing Chatbot</h4>
-                        <p className="text-sm text-muted-foreground">Instant writing support & guidance</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <Separator />
-
-              {/* Use Cases */}
-              <div className="space-y-6">
-                <div className="text-center">
-                  <h3 className="text-2xl font-bold text-foreground mb-2">Junia AI's Use Cases</h3>
-                  <p className="text-muted-foreground">Real-world applications to transform your content strategy</p>
-                </div>
-                <div className="grid gap-3">
-                  <div className="p-4 rounded-lg border border-border bg-card">
-                    <div className="flex items-start space-x-3">
-                      <div className="flex-shrink-0 w-8 h-8 rounded-full border border-border text-xs font-medium text-muted-foreground flex items-center justify-center">1</div>
-                      <div>
-                        <h4 className="font-semibold text-foreground mb-1">SEO Blog Post Generation</h4>
-                        <p className="text-muted-foreground">Create comprehensive, SEO-friendly blog posts (3000+ words)</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-4 rounded-lg border border-border bg-card">
-                    <div className="flex items-start space-x-3">
-                      <div className="flex-shrink-0 w-8 h-8 rounded-full border border-border text-xs font-medium text-muted-foreground flex items-center justify-center">2</div>
-                      <div>
-                        <h4 className="font-semibold text-foreground mb-1">Persuasive Ad Copy Creation</h4>
-                        <p className="text-muted-foreground">Craft compelling advertisement copy for your campaigns</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-4 rounded-lg border border-border bg-card">
-                    <div className="flex items-start space-x-3">
-                      <div className="flex-shrink-0 w-8 h-8 rounded-full border border-border text-xs font-medium text-muted-foreground flex items-center justify-center">3</div>
-                      <div>
-                        <h4 className="font-semibold text-foreground mb-1">Personalized Sales Emails</h4>
-                        <p className="text-muted-foreground">Generate tailored emails that resonate and drive engagement</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-4 rounded-lg border border-border bg-card">
-                    <div className="flex items-start space-x-3">
-                      <div className="flex-shrink-0 w-8 h-8 rounded-full border border-border text-xs font-medium text-muted-foreground flex items-center justify-center">4</div>
-                      <div>
-                        <h4 className="font-semibold text-foreground mb-1">Document Summarization</h4>
-                        <p className="text-muted-foreground">Quickly summarize long documents into actionable insights</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-4 rounded-lg border border-border bg-card">
-                    <div className="flex items-start space-x-3">
-                      <div className="flex-shrink-0 w-8 h-8 rounded-full border border-border text-xs font-medium text-muted-foreground flex items-center justify-center">5</div>
-                      <div>
-                        <h4 className="font-semibold text-foreground mb-1">AI Image Generation</h4>
-                        <p className="text-muted-foreground">Create relevant images for articles and content</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-4 rounded-lg border border-border bg-card">
-                    <div className="flex items-start space-x-3">
-                      <div className="flex-shrink-0 w-8 h-8 rounded-full border border-border text-xs font-medium text-muted-foreground flex items-center justify-center">6</div>
-                      <div>
-                        <h4 className="font-semibold text-foreground mb-1">Multi-Language Content</h4>
-                        <p className="text-muted-foreground">Rewrite and translate content into multiple languages</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ) : (
-            <div className="text-center py-12">
-              <h3 className="text-xl font-semibold mb-4">More information coming soon</h3>
-              <p className="text-muted-foreground">We're working on adding detailed information for all tools.</p>
-            </div>
-          )}
+          <ProductInformation toolData={toolData} />
         </div>
       </main>
 

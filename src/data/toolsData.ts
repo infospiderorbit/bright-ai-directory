@@ -6,15 +6,29 @@ export interface Tool {
   upvotes: number;
   verified: boolean;
   rating: number;
+  reviewsCount?: number;
+  savedCount?: number;
+  addedDate?: string;
   icon: string;
   category: string;
   subcategory: string;
+  productInfo?: {
+    whatIs: string;
+    features: string[];
+    howToUse: {
+      title: string;
+      description: string;
+      steps: { title: string; description: string }[];
+    };
+    coreFeatures: { title: string; description: string }[];
+    useCases: { title: string; description: string }[];
+  };
 }
 
 export const toolsData: { [key: string]: { [key: string]: Tool[] } } = {
   "voice-generation-conversion": {
     "ai-celebrity-voice-generator": [
-      { id: "fakeyou", name: "FakeYou", description: "AI voice synthesis with celebrity voices", url: "", upvotes: 1567, verified: true, rating: 4.7, icon: "🎭", category: "voice-generation-conversion", subcategory: "ai-celebrity-voice-generator" },
+      { id: "fakeyou", name: "FakeYou", description: "AI voice synthesis with celebrity voices", url: "", upvotes: 1567, verified: true, rating: 4.7, reviewsCount: 234, savedCount: 1567, addedDate: "2023-06-03", icon: "🎭", category: "voice-generation-conversion", subcategory: "ai-celebrity-voice-generator" },
       { id: "fish-audio", name: "Fish Audio", description: "High-quality AI voice cloning and generation", url: "", upvotes: 1234, verified: true, rating: 4.6, icon: "🐟", category: "voice-generation-conversion", subcategory: "ai-celebrity-voice-generator" },
       { id: "sendfame", name: "SendFame", description: "Celebrity voice messages with AI", url: "", upvotes: 789, verified: true, rating: 4.5, icon: "⭐", category: "voice-generation-conversion", subcategory: "ai-celebrity-voice-generator" },
       { id: "irocket-icreavoice", name: "iRocket iCreaVoice", description: "AI voice creation and synthesis platform", url: "", upvotes: 567, verified: true, rating: 4.4, icon: "🚀", category: "voice-generation-conversion", subcategory: "ai-celebrity-voice-generator" },
