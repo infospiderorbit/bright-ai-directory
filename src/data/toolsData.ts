@@ -26,6 +26,211 @@ export interface Tool {
 }
 
 export const toolsData: { [key: string]: { [key: string]: Tool[] } } = {
+  "video-animation": {
+    "ai-animated-video": [
+      { id: "animaker", name: "Animaker", description: "Create animated videos and live-action videos in minutes", url: "", upvotes: 1567, verified: true, rating: 4.7, reviewsCount: 234, savedCount: 1567, addedDate: "2023-06-03", icon: "🎬", category: "video-animation", subcategory: "ai-animated-video" },
+      { id: "animate-ai", name: "Animate AI", description: "AI-powered animation creation platform", url: "", upvotes: 1234, verified: true, rating: 4.6, icon: "🎭", category: "video-animation", subcategory: "ai-animated-video" },
+      { id: "autodraft-ai", name: "Autodraft AI", description: "Automated video animation with AI", url: "", upvotes: 989, verified: true, rating: 4.5, icon: "✏️", category: "video-animation", subcategory: "ai-animated-video" },
+      { id: "deep-nostalgia-ai", name: "Deep Nostalgia AI", description: "Animate old photos with AI technology", url: "", upvotes: 876, verified: true, rating: 4.4, icon: "📸", category: "video-animation", subcategory: "ai-animated-video" },
+      { id: "a2e-free-ai-videos", name: "A2E Free and Uncensored AI Videos", description: "Free AI video generation platform", url: "", upvotes: 654, verified: false, rating: 4.3, icon: "🎥", category: "video-animation", subcategory: "ai-animated-video" }
+    ],
+    "ai-animation-generator": [
+      { id: "dreamface", name: "DreamFace", description: "AI-powered face animation generator", url: "", upvotes: 1432, verified: true, rating: 4.6, icon: "😊", category: "video-animation", subcategory: "ai-animation-generator" },
+      { id: "unlucid-ai", name: "Unlucid AI", description: "Advanced AI animation and video generation", url: "", upvotes: 1298, verified: true, rating: 4.5, icon: "🌟", category: "video-animation", subcategory: "ai-animation-generator" },
+      { id: "pollo-ai", name: "Pollo AI", description: "AI animation creator for social media", url: "", upvotes: 1156, verified: true, rating: 4.4, icon: "🐔", category: "video-animation", subcategory: "ai-animation-generator" },
+      { id: "vidu-ai", name: "Vidu AI", description: "Professional AI video animation platform", url: "", upvotes: 987, verified: true, rating: 4.3, icon: "🎬", category: "video-animation", subcategory: "ai-animation-generator" },
+      { id: "viggle-ai", name: "Viggle AI", description: "Character animation with AI technology", url: "", upvotes: 843, verified: true, rating: 4.2, icon: "💃", category: "video-animation", subcategory: "ai-animation-generator" }
+    ],
+    "ai-avatar-video-generator": [
+      { id: "vidyard", name: "Vidyard", description: "AI avatar video creation for business", url: "", upvotes: 1687, verified: true, rating: 4.7, icon: "👨‍💼", category: "video-animation", subcategory: "ai-avatar-video-generator" },
+      { id: "virbo", name: "Virbo", description: "AI spokesperson video generator", url: "", upvotes: 1432, verified: true, rating: 4.6, icon: "🎤", category: "video-animation", subcategory: "ai-avatar-video-generator" },
+      { id: "captions-avatar", name: "Captions", description: "AI-powered video captions and avatars", url: "", upvotes: 1298, verified: true, rating: 4.5, icon: "💬", category: "video-animation", subcategory: "ai-avatar-video-generator" },
+      { id: "elai-io", name: "Elai.io", description: "AI video generation with digital avatars", url: "", upvotes: 1156, verified: true, rating: 4.4, icon: "🤖", category: "video-animation", subcategory: "ai-avatar-video-generator" },
+      { id: "jogg-ai", name: "Jogg.ai", description: "AI avatar video creation platform", url: "", upvotes: 987, verified: true, rating: 4.3, icon: "🏃‍♂️", category: "video-animation", subcategory: "ai-avatar-video-generator" }
+    ],
+    "ai-cartoon-video-generator": [
+      { id: "tooncrafter-ai", name: "ToonCrafter AI", description: "AI cartoon video creation tool", url: "", upvotes: 1234, verified: true, rating: 4.5, icon: "🎨", category: "video-animation", subcategory: "ai-cartoon-video-generator" },
+      { id: "p5-faceapi-cartoon", name: "P5 and faceApi Cartoon Overlay", description: "Face detection cartoon overlay system", url: "", upvotes: 876, verified: true, rating: 4.4, icon: "😄", category: "video-animation", subcategory: "ai-cartoon-video-generator" },
+      { id: "morningcomicbrew", name: "MorningComicBrew.com", description: "Daily comic generation with AI", url: "", upvotes: 654, verified: true, rating: 4.3, icon: "☕", category: "video-animation", subcategory: "ai-cartoon-video-generator" },
+      { id: "videoinu", name: "Videoinu", description: "AI cartoon video generator", url: "", upvotes: 543, verified: true, rating: 4.2, icon: "🐕", category: "video-animation", subcategory: "ai-cartoon-video-generator" },
+      { id: "domo-ai", name: "DomoAI", description: "AI-powered cartoon video creation", url: "", upvotes: 432, verified: false, rating: 4.1, icon: "🏠", category: "video-animation", subcategory: "ai-cartoon-video-generator" }
+    ],
+    "ai-commercial-generator": [
+      { id: "vidau-ai", name: "VidAU AI", description: "AI commercial video generation platform", url: "", upvotes: 1432, verified: true, rating: 4.6, icon: "📺", category: "video-animation", subcategory: "ai-commercial-generator" },
+      { id: "waymark", name: "Waymark", description: "AI video creation for businesses", url: "", upvotes: 1298, verified: true, rating: 4.5, icon: "🎯", category: "video-animation", subcategory: "ai-commercial-generator" },
+      { id: "fancytech", name: "FancyTech", description: "AI-powered commercial video maker", url: "", upvotes: 987, verified: true, rating: 4.4, icon: "✨", category: "video-animation", subcategory: "ai-commercial-generator" },
+      { id: "streamr-ai", name: "Streamr.ai", description: "AI streaming and commercial content", url: "", upvotes: 754, verified: true, rating: 4.3, icon: "📡", category: "video-animation", subcategory: "ai-commercial-generator" },
+      { id: "clip-studio-ai", name: "Clip Studio AI", description: "Professional AI video production", url: "", upvotes: 621, verified: true, rating: 4.2, icon: "🎬", category: "video-animation", subcategory: "ai-commercial-generator" }
+    ],
+    "ai-face-swap-video": [
+      { id: "swapfaces-ai", name: "Swapfaces AI", description: "AI face swapping in videos", url: "", upvotes: 1567, verified: true, rating: 4.5, icon: "🔄", category: "video-animation", subcategory: "ai-face-swap-video" },
+      { id: "ai-face-swap", name: "AI Face Swap", description: "Advanced face swapping technology", url: "", upvotes: 1234, verified: true, rating: 4.4, icon: "👥", category: "video-animation", subcategory: "ai-face-swap-video" },
+      { id: "magic-hour-faceswap", name: "Magic Hour", description: "AI video editing with face swap", url: "", upvotes: 987, verified: true, rating: 4.3, icon: "🌅", category: "video-animation", subcategory: "ai-face-swap-video" },
+      { id: "pixnova-ai", name: "PixNova AI", description: "AI face swap and video editing", url: "", upvotes: 756, verified: true, rating: 4.2, icon: "✨", category: "video-animation", subcategory: "ai-face-swap-video" },
+      { id: "deepfakes-web", name: "Deepfakes Web", description: "Online deepfake video creation", url: "", upvotes: 543, verified: false, rating: 4.0, icon: "🎭", category: "video-animation", subcategory: "ai-face-swap-video" }
+    ],
+    "ai-gif-generator": [
+      { id: "memegen-ai", name: "MemeGen AI", description: "AI-powered GIF and meme generator", url: "", upvotes: 1432, verified: true, rating: 4.6, icon: "😂", category: "video-animation", subcategory: "ai-gif-generator" },
+      { id: "aigify", name: "AIGIFY", description: "Convert images to animated GIFs with AI", url: "", upvotes: 1089, verified: true, rating: 4.5, icon: "🎞️", category: "video-animation", subcategory: "ai-gif-generator" },
+      { id: "datagif", name: "DataGIF", description: "Data visualization to animated GIFs", url: "", upvotes: 876, verified: true, rating: 4.4, icon: "📊", category: "video-animation", subcategory: "ai-gif-generator" },
+      { id: "misgif", name: "misgif", description: "AI GIF creation and editing platform", url: "", upvotes: 654, verified: true, rating: 4.3, icon: "🎨", category: "video-animation", subcategory: "ai-gif-generator" },
+      { id: "aigif", name: "AIGIF", description: "Simple AI-powered GIF generator", url: "", upvotes: 432, verified: true, rating: 4.2, icon: "🎬", category: "video-animation", subcategory: "ai-gif-generator" }
+    ],
+    "ai-lip-sync-generator": [
+      { id: "veo-3", name: "Veo 3", description: "Advanced AI lip sync technology", url: "", upvotes: 1567, verified: true, rating: 4.7, icon: "👄", category: "video-animation", subcategory: "ai-lip-sync-generator" },
+      { id: "magic-hour-lipsync", name: "Magic Hour", description: "AI lip sync video generation", url: "", upvotes: 1234, verified: true, rating: 4.6, icon: "🌅", category: "video-animation", subcategory: "ai-lip-sync-generator" },
+      { id: "sync-so", name: "sync.so", description: "Professional AI lip synchronization", url: "", upvotes: 987, verified: true, rating: 4.5, icon: "🎤", category: "video-animation", subcategory: "ai-lip-sync-generator" },
+      { id: "vozo", name: "Vozo", description: "AI-powered lip sync and dubbing", url: "", upvotes: 754, verified: true, rating: 4.4, icon: "🗣️", category: "video-animation", subcategory: "ai-lip-sync-generator" },
+      { id: "blipcut-ai", name: "BlipCut AI Video Translator", description: "AI video translation with lip sync", url: "", upvotes: 621, verified: true, rating: 4.3, icon: "🌐", category: "video-animation", subcategory: "ai-lip-sync-generator" }
+    ],
+    "ai-movie-generator": [
+      { id: "story-com", name: "Story.com", description: "AI movie and story generation platform", url: "", upvotes: 1432, verified: true, rating: 4.6, icon: "📖", category: "video-animation", subcategory: "ai-movie-generator" },
+      { id: "focal", name: "Focal", description: "AI-powered movie creation tool", url: "", upvotes: 1156, verified: true, rating: 4.5, icon: "🎬", category: "video-animation", subcategory: "ai-movie-generator" },
+      { id: "melies-ai", name: "Melies AI", description: "Cinematic AI movie generation", url: "", upvotes: 987, verified: true, rating: 4.4, icon: "🎭", category: "video-animation", subcategory: "ai-movie-generator" },
+      { id: "supermaker-ai", name: "SuperMaker AI Video Generator", description: "AI video and movie creation platform", url: "", upvotes: 754, verified: true, rating: 4.3, icon: "🦸‍♂️", category: "video-animation", subcategory: "ai-movie-generator" },
+      { id: "zero1cine", name: "zero1cine", description: "AI cinema and movie generation", url: "", upvotes: 543, verified: false, rating: 4.2, icon: "🎞️", category: "video-animation", subcategory: "ai-movie-generator" }
+    ],
+    "ai-music-video-generator": [
+      { id: "brev-ai", name: "Brev.ai", description: "AI music video creation platform", url: "", upvotes: 1298, verified: true, rating: 4.5, icon: "🎵", category: "video-animation", subcategory: "ai-music-video-generator" },
+      { id: "brev-ai-alt", name: "Brev AI", description: "Alternative AI music video generator", url: "", upvotes: 1156, verified: true, rating: 4.4, icon: "🎶", category: "video-animation", subcategory: "ai-music-video-generator" },
+      { id: "kaiber", name: "Kaiber", description: "AI music video and animation creator", url: "", upvotes: 987, verified: true, rating: 4.3, icon: "🎨", category: "video-animation", subcategory: "ai-music-video-generator" },
+      { id: "musichero-ai", name: "MusicHero.ai", description: "AI-powered music video generation", url: "", upvotes: 754, verified: true, rating: 4.2, icon: "🎸", category: "video-animation", subcategory: "ai-music-video-generator" },
+      { id: "neural-frames", name: "Neural Frames", description: "AI video generation for music", url: "", upvotes: 621, verified: true, rating: 4.1, icon: "🧠", category: "video-animation", subcategory: "ai-music-video-generator" }
+    ],
+    "ai-reel-generator": [
+      { id: "veo-reel", name: "Veo", description: "AI reel and short video generator", url: "", upvotes: 1567, verified: true, rating: 4.7, icon: "📱", category: "video-animation", subcategory: "ai-reel-generator" },
+      { id: "deciphr-ai", name: "Deciphr AI", description: "AI content and reel generation", url: "", upvotes: 1234, verified: true, rating: 4.6, icon: "🔍", category: "video-animation", subcategory: "ai-reel-generator" },
+      { id: "autoreels", name: "AutoReels", description: "Automated AI reel creation", url: "", upvotes: 987, verified: true, rating: 4.5, icon: "⚡", category: "video-animation", subcategory: "ai-reel-generator" },
+      { id: "reeler-ai", name: "Reeler AI", description: "AI-powered reel generation platform", url: "", upvotes: 754, verified: true, rating: 4.4, icon: "🎣", category: "video-animation", subcategory: "ai-reel-generator" },
+      { id: "aireelgenerator", name: "AiReelGenerator", description: "Simple AI reel creation tool", url: "", upvotes: 543, verified: true, rating: 4.3, icon: "🎬", category: "video-animation", subcategory: "ai-reel-generator" }
+    ],
+    "ai-short-video-generator": [
+      { id: "opus-clip", name: "Opus Clip", description: "AI short video clips from long content", url: "", upvotes: 1789, verified: true, rating: 4.8, icon: "✂️", category: "video-animation", subcategory: "ai-short-video-generator" },
+      { id: "opusclip-alt", name: "OpusClip", description: "Alternative Opus Clip platform", url: "", upvotes: 1567, verified: true, rating: 4.7, icon: "🎬", category: "video-animation", subcategory: "ai-short-video-generator" },
+      { id: "luma-ai-dream", name: "Luma AI Dream Machine", description: "AI dream-to-video generation", url: "", upvotes: 1432, verified: true, rating: 4.6, icon: "💭", category: "video-animation", subcategory: "ai-short-video-generator" },
+      { id: "vizard-ai", name: "Vizard.ai", description: "AI video editing and short clips", url: "", upvotes: 1298, verified: true, rating: 4.5, icon: "🧙‍♂️", category: "video-animation", subcategory: "ai-short-video-generator" },
+      { id: "ssemble", name: "Ssemble", description: "AI video assembly and editing", url: "", upvotes: 987, verified: true, rating: 4.4, icon: "🔧", category: "video-animation", subcategory: "ai-short-video-generator" }
+    ],
+    "ai-stock-video-generator": [
+      { id: "imgkits", name: "Imgkits - Top AI Image & Video Processing Tools Online", description: "Comprehensive AI video processing toolkit", url: "", upvotes: 1234, verified: true, rating: 4.5, icon: "🛠️", category: "video-animation", subcategory: "ai-stock-video-generator" },
+      { id: "basedlabs-ai", name: "BasedLabs.ai", description: "AI stock video generation platform", url: "", upvotes: 1089, verified: true, rating: 4.4, icon: "🧪", category: "video-animation", subcategory: "ai-stock-video-generator" },
+      { id: "morphic", name: "Morphic", description: "AI video morphing and generation", url: "", upvotes: 876, verified: true, rating: 4.3, icon: "🔄", category: "video-animation", subcategory: "ai-stock-video-generator" },
+      { id: "viddo-veo3", name: "Viddo-Veo3 AI Video Generator", description: "Advanced AI video generation system", url: "", upvotes: 654, verified: true, rating: 4.2, icon: "🎥", category: "video-animation", subcategory: "ai-stock-video-generator" },
+      { id: "crepal", name: "CrePal", description: "Creative AI video generation tool", url: "", upvotes: 432, verified: false, rating: 4.1, icon: "🎨", category: "video-animation", subcategory: "ai-stock-video-generator" }
+    ],
+    "ai-tiktok-video-generator": [
+      { id: "revid-ai", name: "revid.ai", description: "AI TikTok video generation platform", url: "", upvotes: 1432, verified: true, rating: 4.6, icon: "🎵", category: "video-animation", subcategory: "ai-tiktok-video-generator" },
+      { id: "faceless-video", name: "Faceless.video", description: "Anonymous AI video creation", url: "", upvotes: 1156, verified: true, rating: 4.5, icon: "🎭", category: "video-animation", subcategory: "ai-tiktok-video-generator" },
+      { id: "autoshorts-ai", name: "AutoShorts.ai", description: "Automated AI short video creation", url: "", upvotes: 987, verified: true, rating: 4.4, icon: "📱", category: "video-animation", subcategory: "ai-tiktok-video-generator" },
+      { id: "pdf-to-brainrot", name: "PDF To Brainrot", description: "Convert documents to viral videos", url: "", upvotes: 754, verified: true, rating: 4.3, icon: "📄", category: "video-animation", subcategory: "ai-tiktok-video-generator" },
+      { id: "aicut", name: "aicut", description: "AI video cutting and TikTok creation", url: "", upvotes: 621, verified: true, rating: 4.2, icon: "✂️", category: "video-animation", subcategory: "ai-tiktok-video-generator" }
+    ],
+    "ai-ugc-video-generator": [
+      { id: "captions-ugc", name: "Captions", description: "AI UGC video with captions", url: "", upvotes: 1298, verified: true, rating: 4.5, icon: "💬", category: "video-animation", subcategory: "ai-ugc-video-generator" },
+      { id: "arcads", name: "Arcads", description: "AI user-generated content platform", url: "", upvotes: 1089, verified: true, rating: 4.4, icon: "🎯", category: "video-animation", subcategory: "ai-ugc-video-generator" },
+      { id: "makeugc", name: "MakeUGC", description: "AI UGC video creation tool", url: "", upvotes: 876, verified: true, rating: 4.3, icon: "📹", category: "video-animation", subcategory: "ai-ugc-video-generator" },
+      { id: "vidau-ai-ugc", name: "VidAU AI", description: "AI UGC video generation platform", url: "", upvotes: 654, verified: true, rating: 4.2, icon: "📺", category: "video-animation", subcategory: "ai-ugc-video-generator" },
+      { id: "influee", name: "Influee", description: "AI influencer content generation", url: "", upvotes: 432, verified: false, rating: 4.1, icon: "👑", category: "video-animation", subcategory: "ai-ugc-video-generator" }
+    ],
+    "ai-video-editor": [
+      { id: "capcut", name: "CapCut", description: "Popular AI video editing application", url: "", upvotes: 2345, verified: true, rating: 4.8, icon: "✂️", category: "video-animation", subcategory: "ai-video-editor" },
+      { id: "invideo", name: "InVideo", description: "AI-powered video creation platform", url: "", upvotes: 1789, verified: true, rating: 4.7, icon: "🎬", category: "video-animation", subcategory: "ai-video-editor" },
+      { id: "veed-io", name: "VEED.IO", description: "Online AI video editing suite", url: "", upvotes: 1567, verified: true, rating: 4.6, icon: "🎥", category: "video-animation", subcategory: "ai-video-editor" },
+      { id: "clideo", name: "Clideo", description: "Simple AI video editing tools", url: "", upvotes: 1234, verified: true, rating: 4.5, icon: "🎞️", category: "video-animation", subcategory: "ai-video-editor" },
+      { id: "movavi", name: "Movavi", description: "Professional AI video editing software", url: "", upvotes: 1089, verified: true, rating: 4.4, icon: "🎭", category: "video-animation", subcategory: "ai-video-editor" }
+    ],
+    "ai-video-enhancer": [
+      { id: "hitpaw-vikpea", name: "HitPaw VikPea", description: "AI video enhancement and upscaling", url: "", upvotes: 1432, verified: true, rating: 4.6, icon: "📈", category: "video-animation", subcategory: "ai-video-enhancer" },
+      { id: "anyenhancer", name: "AnyEnhancer", description: "Universal AI video enhancement tool", url: "", upvotes: 1156, verified: true, rating: 4.5, icon: "✨", category: "video-animation", subcategory: "ai-video-enhancer" },
+      { id: "wondershare-filmora", name: "Wondershare Filmora", description: "AI-powered video editing and enhancement", url: "", upvotes: 987, verified: true, rating: 4.4, icon: "🎬", category: "video-animation", subcategory: "ai-video-enhancer" },
+      { id: "topaz-labs", name: "Topaz Labs", description: "Professional AI video enhancement", url: "", upvotes: 876, verified: true, rating: 4.3, icon: "💎", category: "video-animation", subcategory: "ai-video-enhancer" },
+      { id: "airbrush", name: "AirBrush", description: "AI video and photo enhancement", url: "", upvotes: 654, verified: true, rating: 4.2, icon: "🖌️", category: "video-animation", subcategory: "ai-video-enhancer" }
+    ],
+    "ai-video-generator": [
+      { id: "sora", name: "Sora", description: "OpenAI's advanced text-to-video model", url: "", upvotes: 2456, verified: true, rating: 4.9, icon: "🌟", category: "video-animation", subcategory: "ai-video-generator" },
+      { id: "heygen", name: "HeyGen", description: "AI avatar video generation platform", url: "", upvotes: 1789, verified: true, rating: 4.7, icon: "👋", category: "video-animation", subcategory: "ai-video-generator" },
+      { id: "kling-ai", name: "Kling AI", description: "Advanced AI video generation system", url: "", upvotes: 1567, verified: true, rating: 4.6, icon: "⚡", category: "video-animation", subcategory: "ai-video-generator" },
+      { id: "higgsfield", name: "Higgsfield", description: "Scientific AI video generation", url: "", upvotes: 1234, verified: true, rating: 4.5, icon: "🔬", category: "video-animation", subcategory: "ai-video-generator" },
+      { id: "unlucid-ai-video", name: "Unlucid AI", description: "Creative AI video generation platform", url: "", upvotes: 1089, verified: true, rating: 4.4, icon: "🌟", category: "video-animation", subcategory: "ai-video-generator" }
+    ],
+    "ai-video-recording": [
+      { id: "veo-recording", name: "Veo", description: "AI-powered video recording system", url: "", upvotes: 1432, verified: true, rating: 4.6, icon: "📹", category: "video-animation", subcategory: "ai-video-recording" },
+      { id: "camtasia", name: "Camtasia", description: "Screen recording and video editing", url: "", upvotes: 1298, verified: true, rating: 4.5, icon: "🎥", category: "video-animation", subcategory: "ai-video-recording" },
+      { id: "guidde", name: "guidde", description: "AI-powered video guide creation", url: "", upvotes: 987, verified: true, rating: 4.4, icon: "📖", category: "video-animation", subcategory: "ai-video-recording" },
+      { id: "focusee", name: "FocuSee", description: "AI screen recording and enhancement", url: "", upvotes: 754, verified: true, rating: 4.3, icon: "👁️", category: "video-animation", subcategory: "ai-video-recording" },
+      { id: "muse-ai", name: "muse.ai", description: "AI video hosting and recording", url: "", upvotes: 621, verified: true, rating: 4.2, icon: "🎭", category: "video-animation", subcategory: "ai-video-recording" }
+    ],
+    "ai-video-search": [
+      { id: "twelvelabs", name: "TwelveLabs", description: "AI video understanding and search", url: "", upvotes: 1234, verified: true, rating: 4.6, icon: "🔍", category: "video-animation", subcategory: "ai-video-search" },
+      { id: "anyclip", name: "AnyClip", description: "AI video intelligence platform", url: "", upvotes: 1089, verified: true, rating: 4.5, icon: "📎", category: "video-animation", subcategory: "ai-video-search" },
+      { id: "memories-ai", name: "Memories.ai", description: "AI-powered video memory search", url: "", upvotes: 876, verified: true, rating: 4.4, icon: "💭", category: "video-animation", subcategory: "ai-video-search" },
+      { id: "imaginario-ai", name: "Imaginario.ai", description: "AI video content discovery", url: "", upvotes: 654, verified: true, rating: 4.3, icon: "🎬", category: "video-animation", subcategory: "ai-video-search" },
+      { id: "veedoai", name: "VeedoAI", description: "AI video search and analysis", url: "", upvotes: 432, verified: false, rating: 4.2, icon: "🔎", category: "video-animation", subcategory: "ai-video-search" }
+    ],
+    "ai-video-summarizer": [
+      { id: "lilys-ai", name: "Lilys AI", description: "AI video summarization platform", url: "", upvotes: 1432, verified: true, rating: 4.6, icon: "🌸", category: "video-animation", subcategory: "ai-video-summarizer" },
+      { id: "revisely", name: "Revisely", description: "AI study video summarization", url: "", upvotes: 1156, verified: true, rating: 4.5, icon: "📚", category: "video-animation", subcategory: "ai-video-summarizer" },
+      { id: "makefilm", name: "Makefilm", description: "AI film and video summarization", url: "", upvotes: 987, verified: true, rating: 4.4, icon: "🎬", category: "video-animation", subcategory: "ai-video-summarizer" },
+      { id: "noiz", name: "Noiz", description: "AI noise reduction and summarization", url: "", upvotes: 754, verified: true, rating: 4.3, icon: "🔇", category: "video-animation", subcategory: "ai-video-summarizer" },
+      { id: "eightify", name: "Eightify", description: "AI YouTube video summarization", url: "", upvotes: 621, verified: true, rating: 4.2, icon: "8️⃣", category: "video-animation", subcategory: "ai-video-summarizer" }
+    ],
+    "ai-video-upscaler": [
+      { id: "hitpaw-vikpea-upscaler", name: "HitPaw VikPea", description: "AI video upscaling and enhancement", url: "", upvotes: 1432, verified: true, rating: 4.6, icon: "📈", category: "video-animation", subcategory: "ai-video-upscaler" },
+      { id: "anyenhancer-upscaler", name: "AnyEnhancer", description: "Universal AI video upscaling", url: "", upvotes: 1156, verified: true, rating: 4.5, icon: "✨", category: "video-animation", subcategory: "ai-video-upscaler" },
+      { id: "nero", name: "Nero", description: "Professional AI video upscaling", url: "", upvotes: 987, verified: true, rating: 4.4, icon: "🔥", category: "video-animation", subcategory: "ai-video-upscaler" },
+      { id: "avclabs", name: "AVCLabs", description: "Advanced AI video processing lab", url: "", upvotes: 754, verified: true, rating: 4.3, icon: "🧪", category: "video-animation", subcategory: "ai-video-upscaler" },
+      { id: "vancei-video-ai", name: "VanceAI Video AI", description: "AI video enhancement and upscaling", url: "", upvotes: 621, verified: true, rating: 4.2, icon: "🎯", category: "video-animation", subcategory: "ai-video-upscaler" }
+    ],
+    "ai-vtuber": [
+      { id: "live3d", name: "Live3D", description: "VTuber avatar creation and streaming", url: "", upvotes: 1298, verified: true, rating: 4.5, icon: "🎭", category: "video-animation", subcategory: "ai-vtuber" },
+      { id: "webcam-motion-capture", name: "Webcam Motion Capture", description: "AI motion capture for VTubers", url: "", upvotes: 876, verified: true, rating: 4.4, icon: "📹", category: "video-animation", subcategory: "ai-vtuber" },
+      { id: "hyper", name: "Hyper", description: "AI VTuber enhancement platform", url: "", upvotes: 654, verified: true, rating: 4.3, icon: "⚡", category: "video-animation", subcategory: "ai-vtuber" },
+      { id: "vtube-studio", name: "VTube Studio", description: "Professional VTuber streaming software", url: "", upvotes: 543, verified: true, rating: 4.2, icon: "📺", category: "video-animation", subcategory: "ai-vtuber" },
+      { id: "virtual-you", name: "Virtual You", description: "AI-powered virtual avatar creator", url: "", upvotes: 432, verified: false, rating: 4.1, icon: "👤", category: "video-animation", subcategory: "ai-vtuber" }
+    ],
+    "ai-youtube-video-maker": [
+      { id: "aicut-youtube", name: "aicut", description: "AI YouTube video creation tool", url: "", upvotes: 1432, verified: true, rating: 4.6, icon: "✂️", category: "video-animation", subcategory: "ai-youtube-video-maker" },
+      { id: "subscribr", name: "Subscribr", description: "AI YouTube content optimization", url: "", upvotes: 1156, verified: true, rating: 4.5, icon: "📺", category: "video-animation", subcategory: "ai-youtube-video-maker" },
+      { id: "jupitrr-ai", name: "Jupitrr AI", description: "AI video creation for YouTube", url: "", upvotes: 987, verified: true, rating: 4.4, icon: "🪐", category: "video-animation", subcategory: "ai-youtube-video-maker" },
+      { id: "autoae", name: "AutoAE", description: "Automated After Effects for YouTube", url: "", upvotes: 754, verified: true, rating: 4.3, icon: "🎬", category: "video-animation", subcategory: "ai-youtube-video-maker" },
+      { id: "woxo", name: "WOXO", description: "AI-powered YouTube video maker", url: "", upvotes: 621, verified: true, rating: 4.2, icon: "📹", category: "video-animation", subcategory: "ai-youtube-video-maker" }
+    ],
+    "image-to-video": [
+      { id: "pixverse", name: "PixVerse", description: "AI image-to-video generation", url: "", upvotes: 1789, verified: true, rating: 4.7, icon: "🎨", category: "video-animation", subcategory: "image-to-video" },
+      { id: "sora-image", name: "Sora", description: "OpenAI's image-to-video model", url: "", upvotes: 1567, verified: true, rating: 4.6, icon: "🌟", category: "video-animation", subcategory: "image-to-video" },
+      { id: "magic-hour-image", name: "Magic Hour", description: "AI image animation platform", url: "", upvotes: 1234, verified: true, rating: 4.5, icon: "🌅", category: "video-animation", subcategory: "image-to-video" },
+      { id: "higgsfield-image", name: "Higgsfield", description: "Scientific image-to-video AI", url: "", upvotes: 987, verified: true, rating: 4.4, icon: "🔬", category: "video-animation", subcategory: "image-to-video" },
+      { id: "unlucid-ai-image", name: "Unlucid AI", description: "Creative image-to-video generation", url: "", upvotes: 754, verified: true, rating: 4.3, icon: "🌟", category: "video-animation", subcategory: "image-to-video" }
+    ],
+    "long-video-to-short-video-ai": [
+      { id: "vizard-ai-short", name: "Vizard.ai", description: "AI long-to-short video conversion", url: "", upvotes: 1567, verified: true, rating: 4.7, icon: "🧙‍♂️", category: "video-animation", subcategory: "long-video-to-short-video-ai" },
+      { id: "riverside-fm-short", name: "Riverside.fm", description: "Podcast to short video AI", url: "", upvotes: 1234, verified: true, rating: 4.6, icon: "🌊", category: "video-animation", subcategory: "long-video-to-short-video-ai" },
+      { id: "opusclip-short", name: "OpusClip", description: "AI clip extraction from long videos", url: "", upvotes: 1089, verified: true, rating: 4.5, icon: "✂️", category: "video-animation", subcategory: "long-video-to-short-video-ai" },
+      { id: "opus-clip-short", name: "Opus Clip", description: "Alternative clip extraction tool", url: "", upvotes: 987, verified: true, rating: 4.4, icon: "🎬", category: "video-animation", subcategory: "long-video-to-short-video-ai" },
+      { id: "sendshort", name: "SendShort", description: "AI short video creation from long content", url: "", upvotes: 754, verified: true, rating: 4.3, icon: "📱", category: "video-animation", subcategory: "long-video-to-short-video-ai" }
+    ],
+    "script-to-video-ai-generator": [
+      { id: "novi-ai", name: "Novi AI", description: "Script-to-video AI generation", url: "", upvotes: 1432, verified: true, rating: 4.6, icon: "📝", category: "video-animation", subcategory: "script-to-video-ai-generator" },
+      { id: "pictory", name: "Pictory", description: "AI video creation from scripts", url: "", upvotes: 1298, verified: true, rating: 4.5, icon: "🎬", category: "video-animation", subcategory: "script-to-video-ai-generator" },
+      { id: "ltx-studio", name: "LTX Studio", description: "Professional script-to-video AI", url: "", upvotes: 987, verified: true, rating: 4.4, icon: "🎭", category: "video-animation", subcategory: "script-to-video-ai-generator" },
+      { id: "zebracat", name: "Zebracat", description: "AI script visualization platform", url: "", upvotes: 754, verified: true, rating: 4.3, icon: "🦓", category: "video-animation", subcategory: "script-to-video-ai-generator" },
+      { id: "aicut-script", name: "AICUT", description: "AI script-to-video converter", url: "", upvotes: 621, verified: true, rating: 4.2, icon: "✂️", category: "video-animation", subcategory: "script-to-video-ai-generator" }
+    ],
+    "text-to-video": [
+      { id: "runway", name: "Runway", description: "Advanced AI text-to-video platform", url: "", upvotes: 2345, verified: true, rating: 4.8, icon: "🛬", category: "video-animation", subcategory: "text-to-video" },
+      { id: "pixverse-text", name: "PixVerse", description: "AI text-to-video generation", url: "", upvotes: 1789, verified: true, rating: 4.7, icon: "🎨", category: "video-animation", subcategory: "text-to-video" },
+      { id: "luma-ai-text", name: "Luma AI Dream Machine", description: "Dream-like text-to-video AI", url: "", upvotes: 1567, verified: true, rating: 4.6, icon: "💭", category: "video-animation", subcategory: "text-to-video" },
+      { id: "invideo-text", name: "InVideo", description: "Text-to-video creation platform", url: "", upvotes: 1234, verified: true, rating: 4.5, icon: "🎬", category: "video-animation", subcategory: "text-to-video" },
+      { id: "heygen-text", name: "HeyGen", description: "AI avatar text-to-video", url: "", upvotes: 1089, verified: true, rating: 4.4, icon: "👋", category: "video-animation", subcategory: "text-to-video" }
+    ],
+    "video-to-video": [
+      { id: "deevid-ai", name: "DeeVid AI", description: "AI video-to-video transformation", url: "", upvotes: 1234, verified: true, rating: 4.5, icon: "🔄", category: "video-animation", subcategory: "video-to-video" },
+      { id: "goenhance-ai", name: "GoEnhance AI", description: "AI video enhancement and transformation", url: "", upvotes: 1089, verified: true, rating: 4.4, icon: "⚡", category: "video-animation", subcategory: "video-to-video" },
+      { id: "lanta-ai", name: "Lanta AI", description: "Video style transfer with AI", url: "", upvotes: 876, verified: true, rating: 4.3, icon: "🏮", category: "video-animation", subcategory: "video-to-video" },
+      { id: "ebsynth", name: "EbSynth", description: "Video synthesis and transformation", url: "", upvotes: 654, verified: true, rating: 4.2, icon: "🎨", category: "video-animation", subcategory: "video-to-video" },
+      { id: "warpvideo-ai", name: "WarpVideo AI", description: "AI video warping and transformation", url: "", upvotes: 432, verified: false, rating: 4.1, icon: "🌀", category: "video-animation", subcategory: "video-to-video" }
+    ]
+  },
   "voice-generation-conversion": {
     "ai-celebrity-voice-generator": [
       { id: "fakeyou", name: "FakeYou", description: "AI voice synthesis with celebrity voices", url: "", upvotes: 1567, verified: true, rating: 4.7, reviewsCount: 234, savedCount: 1567, addedDate: "2023-06-03", icon: "🎭", category: "voice-generation-conversion", subcategory: "ai-celebrity-voice-generator" },
