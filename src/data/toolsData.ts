@@ -1801,6 +1801,148 @@ export const toolsData: { [key: string]: { [key: string]: Tool[] } } = {
       { id: "ai2sql", name: "AI2sql", description: "Convert natural language to SQL queries", url: "", upvotes: 1234, verified: true, rating: 4.7, icon: "🔤", category: "coding-development", subcategory: "sql-query-builder" },
       { id: "vanna-ai", name: "Vanna.AI", description: "AI SQL assistant for complex queries", url: "", upvotes: 876, verified: true, rating: 4.5, icon: "🤖", category: "coding-development", subcategory: "sql-query-builder" }
     ]
+  },
+  "daily-life": {
+    "ai-baby-generator": [
+      { id: "ai-baby-generator", name: "AI Baby Generator", description: "Generate realistic baby faces using AI", url: "", upvotes: 1234, verified: true, rating: 4.5, icon: "👶", category: "daily-life", subcategory: "ai-baby-generator" },
+      { id: "baby-face-generator", name: "Baby Face Generator", description: "Create baby face predictions with AI", url: "", upvotes: 987, verified: true, rating: 4.4, icon: "🍼", category: "daily-life", subcategory: "ai-baby-generator" },
+      { id: "maxstudio-api", name: "MaxStudio API", description: "Professional baby face generation API", url: "", upvotes: 754, verified: true, rating: 4.3, icon: "⚡", category: "daily-life", subcategory: "ai-baby-generator" },
+      { id: "baiby", name: "Baiby", description: "AI-powered baby prediction platform", url: "", upvotes: 621, verified: true, rating: 4.2, icon: "👼", category: "daily-life", subcategory: "ai-baby-generator" },
+      { id: "ourbabyai", name: "OurBabyAI", description: "Family baby prediction using AI", url: "", upvotes: 543, verified: true, rating: 4.1, icon: "👨‍👩‍👶", category: "daily-life", subcategory: "ai-baby-generator" }
+    ],
+    "ai-bible": [
+      { id: "bible-chat", name: "Bible Chat", description: "AI-powered Bible study and discussion", url: "", upvotes: 1456, verified: true, rating: 4.6, icon: "📖", category: "daily-life", subcategory: "ai-bible" },
+      { id: "biblepics", name: "BiblePics", description: "AI-generated Biblical imagery", url: "", upvotes: 1123, verified: true, rating: 4.5, icon: "🖼️", category: "daily-life", subcategory: "ai-bible" },
+      { id: "bible-ai", name: "Bible Ai", description: "AI assistant for Biblical questions", url: "", upvotes: 876, verified: true, rating: 4.4, icon: "✝️", category: "daily-life", subcategory: "ai-bible" },
+      { id: "sermon-ai", name: "Sermon AI 3.0", description: "AI sermon preparation and writing", url: "", upvotes: 654, verified: true, rating: 4.3, icon: "⛪", category: "daily-life", subcategory: "ai-bible" },
+      { id: "ai-pastor", name: "AI Pastor", description: "Virtual pastor for spiritual guidance", url: "", upvotes: 432, verified: true, rating: 4.2, icon: "👨‍💼", category: "daily-life", subcategory: "ai-bible" }
+    ],
+    "ai-cooking-assistant": [
+      { id: "chefgpt", name: "ChefGPT", description: "AI cooking assistant and recipe generator", url: "", upvotes: 1567, verified: true, rating: 4.7, icon: "👨‍🍳", category: "daily-life", subcategory: "ai-cooking-assistant" },
+      { id: "dishgen", name: "DishGen", description: "AI recipe generator from ingredients", url: "", upvotes: 1298, verified: true, rating: 4.6, icon: "🍽️", category: "daily-life", subcategory: "ai-cooking-assistant" },
+      { id: "mycoach-ai", name: "MyCoach Ai", description: "Personal AI cooking coach", url: "", upvotes: 987, verified: true, rating: 4.5, icon: "🥗", category: "daily-life", subcategory: "ai-cooking-assistant" },
+      { id: "flavorish", name: "Flavorish", description: "AI-powered meal planning and recipes", url: "", upvotes: 754, verified: true, rating: 4.4, icon: "🌶️", category: "daily-life", subcategory: "ai-cooking-assistant" },
+      { id: "cookaifood", name: "cookAIfood", description: "AI culinary assistant for cooking", url: "", upvotes: 621, verified: true, rating: 4.3, icon: "🍳", category: "daily-life", subcategory: "ai-cooking-assistant" }
+    ],
+    "ai-dream-interpreter": [
+      { id: "dream-interpreter-ai", name: "Dream Interpreter AI", description: "AI-powered dream analysis and interpretation", url: "", upvotes: 1234, verified: true, rating: 4.5, icon: "💭", category: "daily-life", subcategory: "ai-dream-interpreter" },
+      { id: "dream-interpretation-ai", name: "Dream Interpretation AI", description: "Advanced AI dream meaning analysis", url: "", upvotes: 987, verified: true, rating: 4.4, icon: "🌙", category: "daily-life", subcategory: "ai-dream-interpreter" },
+      { id: "dreamoracle", name: "DreamOracle", description: "AI oracle for dream insights", url: "", upvotes: 754, verified: true, rating: 4.3, icon: "🔮", category: "daily-life", subcategory: "ai-dream-interpreter" },
+      { id: "dream-oracles", name: "Dream Oracles", description: "Multiple AI dream interpretation models", url: "", upvotes: 621, verified: true, rating: 4.2, icon: "✨", category: "daily-life", subcategory: "ai-dream-interpreter" },
+      { id: "tabirim", name: "Tabirim", description: "AI dream dictionary and interpretation", url: "", upvotes: 543, verified: true, rating: 4.1, icon: "📚", category: "daily-life", subcategory: "ai-dream-interpreter" }
+    ],
+    "ai-fitness": [
+      { id: "fitnessai", name: "FitnessAI", description: "AI-powered workout optimization", url: "", upvotes: 1456, verified: true, rating: 4.6, icon: "💪", category: "daily-life", subcategory: "ai-fitness" },
+      { id: "myvelofit", name: "MyVeloFit", description: "AI cycling and fitness coach", url: "", upvotes: 1123, verified: true, rating: 4.5, icon: "🚴‍♂️", category: "daily-life", subcategory: "ai-fitness" },
+      { id: "planfit", name: "Planfit", description: "AI fitness planning and tracking", url: "", upvotes: 876, verified: true, rating: 4.4, icon: "📋", category: "daily-life", subcategory: "ai-fitness" },
+      { id: "neurofit-app", name: "NEUROFIT App", description: "AI-powered neural fitness training", url: "", upvotes: 654, verified: true, rating: 4.3, icon: "🧠", category: "daily-life", subcategory: "ai-fitness" },
+      { id: "shred-app", name: "SHRED: Home & Gym Workouts App", description: "AI workout programs for home and gym", url: "", upvotes: 432, verified: true, rating: 4.2, icon: "🏋️‍♀️", category: "daily-life", subcategory: "ai-fitness" }
+    ],
+    "ai-gift-ideas": [
+      { id: "book-by-anyone", name: "Book by Anyone", description: "AI-generated personalized books as gifts", url: "", upvotes: 1298, verified: true, rating: 4.5, icon: "📖", category: "daily-life", subcategory: "ai-gift-ideas" },
+      { id: "celebrateally", name: "CelebrateAlly", description: "AI gift recommendation platform", url: "", upvotes: 987, verified: true, rating: 4.4, icon: "🎁", category: "daily-life", subcategory: "ai-gift-ideas" },
+      { id: "snappy", name: "Snappy", description: "AI-powered gift selection service", url: "", upvotes: 754, verified: true, rating: 4.3, icon: "🎀", category: "daily-life", subcategory: "ai-gift-ideas" },
+      { id: "gensmo", name: "Gensmo", description: "AI gift generator and ideas platform", url: "", upvotes: 621, verified: true, rating: 4.2, icon: "💝", category: "daily-life", subcategory: "ai-gift-ideas" },
+      { id: "giftruly", name: "Giftruly", description: "AI-curated personalized gift suggestions", url: "", upvotes: 543, verified: true, rating: 4.1, icon: "🎊", category: "daily-life", subcategory: "ai-gift-ideas" }
+    ],
+    "ai-god": [
+      { id: "askjesus", name: "AskJesus", description: "AI spiritual guidance and questions", url: "", upvotes: 1567, verified: true, rating: 4.6, icon: "✝️", category: "daily-life", subcategory: "ai-god" },
+      { id: "ai-godfathers", name: "AI Godfathers", description: "AI wisdom and spiritual advice", url: "", upvotes: 1234, verified: true, rating: 4.5, icon: "👴", category: "daily-life", subcategory: "ai-god" },
+      { id: "day-with-god", name: "Day With God", description: "Daily AI spiritual companion", url: "", upvotes: 987, verified: true, rating: 4.4, icon: "🌅", category: "daily-life", subcategory: "ai-god" },
+      { id: "ask-religion", name: "Ask Religion", description: "AI religious questions and answers", url: "", upvotes: 754, verified: true, rating: 4.3, icon: "🕊️", category: "daily-life", subcategory: "ai-god" },
+      { id: "gitagpt", name: "GitaGPT", description: "AI-powered Bhagavad Gita guidance", url: "", upvotes: 621, verified: true, rating: 4.2, icon: "🕉️", category: "daily-life", subcategory: "ai-god" }
+    ],
+    "ai-news": [
+      { id: "ainvest", name: "AInvest", description: "AI-powered investment news and analysis", url: "", upvotes: 1456, verified: true, rating: 4.6, icon: "📈", category: "daily-life", subcategory: "ai-news" },
+      { id: "stockstory", name: "StockStory", description: "AI stock market news and insights", url: "", upvotes: 1123, verified: true, rating: 4.5, icon: "📊", category: "daily-life", subcategory: "ai-news" },
+      { id: "rundown-ai", name: "The Rundown AI", description: "Daily AI news digest and updates", url: "", upvotes: 876, verified: true, rating: 4.4, icon: "📰", category: "daily-life", subcategory: "ai-news" },
+      { id: "shift-ai", name: "SHIFT AI", description: "AI news aggregation and analysis", url: "", upvotes: 654, verified: true, rating: 4.3, icon: "🔄", category: "daily-life", subcategory: "ai-news" },
+      { id: "webscrypto", name: "WebsCrypto", description: "AI cryptocurrency news platform", url: "", upvotes: 432, verified: true, rating: 4.2, icon: "₿", category: "daily-life", subcategory: "ai-news" }
+    ],
+    "ai-newsletter": [
+      { id: "futurepedia", name: "Futurepedia", description: "AI tools newsletter and directory", url: "", upvotes: 1567, verified: true, rating: 4.7, icon: "🔮", category: "daily-life", subcategory: "ai-newsletter" },
+      { id: "prompt-advance", name: "Prompt Advance", description: "Advanced AI prompting newsletter", url: "", upvotes: 1298, verified: true, rating: 4.6, icon: "⚡", category: "daily-life", subcategory: "ai-newsletter" },
+      { id: "why-try-ai", name: "Why Try AI", description: "AI exploration and education newsletter", url: "", upvotes: 987, verified: true, rating: 4.5, icon: "❓", category: "daily-life", subcategory: "ai-newsletter" },
+      { id: "just-ai-news", name: "Just AI News", description: "Curated AI news and developments", url: "", upvotes: 754, verified: true, rating: 4.4, icon: "📬", category: "daily-life", subcategory: "ai-newsletter" },
+      { id: "artificial-ignorance", name: "Artificial Ignorance", description: "Critical AI news and commentary", url: "", upvotes: 621, verified: true, rating: 4.3, icon: "🤔", category: "daily-life", subcategory: "ai-newsletter" }
+    ],
+    "ai-outfit-generator": [
+      { id: "new-black-ai", name: "The New Black AI", description: "AI fashion and outfit generation", url: "", upvotes: 1432, verified: true, rating: 4.6, icon: "👗", category: "daily-life", subcategory: "ai-outfit-generator" },
+      { id: "cladwell", name: "Cladwell", description: "AI wardrobe and outfit planning", url: "", upvotes: 1156, verified: true, rating: 4.5, icon: "👔", category: "daily-life", subcategory: "ai-outfit-generator" },
+      { id: "outfit-changer", name: "Outfit Changer", description: "AI outfit transformation tool", url: "", upvotes: 987, verified: true, rating: 4.4, icon: "👕", category: "daily-life", subcategory: "ai-outfit-generator" },
+      { id: "stylitics", name: "Stylitics", description: "AI styling and outfit recommendations", url: "", upvotes: 754, verified: true, rating: 4.3, icon: "💄", category: "daily-life", subcategory: "ai-outfit-generator" },
+      { id: "outfits-ai", name: "Outfits AI", description: "AI-powered outfit generation platform", url: "", upvotes: 621, verified: true, rating: 4.2, icon: "👚", category: "daily-life", subcategory: "ai-outfit-generator" }
+    ],
+    "ai-parenting": [
+      { id: "bark", name: "Bark", description: "AI parental monitoring and safety", url: "", upvotes: 1345, verified: true, rating: 4.5, icon: "🐕", category: "daily-life", subcategory: "ai-parenting" },
+      { id: "mobicip", name: "Mobicip", description: "AI-powered parental control platform", url: "", upvotes: 1087, verified: true, rating: 4.4, icon: "📱", category: "daily-life", subcategory: "ai-parenting" },
+      { id: "bestinterest", name: "BestInterest", description: "AI parenting advice and guidance", url: "", upvotes: 876, verified: true, rating: 4.3, icon: "❤️", category: "daily-life", subcategory: "ai-parenting" },
+      { id: "milo", name: "Milo", description: "AI family assistant and organizer", url: "", upvotes: 654, verified: true, rating: 4.2, icon: "👨‍👩‍👧‍👦", category: "daily-life", subcategory: "ai-parenting" },
+      { id: "kidtime", name: "Kidtime", description: "AI children's schedule and activity planner", url: "", upvotes: 543, verified: true, rating: 4.1, icon: "⏰", category: "daily-life", subcategory: "ai-parenting" }
+    ],
+    "ai-pickup-lines": [
+      { id: "lovegenius", name: "LoveGenius", description: "AI dating profile and pickup line generator", url: "", upvotes: 1567, verified: true, rating: 4.5, icon: "💘", category: "daily-life", subcategory: "ai-pickup-lines" },
+      { id: "hingegpt", name: "HingeGPT", description: "AI Hinge conversation starters", url: "", upvotes: 1234, verified: true, rating: 4.4, icon: "💕", category: "daily-life", subcategory: "ai-pickup-lines" },
+      { id: "flirty-pickup-lines", name: "Flirty pickup lines", description: "AI flirtatious conversation generators", url: "", upvotes: 987, verified: true, rating: 4.3, icon: "😘", category: "daily-life", subcategory: "ai-pickup-lines" },
+      { id: "tinder-ice-breakers", name: "Tinder Ice Breakers AI", description: "AI Tinder conversation starters", url: "", upvotes: 754, verified: true, rating: 4.2, icon: "🔥", category: "daily-life", subcategory: "ai-pickup-lines" },
+      { id: "flirtlikepro", name: "FlirtLikePro", description: "Professional AI flirting assistant", url: "", upvotes: 621, verified: true, rating: 4.1, icon: "😉", category: "daily-life", subcategory: "ai-pickup-lines" }
+    ],
+    "ai-portrait-generator": [
+      { id: "genyou", name: "GenYOU", description: "AI personal portrait generation", url: "", upvotes: 1456, verified: true, rating: 4.6, icon: "🎨", category: "daily-life", subcategory: "ai-portrait-generator" },
+      { id: "apob-ai", name: "APOB.AI", description: "Advanced AI portrait creation platform", url: "", upvotes: 1123, verified: true, rating: 4.5, icon: "🖼️", category: "daily-life", subcategory: "ai-portrait-generator" },
+      { id: "pixel-dojo-ai", name: "PIXEL DOJO AI", description: "AI pixel art portrait generator", url: "", upvotes: 876, verified: true, rating: 4.4, icon: "🎯", category: "daily-life", subcategory: "ai-portrait-generator" },
+      { id: "portraitart", name: "PortraitArt", description: "Artistic AI portrait creation", url: "", upvotes: 654, verified: true, rating: 4.3, icon: "🎭", category: "daily-life", subcategory: "ai-portrait-generator" },
+      { id: "foxy-ai", name: "Foxy AI", description: "AI portrait and avatar generator", url: "", upvotes: 432, verified: true, rating: 4.2, icon: "🦊", category: "daily-life", subcategory: "ai-portrait-generator" }
+    ],
+    "ai-recipe": [
+      { id: "chefgpt-recipe", name: "ChefGPT", description: "AI recipe generation and cooking assistant", url: "", upvotes: 1567, verified: true, rating: 4.7, icon: "👨‍🍳", category: "daily-life", subcategory: "ai-recipe" },
+      { id: "dishgen-recipe", name: "DishGen", description: "AI recipe creator from available ingredients", url: "", upvotes: 1298, verified: true, rating: 4.6, icon: "🍽️", category: "daily-life", subcategory: "ai-recipe" },
+      { id: "bargpt", name: "BarGPT", description: "AI cocktail and drink recipe generator", url: "", upvotes: 987, verified: true, rating: 4.5, icon: "🍹", category: "daily-life", subcategory: "ai-recipe" },
+      { id: "cookaifood-recipe", name: "cookAIfood", description: "AI culinary recipe assistant", url: "", upvotes: 754, verified: true, rating: 4.4, icon: "🍳", category: "daily-life", subcategory: "ai-recipe" },
+      { id: "mealpractice", name: "MealPractice", description: "AI meal planning and recipe practice", url: "", upvotes: 621, verified: true, rating: 4.3, icon: "🥘", category: "daily-life", subcategory: "ai-recipe" }
+    ],
+    "ai-religion": [
+      { id: "magisterium-ai", name: "Magisterium AI", description: "AI Catholic teaching and guidance", url: "", upvotes: 1234, verified: true, rating: 4.5, icon: "⛪", category: "daily-life", subcategory: "ai-religion" },
+      { id: "islam-ai", name: "Islam & AI", description: "AI Islamic knowledge and guidance", url: "", upvotes: 987, verified: true, rating: 4.4, icon: "☪️", category: "daily-life", subcategory: "ai-religion" },
+      { id: "gloo", name: "Gloo", description: "AI interfaith dialogue platform", url: "", upvotes: 754, verified: true, rating: 4.3, icon: "🤝", category: "daily-life", subcategory: "ai-religion" },
+      { id: "pastors-ai", name: "Pastors.ai", description: "AI pastoral care and guidance", url: "", upvotes: 621, verified: true, rating: 4.2, icon: "👨‍💼", category: "daily-life", subcategory: "ai-religion" },
+      { id: "gitagpt-religion", name: "GitaGPT", description: "AI Bhagavad Gita wisdom and guidance", url: "", upvotes: 543, verified: true, rating: 4.1, icon: "🕉️", category: "daily-life", subcategory: "ai-religion" }
+    ],
+    "ai-selfie-generator": [
+      { id: "facetune", name: "Facetune", description: "AI photo editing and selfie enhancement", url: "", upvotes: 1678, verified: true, rating: 4.7, icon: "📸", category: "daily-life", subcategory: "ai-selfie-generator" },
+      { id: "crazyfaceai", name: "CrazyFaceAI", description: "AI crazy face and selfie generator", url: "", upvotes: 1345, verified: true, rating: 4.6, icon: "🤪", category: "daily-life", subcategory: "ai-selfie-generator" },
+      { id: "barbie-selfie", name: "Barbie Selfie Generator", description: "AI Barbie-style selfie transformation", url: "", upvotes: 1087, verified: true, rating: 4.5, icon: "💗", category: "daily-life", subcategory: "ai-selfie-generator" },
+      { id: "photify-ai", name: "Photify AI", description: "AI photo generation and enhancement", url: "", upvotes: 876, verified: true, rating: 4.4, icon: "✨", category: "daily-life", subcategory: "ai-selfie-generator" },
+      { id: "aiselfies", name: "AISelfi.es", description: "AI selfie generation platform", url: "", upvotes: 654, verified: true, rating: 4.3, icon: "🤳", category: "daily-life", subcategory: "ai-selfie-generator" }
+    ],
+    "ai-shopping-assistant": [
+      { id: "honeydo", name: "HoneyDo: Speak, Snap and Shop", description: "AI voice shopping assistant", url: "", upvotes: 1432, verified: true, rating: 4.6, icon: "🛒", category: "daily-life", subcategory: "ai-shopping-assistant" },
+      { id: "spoiledchild", name: "SpoiledChild", description: "AI personalized shopping recommendations", url: "", upvotes: 1156, verified: true, rating: 4.5, icon: "🛍️", category: "daily-life", subcategory: "ai-shopping-assistant" },
+      { id: "dealdrop", name: "DealDrop", description: "AI deal finder and shopping assistant", url: "", upvotes: 987, verified: true, rating: 4.4, icon: "💰", category: "daily-life", subcategory: "ai-shopping-assistant" },
+      { id: "vetted", name: "Vetted", description: "AI product research and recommendations", url: "", upvotes: 754, verified: true, rating: 4.3, icon: "✅", category: "daily-life", subcategory: "ai-shopping-assistant" },
+      { id: "tictuk", name: "Tictuk", description: "AI shopping comparison platform", url: "", upvotes: 621, verified: true, rating: 4.2, icon: "🔍", category: "daily-life", subcategory: "ai-shopping-assistant" }
+    ],
+    "ai-sports": [
+      { id: "fight-iq", name: "Fight IQ", description: "AI combat sports analysis and training", url: "", upvotes: 1298, verified: true, rating: 4.5, icon: "🥊", category: "daily-life", subcategory: "ai-sports" },
+      { id: "pixellot", name: "Pixellot", description: "AI sports video analysis platform", url: "", upvotes: 1087, verified: true, rating: 4.4, icon: "📹", category: "daily-life", subcategory: "ai-sports" },
+      { id: "myvelofit-sports", name: "MyVeloFit", description: "AI cycling performance analysis", url: "", upvotes: 876, verified: true, rating: 4.3, icon: "🚴‍♂️", category: "daily-life", subcategory: "ai-sports" },
+      { id: "ludex", name: "Ludex", description: "AI sports betting and analysis", url: "", upvotes: 654, verified: true, rating: 4.2, icon: "🎲", category: "daily-life", subcategory: "ai-sports" },
+      { id: "be-your-best", name: "Be Your Best", description: "AI sports performance optimization", url: "", upvotes: 543, verified: true, rating: 4.1, icon: "🏆", category: "daily-life", subcategory: "ai-sports" }
+    ],
+    "ai-travel": [
+      { id: "wanderboat", name: "Wanderboat", description: "AI travel planning and booking platform", url: "", upvotes: 1567, verified: true, rating: 4.6, icon: "⛵", category: "daily-life", subcategory: "ai-travel" },
+      { id: "mindtrip", name: "Mindtrip", description: "AI personalized travel experiences", url: "", upvotes: 1298, verified: true, rating: 4.5, icon: "🧠", category: "daily-life", subcategory: "ai-travel" },
+      { id: "layla-ai", name: "Layla AI", description: "AI travel assistant and planner", url: "", upvotes: 987, verified: true, rating: 4.4, icon: "🌸", category: "daily-life", subcategory: "ai-travel" },
+      { id: "trip-planner-ai", name: "Trip Planner AI", description: "AI-powered trip planning tool", url: "", upvotes: 754, verified: true, rating: 4.3, icon: "🗺️", category: "daily-life", subcategory: "ai-travel" },
+      { id: "imean", name: "iMean", description: "AI travel recommendation engine", url: "", upvotes: 621, verified: true, rating: 4.2, icon: "✈️", category: "daily-life", subcategory: "ai-travel" }
+    ],
+    "ai-trip-planner": [
+      { id: "thatch", name: "Thatch", description: "AI collaborative trip planning platform", url: "", upvotes: 1432, verified: true, rating: 4.6, icon: "🏠", category: "daily-life", subcategory: "ai-trip-planner" },
+      { id: "wonderplan", name: "Wonderplan", description: "AI comprehensive trip planning tool", url: "", upvotes: 1156, verified: true, rating: 4.5, icon: "🌟", category: "daily-life", subcategory: "ai-trip-planner" },
+      { id: "hadana-ai", name: "Hadana AI", description: "AI local travel guide and planner", url: "", upvotes: 987, verified: true, rating: 4.4, icon: "🏛️", category: "daily-life", subcategory: "ai-trip-planner" },
+      { id: "aicotravel", name: "Aicotravel", description: "AI travel itinerary generator", url: "", upvotes: 754, verified: true, rating: 4.3, icon: "🎒", category: "daily-life", subcategory: "ai-trip-planner" },
+      { id: "tripper-guide", name: "Tripper Guide", description: "AI trip guide and planning assistant", url: "", upvotes: 621, verified: true, rating: 4.2, icon: "🧳", category: "daily-life", subcategory: "ai-trip-planner" }
+    ]
   }
 };
 
