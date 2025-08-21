@@ -696,10 +696,12 @@ const FeaturedTools = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {tools.map((tool) => (
-                  <Card 
+                  <Link 
                     key={tool.id} 
-                    className="group hover:shadow-hover transition-all duration-300 hover:-translate-y-1 border bg-white/90 backdrop-blur-sm overflow-hidden"
+                    to={`/${tool.name.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '')}`}
                   >
+                    <Card className="group hover:shadow-hover transition-all duration-300 hover:-translate-y-1 border bg-white/90 backdrop-blur-sm overflow-hidden h-full"
+                    >
                     <CardHeader className="pb-3">
                       <div className="flex items-start justify-between mb-3">
                         <div className="text-3xl">{tool.icon}</div>
@@ -735,7 +737,8 @@ const FeaturedTools = () => {
                         </Button>
                       </div>
                     </CardContent>
-                  </Card>
+                    </Card>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -809,7 +812,8 @@ const FeaturedTools = () => {
               icon: "🌐"
             }
           ].map((tool, index) => (
-            <Card key={index} className="group hover:shadow-hover transition-all duration-300 hover:-translate-y-1 bg-card/50 backdrop-blur-sm border-border/50">
+            <Link key={index} to={`/${tool.name.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '')}`}>
+              <Card className="group hover:shadow-hover transition-all duration-300 hover:-translate-y-1 bg-card/50 backdrop-blur-sm border-border/50 h-full">
               <CardHeader className="pb-3">
                 <div className="flex items-start justify-between">
                   <div className="text-2xl mb-2">{tool.icon}</div>
@@ -843,6 +847,7 @@ const FeaturedTools = () => {
                 </div>
               </CardContent>
             </Card>
+            </Link>
           ))}
         </div>
       </div>

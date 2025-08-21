@@ -1,6 +1,7 @@
 import { Star, ExternalLink, Heart, Bookmark } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
 
 interface ToolCardProps {
   name: string;
@@ -24,9 +25,10 @@ const ToolCard = ({
   featured = false 
 }: ToolCardProps) => {
   return (
-    <div className={`group relative bg-card rounded-xl p-6 border transition-smooth hover:shadow-hover hover:-translate-y-1 ${
-      featured ? 'ring-2 ring-primary/20 shadow-card' : ''
-    }`}>
+    <Link to={`/${name.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '')}`}>
+      <div className={`group relative bg-card rounded-xl p-6 border transition-smooth hover:shadow-hover hover:-translate-y-1 ${
+        featured ? 'ring-2 ring-primary/20 shadow-card' : ''
+      }`}>
       {featured && (
         <div className="absolute -top-3 left-4 px-3 py-1 gradient-primary text-white text-xs font-medium rounded-full">
           Featured
@@ -74,11 +76,12 @@ const ToolCard = ({
         </div>
       </div>
       
-      <Button className="w-full group-hover:gradient-primary group-hover:text-white transition-smooth" variant="outline">
-        View Tool
-        <ExternalLink className="ml-2 h-4 w-4" />
-      </Button>
-    </div>
+        <Button className="w-full group-hover:gradient-primary group-hover:text-white transition-smooth" variant="outline">
+          View Tool
+          <ExternalLink className="ml-2 h-4 w-4" />
+        </Button>
+      </div>
+    </Link>
   );
 };
 
