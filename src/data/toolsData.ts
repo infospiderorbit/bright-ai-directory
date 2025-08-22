@@ -2094,6 +2094,176 @@ export const toolsData: { [key: string]: { [key: string]: Tool[] } } = {
       { id: "copy-ai", name: "Copy.ai", description: "AI content and marketing workflow platform", url: "", upvotes: 1298, verified: true, rating: 4.4, icon: "✍️", category: "business-management", subcategory: "ai-workflow" },
       { id: "dify-ai", name: "Dify.AI", description: "AI application development and workflow platform", url: "", upvotes: 1156, verified: true, rating: 4.3, icon: "🛠️", category: "business-management", subcategory: "ai-workflow" }
     ]
+  },
+  "marketing-advertising": {
+    "ai-ad-creative": [
+      { id: "adcreative-ai", name: "AdCreative.ai", description: "AI-powered ad creative generation platform", url: "", upvotes: 2234, verified: true, rating: 4.8, icon: "🎨", category: "marketing-advertising", subcategory: "ai-ad-creative" },
+      { id: "predis-ai-creative", name: "Predis.ai", description: "AI social media creative generator", url: "", upvotes: 1876, verified: true, rating: 4.7, icon: "📱", category: "marketing-advertising", subcategory: "ai-ad-creative" },
+      { id: "gethookd", name: "Gethookd", description: "AI ad creative and copywriting tool", url: "", upvotes: 1543, verified: true, rating: 4.6, icon: "🪝", category: "marketing-advertising", subcategory: "ai-ad-creative" },
+      { id: "icon-ai", name: "Icon AI", description: "AI icon and creative element generator", url: "", upvotes: 1298, verified: true, rating: 4.5, icon: "💎", category: "marketing-advertising", subcategory: "ai-ad-creative" },
+      { id: "neurons-ai", name: "Neurons AI", description: "AI creative optimization and testing", url: "", upvotes: 1156, verified: true, rating: 4.4, icon: "🧠", category: "marketing-advertising", subcategory: "ai-ad-creative" }
+    ],
+    "ai-ad-generator": [
+      { id: "creatify", name: "Creatify", description: "AI video ad generator for marketing", url: "", upvotes: 1987, verified: true, rating: 4.7, icon: "🎬", category: "marketing-advertising", subcategory: "ai-ad-generator" },
+      { id: "higgsfield", name: "Higgsfield", description: "AI ad generation and optimization platform", url: "", upvotes: 1654, verified: true, rating: 4.6, icon: "⚛️", category: "marketing-advertising", subcategory: "ai-ad-generator" },
+      { id: "predis-ai-generator", name: "Predis.ai", description: "AI ad generator for social media", url: "", upvotes: 1432, verified: true, rating: 4.5, icon: "📱", category: "marketing-advertising", subcategory: "ai-ad-generator" },
+      { id: "adcreative-ai-generator", name: "AdCreative.ai", description: "AI ad creative generator", url: "", upvotes: 1298, verified: true, rating: 4.4, icon: "🎨", category: "marketing-advertising", subcategory: "ai-ad-generator" },
+      { id: "captions", name: "Captions", description: "AI video ad generator with captions", url: "", upvotes: 1156, verified: true, rating: 4.3, icon: "📝", category: "marketing-advertising", subcategory: "ai-ad-generator" }
+    ],
+    "ai-advertising": [
+      { id: "aisensy", name: "AiSensy", description: "AI WhatsApp marketing and advertising platform", url: "", upvotes: 1789, verified: true, rating: 4.6, icon: "💬", category: "marketing-advertising", subcategory: "ai-advertising" },
+      { id: "ai-insights-coupler", name: "AI Insights by Coupler.io", description: "AI advertising insights and analytics", url: "", upvotes: 1543, verified: true, rating: 4.5, icon: "📊", category: "marketing-advertising", subcategory: "ai-advertising" },
+      { id: "scale-insights", name: "Scale Insights™", description: "AI advertising optimization platform", url: "", upvotes: 1432, verified: true, rating: 4.4, icon: "📈", category: "marketing-advertising", subcategory: "ai-advertising" },
+      { id: "winning-hunter", name: "Winning Hunter", description: "AI ad spy and competitor analysis tool", url: "", upvotes: 1298, verified: true, rating: 4.3, icon: "🎯", category: "marketing-advertising", subcategory: "ai-advertising" },
+      { id: "lexi-ai", name: "Lexi AI", description: "AI advertising assistant and optimizer", url: "", upvotes: 1156, verified: true, rating: 4.2, icon: "🤖", category: "marketing-advertising", subcategory: "ai-advertising" }
+    ],
+    "ai-affiliate-marketing": [
+      { id: "joylink", name: "JoyLink", description: "AI affiliate marketing platform", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "🔗", category: "marketing-advertising", subcategory: "ai-affiliate-marketing" },
+      { id: "lasso", name: "Lasso", description: "AI affiliate link management tool", url: "", upvotes: 1432, verified: true, rating: 4.4, icon: "🪢", category: "marketing-advertising", subcategory: "ai-affiliate-marketing" },
+      { id: "affpilot", name: "Affpilot", description: "AI affiliate marketing automation", url: "", upvotes: 1298, verified: true, rating: 4.3, icon: "✈️", category: "marketing-advertising", subcategory: "ai-affiliate-marketing" },
+      { id: "reditus", name: "Reditus", description: "AI affiliate program management platform", url: "", upvotes: 1156, verified: true, rating: 4.2, icon: "💰", category: "marketing-advertising", subcategory: "ai-affiliate-marketing" },
+      { id: "kowboykit", name: "KowboyKit", description: "AI affiliate marketing toolkit", url: "", upvotes: 987, verified: true, rating: 4.1, icon: "🤠", category: "marketing-advertising", subcategory: "ai-affiliate-marketing" }
+    ],
+    "ai-cold-calling": [
+      { id: "dealmachine-calling", name: "DealMachine", description: "AI real estate cold calling platform", url: "", upvotes: 1789, verified: true, rating: 4.6, icon: "🏠", category: "marketing-advertising", subcategory: "ai-cold-calling" },
+      { id: "oneai", name: "OneAI", description: "AI cold calling and conversation platform", url: "", upvotes: 1543, verified: true, rating: 4.5, icon: "☝️", category: "marketing-advertising", subcategory: "ai-cold-calling" },
+      { id: "structurely", name: "Structurely", description: "AI real estate cold calling assistant", url: "", upvotes: 1432, verified: true, rating: 4.4, icon: "🏗️", category: "marketing-advertising", subcategory: "ai-cold-calling" },
+      { id: "outplay", name: "Outplay", description: "AI sales engagement and cold calling platform", url: "", upvotes: 1298, verified: true, rating: 4.3, icon: "🎯", category: "marketing-advertising", subcategory: "ai-cold-calling" },
+      { id: "smartwriter", name: "SmartWriter", description: "AI cold email and calling assistant", url: "", upvotes: 1156, verified: true, rating: 4.2, icon: "✍️", category: "marketing-advertising", subcategory: "ai-cold-calling" }
+    ],
+    "ai-digital-marketing": [
+      { id: "askingtips", name: "AskingTips", description: "AI digital marketing insights platform", url: "", upvotes: 1678, verified: true, rating: 4.5, icon: "💡", category: "marketing-advertising", subcategory: "ai-digital-marketing" },
+      { id: "vendasta", name: "Vendasta", description: "AI digital marketing platform for agencies", url: "", upvotes: 1543, verified: true, rating: 4.4, icon: "🏢", category: "marketing-advertising", subcategory: "ai-digital-marketing" },
+      { id: "swipe-insight", name: "Swipe Insight", description: "AI competitor analysis for digital marketing", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "📱", category: "marketing-advertising", subcategory: "ai-digital-marketing" },
+      { id: "seomator", name: "Seomator", description: "AI SEO and digital marketing tool", url: "", upvotes: 1298, verified: true, rating: 4.2, icon: "🔍", category: "marketing-advertising", subcategory: "ai-digital-marketing" },
+      { id: "head", name: "Head", description: "AI digital marketing optimization platform", url: "", upvotes: 1156, verified: true, rating: 4.1, icon: "🧠", category: "marketing-advertising", subcategory: "ai-digital-marketing" }
+    ],
+    "ai-email-generator": [
+      { id: "superhuman", name: "Superhuman", description: "AI email client and generator", url: "", upvotes: 2134, verified: true, rating: 4.7, icon: "⚡", category: "marketing-advertising", subcategory: "ai-email-generator" },
+      { id: "recruit-crm-email", name: "Recruit CRM", description: "AI recruiting email generator", url: "", upvotes: 1678, verified: true, rating: 4.5, icon: "👥", category: "marketing-advertising", subcategory: "ai-email-generator" },
+      { id: "toolsaday", name: "Toolsaday", description: "AI email and content generator", url: "", upvotes: 1432, verified: true, rating: 4.4, icon: "🛠️", category: "marketing-advertising", subcategory: "ai-email-generator" },
+      { id: "stripo", name: "Stripo", description: "AI email template and content generator", url: "", upvotes: 1298, verified: true, rating: 4.3, icon: "📧", category: "marketing-advertising", subcategory: "ai-email-generator" },
+      { id: "chatgpt-sales-prompts", name: "200+ ChatGPT Mega-Prompts for Sales", description: "AI email and sales prompt collection", url: "", upvotes: 1156, verified: true, rating: 4.2, icon: "💬", category: "marketing-advertising", subcategory: "ai-email-generator" }
+    ],
+    "ai-email-marketing": [
+      { id: "beacons", name: "Beacons", description: "AI creator economy and email marketing platform", url: "", upvotes: 1987, verified: true, rating: 4.6, icon: "🎯", category: "marketing-advertising", subcategory: "ai-email-marketing" },
+      { id: "mailchimp", name: "Mailchimp", description: "AI email marketing and automation platform", url: "", upvotes: 1876, verified: true, rating: 4.5, icon: "🐵", category: "marketing-advertising", subcategory: "ai-email-marketing" },
+      { id: "klaviyo", name: "Klaviyo", description: "AI email marketing for ecommerce", url: "", upvotes: 1654, verified: true, rating: 4.4, icon: "💌", category: "marketing-advertising", subcategory: "ai-email-marketing" },
+      { id: "smartlead", name: "Smartlead", description: "AI cold email marketing platform", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "📬", category: "marketing-advertising", subcategory: "ai-email-marketing" },
+      { id: "robly", name: "Robly Email Marketing", description: "AI email marketing automation", url: "", upvotes: 1298, verified: true, rating: 4.2, icon: "🤖", category: "marketing-advertising", subcategory: "ai-email-marketing" }
+    ],
+    "ai-flyer-generator": [
+      { id: "styldod", name: "Styldod", description: "AI real estate flyer generator", url: "", upvotes: 1543, verified: true, rating: 4.5, icon: "🏠", category: "marketing-advertising", subcategory: "ai-flyer-generator" },
+      { id: "7lemon", name: "7Lemon", description: "AI flyer and marketing material generator", url: "", upvotes: 1432, verified: true, rating: 4.4, icon: "🍋", category: "marketing-advertising", subcategory: "ai-flyer-generator" },
+      { id: "ilogo-ai", name: "iLogo - Ai Logo Design", description: "AI logo and flyer design platform", url: "", upvotes: 1298, verified: true, rating: 4.3, icon: "🎨", category: "marketing-advertising", subcategory: "ai-flyer-generator" },
+      { id: "designs-ai", name: "Designs AI", description: "AI design platform for flyers and graphics", url: "", upvotes: 1156, verified: true, rating: 4.2, icon: "🖌️", category: "marketing-advertising", subcategory: "ai-flyer-generator" },
+      { id: "logome", name: "Logome", description: "AI brand identity and flyer generator", url: "", upvotes: 987, verified: true, rating: 4.1, icon: "🏷️", category: "marketing-advertising", subcategory: "ai-flyer-generator" }
+    ],
+    "ai-lead-generation": [
+      { id: "getprospect", name: "GetProspect", description: "AI lead generation and prospecting tool", url: "", upvotes: 1987, verified: true, rating: 4.6, icon: "🎯", category: "marketing-advertising", subcategory: "ai-lead-generation" },
+      { id: "phantombuster", name: "PhantomBuster", description: "AI lead generation automation platform", url: "", upvotes: 1876, verified: true, rating: 4.5, icon: "👻", category: "marketing-advertising", subcategory: "ai-lead-generation" },
+      { id: "instantly-ai", name: "Instantly.ai", description: "AI cold email lead generation", url: "", upvotes: 1654, verified: true, rating: 4.4, icon: "⚡", category: "marketing-advertising", subcategory: "ai-lead-generation" },
+      { id: "clay", name: "Clay", description: "AI lead enrichment and generation platform", url: "", upvotes: 1543, verified: true, rating: 4.3, icon: "🧱", category: "marketing-advertising", subcategory: "ai-lead-generation" },
+      { id: "popl", name: "Popl", description: "AI digital business card and lead generation", url: "", upvotes: 1432, verified: true, rating: 4.2, icon: "📇", category: "marketing-advertising", subcategory: "ai-lead-generation" }
+    ],
+    "ai-marketing": [
+      { id: "mailchimp-marketing", name: "Mailchimp", description: "AI marketing automation platform", url: "", upvotes: 2234, verified: true, rating: 4.7, icon: "🐵", category: "marketing-advertising", subcategory: "ai-marketing" },
+      { id: "klaviyo-marketing", name: "Klaviyo", description: "AI marketing platform for brands", url: "", upvotes: 1987, verified: true, rating: 4.6, icon: "💌", category: "marketing-advertising", subcategory: "ai-marketing" },
+      { id: "jasper-ai", name: "Jasper AI", description: "AI content marketing platform", url: "", upvotes: 1876, verified: true, rating: 4.5, icon: "💎", category: "marketing-advertising", subcategory: "ai-marketing" },
+      { id: "hypeauditor", name: "HypeAuditor", description: "AI influencer marketing analytics", url: "", upvotes: 1654, verified: true, rating: 4.4, icon: "📊", category: "marketing-advertising", subcategory: "ai-marketing" },
+      { id: "activecampaign", name: "ActiveCampaign", description: "AI marketing automation and CRM", url: "", upvotes: 1543, verified: true, rating: 4.3, icon: "🎯", category: "marketing-advertising", subcategory: "ai-marketing" }
+    ],
+    "ai-marketing-plan-generator": [
+      { id: "bizplanner-ai", name: "BizPlanner AI", description: "AI business and marketing plan generator", url: "", upvotes: 1678, verified: true, rating: 4.5, icon: "📋", category: "marketing-advertising", subcategory: "ai-marketing-plan-generator" },
+      { id: "plannit-ai", name: "Plannit AI", description: "AI marketing strategy planner", url: "", upvotes: 1543, verified: true, rating: 4.4, icon: "🗓️", category: "marketing-advertising", subcategory: "ai-marketing-plan-generator" },
+      { id: "averi-ai", name: "Averi AI", description: "AI marketing plan and strategy generator", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "🤖", category: "marketing-advertising", subcategory: "ai-marketing-plan-generator" },
+      { id: "content-codex", name: "Content Codex", description: "AI content marketing plan generator", url: "", upvotes: 1298, verified: true, rating: 4.2, icon: "📚", category: "marketing-advertising", subcategory: "ai-marketing-plan-generator" },
+      { id: "molo9", name: "Molo9™", description: "AI marketing strategy and planning platform", url: "", upvotes: 1156, verified: true, rating: 4.1, icon: "🎯", category: "marketing-advertising", subcategory: "ai-marketing-plan-generator" }
+    ],
+    "ai-pitch-deck-generator": [
+      { id: "pitch", name: "Pitch", description: "AI presentation and pitch deck platform", url: "", upvotes: 1987, verified: true, rating: 4.6, icon: "🎯", category: "marketing-advertising", subcategory: "ai-pitch-deck-generator" },
+      { id: "slidebean", name: "Slidebean", description: "AI pitch deck design and generator", url: "", upvotes: 1876, verified: true, rating: 4.5, icon: "📊", category: "marketing-advertising", subcategory: "ai-pitch-deck-generator" },
+      { id: "openvc", name: "OpenVC", description: "AI pitch deck builder for startups", url: "", upvotes: 1654, verified: true, rating: 4.4, icon: "💼", category: "marketing-advertising", subcategory: "ai-pitch-deck-generator" },
+      { id: "storydoc", name: "Storydoc", description: "AI interactive pitch deck generator", url: "", upvotes: 1543, verified: true, rating: 4.3, icon: "📖", category: "marketing-advertising", subcategory: "ai-pitch-deck-generator" },
+      { id: "upmetrics", name: "Upmetrics", description: "AI business plan and pitch deck generator", url: "", upvotes: 1432, verified: true, rating: 4.2, icon: "📈", category: "marketing-advertising", subcategory: "ai-pitch-deck-generator" }
+    ],
+    "ai-reply": [
+      { id: "autoresponder-ai", name: "AutoResponder.ai", description: "AI auto-reply system for messaging", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "🤖", category: "marketing-advertising", subcategory: "ai-reply" },
+      { id: "tanka", name: "Tanka", description: "AI social media reply generator", url: "", upvotes: 1543, verified: true, rating: 4.4, icon: "💬", category: "marketing-advertising", subcategory: "ai-reply" },
+      { id: "linktodm", name: "LinktoDM", description: "AI DM and reply automation tool", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "🔗", category: "marketing-advertising", subcategory: "ai-reply" },
+      { id: "hyperclapper", name: "HyperClapper", description: "AI social media reply assistant", url: "", upvotes: 1298, verified: true, rating: 4.2, icon: "👏", category: "marketing-advertising", subcategory: "ai-reply" },
+      { id: "replyguy", name: "ReplyGuy", description: "AI reply generation for social media", url: "", upvotes: 1156, verified: true, rating: 4.1, icon: "👤", category: "marketing-advertising", subcategory: "ai-reply" }
+    ],
+    "ai-response-generator": [
+      { id: "responso", name: "Responso", description: "AI response generator for customer service", url: "", upvotes: 1789, verified: true, rating: 4.6, icon: "💬", category: "marketing-advertising", subcategory: "ai-response-generator" },
+      { id: "engage-ai", name: "Engage AI", description: "AI social media response generator", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "🤝", category: "marketing-advertising", subcategory: "ai-response-generator" },
+      { id: "commentguard", name: "CommentGuard", description: "AI comment and response moderation", url: "", upvotes: 1543, verified: true, rating: 4.4, icon: "🛡️", category: "marketing-advertising", subcategory: "ai-response-generator" },
+      { id: "mara-ai", name: "MARA AI", description: "AI response generator for reviews", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "⭐", category: "marketing-advertising", subcategory: "ai-response-generator" },
+      { id: "mailbutler", name: "Mailbutler", description: "AI email response generator", url: "", upvotes: 1298, verified: true, rating: 4.2, icon: "📧", category: "marketing-advertising", subcategory: "ai-response-generator" }
+    ],
+    "ai-reviews": [
+      { id: "roast", name: "ROAST", description: "AI dating profile review platform", url: "", upvotes: 1876, verified: true, rating: 4.6, icon: "🔥", category: "marketing-advertising", subcategory: "ai-reviews" },
+      { id: "ai-otaku-labo", name: "AI オタクLABO (AI Otaku LABO)", description: "AI review and analysis platform", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "🤖", category: "marketing-advertising", subcategory: "ai-reviews" },
+      { id: "aijourney", name: "AIJourney", description: "AI tool review and comparison platform", url: "", upvotes: 1543, verified: true, rating: 4.4, icon: "🚀", category: "marketing-advertising", subcategory: "ai-reviews" },
+      { id: "tracefuse", name: "TraceFuse", description: "AI review analysis and insights", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "🔍", category: "marketing-advertising", subcategory: "ai-reviews" },
+      { id: "vetted-reviews", name: "Vetted", description: "AI product review and recommendation platform", url: "", upvotes: 1298, verified: true, rating: 4.2, icon: "✅", category: "marketing-advertising", subcategory: "ai-reviews" }
+    ],
+    "ai-seo-tools": [
+      { id: "prepostseo", name: "Prepostseo", description: "AI SEO tools and optimization platform", url: "", upvotes: 2134, verified: true, rating: 4.7, icon: "🔍", category: "marketing-advertising", subcategory: "ai-seo-tools" },
+      { id: "surfer", name: "Surfer", description: "AI content optimization for SEO", url: "", upvotes: 1987, verified: true, rating: 4.6, icon: "🏄", category: "marketing-advertising", subcategory: "ai-seo-tools" },
+      { id: "aiseo", name: "AISEO", description: "AI SEO content generator and optimizer", url: "", upvotes: 1876, verified: true, rating: 4.5, icon: "🚀", category: "marketing-advertising", subcategory: "ai-seo-tools" },
+      { id: "tubebuddy", name: "TubeBuddy", description: "AI YouTube SEO optimization tool", url: "", upvotes: 1654, verified: true, rating: 4.4, icon: "📺", category: "marketing-advertising", subcategory: "ai-seo-tools" },
+      { id: "seo-ai", name: "SEO.AI", description: "AI SEO automation and optimization platform", url: "", upvotes: 1543, verified: true, rating: 4.3, icon: "🤖", category: "marketing-advertising", subcategory: "ai-seo-tools" }
+    ],
+    "ai-sales": [
+      { id: "instantly-ai-sales", name: "Instantly.ai", description: "AI cold email sales automation", url: "", upvotes: 2234, verified: true, rating: 4.7, icon: "⚡", category: "marketing-advertising", subcategory: "ai-sales" },
+      { id: "gong", name: "Gong", description: "AI sales conversation analytics", url: "", upvotes: 1987, verified: true, rating: 4.6, icon: "🥇", category: "marketing-advertising", subcategory: "ai-sales" },
+      { id: "outreach", name: "Outreach", description: "AI sales engagement platform", url: "", upvotes: 1876, verified: true, rating: 4.5, icon: "📬", category: "marketing-advertising", subcategory: "ai-sales" },
+      { id: "seismic", name: "Seismic", description: "AI sales enablement platform", url: "", upvotes: 1654, verified: true, rating: 4.4, icon: "📊", category: "marketing-advertising", subcategory: "ai-sales" },
+      { id: "truegether", name: "TrueGether", description: "AI marketplace and sales platform", url: "", upvotes: 1543, verified: true, rating: 4.3, icon: "🛒", category: "marketing-advertising", subcategory: "ai-sales" }
+    ],
+    "ai-sales-assistant": [
+      { id: "getprospect-sales", name: "GetProspect", description: "AI sales prospecting assistant", url: "", upvotes: 1789, verified: true, rating: 4.6, icon: "🎯", category: "marketing-advertising", subcategory: "ai-sales-assistant" },
+      { id: "dialpad", name: "Dialpad", description: "AI sales communication platform", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "☎️", category: "marketing-advertising", subcategory: "ai-sales-assistant" },
+      { id: "callhippo", name: "CallHippo", description: "AI virtual phone system for sales", url: "", upvotes: 1543, verified: true, rating: 4.4, icon: "🦛", category: "marketing-advertising", subcategory: "ai-sales-assistant" },
+      { id: "respond-io", name: "Respond.io", description: "AI customer conversation platform for sales", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "💬", category: "marketing-advertising", subcategory: "ai-sales-assistant" },
+      { id: "tome", name: "Tome", description: "AI presentation tool for sales", url: "", upvotes: 1298, verified: true, rating: 4.2, icon: "📚", category: "marketing-advertising", subcategory: "ai-sales-assistant" }
+    ],
+    "ai-shopify-store-builder": [
+      { id: "storebuild-ai", name: "StoreBuild.ai", description: "AI Shopify store builder and optimizer", url: "", upvotes: 1678, verified: true, rating: 4.5, icon: "🛍️", category: "marketing-advertising", subcategory: "ai-shopify-store-builder" },
+      { id: "glitching-ai", name: "Glitching AI", description: "AI ecommerce store generator", url: "", upvotes: 1543, verified: true, rating: 4.4, icon: "⚡", category: "marketing-advertising", subcategory: "ai-shopify-store-builder" },
+      { id: "kopy", name: "Kopy", description: "AI Shopify product description generator", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "✍️", category: "marketing-advertising", subcategory: "ai-shopify-store-builder" },
+      { id: "marketsy-ai", name: "Marketsy.ai", description: "AI marketplace and store builder", url: "", upvotes: 1298, verified: true, rating: 4.2, icon: "🏪", category: "marketing-advertising", subcategory: "ai-shopify-store-builder" },
+      { id: "buildmystores", name: "BuildMyStores", description: "AI automated store builder", url: "", upvotes: 1156, verified: true, rating: 4.1, icon: "🏗️", category: "marketing-advertising", subcategory: "ai-shopify-store-builder" }
+    ],
+    "ai-website-designer": [
+      { id: "readdy", name: "Readdy", description: "AI website design and builder", url: "", upvotes: 1987, verified: true, rating: 4.6, icon: "🌐", category: "marketing-advertising", subcategory: "ai-website-designer" },
+      { id: "studio-ai", name: "STUDIO AI", description: "AI web design platform", url: "", upvotes: 1876, verified: true, rating: 4.5, icon: "🎨", category: "marketing-advertising", subcategory: "ai-website-designer" },
+      { id: "wegic", name: "Wegic", description: "AI website builder and designer", url: "", upvotes: 1654, verified: true, rating: 4.4, icon: "🪄", category: "marketing-advertising", subcategory: "ai-website-designer" },
+      { id: "b12", name: "B12", description: "AI website builder for professionals", url: "", upvotes: 1543, verified: true, rating: 4.3, icon: "🏢", category: "marketing-advertising", subcategory: "ai-website-designer" },
+      { id: "baked-design", name: "Baked Design", description: "AI web design automation platform", url: "", upvotes: 1432, verified: true, rating: 4.2, icon: "🍞", category: "marketing-advertising", subcategory: "ai-website-designer" }
+    ],
+    "ad-copy": [
+      { id: "scrip-ai", name: "Scrip AI", description: "AI ad copy and script generator", url: "", upvotes: 1789, verified: true, rating: 4.6, icon: "📝", category: "marketing-advertising", subcategory: "ad-copy" },
+      { id: "freeadcopy", name: "Freeadcopy", description: "Free AI ad copy generator", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "💰", category: "marketing-advertising", subcategory: "ad-copy" },
+      { id: "pixcanva-ai", name: "PixCanva AI", description: "AI ad copy and design platform", url: "", upvotes: 1543, verified: true, rating: 4.4, icon: "🎨", category: "marketing-advertising", subcategory: "ad-copy" },
+      { id: "adcopy", name: "AdCopy", description: "AI advertising copy generator", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "📢", category: "marketing-advertising", subcategory: "ad-copy" },
+      { id: "copycop-ai", name: "CopyCop AI", description: "AI ad copy optimization and compliance", url: "", upvotes: 1298, verified: true, rating: 4.2, icon: "👮", category: "marketing-advertising", subcategory: "ad-copy" }
+    ],
+    "google-ads-ai": [
+      { id: "search-atlas", name: "Search Atlas", description: "AI Google Ads optimization platform", url: "", upvotes: 1876, verified: true, rating: 4.6, icon: "🗺️", category: "marketing-advertising", subcategory: "google-ads-ai" },
+      { id: "blobr", name: "Blobr", description: "AI Google Ads insights and analytics", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "🫧", category: "marketing-advertising", subcategory: "google-ads-ai" },
+      { id: "30characters", name: "30characters", description: "AI Google Ads headline generator", url: "", upvotes: 1543, verified: true, rating: 4.4, icon: "📊", category: "marketing-advertising", subcategory: "google-ads-ai" },
+      { id: "adwisely", name: "Adwisely", description: "AI Google Ads automation for ecommerce", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "🛒", category: "marketing-advertising", subcategory: "google-ads-ai" },
+      { id: "dittto-ai", name: "Dittto.ai", description: "AI Google Ads copy generator", url: "", upvotes: 1298, verified: true, rating: 4.2, icon: "📝", category: "marketing-advertising", subcategory: "google-ads-ai" }
+    ],
+    "seo-writing-ai": [
+      { id: "surfer-seo", name: "Surfer", description: "AI SEO content optimization platform", url: "", upvotes: 2134, verified: true, rating: 4.7, icon: "🏄", category: "marketing-advertising", subcategory: "seo-writing-ai" },
+      { id: "junia-ai", name: "Junia AI", description: "AI SEO content writer and optimizer", url: "", upvotes: 1987, verified: true, rating: 4.6, icon: "🚀", category: "marketing-advertising", subcategory: "seo-writing-ai" },
+      { id: "surgegraph", name: "SurgeGraph", description: "AI SEO content generation platform", url: "", upvotes: 1876, verified: true, rating: 4.5, icon: "📈", category: "marketing-advertising", subcategory: "seo-writing-ai" },
+      { id: "senuto", name: "Senuto", description: "AI SEO content and keyword tool", url: "", upvotes: 1654, verified: true, rating: 4.4, icon: "🔍", category: "marketing-advertising", subcategory: "seo-writing-ai" },
+      { id: "seo-writing-ai-tool", name: "SEO Writing AI", description: "AI SEO content writing assistant", url: "", upvotes: 1543, verified: true, rating: 4.3, icon: "✍️", category: "marketing-advertising", subcategory: "seo-writing-ai" }
+    ]
   }
 };
 
