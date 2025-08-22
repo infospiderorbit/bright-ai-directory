@@ -2022,6 +2022,78 @@ export const toolsData: { [key: string]: { [key: string]: Tool[] } } = {
       { id: "arbitragescanner", name: "ArbitrageScanner.io", description: "AI arbitrage trading opportunities scanner", url: "", upvotes: 1156, verified: true, rating: 4.4, icon: "🔍", category: "legal-finance", subcategory: "ai-trading-bot" },
       { id: "gunbot", name: "Gunbot", description: "AI cryptocurrency trading bot", url: "", upvotes: 987, verified: true, rating: 4.3, icon: "🔫", category: "legal-finance", subcategory: "ai-trading-bot" }
     ]
+  },
+  "business-management": {
+    "ai-crm": [
+      { id: "hubspot", name: "HubSpot", description: "AI-powered CRM and marketing platform", url: "", upvotes: 2145, verified: true, rating: 4.8, icon: "🚀", category: "business-management", subcategory: "ai-crm" },
+      { id: "salesforce-platform", name: "Salesforce Platform", description: "AI-enhanced CRM and business platform", url: "", upvotes: 1987, verified: true, rating: 4.7, icon: "☁️", category: "business-management", subcategory: "ai-crm" },
+      { id: "tabsquare", name: "TabSquare", description: "AI restaurant CRM and management platform", url: "", upvotes: 1432, verified: true, rating: 4.6, icon: "🍽️", category: "business-management", subcategory: "ai-crm" },
+      { id: "attio", name: "Attio", description: "AI-powered modern CRM platform", url: "", upvotes: 1298, verified: true, rating: 4.5, icon: "⚡", category: "business-management", subcategory: "ai-crm" },
+      { id: "recruit-crm", name: "Recruit CRM", description: "AI recruiting and talent CRM platform", url: "", upvotes: 1156, verified: true, rating: 4.4, icon: "👥", category: "business-management", subcategory: "ai-crm" }
+    ],
+    "ai-call-center": [
+      { id: "openphone", name: "OpenPhone", description: "AI business phone and call center solution", url: "", upvotes: 1678, verified: true, rating: 4.7, icon: "📞", category: "business-management", subcategory: "ai-call-center" },
+      { id: "callhippo", name: "CallHippo", description: "AI-powered virtual phone system", url: "", upvotes: 1432, verified: true, rating: 4.6, icon: "🦛", category: "business-management", subcategory: "ai-call-center" },
+      { id: "convoso", name: "Convoso", description: "AI call center and lead management platform", url: "", upvotes: 1298, verified: true, rating: 4.5, icon: "🎯", category: "business-management", subcategory: "ai-call-center" },
+      { id: "justcall", name: "JustCall", description: "AI cloud phone system for businesses", url: "", upvotes: 1156, verified: true, rating: 4.4, icon: "☁️", category: "business-management", subcategory: "ai-call-center" },
+      { id: "bland-ai", name: "Bland AI", description: "AI voice agent for call centers", url: "", upvotes: 987, verified: true, rating: 4.3, icon: "🤖", category: "business-management", subcategory: "ai-call-center" }
+    ],
+    "ai-customer-service": [
+      { id: "chaport", name: "Chaport", description: "AI-powered live chat and customer service", url: "", upvotes: 1567, verified: true, rating: 4.7, icon: "💬", category: "business-management", subcategory: "ai-customer-service" },
+      { id: "dialpad", name: "Dialpad", description: "AI business communications platform", url: "", upvotes: 1432, verified: true, rating: 4.6, icon: "📱", category: "business-management", subcategory: "ai-customer-service" },
+      { id: "openphone-cs", name: "OpenPhone", description: "AI customer service phone solution", url: "", upvotes: 1298, verified: true, rating: 4.5, icon: "📞", category: "business-management", subcategory: "ai-customer-service" },
+      { id: "jotform-ai-agents", name: "Jotform AI Agents", description: "AI agents for customer service automation", url: "", upvotes: 1156, verified: true, rating: 4.4, icon: "🤖", category: "business-management", subcategory: "ai-customer-service" },
+      { id: "tidio", name: "Tidio", description: "AI chatbot and customer service platform", url: "", upvotes: 987, verified: true, rating: 4.3, icon: "🎭", category: "business-management", subcategory: "ai-customer-service" }
+    ],
+    "ai-erp": [
+      { id: "memento-database", name: "Memento Database", description: "AI-powered business database and ERP", url: "", upvotes: 1432, verified: true, rating: 4.6, icon: "🗃️", category: "business-management", subcategory: "ai-erp" },
+      { id: "erp-ai", name: "ERP.AI", description: "AI-enhanced enterprise resource planning", url: "", upvotes: 1298, verified: true, rating: 4.5, icon: "🏢", category: "business-management", subcategory: "ai-erp" },
+      { id: "iota-uz", name: "IOTA.UZ", description: "AI ERP system for modern businesses", url: "", upvotes: 987, verified: true, rating: 4.4, icon: "⚡", category: "business-management", subcategory: "ai-erp" },
+      { id: "tangle", name: "Tangle", description: "AI supply chain and ERP platform", url: "", upvotes: 754, verified: true, rating: 4.3, icon: "🕸️", category: "business-management", subcategory: "ai-erp" },
+      { id: "stateset", name: "StateSet", description: "AI commerce and ERP automation", url: "", upvotes: 621, verified: true, rating: 4.2, icon: "⚙️", category: "business-management", subcategory: "ai-erp" }
+    ],
+    "ai-interview-assistant": [
+      { id: "final-round-ai", name: "Final Round AI", description: "AI interview preparation and coaching", url: "", upvotes: 1567, verified: true, rating: 4.7, icon: "🎯", category: "business-management", subcategory: "ai-interview-assistant" },
+      { id: "parakeetai", name: "ParakeetAI", description: "AI interview transcription and analysis", url: "", upvotes: 1432, verified: true, rating: 4.6, icon: "🦜", category: "business-management", subcategory: "ai-interview-assistant" },
+      { id: "listen-labs", name: "Listen Labs", description: "AI conversation intelligence for interviews", url: "", upvotes: 1298, verified: true, rating: 4.5, icon: "👂", category: "business-management", subcategory: "ai-interview-assistant" },
+      { id: "talent-titan", name: "Talent Titan", description: "AI talent assessment and interview platform", url: "", upvotes: 1156, verified: true, rating: 4.4, icon: "⚡", category: "business-management", subcategory: "ai-interview-assistant" },
+      { id: "wonsultingai", name: "WonsultingAI", description: "AI career coaching and interview prep", url: "", upvotes: 987, verified: true, rating: 4.3, icon: "🏆", category: "business-management", subcategory: "ai-interview-assistant" }
+    ],
+    "ai-product-manager": [
+      { id: "productboard", name: "Productboard", description: "AI product management and roadmap platform", url: "", upvotes: 1789, verified: true, rating: 4.8, icon: "📋", category: "business-management", subcategory: "ai-product-manager" },
+      { id: "bagel-ai", name: "Bagel AI", description: "AI product management assistant", url: "", upvotes: 1432, verified: true, rating: 4.6, icon: "🥯", category: "business-management", subcategory: "ai-product-manager" },
+      { id: "chatprd", name: "ChatPRD", description: "AI product requirements document generator", url: "", upvotes: 1298, verified: true, rating: 4.5, icon: "📝", category: "business-management", subcategory: "ai-product-manager" },
+      { id: "userlens-wudpecker", name: "Userlens by Wudpecker", description: "AI user research and product insights", url: "", upvotes: 1156, verified: true, rating: 4.4, icon: "🔍", category: "business-management", subcategory: "ai-product-manager" },
+      { id: "zeda-io", name: "Zeda.io", description: "AI product discovery and management platform", url: "", upvotes: 987, verified: true, rating: 4.3, icon: "🎯", category: "business-management", subcategory: "ai-product-manager" }
+    ],
+    "ai-project-management": [
+      { id: "miro", name: "Miro", description: "AI-powered collaborative whiteboard and project management", url: "", upvotes: 2134, verified: true, rating: 4.8, icon: "🎨", category: "business-management", subcategory: "ai-project-management" },
+      { id: "dooray", name: "Dooray!", description: "AI project management and collaboration platform", url: "", upvotes: 1432, verified: true, rating: 4.6, icon: "🚪", category: "business-management", subcategory: "ai-project-management" },
+      { id: "whimsical", name: "Whimsical", description: "AI visual collaboration and project planning", url: "", upvotes: 1298, verified: true, rating: 4.5, icon: "✨", category: "business-management", subcategory: "ai-project-management" },
+      { id: "dronedeploy", name: "DroneDeploy", description: "AI drone project management platform", url: "", upvotes: 1156, verified: true, rating: 4.4, icon: "🚁", category: "business-management", subcategory: "ai-project-management" },
+      { id: "smartsuite", name: "SmartSuite", description: "AI work management and project platform", url: "", upvotes: 987, verified: true, rating: 4.3, icon: "🎯", category: "business-management", subcategory: "ai-project-management" }
+    ],
+    "ai-recruiting": [
+      { id: "mercor", name: "Mercor", description: "AI talent matching and recruiting platform", url: "", upvotes: 1678, verified: true, rating: 4.7, icon: "🎯", category: "business-management", subcategory: "ai-recruiting" },
+      { id: "recruit-crm-recruiting", name: "Recruit CRM", description: "AI recruiting and applicant tracking system", url: "", upvotes: 1432, verified: true, rating: 4.6, icon: "👥", category: "business-management", subcategory: "ai-recruiting" },
+      { id: "zara-recruiting", name: "Zara", description: "AI recruiting and talent acquisition", url: "", upvotes: 1298, verified: true, rating: 4.5, icon: "👗", category: "business-management", subcategory: "ai-recruiting" },
+      { id: "codesignal", name: "CodeSignal", description: "AI technical recruiting and assessment", url: "", upvotes: 1156, verified: true, rating: 4.4, icon: "💻", category: "business-management", subcategory: "ai-recruiting" },
+      { id: "talent-titan-recruiting", name: "Talent Titan", description: "AI recruiting and talent management", url: "", upvotes: 987, verified: true, rating: 4.3, icon: "⚡", category: "business-management", subcategory: "ai-recruiting" }
+    ],
+    "ai-roadmap": [
+      { id: "bagel-ai-roadmap", name: "Bagel AI", description: "AI product roadmap and planning tool", url: "", upvotes: 1432, verified: true, rating: 4.6, icon: "🥯", category: "business-management", subcategory: "ai-roadmap" },
+      { id: "zeda-io-roadmap", name: "Zeda.io", description: "AI product roadmap management platform", url: "", upvotes: 1298, verified: true, rating: 4.5, icon: "🎯", category: "business-management", subcategory: "ai-roadmap" },
+      { id: "productroadmap-ai", name: "ProductRoadmap.ai", description: "AI-powered product roadmap generator", url: "", upvotes: 1156, verified: true, rating: 4.4, icon: "🗺️", category: "business-management", subcategory: "ai-roadmap" },
+      { id: "skillai", name: "SkillAI", description: "AI skill development roadmap platform", url: "", upvotes: 987, verified: true, rating: 4.3, icon: "🧠", category: "business-management", subcategory: "ai-roadmap" },
+      { id: "plani-ai", name: "Plani.ai", description: "AI project and roadmap planning tool", url: "", upvotes: 754, verified: true, rating: 4.2, icon: "📋", category: "business-management", subcategory: "ai-roadmap" }
+    ],
+    "ai-workflow": [
+      { id: "n8n", name: "n8n", description: "AI workflow automation platform", url: "", upvotes: 1789, verified: true, rating: 4.7, icon: "⚡", category: "business-management", subcategory: "ai-workflow" },
+      { id: "zapier", name: "Zapier", description: "AI automation and workflow integration", url: "", upvotes: 1678, verified: true, rating: 4.6, icon: "🔗", category: "business-management", subcategory: "ai-workflow" },
+      { id: "syncsketch", name: "SyncSketch", description: "AI creative workflow and collaboration", url: "", upvotes: 1432, verified: true, rating: 4.5, icon: "🎨", category: "business-management", subcategory: "ai-workflow" },
+      { id: "copy-ai", name: "Copy.ai", description: "AI content and marketing workflow platform", url: "", upvotes: 1298, verified: true, rating: 4.4, icon: "✍️", category: "business-management", subcategory: "ai-workflow" },
+      { id: "dify-ai", name: "Dify.AI", description: "AI application development and workflow platform", url: "", upvotes: 1156, verified: true, rating: 4.3, icon: "🛠️", category: "business-management", subcategory: "ai-workflow" }
+    ]
   }
 };
 
