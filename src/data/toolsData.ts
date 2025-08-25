@@ -2541,6 +2541,71 @@ export const toolsData: { [key: string]: { [key: string]: Tool[] } } = {
       { id: "audeering", name: "audEERING", description: "AI voice emotion and translation analysis", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "👂", category: "education-translation", subcategory: "ai-voice-translator" },
       { id: "translinguist", name: "TransLinguist", description: "AI multilingual voice translation platform", url: "", upvotes: 1298, verified: true, rating: 4.2, icon: "🌍", category: "education-translation", subcategory: "ai-voice-translator" }
     ]
+  },
+  "chatbots-virtual-companions": {
+    "ai-anime-girlfriend": [
+      { id: "juicy-ai", name: "Juicy AI", description: "AI anime girlfriend chat and roleplay platform", url: "", upvotes: 2876, verified: true, rating: 4.7, icon: "💕", category: "chatbots-virtual-companions", subcategory: "ai-anime-girlfriend" },
+      { id: "sorapix", name: "SoraPix", description: "AI anime character generation and chat", url: "", upvotes: 2543, verified: true, rating: 4.6, icon: "🎨", category: "chatbots-virtual-companions", subcategory: "ai-anime-girlfriend" },
+      { id: "ai-anime-girlfriend", name: "AI Anime Girlfriend", description: "Personalized AI anime companion and chat", url: "", upvotes: 2321, verified: true, rating: 4.5, icon: "🌸", category: "chatbots-virtual-companions", subcategory: "ai-anime-girlfriend" },
+      { id: "ainder", name: "Ainder - Find Anime AI Friends", description: "AI anime friend matching and chat platform", url: "", upvotes: 1987, verified: true, rating: 4.4, icon: "👫", category: "chatbots-virtual-companions", subcategory: "ai-anime-girlfriend" },
+      { id: "gpt-personal-companion", name: "GPT Personal Companion", description: "AI personal companion with anime personality", url: "", upvotes: 1765, verified: true, rating: 4.3, icon: "🤖", category: "chatbots-virtual-companions", subcategory: "ai-anime-girlfriend" }
+    ],
+    "ai-boyfriend": [
+      { id: "candy-ai", name: "Candy AI", description: "AI boyfriend companion with realistic conversations", url: "", upvotes: 3124, verified: true, rating: 4.8, icon: "🍭", category: "chatbots-virtual-companions", subcategory: "ai-boyfriend" },
+      { id: "nomi-ai", name: "Nomi.ai", description: "AI boyfriend with emotional intelligence", url: "", upvotes: 2876, verified: true, rating: 4.7, icon: "💙", category: "chatbots-virtual-companions", subcategory: "ai-boyfriend" },
+      { id: "secret-desires", name: "Secret Desires", description: "AI intimate boyfriend chat companion", url: "", upvotes: 2543, verified: true, rating: 4.6, icon: "🔥", category: "chatbots-virtual-companions", subcategory: "ai-boyfriend" },
+      { id: "rubii-ai", name: "Rubii: AI Character Community", description: "AI boyfriend characters and community", url: "", upvotes: 2321, verified: true, rating: 4.5, icon: "💎", category: "chatbots-virtual-companions", subcategory: "ai-boyfriend" },
+      { id: "muah-ai", name: "Muah.AI", description: "AI boyfriend with photo and voice features", url: "", upvotes: 1987, verified: true, rating: 4.4, icon: "💋", category: "chatbots-virtual-companions", subcategory: "ai-boyfriend" }
+    ],
+    "ai-character": [
+      { id: "janitor-ai-character", name: "Janitor AI", description: "AI character creation and roleplay platform", url: "", upvotes: 3456, verified: true, rating: 4.8, icon: "🧹", category: "chatbots-virtual-companions", subcategory: "ai-character" },
+      { id: "crushon-ai", name: "CrushOn.AI", description: "AI character chat with no restrictions", url: "", upvotes: 3124, verified: true, rating: 4.7, icon: "💘", category: "chatbots-virtual-companions", subcategory: "ai-character" },
+      { id: "talkie-ai-character", name: "Talkie AI", description: "AI character conversations and roleplay", url: "", upvotes: 2876, verified: true, rating: 4.6, icon: "🗣️", category: "chatbots-virtual-companions", subcategory: "ai-character" },
+      { id: "dippy", name: "Dippy", description: "AI character creation and chat platform", url: "", upvotes: 2543, verified: true, rating: 4.5, icon: "🎭", category: "chatbots-virtual-companions", subcategory: "ai-character" },
+      { id: "caveduck", name: "Caveduck", description: "AI character interactions and stories", url: "", upvotes: 2321, verified: true, rating: 4.4, icon: "🦆", category: "chatbots-virtual-companions", subcategory: "ai-character" }
+    ],
+    "ai-chatbot": [
+      { id: "spicychat-ai", name: "SPICYCHAT.AI", description: "AI chatbot with adult conversation capabilities", url: "", upvotes: 4567, verified: true, rating: 4.8, icon: "🌶️", category: "chatbots-virtual-companions", subcategory: "ai-chatbot" },
+      { id: "chatgpt", name: "ChatGPT", description: "Advanced AI chatbot for conversations and assistance", url: "", upvotes: 5432, verified: true, rating: 4.9, icon: "🤖", category: "chatbots-virtual-companions", subcategory: "ai-chatbot" },
+      { id: "google-gemini", name: "Google Gemini", description: "Google's AI chatbot with multimodal capabilities", url: "", upvotes: 4123, verified: true, rating: 4.7, icon: "🔮", category: "chatbots-virtual-companions", subcategory: "ai-chatbot" },
+      { id: "polybuzz-ai", name: "PolyBuzz.ai", description: "AI chatbot for diverse conversations", url: "", upvotes: 2876, verified: true, rating: 4.6, icon: "🗨️", category: "chatbots-virtual-companions", subcategory: "ai-chatbot" },
+      { id: "offline-chat", name: "Offline Chat: Private AI", description: "Private AI chatbot that works offline", url: "", upvotes: 2543, verified: true, rating: 4.5, icon: "🔒", category: "chatbots-virtual-companions", subcategory: "ai-chatbot" }
+    ],
+    "ai-dating-assistant": [
+      { id: "rizz-ai", name: "RIZZ AI", description: "AI dating assistant for better conversations", url: "", upvotes: 3456, verified: true, rating: 4.7, icon: "💬", category: "chatbots-virtual-companions", subcategory: "ai-dating-assistant" },
+      { id: "roast-dating", name: "ROAST", description: "AI dating profile optimization and feedback", url: "", upvotes: 3124, verified: true, rating: 4.6, icon: "🔥", category: "chatbots-virtual-companions", subcategory: "ai-dating-assistant" },
+      { id: "cheateye", name: "CheatEye", description: "AI dating conversation and advice assistant", url: "", upvotes: 2876, verified: true, rating: 4.5, icon: "👁️", category: "chatbots-virtual-companions", subcategory: "ai-dating-assistant" },
+      { id: "tinderprofile-ai", name: "TinderProfile.ai", description: "AI Tinder profile creation and optimization", url: "", upvotes: 2543, verified: true, rating: 4.4, icon: "❤️", category: "chatbots-virtual-companions", subcategory: "ai-dating-assistant" },
+      { id: "wingmanx", name: "WingmanX", description: "AI wingman for dating conversations", url: "", upvotes: 2321, verified: true, rating: 4.3, icon: "🕊️", category: "chatbots-virtual-companions", subcategory: "ai-dating-assistant" }
+    ],
+    "ai-girlfriend": [
+      { id: "lovescape", name: "LOVESCAPE", description: "AI girlfriend with immersive experiences", url: "", upvotes: 3789, verified: true, rating: 4.8, icon: "💖", category: "chatbots-virtual-companions", subcategory: "ai-girlfriend" },
+      { id: "juicychat-ai", name: "JuicyChat.AI", description: "AI girlfriend chat with premium features", url: "", upvotes: 3456, verified: true, rating: 4.7, icon: "🍑", category: "chatbots-virtual-companions", subcategory: "ai-girlfriend" },
+      { id: "girlfriendgpt", name: "GirlfriendGPT", description: "AI girlfriend powered by advanced language models", url: "", upvotes: 3124, verified: true, rating: 4.6, icon: "💕", category: "chatbots-virtual-companions", subcategory: "ai-girlfriend" },
+      { id: "kindroid", name: "Kindroid", description: "AI girlfriend with emotional connection", url: "", upvotes: 2876, verified: true, rating: 4.5, icon: "🤖", category: "chatbots-virtual-companions", subcategory: "ai-girlfriend" },
+      { id: "golove", name: "GoLove", description: "AI girlfriend dating and relationship simulator", url: "", upvotes: 2543, verified: true, rating: 4.4, icon: "💘", category: "chatbots-virtual-companions", subcategory: "ai-girlfriend" }
+    ],
+    "ai-joke": [
+      { id: "roastedby-ai", name: "Roastedby.ai", description: "AI roast and joke generation platform", url: "", upvotes: 2876, verified: true, rating: 4.6, icon: "🔥", category: "chatbots-virtual-companions", subcategory: "ai-joke" },
+      { id: "ai-roast-generator", name: "AI Roast Generator", description: "Generate AI-powered roasts and comebacks", url: "", upvotes: 2543, verified: true, rating: 4.5, icon: "😂", category: "chatbots-virtual-companions", subcategory: "ai-joke" },
+      { id: "punchlines-ai", name: "punchlines.ai", description: "AI joke and punchline generator", url: "", upvotes: 2321, verified: true, rating: 4.4, icon: "🎭", category: "chatbots-virtual-companions", subcategory: "ai-joke" },
+      { id: "uncle-ai", name: "Uncle A.I.", description: "AI uncle with dad jokes and humor", url: "", upvotes: 1987, verified: true, rating: 4.3, icon: "👨‍🦳", category: "chatbots-virtual-companions", subcategory: "ai-joke" },
+      { id: "ai-roastbot", name: "AI RoastBot", description: "AI bot specialized in roasts and burns", url: "", upvotes: 1765, verified: true, rating: 4.2, icon: "🤖", category: "chatbots-virtual-companions", subcategory: "ai-joke" }
+    ],
+    "ai-roleplay": [
+      { id: "janitor-ai-roleplay", name: "Janitor AI", description: "AI roleplay platform with diverse scenarios", url: "", upvotes: 3789, verified: true, rating: 4.8, icon: "🎪", category: "chatbots-virtual-companions", subcategory: "ai-roleplay" },
+      { id: "eroplay-ai", name: "EroPlay.ai", description: "AI adult roleplay and fantasy platform", url: "", upvotes: 3456, verified: true, rating: 4.7, icon: "🌹", category: "chatbots-virtual-companions", subcategory: "ai-roleplay" },
+      { id: "dream-companion", name: "Dream Companion", description: "AI roleplay companion for fantasy scenarios", url: "", upvotes: 3124, verified: true, rating: 4.6, icon: "✨", category: "chatbots-virtual-companions", subcategory: "ai-roleplay" },
+      { id: "tipsy-chat", name: "Tipsy Chat", description: "AI roleplay with relaxed conversations", url: "", upvotes: 2876, verified: true, rating: 4.5, icon: "🍷", category: "chatbots-virtual-companions", subcategory: "ai-roleplay" },
+      { id: "talkie-ai-roleplay", name: "Talkie AI", description: "AI roleplay with voice and text interaction", url: "", upvotes: 2543, verified: true, rating: 4.4, icon: "🎯", category: "chatbots-virtual-companions", subcategory: "ai-roleplay" }
+    ],
+    "dirty-talking-ai": [
+      { id: "aiallure", name: "aiAllure", description: "AI adult conversation and intimacy platform", url: "", upvotes: 3456, verified: true, rating: 4.7, icon: "💋", category: "chatbots-virtual-companions", subcategory: "dirty-talking-ai" },
+      { id: "bloom-ai", name: "BLOOM", description: "AI intimate conversation and companionship", url: "", upvotes: 3124, verified: true, rating: 4.6, icon: "🌺", category: "chatbots-virtual-companions", subcategory: "dirty-talking-ai" },
+      { id: "dirtytalking-ai", name: "DirtyTalking.ai", description: "AI platform for adult conversations", url: "", upvotes: 2876, verified: true, rating: 4.5, icon: "🔥", category: "chatbots-virtual-companions", subcategory: "dirty-talking-ai" },
+      { id: "naughtybot", name: "NaughtyBot", description: "AI bot for playful adult conversations", url: "", upvotes: 2543, verified: true, rating: 4.4, icon: "😈", category: "chatbots-virtual-companions", subcategory: "dirty-talking-ai" },
+      { id: "erotix", name: "ErotiX", description: "AI erotic conversation and roleplay platform", url: "", upvotes: 2321, verified: true, rating: 4.3, icon: "🖤", category: "chatbots-virtual-companions", subcategory: "dirty-talking-ai" }
+    ]
   }
 };
 
