@@ -2371,6 +2371,176 @@ export const toolsData: { [key: string]: { [key: string]: Tool[] } } = {
       { id: "free-ai-therapist", name: "Free AI (not a) Therapist", description: "AI conversational therapy and emotional support", url: "", upvotes: 1543, verified: true, rating: 4.3, icon: "💬", category: "health-wellness", subcategory: "ai-therapist" },
       { id: "therapywith-ai", name: "TherapywithAI", description: "AI-assisted therapy sessions and mental health support", url: "", upvotes: 1432, verified: true, rating: 4.2, icon: "🧘", category: "health-wellness", subcategory: "ai-therapist" }
     ]
+  },
+  "education-translation": {
+    "ai-answer": [
+      { id: "wolfram-alpha", name: "Wolfram|Alpha", description: "AI computational knowledge engine and answer platform", url: "", upvotes: 2456, verified: true, rating: 4.8, icon: "🔬", category: "education-translation", subcategory: "ai-answer" },
+      { id: "hoi-dap-ai-hay", name: "Hỏi đáp AI Hay", description: "AI question answering platform in Vietnamese", url: "", upvotes: 1876, verified: true, rating: 4.6, icon: "❓", category: "education-translation", subcategory: "ai-answer" },
+      { id: "perplexity-ai", name: "Perplexity AI", description: "AI-powered search and answer engine", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "🤖", category: "education-translation", subcategory: "ai-answer" },
+      { id: "course-hero", name: "Course Hero", description: "AI tutoring and study assistance platform", url: "", upvotes: 1543, verified: true, rating: 4.4, icon: "🎓", category: "education-translation", subcategory: "ai-answer" },
+      { id: "iask-ai", name: "iAsk.Ai", description: "AI question answering and research assistant", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "🔍", category: "education-translation", subcategory: "ai-answer" }
+    ],
+    "ai-article-summarizer": [
+      { id: "ai-summarizer", name: "AI Summarizer", description: "Advanced AI text summarization tool", url: "", upvotes: 1987, verified: true, rating: 4.7, icon: "📝", category: "education-translation", subcategory: "ai-article-summarizer" },
+      { id: "kome-ai", name: "Kome AI", description: "AI article summarizer and content processor", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "📄", category: "education-translation", subcategory: "ai-article-summarizer" },
+      { id: "scholarcy", name: "Scholarcy", description: "AI research paper summarizer for academics", url: "", upvotes: 1543, verified: true, rating: 4.4, icon: "🎓", category: "education-translation", subcategory: "ai-article-summarizer" },
+      { id: "tldr-this", name: "TLDR This", description: "AI article summarizer for quick reading", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "⚡", category: "education-translation", subcategory: "ai-article-summarizer" },
+      { id: "scisummary", name: "SciSummary", description: "AI scientific article summarizer", url: "", upvotes: 1298, verified: true, rating: 4.2, icon: "🔬", category: "education-translation", subcategory: "ai-article-summarizer" }
+    ],
+    "ai-book-summarizer": [
+      { id: "sobrief", name: "SoBrief", description: "AI book summarizer for quick insights", url: "", upvotes: 1876, verified: true, rating: 4.6, icon: "📚", category: "education-translation", subcategory: "ai-book-summarizer" },
+      { id: "summarist-ai", name: "Summarist.ai", description: "AI book summary generation platform", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "📖", category: "education-translation", subcategory: "ai-book-summarizer" },
+      { id: "booksai", name: "BooksAI", description: "AI book analysis and summarization tool", url: "", upvotes: 1543, verified: true, rating: 4.4, icon: "🤖", category: "education-translation", subcategory: "ai-book-summarizer" },
+      { id: "booksai-com", name: "BooksAI.com", description: "AI-powered book summary platform", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "📚", category: "education-translation", subcategory: "ai-book-summarizer" },
+      { id: "chunker-ai", name: "Chunker AI", description: "AI text chunking and book summarization", url: "", upvotes: 1298, verified: true, rating: 4.2, icon: "🔗", category: "education-translation", subcategory: "ai-book-summarizer" }
+    ],
+    "ai-coaching": [
+      { id: "fight-iq", name: "Fight IQ", description: "AI coaching for combat sports and training", url: "", upvotes: 1765, verified: true, rating: 4.5, icon: "🥊", category: "education-translation", subcategory: "ai-coaching" },
+      { id: "streaks-66", name: "Streaks 66 - Habit Tracker AI", description: "AI habit tracking and coaching platform", url: "", upvotes: 1543, verified: true, rating: 4.4, icon: "⚡", category: "education-translation", subcategory: "ai-coaching" },
+      { id: "skillsoft-percipio", name: "Skillsoft Percipio", description: "AI-powered learning and coaching platform", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "🎯", category: "education-translation", subcategory: "ai-coaching" },
+      { id: "elsa-speak", name: "ELSA Speak", description: "AI English pronunciation coaching", url: "", upvotes: 1298, verified: true, rating: 4.2, icon: "🗣️", category: "education-translation", subcategory: "ai-coaching" },
+      { id: "callhippo-coaching", name: "CallHippo", description: "AI sales coaching and communication platform", url: "", upvotes: 1156, verified: true, rating: 4.1, icon: "📞", category: "education-translation", subcategory: "ai-coaching" }
+    ],
+    "ai-course": [
+      { id: "datacamp", name: "DataCamp", description: "AI-powered data science learning platform", url: "", upvotes: 2134, verified: true, rating: 4.7, icon: "📊", category: "education-translation", subcategory: "ai-course" },
+      { id: "brilliant", name: "Brilliant", description: "AI interactive learning for STEM subjects", url: "", upvotes: 1987, verified: true, rating: 4.6, icon: "💡", category: "education-translation", subcategory: "ai-course" },
+      { id: "skillsoft-percipio-course", name: "Skillsoft Percipio", description: "AI corporate learning and course platform", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "🎓", category: "education-translation", subcategory: "ai-course" },
+      { id: "coddy", name: "Coddy", description: "AI coding courses and programming education", url: "", upvotes: 1543, verified: true, rating: 4.4, icon: "💻", category: "education-translation", subcategory: "ai-course" },
+      { id: "openai-academy", name: "OpenAI Academy", description: "AI education and training platform", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "🤖", category: "education-translation", subcategory: "ai-course" }
+    ],
+    "ai-flashcard-maker": [
+      { id: "knowt", name: "Knowt", description: "AI flashcard generation from study materials", url: "", upvotes: 1876, verified: true, rating: 4.6, icon: "📇", category: "education-translation", subcategory: "ai-flashcard-maker" },
+      { id: "gizmo", name: "Gizmo", description: "AI-powered flashcard creation and study tool", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "⚙️", category: "education-translation", subcategory: "ai-flashcard-maker" },
+      { id: "studydrive", name: "Studydrive", description: "AI study materials and flashcard platform", url: "", upvotes: 1543, verified: true, rating: 4.4, icon: "🚗", category: "education-translation", subcategory: "ai-flashcard-maker" },
+      { id: "turbolearn-ai", name: "TurboLearn AI", description: "AI accelerated learning and flashcard creation", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "🚀", category: "education-translation", subcategory: "ai-flashcard-maker" },
+      { id: "study-fetch", name: "Study Fetch", description: "AI study material fetching and flashcard generation", url: "", upvotes: 1298, verified: true, rating: 4.2, icon: "📚", category: "education-translation", subcategory: "ai-flashcard-maker" }
+    ],
+    "ai-homework-helper": [
+      { id: "gauth", name: "Gauth", description: "AI homework solver and math problem assistant", url: "", upvotes: 2234, verified: true, rating: 4.7, icon: "🔢", category: "education-translation", subcategory: "ai-homework-helper" },
+      { id: "course-hero-homework", name: "Course Hero", description: "AI homework help and tutoring platform", url: "", upvotes: 1987, verified: true, rating: 4.6, icon: "🎓", category: "education-translation", subcategory: "ai-homework-helper" },
+      { id: "unstuck-ai", name: "Unstuck AI", description: "AI homework assistance and problem solving", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "🔓", category: "education-translation", subcategory: "ai-homework-helper" },
+      { id: "bartleby", name: "bartleby", description: "AI textbook solutions and homework help", url: "", upvotes: 1543, verified: true, rating: 4.4, icon: "📖", category: "education-translation", subcategory: "ai-homework-helper" },
+      { id: "study-fetch-homework", name: "Study Fetch", description: "AI homework assistance and study support", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "📝", category: "education-translation", subcategory: "ai-homework-helper" }
+    ],
+    "ai-image-translator": [
+      { id: "pdnob-image-translator", name: "PDNob Image Translator", description: "AI image text translation and OCR", url: "", upvotes: 1876, verified: true, rating: 4.6, icon: "🖼️", category: "education-translation", subcategory: "ai-image-translator" },
+      { id: "pipiads", name: "Pipiads", description: "AI image translation for advertising content", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "📢", category: "education-translation", subcategory: "ai-image-translator" },
+      { id: "transmonkey-ai", name: "Transmonkey AI Translator Suite", description: "AI image and document translation platform", url: "", upvotes: 1543, verified: true, rating: 4.4, icon: "🐒", category: "education-translation", subcategory: "ai-image-translator" },
+      { id: "ai-manga-translator", name: "AI Manga Translator", description: "AI manga and comic image translation", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "📚", category: "education-translation", subcategory: "ai-image-translator" },
+      { id: "ai-image-translator", name: "AI Image Translator", description: "General AI image text translation tool", url: "", upvotes: 1298, verified: true, rating: 4.2, icon: "🔤", category: "education-translation", subcategory: "ai-image-translator" }
+    ],
+    "ai-knowledge-base": [
+      { id: "intercom", name: "Intercom", description: "AI customer support knowledge base platform", url: "", upvotes: 2134, verified: true, rating: 4.7, icon: "💬", category: "education-translation", subcategory: "ai-knowledge-base" },
+      { id: "notion", name: "Notion", description: "AI-powered workspace and knowledge management", url: "", upvotes: 1987, verified: true, rating: 4.6, icon: "📝", category: "education-translation", subcategory: "ai-knowledge-base" },
+      { id: "textcortex", name: "TextCortex", description: "AI writing and knowledge base creation", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "🧠", category: "education-translation", subcategory: "ai-knowledge-base" },
+      { id: "crisp", name: "Crisp", description: "AI customer service knowledge base", url: "", upvotes: 1543, verified: true, rating: 4.4, icon: "🍪", category: "education-translation", subcategory: "ai-knowledge-base" },
+      { id: "helpjuice", name: "Helpjuice", description: "AI knowledge base and help center platform", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "🥤", category: "education-translation", subcategory: "ai-knowledge-base" }
+    ],
+    "ai-knowledge-graph": [
+      { id: "connected-papers", name: "Connected Papers", description: "AI research paper knowledge graph visualization", url: "", upvotes: 1876, verified: true, rating: 4.6, icon: "🔗", category: "education-translation", subcategory: "ai-knowledge-graph" },
+      { id: "writer", name: "Writer", description: "AI writing platform with knowledge graph features", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "✍️", category: "education-translation", subcategory: "ai-knowledge-graph" },
+      { id: "open-knowledge-maps", name: "Open Knowledge Maps", description: "AI knowledge mapping and visualization platform", url: "", upvotes: 1543, verified: true, rating: 4.4, icon: "🗺️", category: "education-translation", subcategory: "ai-knowledge-graph" },
+      { id: "sciphi", name: "SciPhi", description: "AI scientific knowledge graph and research tool", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "🔬", category: "education-translation", subcategory: "ai-knowledge-graph" },
+      { id: "infranodus", name: "InfraNodus", description: "AI text network analysis and knowledge graphs", url: "", upvotes: 1298, verified: true, rating: 4.2, icon: "🕸️", category: "education-translation", subcategory: "ai-knowledge-graph" }
+    ],
+    "ai-knowledge-management": [
+      { id: "glean", name: "Glean", description: "AI workplace search and knowledge management", url: "", upvotes: 1987, verified: true, rating: 4.6, icon: "🔍", category: "education-translation", subcategory: "ai-knowledge-management" },
+      { id: "mymind", name: "mymind", description: "AI personal knowledge management and notes", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "🧠", category: "education-translation", subcategory: "ai-knowledge-management" },
+      { id: "flowith-2", name: "Flowith 2.0", description: "AI workflow and knowledge management platform", url: "", upvotes: 1543, verified: true, rating: 4.4, icon: "🌊", category: "education-translation", subcategory: "ai-knowledge-management" },
+      { id: "llamaindex", name: "LlamaIndex", description: "AI data framework for knowledge management", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "🦙", category: "education-translation", subcategory: "ai-knowledge-management" },
+      { id: "slite", name: "Slite", description: "AI team knowledge base and documentation", url: "", upvotes: 1298, verified: true, rating: 4.2, icon: "📄", category: "education-translation", subcategory: "ai-knowledge-management" }
+    ],
+    "ai-language-learning": [
+      { id: "language-reactor", name: "Language Reactor", description: "AI language learning through media consumption", url: "", upvotes: 1876, verified: true, rating: 4.6, icon: "⚛️", category: "education-translation", subcategory: "ai-language-learning" },
+      { id: "elsa-speak-learning", name: "ELSA Speak", description: "AI English pronunciation and speaking coach", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "🗣️", category: "education-translation", subcategory: "ai-language-learning" },
+      { id: "boldvoice", name: "BoldVoice", description: "AI accent coaching for English learners", url: "", upvotes: 1543, verified: true, rating: 4.4, icon: "🎤", category: "education-translation", subcategory: "ai-language-learning" },
+      { id: "pte-apeuni", name: "PTE APEUni", description: "AI PTE exam preparation and practice", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "📝", category: "education-translation", subcategory: "ai-language-learning" },
+      { id: "talkpal", name: "Talkpal", description: "AI language learning conversation partner", url: "", upvotes: 1298, verified: true, rating: 4.2, icon: "👥", category: "education-translation", subcategory: "ai-language-learning" }
+    ],
+    "ai-lesson-plan-generator": [
+      { id: "magic-school", name: "MagicSchool", description: "AI lesson plan generator for educators", url: "", upvotes: 1987, verified: true, rating: 4.6, icon: "🏫", category: "education-translation", subcategory: "ai-lesson-plan-generator" },
+      { id: "curipod", name: "Curipod", description: "AI interactive lesson creation platform", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "🎯", category: "education-translation", subcategory: "ai-lesson-plan-generator" },
+      { id: "to-teach", name: "To Teach", description: "AI personalized lesson plan generator", url: "", upvotes: 1543, verified: true, rating: 4.4, icon: "👩‍🏫", category: "education-translation", subcategory: "ai-lesson-plan-generator" },
+      { id: "amazy-uk", name: "Amazy.uk", description: "AI lesson planning and educational content", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "🌟", category: "education-translation", subcategory: "ai-lesson-plan-generator" },
+      { id: "mindsmith", name: "Mindsmith", description: "AI instructional design and lesson creation", url: "", upvotes: 1298, verified: true, rating: 4.2, icon: "🔨", category: "education-translation", subcategory: "ai-lesson-plan-generator" }
+    ],
+    "ai-math": [
+      { id: "mathgpt", name: "MathGPT", description: "AI mathematics problem solver and tutor", url: "", upvotes: 2134, verified: true, rating: 4.7, icon: "🔢", category: "education-translation", subcategory: "ai-math" },
+      { id: "gauth-math", name: "Gauth", description: "AI math problem solver with step-by-step solutions", url: "", upvotes: 1987, verified: true, rating: 4.6, icon: "📐", category: "education-translation", subcategory: "ai-math" },
+      { id: "mathos-ai", name: "Mathos AI", description: "AI mathematical analysis and problem solving", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "📊", category: "education-translation", subcategory: "ai-math" },
+      { id: "thetawise", name: "Thetawise", description: "AI mathematics education and tutoring", url: "", upvotes: 1543, verified: true, rating: 4.4, icon: "θ", category: "education-translation", subcategory: "ai-math" },
+      { id: "math-ai", name: "Math AI", description: "AI mathematical computation and learning tool", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "∑", category: "education-translation", subcategory: "ai-math" }
+    ],
+    "ai-mind-mapping": [
+      { id: "mymap", name: "MyMap", description: "AI mind mapping and visual thinking tool", url: "", upvotes: 1876, verified: true, rating: 4.6, icon: "🗺️", category: "education-translation", subcategory: "ai-mind-mapping" },
+      { id: "xmind-ai", name: "Xmind AI", description: "AI-powered mind mapping software", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "🧠", category: "education-translation", subcategory: "ai-mind-mapping" },
+      { id: "mapify", name: "Mapify", description: "AI concept mapping and visualization platform", url: "", upvotes: 1543, verified: true, rating: 4.4, icon: "🗂️", category: "education-translation", subcategory: "ai-mind-mapping" },
+      { id: "algor-education", name: "Algor Education", description: "AI educational mind mapping and learning", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "🎓", category: "education-translation", subcategory: "ai-mind-mapping" },
+      { id: "felo", name: "Felo", description: "AI mind mapping and knowledge organization", url: "", upvotes: 1298, verified: true, rating: 4.2, icon: "🎯", category: "education-translation", subcategory: "ai-mind-mapping" }
+    ],
+    "ai-question-generator": [
+      { id: "quizgecko", name: "Quizgecko", description: "AI quiz and question generator from content", url: "", upvotes: 1987, verified: true, rating: 4.6, icon: "🦎", category: "education-translation", subcategory: "ai-question-generator" },
+      { id: "blocksurvey", name: "BlockSurvey", description: "AI survey and question generation platform", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "📊", category: "education-translation", subcategory: "ai-question-generator" },
+      { id: "testportal", name: "Testportal", description: "AI test and question creation platform", url: "", upvotes: 1543, verified: true, rating: 4.4, icon: "📝", category: "education-translation", subcategory: "ai-question-generator" },
+      { id: "sendsteps-ai", name: "Sendsteps.ai", description: "AI interactive presentation and question generator", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "📊", category: "education-translation", subcategory: "ai-question-generator" },
+      { id: "quizbot-ai", name: "QuizBot.ai", description: "AI quiz bot and question generation tool", url: "", upvotes: 1298, verified: true, rating: 4.2, icon: "🤖", category: "education-translation", subcategory: "ai-question-generator" }
+    ],
+    "ai-quiz-generator": [
+      { id: "studocu", name: "Studocu", description: "AI quiz generation from study documents", url: "", upvotes: 1876, verified: true, rating: 4.6, icon: "📚", category: "education-translation", subcategory: "ai-quiz-generator" },
+      { id: "turbolearn-ai-quiz", name: "TurboLearn AI", description: "AI quiz creation and learning acceleration", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "🚀", category: "education-translation", subcategory: "ai-quiz-generator" },
+      { id: "fillout", name: "Fillout", description: "AI form and quiz builder platform", url: "", upvotes: 1543, verified: true, rating: 4.4, icon: "📝", category: "education-translation", subcategory: "ai-quiz-generator" },
+      { id: "scoreapp", name: "ScoreApp", description: "AI quiz marketing and lead generation", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "🎯", category: "education-translation", subcategory: "ai-quiz-generator" },
+      { id: "study-fetch-quiz", name: "Study Fetch", description: "AI study material quiz generation", url: "", upvotes: 1298, verified: true, rating: 4.2, icon: "📊", category: "education-translation", subcategory: "ai-quiz-generator" }
+    ],
+    "ai-quizzes": [
+      { id: "achievable", name: "Achievable", description: "AI adaptive quiz platform for exam preparation", url: "", upvotes: 1987, verified: true, rating: 4.6, icon: "🏆", category: "education-translation", subcategory: "ai-quizzes" },
+      { id: "octane-ai", name: "Octane AI", description: "AI quiz platform for ecommerce and marketing", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "⚡", category: "education-translation", subcategory: "ai-quizzes" },
+      { id: "educato", name: "Educato", description: "AI educational quiz and assessment platform", url: "", upvotes: 1543, verified: true, rating: 4.4, icon: "🎓", category: "education-translation", subcategory: "ai-quizzes" },
+      { id: "quizbot-ai-quizzes", name: "QuizBot.ai", description: "AI quiz creation and management platform", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "🤖", category: "education-translation", subcategory: "ai-quizzes" },
+      { id: "magicform-app", name: "MagicForm.app", description: "AI form and quiz creation platform", url: "", upvotes: 1298, verified: true, rating: 4.2, icon: "✨", category: "education-translation", subcategory: "ai-quizzes" }
+    ],
+    "ai-reader": [
+      { id: "elevenreader", name: "ElevenReader", description: "AI text-to-speech reading assistant", url: "", upvotes: 1876, verified: true, rating: 4.6, icon: "📖", category: "education-translation", subcategory: "ai-reader" },
+      { id: "peech", name: "Peech", description: "AI speech generation and reading platform", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "🗣️", category: "education-translation", subcategory: "ai-reader" },
+      { id: "audeus", name: "Audeus", description: "AI audio content and reading assistant", url: "", upvotes: 1543, verified: true, rating: 4.4, icon: "🎧", category: "education-translation", subcategory: "ai-reader" },
+      { id: "clearly-reader", name: "Clearly Reader", description: "AI reading comprehension and clarity tool", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "👓", category: "education-translation", subcategory: "ai-reader" },
+      { id: "thread-navigator", name: "Thread Navigator", description: "AI content navigation and reading assistant", url: "", upvotes: 1298, verified: true, rating: 4.2, icon: "🧭", category: "education-translation", subcategory: "ai-reader" }
+    ],
+    "ai-teachers": [
+      { id: "talkpal-teacher", name: "Talkpal", description: "AI language teaching and conversation partner", url: "", upvotes: 1987, verified: true, rating: 4.6, icon: "👩‍🏫", category: "education-translation", subcategory: "ai-teachers" },
+      { id: "magic-school-teacher", name: "MagicSchool", description: "AI teaching assistant and lesson planner", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "🏫", category: "education-translation", subcategory: "ai-teachers" },
+      { id: "youlearn-ai", name: "YouLearn AI", description: "AI personalized learning and teaching platform", url: "", upvotes: 1543, verified: true, rating: 4.4, icon: "🎓", category: "education-translation", subcategory: "ai-teachers" },
+      { id: "readtheory", name: "ReadTheory", description: "AI reading comprehension teaching platform", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "📚", category: "education-translation", subcategory: "ai-teachers" },
+      { id: "schoolai", name: "SchoolAI", description: "AI teaching and educational assistance platform", url: "", upvotes: 1298, verified: true, rating: 4.2, icon: "🤖", category: "education-translation", subcategory: "ai-teachers" }
+    ],
+    "ai-translate": [
+      { id: "deepl", name: "DeepL", description: "AI translation with superior accuracy and nuance", url: "", upvotes: 2456, verified: true, rating: 4.8, icon: "🌐", category: "education-translation", subcategory: "ai-translate" },
+      { id: "immersive-translate", name: "Immersive Translate", description: "AI web page translation with context preservation", url: "", upvotes: 1987, verified: true, rating: 4.6, icon: "🔄", category: "education-translation", subcategory: "ai-translate" },
+      { id: "lingvanex", name: "Lingvanex", description: "AI translation for text, voice, and documents", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "🗣️", category: "education-translation", subcategory: "ai-translate" },
+      { id: "openl-translate", name: "OpenL Translate", description: "AI open-source translation platform", url: "", upvotes: 1543, verified: true, rating: 4.4, icon: "🔓", category: "education-translation", subcategory: "ai-translate" },
+      { id: "machinetranslation-com", name: "MachineTranslation.com", description: "AI machine translation services and tools", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "⚙️", category: "education-translation", subcategory: "ai-translate" }
+    ],
+    "ai-tutorial": [
+      { id: "brilliant-tutorial", name: "Brilliant", description: "AI interactive tutorials for STEM learning", url: "", upvotes: 1876, verified: true, rating: 4.6, icon: "💡", category: "education-translation", subcategory: "ai-tutorial" },
+      { id: "futurepedia", name: "Futurepedia", description: "AI tutorial and tool discovery platform", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "🔮", category: "education-translation", subcategory: "ai-tutorial" },
+      { id: "guidde", name: "guidde", description: "AI video tutorial and guide creation", url: "", upvotes: 1543, verified: true, rating: 4.4, icon: "📹", category: "education-translation", subcategory: "ai-tutorial" },
+      { id: "midlibrary", name: "Midlibrary", description: "AI tutorial and learning resource library", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "📚", category: "education-translation", subcategory: "ai-tutorial" },
+      { id: "projectai", name: "ProjectAI", description: "AI project-based learning and tutorials", url: "", upvotes: 1298, verified: true, rating: 4.2, icon: "🚀", category: "education-translation", subcategory: "ai-tutorial" }
+    ],
+    "ai-video-translator": [
+      { id: "vidnoz-ai", name: "Vidnoz AI", description: "AI video translation and dubbing platform", url: "", upvotes: 1987, verified: true, rating: 4.6, icon: "🎬", category: "education-translation", subcategory: "ai-video-translator" },
+      { id: "clideo", name: "Clideo", description: "AI video editing and translation tools", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "✂️", category: "education-translation", subcategory: "ai-video-translator" },
+      { id: "blipcut-ai-video", name: "BlipCut AI Video Translator", description: "AI video translation with lip sync", url: "", upvotes: 1543, verified: true, rating: 4.4, icon: "🌐", category: "education-translation", subcategory: "ai-video-translator" },
+      { id: "rask-ai", name: "Rask AI", description: "AI video localization and translation", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "🎭", category: "education-translation", subcategory: "ai-video-translator" },
+      { id: "d-id", name: "D-ID", description: "AI video translation with digital avatars", url: "", upvotes: 1298, verified: true, rating: 4.2, icon: "🤖", category: "education-translation", subcategory: "ai-video-translator" }
+    ],
+    "ai-voice-translator": [
+      { id: "ai-phone", name: "AI Phone", description: "AI real-time voice translation for calls", url: "", upvotes: 1876, verified: true, rating: 4.6, icon: "📞", category: "education-translation", subcategory: "ai-voice-translator" },
+      { id: "sanas", name: "Sanas", description: "AI accent translation and voice coaching", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "🗣️", category: "education-translation", subcategory: "ai-voice-translator" },
+      { id: "verbalate", name: "Verbalate", description: "AI voice translation and dubbing platform", url: "", upvotes: 1543, verified: true, rating: 4.4, icon: "🎤", category: "education-translation", subcategory: "ai-voice-translator" },
+      { id: "audeering", name: "audEERING", description: "AI voice emotion and translation analysis", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "👂", category: "education-translation", subcategory: "ai-voice-translator" },
+      { id: "translinguist", name: "TransLinguist", description: "AI multilingual voice translation platform", url: "", upvotes: 1298, verified: true, rating: 4.2, icon: "🌍", category: "education-translation", subcategory: "ai-voice-translator" }
+    ]
   }
 };
 
