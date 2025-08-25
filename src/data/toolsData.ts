@@ -2264,6 +2264,50 @@ export const toolsData: { [key: string]: { [key: string]: Tool[] } } = {
       { id: "senuto", name: "Senuto", description: "AI SEO content and keyword tool", url: "", upvotes: 1654, verified: true, rating: 4.4, icon: "🔍", category: "marketing-advertising", subcategory: "seo-writing-ai" },
       { id: "seo-writing-ai-tool", name: "SEO Writing AI", description: "AI SEO content writing assistant", url: "", upvotes: 1543, verified: true, rating: 4.3, icon: "✍️", category: "marketing-advertising", subcategory: "seo-writing-ai" }
     ]
+  },
+  "health-wellness": {
+    "ai-dermatology": [
+      { id: "skinive", name: "Skinive", description: "AI-powered skin analysis and dermatology assistant", url: "", upvotes: 1876, verified: true, rating: 4.6, icon: "🔬", category: "health-wellness", subcategory: "ai-dermatology" },
+      { id: "eczemaless", name: "Eczemaless", description: "AI eczema management and treatment guidance", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "🩹", category: "health-wellness", subcategory: "ai-dermatology" },
+      { id: "skincarelens", name: "SkinCareLens", description: "AI-powered skincare analysis and recommendations", url: "", upvotes: 1543, verified: true, rating: 4.4, icon: "📱", category: "health-wellness", subcategory: "ai-dermatology" },
+      { id: "regrow-ai", name: "Regrow AI", description: "AI hair loss analysis and treatment recommendations", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "💇", category: "health-wellness", subcategory: "ai-dermatology" },
+      { id: "face-gpt", name: "Face GPT", description: "AI facial analysis and skincare consultation", url: "", upvotes: 1298, verified: true, rating: 4.2, icon: "👤", category: "health-wellness", subcategory: "ai-dermatology" }
+    ],
+    "ai-healthcare": [
+      { id: "medisphere", name: "MediSphere", description: "AI-powered healthcare management platform", url: "", upvotes: 2134, verified: true, rating: 4.7, icon: "🏥", category: "health-wellness", subcategory: "ai-healthcare" },
+      { id: "freed-ai", name: "Freed", description: "AI medical documentation and clinical assistant", url: "", upvotes: 1987, verified: true, rating: 4.6, icon: "📋", category: "health-wellness", subcategory: "ai-healthcare" },
+      { id: "heidi-health", name: "Heidi Health", description: "AI healthcare assistant for medical professionals", url: "", upvotes: 1876, verified: true, rating: 4.5, icon: "👩‍⚕️", category: "health-wellness", subcategory: "ai-healthcare" },
+      { id: "carepatron", name: "Carepatron", description: "AI practice management for healthcare providers", url: "", upvotes: 1654, verified: true, rating: 4.4, icon: "💼", category: "health-wellness", subcategory: "ai-healthcare" },
+      { id: "dr-oracle", name: "Dr.Oracle", description: "AI medical knowledge and diagnostic assistant", url: "", upvotes: 1543, verified: true, rating: 4.3, icon: "🔮", category: "health-wellness", subcategory: "ai-healthcare" }
+    ],
+    "ai-medical-diagnosis": [
+      { id: "doctronic", name: "Doctronic", description: "AI-powered medical diagnosis and consultation platform", url: "", upvotes: 1987, verified: true, rating: 4.6, icon: "🩺", category: "health-wellness", subcategory: "ai-medical-diagnosis" },
+      { id: "pearl-ai", name: "Pearl", description: "AI dental and medical diagnosis assistant", url: "", upvotes: 1876, verified: true, rating: 4.5, icon: "🦷", category: "health-wellness", subcategory: "ai-medical-diagnosis" },
+      { id: "glass-health", name: "Glass Health", description: "AI clinical decision support and diagnosis", url: "", upvotes: 1654, verified: true, rating: 4.4, icon: "🔍", category: "health-wellness", subcategory: "ai-medical-diagnosis" },
+      { id: "overjet", name: "Overjet", description: "AI dental diagnosis and treatment planning", url: "", upvotes: 1543, verified: true, rating: 4.3, icon: "🦷", category: "health-wellness", subcategory: "ai-medical-diagnosis" },
+      { id: "empirical-health", name: "Empirical Health", description: "AI-powered medical research and diagnosis", url: "", upvotes: 1432, verified: true, rating: 4.2, icon: "📊", category: "health-wellness", subcategory: "ai-medical-diagnosis" }
+    ],
+    "ai-mental-health": [
+      { id: "replika", name: "Replika", description: "AI companion for emotional support and mental wellness", url: "", upvotes: 2234, verified: true, rating: 4.7, icon: "🤗", category: "health-wellness", subcategory: "ai-mental-health" },
+      { id: "brain-fm", name: "Brain.fm", description: "AI-generated music for focus and mental wellness", url: "", upvotes: 1987, verified: true, rating: 4.6, icon: "🧠", category: "health-wellness", subcategory: "ai-mental-health" },
+      { id: "endel", name: "Endel", description: "AI adaptive soundscapes for mental health", url: "", upvotes: 1876, verified: true, rating: 4.5, icon: "🎵", category: "health-wellness", subcategory: "ai-mental-health" },
+      { id: "upheal", name: "Upheal", description: "AI-powered mental health support platform", url: "", upvotes: 1654, verified: true, rating: 4.4, icon: "💚", category: "health-wellness", subcategory: "ai-mental-health" },
+      { id: "rosebud-ai", name: "Rosebud", description: "AI journaling for mental health and self-reflection", url: "", upvotes: 1543, verified: true, rating: 4.3, icon: "🌹", category: "health-wellness", subcategory: "ai-mental-health" }
+    ],
+    "ai-symptom-checker": [
+      { id: "docus-ai", name: "Docus AI", description: "AI symptom checker and health assessment", url: "", upvotes: 1876, verified: true, rating: 4.6, icon: "🩹", category: "health-wellness", subcategory: "ai-symptom-checker" },
+      { id: "mediktor", name: "Mediktor", description: "AI medical symptom checker and triage", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "🏥", category: "health-wellness", subcategory: "ai-symptom-checker" },
+      { id: "avey-app", name: "Avey App", description: "AI health assessment and symptom tracking", url: "", upvotes: 1543, verified: true, rating: 4.4, icon: "📱", category: "health-wellness", subcategory: "ai-symptom-checker" },
+      { id: "docai", name: "DocAI", description: "AI symptom analysis and medical guidance", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "👨‍⚕️", category: "health-wellness", subcategory: "ai-symptom-checker" },
+      { id: "hehealth", name: "HeHealth", description: "AI symptom checker for men's health", url: "", upvotes: 1298, verified: true, rating: 4.2, icon: "♂️", category: "health-wellness", subcategory: "ai-symptom-checker" }
+    ],
+    "ai-therapist": [
+      { id: "selfgazer", name: "Selfgazer", description: "AI-powered self-reflection and therapy assistant", url: "", upvotes: 1987, verified: true, rating: 4.6, icon: "🪞", category: "health-wellness", subcategory: "ai-therapist" },
+      { id: "abby-therapist", name: "Abby - Your AI Therapist", description: "AI therapeutic conversation and mental health support", url: "", upvotes: 1876, verified: true, rating: 4.5, icon: "👩‍⚕️", category: "health-wellness", subcategory: "ai-therapist" },
+      { id: "infiheal", name: "Infiheal", description: "AI mental health therapy and healing platform", url: "", upvotes: 1654, verified: true, rating: 4.4, icon: "💊", category: "health-wellness", subcategory: "ai-therapist" },
+      { id: "free-ai-therapist", name: "Free AI (not a) Therapist", description: "AI conversational therapy and emotional support", url: "", upvotes: 1543, verified: true, rating: 4.3, icon: "💬", category: "health-wellness", subcategory: "ai-therapist" },
+      { id: "therapywith-ai", name: "TherapywithAI", description: "AI-assisted therapy sessions and mental health support", url: "", upvotes: 1432, verified: true, rating: 4.2, icon: "🧘", category: "health-wellness", subcategory: "ai-therapist" }
+    ]
   }
 };
 
