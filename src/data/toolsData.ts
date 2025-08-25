@@ -2093,6 +2093,69 @@ export const toolsData: { [key: string]: { [key: string]: Tool[] } } = {
       { id: "syncsketch", name: "SyncSketch", description: "AI creative workflow and collaboration", url: "", upvotes: 1432, verified: true, rating: 4.5, icon: "🎨", category: "business-management", subcategory: "ai-workflow" },
       { id: "copy-ai", name: "Copy.ai", description: "AI content and marketing workflow platform", url: "", upvotes: 1298, verified: true, rating: 4.4, icon: "✍️", category: "business-management", subcategory: "ai-workflow" },
       { id: "dify-ai", name: "Dify.AI", description: "AI application development and workflow platform", url: "", upvotes: 1156, verified: true, rating: 4.3, icon: "🛠️", category: "business-management", subcategory: "ai-workflow" }
+    ],
+    "ai-business-ideas-generator": [
+      { id: "vizologi", name: "Vizologi", description: "AI business ideas generator and market research", url: "", upvotes: 1987, verified: true, rating: 4.7, icon: "💡", category: "business-management", subcategory: "ai-business-ideas-generator" },
+      { id: "stratup-ai", name: "Stratup.ai", description: "AI-powered startup ideas and business planning", url: "", upvotes: 1654, verified: true, rating: 4.6, icon: "🚀", category: "business-management", subcategory: "ai-business-ideas-generator" },
+      { id: "solo-ideas", name: "Solo", description: "AI business ideas for solo entrepreneurs", url: "", upvotes: 1432, verified: true, rating: 4.5, icon: "👤", category: "business-management", subcategory: "ai-business-ideas-generator" },
+      { id: "buildpad", name: "Buildpad", description: "AI business idea validation and development", url: "", upvotes: 1298, verified: true, rating: 4.4, icon: "🏗️", category: "business-management", subcategory: "ai-business-ideas-generator" },
+      { id: "validator-ai", name: "ValidatorAI", description: "AI business idea validation platform", url: "", upvotes: 1156, verified: true, rating: 4.3, icon: "✅", category: "business-management", subcategory: "ai-business-ideas-generator" }
+    ],
+    "ai-business-name-generator": [
+      { id: "namelix", name: "Namelix", description: "AI business name generator and branding", url: "", upvotes: 2134, verified: true, rating: 4.8, icon: "🏷️", category: "business-management", subcategory: "ai-business-name-generator" },
+      { id: "namesnack", name: "NameSnack", description: "AI business name and domain generator", url: "", upvotes: 1876, verified: true, rating: 4.7, icon: "🍿", category: "business-management", subcategory: "ai-business-name-generator" },
+      { id: "brandbolt", name: "BrandBolt", description: "AI brand name generator and trademark checker", url: "", upvotes: 1654, verified: true, rating: 4.6, icon: "⚡", category: "business-management", subcategory: "ai-business-name-generator" },
+      { id: "brandix-ai", name: "Brandix AI", description: "AI business name and brand identity generator", url: "", upvotes: 1432, verified: true, rating: 4.5, icon: "🎨", category: "business-management", subcategory: "ai-business-name-generator" },
+      { id: "findname", name: "FindName", description: "AI business name finder and availability checker", url: "", upvotes: 1298, verified: true, rating: 4.4, icon: "🔍", category: "business-management", subcategory: "ai-business-name-generator" }
+    ],
+    "ai-company-name-generator": [
+      { id: "naming-magic", name: "Naming Magic", description: "AI company name generator with domain availability", url: "", upvotes: 1987, verified: true, rating: 4.7, icon: "🪄", category: "business-management", subcategory: "ai-company-name-generator" },
+      { id: "namegener", name: "Namegener", description: "AI company and product name generator", url: "", upvotes: 1654, verified: true, rating: 4.6, icon: "⚙️", category: "business-management", subcategory: "ai-company-name-generator" },
+      { id: "brandkiit", name: "BrandKiit", description: "AI brand and company name generator", url: "", upvotes: 1432, verified: true, rating: 4.5, icon: "🛠️", category: "business-management", subcategory: "ai-company-name-generator" },
+      { id: "namehassle", name: "NameHassle", description: "AI company name generator without the hassle", url: "", upvotes: 1298, verified: true, rating: 4.4, icon: "🎯", category: "business-management", subcategory: "ai-company-name-generator" },
+      { id: "namefinder-ai", name: "Namefinder.ai", description: "AI company name finder and generator", url: "", upvotes: 1156, verified: true, rating: 4.3, icon: "🔎", category: "business-management", subcategory: "ai-company-name-generator" }
+    ],
+    "ai-consulting": [
+      { id: "heroz", name: "HEROZ", description: "AI consulting and business intelligence platform", url: "", upvotes: 1789, verified: true, rating: 4.6, icon: "🦸", category: "business-management", subcategory: "ai-consulting" },
+      { id: "shift-ai", name: "SHIFT AI", description: "AI transformation consulting services", url: "", upvotes: 1543, verified: true, rating: 4.5, icon: "🔄", category: "business-management", subcategory: "ai-consulting" },
+      { id: "leanware", name: "Leanware", description: "AI lean consulting and process optimization", url: "", upvotes: 1432, verified: true, rating: 4.4, icon: "⚖️", category: "business-management", subcategory: "ai-consulting" },
+      { id: "visage-technologies", name: "Visage Technologies", description: "AI computer vision consulting solutions", url: "", upvotes: 1298, verified: true, rating: 4.3, icon: "👁️", category: "business-management", subcategory: "ai-consulting" },
+      { id: "ai-superior", name: "AI Superior", description: "AI consulting and implementation services", url: "", upvotes: 1156, verified: true, rating: 4.2, icon: "⭐", category: "business-management", subcategory: "ai-consulting" }
+    ],
+    "ai-crypto": [
+      { id: "webscrypto", name: "WebsCrypto", description: "AI cryptocurrency trading and analysis", url: "", upvotes: 1876, verified: true, rating: 4.6, icon: "₿", category: "business-management", subcategory: "ai-crypto" },
+      { id: "pionex", name: "Pionex", description: "AI crypto trading bot platform", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "🤖", category: "business-management", subcategory: "ai-crypto" },
+      { id: "luxalgo", name: "LuxAlgo", description: "AI cryptocurrency market analysis tools", url: "", upvotes: 1432, verified: true, rating: 4.4, icon: "📈", category: "business-management", subcategory: "ai-crypto" },
+      { id: "incite-ai", name: "Incite AI", description: "AI crypto investment and trading insights", url: "", upvotes: 1298, verified: true, rating: 4.3, icon: "💎", category: "business-management", subcategory: "ai-crypto" },
+      { id: "chaingpt", name: "ChainGPT", description: "AI blockchain and crypto assistant", url: "", upvotes: 1156, verified: true, rating: 4.2, icon: "🔗", category: "business-management", subcategory: "ai-crypto" }
+    ],
+    "ai-domain-name-generator": [
+      { id: "namesnack-domain", name: "NameSnack", description: "AI domain name generator and checker", url: "", upvotes: 1789, verified: true, rating: 4.6, icon: "🌐", category: "business-management", subcategory: "ai-domain-name-generator" },
+      { id: "namehassle-domain", name: "NameHassle", description: "AI domain name generator with availability", url: "", upvotes: 1543, verified: true, rating: 4.5, icon: "🎯", category: "business-management", subcategory: "ai-domain-name-generator" },
+      { id: "namy-ai", name: "Namy.ai", description: "AI domain name generator and branding", url: "", upvotes: 1432, verified: true, rating: 4.4, icon: "🤖", category: "business-management", subcategory: "ai-domain-name-generator" },
+      { id: "onlycoms", name: "OnlyComs", description: "AI .com domain name generator", url: "", upvotes: 1298, verified: true, rating: 4.3, icon: "🏷️", category: "business-management", subcategory: "ai-domain-name-generator" },
+      { id: "brandsnap-ai", name: "BrandSnap.ai", description: "AI domain name and brand generator", url: "", upvotes: 1156, verified: true, rating: 4.2, icon: "📸", category: "business-management", subcategory: "ai-domain-name-generator" }
+    ],
+    "blockchain": [
+      { id: "deepnewz", name: "DeepNewz", description: "AI blockchain news and analysis platform", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "📰", category: "business-management", subcategory: "blockchain" },
+      { id: "talent-protocol", name: "Talent Protocol", description: "AI talent marketplace on blockchain", url: "", upvotes: 1432, verified: true, rating: 4.4, icon: "🌟", category: "business-management", subcategory: "blockchain" },
+      { id: "futureverse", name: "Futureverse", description: "AI blockchain and metaverse platform", url: "", upvotes: 1298, verified: true, rating: 4.3, icon: "🌌", category: "business-management", subcategory: "blockchain" },
+      { id: "cortex-labs", name: "Cortex Labs", description: "AI blockchain infrastructure platform", url: "", upvotes: 1156, verified: true, rating: 4.2, icon: "🧠", category: "business-management", subcategory: "blockchain" },
+      { id: "namefi", name: "Namefi", description: "AI blockchain domain and identity platform", url: "", upvotes: 987, verified: true, rating: 4.1, icon: "🆔", category: "business-management", subcategory: "blockchain" }
+    ],
+    "nfts": [
+      { id: "recap-nft", name: "Recap", description: "AI NFT creation and marketplace platform", url: "", upvotes: 1543, verified: true, rating: 4.4, icon: "🎨", category: "business-management", subcategory: "nfts" },
+      { id: "skyhitz", name: "Skyhitz", description: "AI music NFT platform and marketplace", url: "", upvotes: 1432, verified: true, rating: 4.3, icon: "🎵", category: "business-management", subcategory: "nfts" },
+      { id: "worlds-beyond", name: "Worlds Beyond", description: "AI NFT gaming and metaverse platform", url: "", upvotes: 1298, verified: true, rating: 4.2, icon: "🌍", category: "business-management", subcategory: "nfts" },
+      { id: "defipe", name: "DefiPe", description: "AI DeFi and NFT analytics platform", url: "", upvotes: 1156, verified: true, rating: 4.1, icon: "📊", category: "business-management", subcategory: "nfts" },
+      { id: "nft-advisor", name: "NFT Advisor", description: "AI NFT investment and advisory platform", url: "", upvotes: 987, verified: true, rating: 4.0, icon: "💼", category: "business-management", subcategory: "nfts" }
+    ],
+    "web3": [
+      { id: "spice-ai", name: "Spice AI", description: "AI Web3 data and analytics platform", url: "", upvotes: 1432, verified: true, rating: 4.4, icon: "🌶️", category: "business-management", subcategory: "web3" },
+      { id: "likn", name: "LIKN", description: "AI Web3 social networking platform", url: "", upvotes: 1298, verified: true, rating: 4.3, icon: "🔗", category: "business-management", subcategory: "web3" },
+      { id: "rido-protocol", name: "Rido Protocol", description: "AI Web3 protocol and infrastructure", url: "", upvotes: 1156, verified: true, rating: 4.2, icon: "🚗", category: "business-management", subcategory: "web3" },
+      { id: "swaap", name: "Swaap", description: "AI Web3 DeFi trading platform", url: "", upvotes: 987, verified: true, rating: 4.1, icon: "🔄", category: "business-management", subcategory: "web3" },
+      { id: "puti", name: "PUTI", description: "AI Web3 development and deployment platform", url: "", upvotes: 754, verified: true, rating: 4.0, icon: "🛠️", category: "business-management", subcategory: "web3" }
     ]
   },
   "marketing-advertising": {
