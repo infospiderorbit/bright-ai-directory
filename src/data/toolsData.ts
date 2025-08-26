@@ -2919,6 +2919,65 @@ export const toolsData: { [key: string]: { [key: string]: Tool[] } } = {
       { id: "luw-ai", name: "Luw.ai", description: "Smart AI room layout planner", url: "", upvotes: 1156, verified: true, rating: 4.4, icon: "💡", category: "interior-architectural-design", subcategory: "ai-room-planner" },
       { id: "room-ai", name: "Room AI", description: "AI-powered room design assistant", url: "", upvotes: 987, verified: true, rating: 4.3, icon: "🏡", category: "interior-architectural-design", subcategory: "ai-room-planner" }
     ]
+  },
+
+  "research-data-analysis": {
+    "ai-data-mining": [
+      { id: "firecrawl", name: "Firecrawl", description: "AI web scraping and data mining platform", url: "", upvotes: 2876, verified: true, rating: 4.7, icon: "🔍", category: "research-data-analysis", subcategory: "ai-data-mining" },
+      { id: "idox-ai", name: "iDox.ai", description: "AI document analysis and data mining", url: "", upvotes: 2543, verified: true, rating: 4.6, icon: "📊", category: "research-data-analysis", subcategory: "ai-data-mining" },
+      { id: "infranodus", name: "InfraNodus", description: "AI text network analysis and data mining", url: "", upvotes: 2321, verified: true, rating: 4.5, icon: "🕸️", category: "research-data-analysis", subcategory: "ai-data-mining" },
+      { id: "docugami", name: "Docugami", description: "AI document understanding and data extraction", url: "", upvotes: 1987, verified: true, rating: 4.4, icon: "📄", category: "research-data-analysis", subcategory: "ai-data-mining" },
+      { id: "graphite-note", name: "Graphite Note", description: "AI predictive analytics and data mining", url: "", upvotes: 1765, verified: true, rating: 4.3, icon: "📈", category: "research-data-analysis", subcategory: "ai-data-mining" }
+    ],
+    "ai-for-data-analytics": [
+      { id: "tabsquare", name: "TabSquare", description: "AI-powered restaurant data analytics platform", url: "", upvotes: 2654, verified: true, rating: 4.6, icon: "🍽️", category: "research-data-analysis", subcategory: "ai-for-data-analytics" },
+      { id: "julius-ai-analytics", name: "Julius AI", description: "AI data analyst for business intelligence", url: "", upvotes: 2432, verified: true, rating: 4.5, icon: "📊", category: "research-data-analysis", subcategory: "ai-for-data-analytics" },
+      { id: "salesforce-platform", name: "Salesforce Platform", description: "AI-powered CRM and data analytics", url: "", upvotes: 2298, verified: true, rating: 4.4, icon: "☁️", category: "research-data-analysis", subcategory: "ai-for-data-analytics" },
+      { id: "eos-data-analytics", name: "EOS Data Analytics (EOSDA)", description: "AI satellite data analytics platform", url: "", upvotes: 1876, verified: true, rating: 4.3, icon: "🛰️", category: "research-data-analysis", subcategory: "ai-for-data-analytics" },
+      { id: "veo-analytics", name: "Veo", description: "AI sports performance data analytics", url: "", upvotes: 1654, verified: true, rating: 4.2, icon: "⚽", category: "research-data-analysis", subcategory: "ai-for-data-analytics" }
+    ],
+    "ai-papers": [
+      { id: "paperguide", name: "Paperguide", description: "AI research paper writing and analysis", url: "", upvotes: 2876, verified: true, rating: 4.7, icon: "📝", category: "research-data-analysis", subcategory: "ai-papers" },
+      { id: "yomu-ai", name: "Yomu AI", description: "AI academic writing and paper assistant", url: "", upvotes: 2543, verified: true, rating: 4.6, icon: "✍️", category: "research-data-analysis", subcategory: "ai-papers" },
+      { id: "scholarai", name: "ScholarAI", description: "AI academic research and paper finder", url: "", upvotes: 2321, verified: true, rating: 4.5, icon: "🎓", category: "research-data-analysis", subcategory: "ai-papers" },
+      { id: "zeli-app", name: "Zeli.app", description: "AI paper summarization and analysis", url: "", upvotes: 1987, verified: true, rating: 4.4, icon: "📑", category: "research-data-analysis", subcategory: "ai-papers" },
+      { id: "goatstack-ai", name: "GoatStack.AI", description: "AI research paper collaboration platform", url: "", upvotes: 1765, verified: true, rating: 4.3, icon: "🐐", category: "research-data-analysis", subcategory: "ai-papers" }
+    ],
+    "ai-predictions": [
+      { id: "tarotoo", name: "Tarotoo", description: "AI tarot card predictions and readings", url: "", upvotes: 2432, verified: true, rating: 4.5, icon: "🔮", category: "research-data-analysis", subcategory: "ai-predictions" },
+      { id: "hint-predictions", name: "Hint", description: "AI predictive analytics and forecasting", url: "", upvotes: 2298, verified: true, rating: 4.4, icon: "💡", category: "research-data-analysis", subcategory: "ai-predictions" },
+      { id: "tarotap", name: "Tarotap", description: "AI-powered tarot predictions and insights", url: "", upvotes: 1876, verified: true, rating: 4.3, icon: "🃏", category: "research-data-analysis", subcategory: "ai-predictions" },
+      { id: "lyzr", name: "Lyzr", description: "AI business predictions and analytics", url: "", upvotes: 1654, verified: true, rating: 4.2, icon: "📊", category: "research-data-analysis", subcategory: "ai-predictions" },
+      { id: "altindex", name: "AltIndex", description: "AI alternative investment predictions", url: "", upvotes: 1432, verified: true, rating: 4.1, icon: "📈", category: "research-data-analysis", subcategory: "ai-predictions" }
+    ],
+    "ai-research-papers": [
+      { id: "researchrabbit", name: "ResearchRabbit", description: "AI research paper discovery and networking", url: "", upvotes: 3124, verified: true, rating: 4.8, icon: "🐰", category: "research-data-analysis", subcategory: "ai-research-papers" },
+      { id: "centre-governance-ai", name: "Centre for the Governance of AI", description: "AI governance research and policy papers", url: "", upvotes: 2876, verified: true, rating: 4.7, icon: "🏛️", category: "research-data-analysis", subcategory: "ai-research-papers" },
+      { id: "blainy", name: "Blainy", description: "AI research paper writing and editing", url: "", upvotes: 2543, verified: true, rating: 4.6, icon: "📖", category: "research-data-analysis", subcategory: "ai-research-papers" },
+      { id: "explainpaper", name: "Explainpaper", description: "AI research paper explanation and summary", url: "", upvotes: 2321, verified: true, rating: 4.5, icon: "💬", category: "research-data-analysis", subcategory: "ai-research-papers" },
+      { id: "illuminate", name: "Illuminate", description: "AI research insights and paper analysis", url: "", upvotes: 1987, verified: true, rating: 4.4, icon: "💡", category: "research-data-analysis", subcategory: "ai-research-papers" }
+    ],
+    "ai-research-tool": [
+      { id: "prolific", name: "Prolific", description: "AI-powered research participant platform", url: "", upvotes: 2654, verified: true, rating: 4.6, icon: "👥", category: "research-data-analysis", subcategory: "ai-research-tool" },
+      { id: "glasp", name: "Glasp", description: "AI research highlighting and note-taking", url: "", upvotes: 2432, verified: true, rating: 4.5, icon: "✨", category: "research-data-analysis", subcategory: "ai-research-tool" },
+      { id: "branded", name: "Branded", description: "AI market research and brand analysis", url: "", upvotes: 2298, verified: true, rating: 4.4, icon: "🏷️", category: "research-data-analysis", subcategory: "ai-research-tool" },
+      { id: "semantic-scholar", name: "Semantic Scholar", description: "AI academic search and research platform", url: "", upvotes: 1876, verified: true, rating: 4.3, icon: "🔍", category: "research-data-analysis", subcategory: "ai-research-tool" },
+      { id: "elicit", name: "Elicit", description: "AI research assistant for literature review", url: "", upvotes: 1654, verified: true, rating: 4.2, icon: "🧠", category: "research-data-analysis", subcategory: "ai-research-tool" }
+    ],
+    "ai-sports-betting": [
+      { id: "rithmm", name: "Rithmm", description: "AI sports betting analytics and predictions", url: "", upvotes: 2876, verified: true, rating: 4.7, icon: "🎯", category: "research-data-analysis", subcategory: "ai-sports-betting" },
+      { id: "betharmony", name: "BetHarmony", description: "AI sports betting optimization platform", url: "", upvotes: 2543, verified: true, rating: 4.6, icon: "⚡", category: "research-data-analysis", subcategory: "ai-sports-betting" },
+      { id: "sports-ai", name: "Sports AI", description: "AI sports analytics and betting insights", url: "", upvotes: 2321, verified: true, rating: 4.5, icon: "🏆", category: "research-data-analysis", subcategory: "ai-sports-betting" },
+      { id: "numbers-game", name: "Numbers Game", description: "AI sports betting number analysis", url: "", upvotes: 1987, verified: true, rating: 4.4, icon: "🔢", category: "research-data-analysis", subcategory: "ai-sports-betting" },
+      { id: "mysports-ai", name: "Mysports AI", description: "Personalized AI sports betting assistant", url: "", upvotes: 1765, verified: true, rating: 4.3, icon: "🎲", category: "research-data-analysis", subcategory: "ai-sports-betting" }
+    ],
+    "ai-sports-predictions": [
+      { id: "nerdytips", name: "NerdyTips", description: "AI sports predictions and betting tips", url: "", upvotes: 2654, verified: true, rating: 4.6, icon: "🤓", category: "research-data-analysis", subcategory: "ai-sports-predictions" },
+      { id: "best-bike-split", name: "Best Bike Split", description: "AI cycling performance predictions", url: "", upvotes: 2432, verified: true, rating: 4.5, icon: "🚴", category: "research-data-analysis", subcategory: "ai-sports-predictions" },
+      { id: "sports-ai-predictions", name: "Sports AI", description: "AI sports outcome predictions platform", url: "", upvotes: 2298, verified: true, rating: 4.4, icon: "⚽", category: "research-data-analysis", subcategory: "ai-sports-predictions" },
+      { id: "rithmm-predictions", name: "Rithmm", description: "AI sports betting predictions and analytics", url: "", upvotes: 1876, verified: true, rating: 4.3, icon: "📊", category: "research-data-analysis", subcategory: "ai-sports-predictions" },
+      { id: "xaslarbet", name: "Xaslarbet", description: "AI sports predictions and match analysis", url: "", upvotes: 1654, verified: true, rating: 4.2, icon: "🎰", category: "research-data-analysis", subcategory: "ai-sports-predictions" }
+    ]
   }
 };
 
