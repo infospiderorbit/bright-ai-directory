@@ -2606,6 +2606,51 @@ export const toolsData: { [key: string]: { [key: string]: Tool[] } } = {
       { id: "naughtybot", name: "NaughtyBot", description: "AI bot for playful adult conversations", url: "", upvotes: 2543, verified: true, rating: 4.4, icon: "😈", category: "chatbots-virtual-companions", subcategory: "dirty-talking-ai" },
       { id: "erotix", name: "ErotiX", description: "AI erotic conversation and roleplay platform", url: "", upvotes: 2321, verified: true, rating: 4.3, icon: "🖤", category: "chatbots-virtual-companions", subcategory: "dirty-talking-ai" }
     ]
+  },
+
+  "interior-architectural-design": {
+    "ai-backyard-design": [
+      { id: "neighborbrite", name: "Neighborbrite", description: "AI-powered backyard design and landscaping tool", url: "", upvotes: 1432, verified: true, rating: 4.6, icon: "🏡", category: "interior-architectural-design", subcategory: "ai-backyard-design" },
+      { id: "dreamzar-app", name: "DreamzAR App", description: "Augmented reality backyard design application", url: "", upvotes: 1298, verified: true, rating: 4.5, icon: "📱", category: "interior-architectural-design", subcategory: "ai-backyard-design" },
+      { id: "dreamzar", name: "DreamzAR", description: "AR-powered backyard visualization platform", url: "", upvotes: 1156, verified: true, rating: 4.4, icon: "🔮", category: "interior-architectural-design", subcategory: "ai-backyard-design" },
+      { id: "rescape-ai", name: "Rescape AI", description: "AI backyard and outdoor space design", url: "", upvotes: 987, verified: true, rating: 4.3, icon: "🌿", category: "interior-architectural-design", subcategory: "ai-backyard-design" },
+      { id: "pool-planner-ai", name: "Pool Planner AI", description: "AI-powered swimming pool design tool", url: "", upvotes: 754, verified: true, rating: 4.2, icon: "🏊", category: "interior-architectural-design", subcategory: "ai-backyard-design" }
+    ],
+    "ai-floor-plan-generator": [
+      { id: "planner-5d", name: "Planner 5D", description: "Professional floor plan generator with AI", url: "", upvotes: 1567, verified: true, rating: 4.7, icon: "📐", category: "interior-architectural-design", subcategory: "ai-floor-plan-generator" },
+      { id: "coohom", name: "Coohom", description: "AI-powered interior design and floor planning", url: "", upvotes: 1432, verified: true, rating: 4.6, icon: "🏠", category: "interior-architectural-design", subcategory: "ai-floor-plan-generator" },
+      { id: "maket", name: "Maket", description: "AI-driven floor plan generation platform", url: "", upvotes: 1298, verified: true, rating: 4.5, icon: "🗺️", category: "interior-architectural-design", subcategory: "ai-floor-plan-generator" },
+      { id: "mappedin", name: "Mappedin", description: "Interactive floor plan mapping with AI", url: "", upvotes: 1156, verified: true, rating: 4.4, icon: "🗺️", category: "interior-architectural-design", subcategory: "ai-floor-plan-generator" },
+      { id: "getfloorplan", name: "Getfloorplan", description: "Simple AI floor plan generation tool", url: "", upvotes: 987, verified: true, rating: 4.3, icon: "📋", category: "interior-architectural-design", subcategory: "ai-floor-plan-generator" }
+    ],
+    "ai-interior-design": [
+      { id: "coohom-interior", name: "Coohom", description: "Complete AI interior design solution", url: "", upvotes: 1687, verified: true, rating: 4.8, icon: "🏠", category: "interior-architectural-design", subcategory: "ai-interior-design" },
+      { id: "roomgpt", name: "RoomGPT", description: "AI room design and renovation tool", url: "", upvotes: 1432, verified: true, rating: 4.7, icon: "🛋️", category: "interior-architectural-design", subcategory: "ai-interior-design" },
+      { id: "foyr-neo", name: "Foyr Neo", description: "Professional AI interior design platform", url: "", upvotes: 1298, verified: true, rating: 4.6, icon: "🎨", category: "interior-architectural-design", subcategory: "ai-interior-design" },
+      { id: "homevisualizer-ai", name: "HomeVisualizer.AI", description: "AI-powered home visualization tool", url: "", upvotes: 1156, verified: true, rating: 4.5, icon: "👁️", category: "interior-architectural-design", subcategory: "ai-interior-design" },
+      { id: "mnml-ai", name: "mnml.ai", description: "Minimalist AI interior design assistant", url: "", upvotes: 987, verified: true, rating: 4.4, icon: "◽", category: "interior-architectural-design", subcategory: "ai-interior-design" }
+    ],
+    "ai-kitchen-design": [
+      { id: "kitchengpt", name: "KitchenGPT", description: "AI kitchen design and layout tool", url: "", upvotes: 1432, verified: true, rating: 4.6, icon: "🍳", category: "interior-architectural-design", subcategory: "ai-kitchen-design" },
+      { id: "myarchitectai", name: "MyArchitectAI", description: "AI-powered kitchen architectural design", url: "", upvotes: 1298, verified: true, rating: 4.5, icon: "🏗️", category: "interior-architectural-design", subcategory: "ai-kitchen-design" },
+      { id: "spacely-ai", name: "Spacely AI", description: "AI kitchen space planning and design", url: "", upvotes: 1156, verified: true, rating: 4.4, icon: "🏠", category: "interior-architectural-design", subcategory: "ai-kitchen-design" },
+      { id: "ai-two", name: "AI Two", description: "Dual AI kitchen design assistant", url: "", upvotes: 987, verified: true, rating: 4.3, icon: "2️⃣", category: "interior-architectural-design", subcategory: "ai-kitchen-design" },
+      { id: "arcadium", name: "Arcadium", description: "AI kitchen and interior design platform", url: "", upvotes: 754, verified: true, rating: 4.2, icon: "🏛️", category: "interior-architectural-design", subcategory: "ai-kitchen-design" }
+    ],
+    "ai-landscape-generator": [
+      { id: "renovate-ai", name: "Renovate AI", description: "AI landscape design and renovation", url: "", upvotes: 1432, verified: true, rating: 4.6, icon: "🌳", category: "interior-architectural-design", subcategory: "ai-landscape-generator" },
+      { id: "dreamzar-app-landscape", name: "DreamzAR App", description: "AR landscape design application", url: "", upvotes: 1298, verified: true, rating: 4.5, icon: "📱", category: "interior-architectural-design", subcategory: "ai-landscape-generator" },
+      { id: "ai-garden-design", name: "AI Garden Design by Ogrovision", description: "Professional AI garden design tool", url: "", upvotes: 1156, verified: true, rating: 4.4, icon: "🌺", category: "interior-architectural-design", subcategory: "ai-landscape-generator" },
+      { id: "landscapedesignsai", name: "LandscapeDesignsAI", description: "AI-powered landscape design generator", url: "", upvotes: 987, verified: true, rating: 4.3, icon: "🏞️", category: "interior-architectural-design", subcategory: "ai-landscape-generator" },
+      { id: "landscapingai", name: "LandscapingAI", description: "AI landscaping design and planning", url: "", upvotes: 754, verified: true, rating: 4.2, icon: "🌱", category: "interior-architectural-design", subcategory: "ai-landscape-generator" }
+    ],
+    "ai-room-planner": [
+      { id: "roomgpt-planner", name: "RoomGPT", description: "AI room planning and design tool", url: "", upvotes: 1567, verified: true, rating: 4.7, icon: "🛋️", category: "interior-architectural-design", subcategory: "ai-room-planner" },
+      { id: "ai-room-planner", name: "AI Room Planner", description: "Professional AI room planning platform", url: "", upvotes: 1432, verified: true, rating: 4.6, icon: "📐", category: "interior-architectural-design", subcategory: "ai-room-planner" },
+      { id: "interior-ai", name: "Interior AI", description: "AI interior design and room planning", url: "", upvotes: 1298, verified: true, rating: 4.5, icon: "🏠", category: "interior-architectural-design", subcategory: "ai-room-planner" },
+      { id: "luw-ai", name: "Luw.ai", description: "Smart AI room layout planner", url: "", upvotes: 1156, verified: true, rating: 4.4, icon: "💡", category: "interior-architectural-design", subcategory: "ai-room-planner" },
+      { id: "room-ai", name: "Room AI", description: "AI-powered room design assistant", url: "", upvotes: 987, verified: true, rating: 4.3, icon: "🏡", category: "interior-architectural-design", subcategory: "ai-room-planner" }
+    ]
   }
 };
 
