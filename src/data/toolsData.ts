@@ -1033,7 +1033,7 @@ export const toolsData: { [key: string]: { [key: string]: Tool[] } } = {
     ],
     "ai-chat-generator": [
       { id: "chai", name: "CHAI", description: "AI chatbot platform for interactive conversations", url: "", upvotes: 789, verified: true, rating: 4.7, icon: "☕", category: "writing-editing", subcategory: "ai-chat-generator" },
-      { id: "sharesome-ai", name: "Sharesome AI", description: "AI chat and content sharing platform", url: "", upvotes: 345, verified: true, rating: 4.3, icon: "💬", category: "writing-editing", subcategory: "ai-chat-generator" },
+      { id: "sharesome-ai", name: "Sharesome AI", description: "AI chat and content sharing platform", url: "https://sharesome.com/ai/", upvotes: 345, verified: true, rating: 4.3, icon: "💬", category: "writing-editing", subcategory: "ai-chat-generator" },,
       { id: "chatfuel", name: "Chatfuel", description: "AI chatbot builder for businesses", url: "", upvotes: 567, verified: true, rating: 4.5, icon: "🤖", category: "writing-editing", subcategory: "ai-chat-generator" },
       { id: "landbot", name: "Landbot", description: "Conversational AI platform for customer engagement", url: "", upvotes: 423, verified: true, rating: 4.4, icon: "🚀", category: "writing-editing", subcategory: "ai-chat-generator" },
       { id: "typebot", name: "Typebot", description: "Open-source chatbot builder with AI capabilities", url: "", upvotes: 234, verified: false, rating: 4.2, icon: "⌨️", category: "writing-editing", subcategory: "ai-chat-generator" }
@@ -3107,7 +3107,7 @@ export const toolsData: { [key: string]: { [key: string]: Tool[] } } = {
       { id: "girlfriendgpt-nsfw", name: "GirlfriendGPT", description: "AI girlfriend with adult conversation features", url: "", upvotes: 4234, verified: true, rating: 4.7, icon: "💕", category: "other", subcategory: "nsfw" },
       { id: "crushon-ai", name: "CrushOn.AI", description: "AI companion with romantic and adult features", url: "", upvotes: 3987, verified: true, rating: 4.6, icon: "💘", category: "other", subcategory: "nsfw" },
       { id: "craveu-ai", name: "CraveU AI", description: "AI platform for adult entertainment and chat", url: "", upvotes: 3765, verified: true, rating: 4.5, icon: "❤️‍🔥", category: "other", subcategory: "nsfw" },
-      { id: "sharesome-ai", name: "Sharesome AI", description: "AI adult content creation and sharing", url: "", upvotes: 3543, verified: true, rating: 4.4, icon: "🔞", category: "other", subcategory: "nsfw" }
+      { id: "sharesome-ai", name: "Sharesome AI", description: "AI adult content creation and sharing", url: "https://sharesome.com/ai/", upvotes: 3543, verified: true, rating: 4.4, icon: "🔞", category: "other", subcategory: "nsfw" }
     ],
     "open-source-ai-models": [
       { id: "hugging-face", name: "Hugging Face", description: "Open source AI models and community platform", url: "https://huggingface.co", upvotes: 4567, verified: true, rating: 4.9, icon: "🤗", category: "other", subcategory: "open-source-ai-models" },

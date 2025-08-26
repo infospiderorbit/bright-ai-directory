@@ -25,11 +25,10 @@ const WebsiteSnapshot = ({ toolUrl, toolName }: WebsiteSnapshotProps) => {
         setIsLoading(true);
         setHasError(false);
         
-        // Using multiple free screenshot services as fallbacks
         const screenshotServices = [
-          `https://api.urlbox.io/v1/ca482d7e-9417-4569-90fe-80f7c5e1c781/png?url=${encodeURIComponent(toolUrl)}&width=1200&height=800&quality=80&delay=2000`,
-          `https://shot.screenshotapi.net/screenshot?token=free&url=${encodeURIComponent(toolUrl)}&width=1200&height=800&file_type=png&wait_for_event=load`,
-          `https://api.microlink.io/screenshot?url=${encodeURIComponent(toolUrl)}&viewport.width=1200&viewport.height=800&type=png&overlay.background=white`
+          `https://s.wordpress.com/mshots/v1/${encodeURIComponent(toolUrl)}?w=1200`,
+          `https://image.thum.io/get/width/1200/crop/800/noanimate/${encodeURIComponent(toolUrl)}`,
+          `https://mini.s-shot.ru/1200x800/1024/jpeg/?${encodeURIComponent(toolUrl)}`
         ];
         
         // Try the first service
@@ -95,10 +94,10 @@ const WebsiteSnapshot = ({ toolUrl, toolName }: WebsiteSnapshotProps) => {
             onError={(e) => {
               // Try fallback services if the first one fails
               const currentSrc = e.currentTarget.src;
-              if (currentSrc.includes('urlbox.io')) {
-                e.currentTarget.src = `https://shot.screenshotapi.net/screenshot?token=free&url=${encodeURIComponent(toolUrl!)}&width=1200&height=800&file_type=png&wait_for_event=load`;
-              } else if (currentSrc.includes('screenshotapi.net')) {
-                e.currentTarget.src = `https://api.microlink.io/screenshot?url=${encodeURIComponent(toolUrl!)}&viewport.width=1200&viewport.height=800&type=png&overlay.background=white`;
+              if (currentSrc.includes('s.wordpress.com')) {
+                e.currentTarget.src = `https://image.thum.io/get/width/1200/crop/800/noanimate/${encodeURIComponent(toolUrl!)}`;
+              } else if (currentSrc.includes('image.thum.io')) {
+                e.currentTarget.src = `https://mini.s-shot.ru/1200x800/1024/jpeg/?${encodeURIComponent(toolUrl!)}`;
               } else {
                 setHasError(true);
               }
