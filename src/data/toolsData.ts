@@ -3043,6 +3043,86 @@ export const toolsData: { [key: string]: { [key: string]: Tool[] } } = {
       { id: "rithmm-predictions", name: "Rithmm", description: "AI sports betting predictions and analytics", url: "", upvotes: 1876, verified: true, rating: 4.3, icon: "📊", category: "research-data-analysis", subcategory: "ai-sports-predictions" },
       { id: "xaslarbet", name: "Xaslarbet", description: "AI sports predictions and match analysis", url: "", upvotes: 1654, verified: true, rating: 4.2, icon: "🎰", category: "research-data-analysis", subcategory: "ai-sports-predictions" }
     ]
+  },
+
+  "other": {
+    "ai-game-generator": [
+      { id: "rosebud-ai-game", name: "Rosebud AI", description: "AI-powered game generation and development platform", url: "", upvotes: 2134, verified: true, rating: 4.8, icon: "🌹", category: "other", subcategory: "ai-game-generator" },
+      { id: "ludo-ai", name: "Ludo.ai", description: "AI game design and concept generator", url: "", upvotes: 1876, verified: true, rating: 4.7, icon: "🎮", category: "other", subcategory: "ai-game-generator" },
+      { id: "websim", name: "Websim", description: "AI-powered web-based game simulator", url: "", upvotes: 1654, verified: true, rating: 4.6, icon: "🌐", category: "other", subcategory: "ai-game-generator" },
+      { id: "ai-minecraft-game", name: "AI Minecraft", description: "AI-generated Minecraft game content", url: "", upvotes: 1432, verified: true, rating: 4.5, icon: "⛏️", category: "other", subcategory: "ai-game-generator" },
+      { id: "rosebud-ai-minecraft", name: "Rosebud AI", description: "AI Minecraft content generator", url: "", upvotes: 1298, verified: true, rating: 4.4, icon: "🌹", category: "other", subcategory: "ai-game-generator" }
+    ],
+    "ai-games": [
+      { id: "easysbc", name: "EasySBC", description: "AI-powered FIFA SBC solver and game assistant", url: "", upvotes: 2345, verified: true, rating: 4.8, icon: "⚽", category: "other", subcategory: "ai-games" },
+      { id: "aimlabs", name: "Aimlabs", description: "AI training platform for FPS gaming", url: "", upvotes: 2156, verified: true, rating: 4.7, icon: "🎯", category: "other", subcategory: "ai-games" },
+      { id: "human-or-not", name: "Human or Not", description: "AI detection game and social experiment", url: "", upvotes: 1987, verified: true, rating: 4.6, icon: "🤖", category: "other", subcategory: "ai-games" },
+      { id: "your-gg", name: "YOUR.GG", description: "AI gaming performance analytics", url: "", upvotes: 1765, verified: true, rating: 4.5, icon: "📊", category: "other", subcategory: "ai-games" },
+      { id: "ai-realm", name: "AI Realm", description: "AI-powered gaming universe and platform", url: "", upvotes: 1543, verified: true, rating: 4.4, icon: "🏰", category: "other", subcategory: "ai-games" }
+    ],
+    "ai-models": [
+      { id: "google-ai-developers", name: "Google AI for Developers", description: "Google's AI models and development tools", url: "", upvotes: 3456, verified: true, rating: 4.9, icon: "🔬", category: "other", subcategory: "ai-models" },
+      { id: "civitai", name: "Civitai", description: "Community-driven AI model sharing platform", url: "", upvotes: 2987, verified: true, rating: 4.8, icon: "🎨", category: "other", subcategory: "ai-models" },
+      { id: "heroz", name: "HEROZ", description: "AI game and model development platform", url: "", upvotes: 2345, verified: true, rating: 4.7, icon: "🦸", category: "other", subcategory: "ai-models" },
+      { id: "minimax", name: "MiniMax", description: "Advanced AI model development platform", url: "", upvotes: 2156, verified: true, rating: 4.6, icon: "🔄", category: "other", subcategory: "ai-models" },
+      { id: "google-ai-studio", name: "Google AI Studio", description: "Google's AI model development environment", url: "", upvotes: 1987, verified: true, rating: 4.5, icon: "🎬", category: "other", subcategory: "ai-models" }
+    ],
+    "ai-poker": [
+      { id: "pairrd", name: "Pairrd", description: "AI poker strategy and analysis platform", url: "", upvotes: 1876, verified: true, rating: 4.7, icon: "♠️", category: "other", subcategory: "ai-poker" },
+      { id: "poker-bot-ai", name: "Poker Bot AI+", description: "Advanced AI poker bot and assistant", url: "", upvotes: 1654, verified: true, rating: 4.6, icon: "🤖", category: "other", subcategory: "ai-poker" },
+      { id: "pokergpt", name: "PokerGPT", description: "AI poker advisor powered by GPT technology", url: "", upvotes: 1432, verified: true, rating: 4.5, icon: "🎰", category: "other", subcategory: "ai-poker" },
+      { id: "hybrid-poker", name: "Hybrid Poker", description: "AI-human hybrid poker platform", url: "", upvotes: 1298, verified: true, rating: 4.4, icon: "🔀", category: "other", subcategory: "ai-poker" },
+      { id: "rta-poker", name: "RTA.POKER", description: "Real-time AI poker assistance", url: "", upvotes: 1156, verified: true, rating: 4.3, icon: "⏱️", category: "other", subcategory: "ai-poker" }
+    ],
+    "ai-robot": [
+      { id: "dronedeploy", name: "DroneDeploy", description: "AI-powered drone mapping and robotics", url: "", upvotes: 2456, verified: true, rating: 4.8, icon: "🚁", category: "other", subcategory: "ai-robot" },
+      { id: "covariant", name: "Covariant", description: "AI robotics for warehouse automation", url: "", upvotes: 2234, verified: true, rating: 4.7, icon: "🤖", category: "other", subcategory: "ai-robot" },
+      { id: "sanctuary-ai", name: "Sanctuary AI", description: "General-purpose humanoid robots", url: "", upvotes: 2012, verified: true, rating: 4.6, icon: "🏛️", category: "other", subcategory: "ai-robot" },
+      { id: "folotoy", name: "FOLOTOY", description: "AI companion robot toy platform", url: "", upvotes: 1789, verified: true, rating: 4.5, icon: "🧸", category: "other", subcategory: "ai-robot" },
+      { id: "furhat-robotics", name: "Furhat Robotics", description: "Social robotics with AI conversation", url: "", upvotes: 1567, verified: true, rating: 4.4, icon: "👤", category: "other", subcategory: "ai-robot" }
+    ],
+    "ai-tools-directory": [
+      { id: "sourcenext", name: "Sourcenext", description: "Comprehensive AI tools directory", url: "", upvotes: 1987, verified: true, rating: 4.7, icon: "📚", category: "other", subcategory: "ai-tools-directory" },
+      { id: "miniapps-ai", name: "miniapps.ai", description: "Curated collection of AI mini-applications", url: "", upvotes: 1765, verified: true, rating: 4.6, icon: "📱", category: "other", subcategory: "ai-tools-directory" },
+      { id: "chad-ai", name: "Chad AI", description: "AI tools discovery and comparison platform", url: "", upvotes: 1543, verified: true, rating: 4.5, icon: "💪", category: "other", subcategory: "ai-tools-directory" },
+      { id: "globalgpt", name: "GlobalGPT", description: "Global directory of GPT and AI tools", url: "", upvotes: 1432, verified: true, rating: 4.4, icon: "🌍", category: "other", subcategory: "ai-tools-directory" },
+      { id: "easy-with-ai", name: "Easy With AI", description: "Simple AI tools directory and guides", url: "", upvotes: 1321, verified: true, rating: 4.3, icon: "✨", category: "other", subcategory: "ai-tools-directory" }
+    ],
+    "large-language-models": [
+      { id: "deepseek", name: "DeepSeek", description: "Advanced large language model platform", url: "", upvotes: 3456, verified: true, rating: 4.9, icon: "🔍", category: "other", subcategory: "large-language-models" },
+      { id: "minimax-llm", name: "MiniMax", description: "Efficient large language model solution", url: "", upvotes: 3234, verified: true, rating: 4.8, icon: "🔄", category: "other", subcategory: "large-language-models" },
+      { id: "offline-chat-llm", name: "Offline Chat: Private AI", description: "Private offline large language model", url: "", upvotes: 2987, verified: true, rating: 4.7, icon: "🔒", category: "other", subcategory: "large-language-models" },
+      { id: "google-gemini-llm", name: "Google Gemini", description: "Google's multimodal large language model", url: "", upvotes: 2765, verified: true, rating: 4.6, icon: "💎", category: "other", subcategory: "large-language-models" },
+      { id: "poe", name: "Poe", description: "Access to multiple language models in one platform", url: "", upvotes: 2543, verified: true, rating: 4.5, icon: "🎭", category: "other", subcategory: "large-language-models" }
+    ],
+    "minecraft-ai": [
+      { id: "skingenerator-io", name: "SkinGenerator.io", description: "AI Minecraft skin generator", url: "", upvotes: 1876, verified: true, rating: 4.6, icon: "🎨", category: "other", subcategory: "minecraft-ai" },
+      { id: "ai-mc-texture", name: "AI MC Texture", description: "AI-generated Minecraft texture packs", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "🧱", category: "other", subcategory: "minecraft-ai" },
+      { id: "minecraft-plot", name: "Minecraft Plot", description: "AI story and plot generator for Minecraft", url: "", upvotes: 1432, verified: true, rating: 4.4, icon: "📖", category: "other", subcategory: "minecraft-ai" },
+      { id: "ai-minecraft-mc", name: "AI Minecraft", description: "AI assistant for Minecraft gameplay", url: "", upvotes: 1298, verified: true, rating: 4.3, icon: "⛏️", category: "other", subcategory: "minecraft-ai" },
+      { id: "olc-bedrock-dev", name: "OLC Bedrock Dev Helper", description: "AI development assistant for Minecraft Bedrock", url: "", upvotes: 1156, verified: true, rating: 4.2, icon: "🔧", category: "other", subcategory: "minecraft-ai" }
+    ],
+    "nsfw": [
+      { id: "juicychat-ai-nsfw", name: "JuicyChat.AI", description: "AI adult chat and conversation platform", url: "", upvotes: 4567, verified: true, rating: 4.8, icon: "🍑", category: "other", subcategory: "nsfw" },
+      { id: "girlfriendgpt-nsfw", name: "GirlfriendGPT", description: "AI girlfriend with adult conversation features", url: "", upvotes: 4234, verified: true, rating: 4.7, icon: "💕", category: "other", subcategory: "nsfw" },
+      { id: "crushon-ai", name: "CrushOn.AI", description: "AI companion with romantic and adult features", url: "", upvotes: 3987, verified: true, rating: 4.6, icon: "💘", category: "other", subcategory: "nsfw" },
+      { id: "craveu-ai", name: "CraveU AI", description: "AI platform for adult entertainment and chat", url: "", upvotes: 3765, verified: true, rating: 4.5, icon: "❤️‍🔥", category: "other", subcategory: "nsfw" },
+      { id: "sharesome-ai", name: "Sharesome AI", description: "AI adult content creation and sharing", url: "", upvotes: 3543, verified: true, rating: 4.4, icon: "🔞", category: "other", subcategory: "nsfw" }
+    ],
+    "open-source-ai-models": [
+      { id: "hugging-face", name: "Hugging Face", description: "Open source AI models and community platform", url: "", upvotes: 4567, verified: true, rating: 4.9, icon: "🤗", category: "other", subcategory: "open-source-ai-models" },
+      { id: "venice-ai", name: "Venice AI", description: "Uncensored open source AI model platform", url: "", upvotes: 3456, verified: true, rating: 4.8, icon: "🏛️", category: "other", subcategory: "open-source-ai-models" },
+      { id: "google-ai-developers-os", name: "Google AI for Developers", description: "Google's open source AI development tools", url: "", upvotes: 3234, verified: true, rating: 4.7, icon: "🔬", category: "other", subcategory: "open-source-ai-models" },
+      { id: "mimicpc", name: "MimicPC", description: "Open source AI model deployment platform", url: "", upvotes: 2987, verified: true, rating: 4.6, icon: "💻", category: "other", subcategory: "open-source-ai-models" },
+      { id: "unsloth-ai", name: "Unsloth AI", description: "Fast open source AI model training", url: "", upvotes: 2765, verified: true, rating: 4.5, icon: "⚡", category: "other", subcategory: "open-source-ai-models" }
+    ],
+    "other": [
+      { id: "foodanalyst", name: "FoodAnalyst: Know your food", description: "AI food analysis and nutrition tracking", url: "", upvotes: 1876, verified: true, rating: 4.6, icon: "🍎", category: "other", subcategory: "other" },
+      { id: "imyfone", name: "iMyFone", description: "AI-powered mobile utility and recovery tools", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "📱", category: "other", subcategory: "other" },
+      { id: "characterhub", name: "CharacterHub", description: "AI character creation and sharing platform", url: "", upvotes: 1432, verified: true, rating: 4.4, icon: "👤", category: "other", subcategory: "other" },
+      { id: "angular-dev", name: "Angular.dev", description: "Angular development with AI assistance", url: "", upvotes: 1298, verified: true, rating: 4.3, icon: "🅰️", category: "other", subcategory: "other" },
+      { id: "periodic-table-2024", name: "Periodic Table Chemistry 2024", description: "AI-enhanced chemistry learning platform", url: "", upvotes: 1156, verified: true, rating: 4.2, icon: "⚗️", category: "other", subcategory: "other" }
+    ]
   }
 };
 
