@@ -26,6 +26,71 @@ export interface Tool {
 }
 
 export const toolsData: { [key: string]: { [key: string]: Tool[] } } = {
+  "business-research": {
+    "ai-crypto": [
+      { id: "coinmarketcap", name: "CoinMarketCap", description: "Cryptocurrency market data and analysis platform", url: "", upvotes: 2345, verified: true, rating: 4.8, icon: "₿", category: "business-research", subcategory: "ai-crypto" },
+      { id: "messari", name: "Messari", description: "Crypto research and market intelligence", url: "", upvotes: 1987, verified: true, rating: 4.7, icon: "📊", category: "business-research", subcategory: "ai-crypto" },
+      { id: "glassnode", name: "Glassnode", description: "On-chain analytics and crypto insights", url: "", upvotes: 1654, verified: true, rating: 4.6, icon: "🔍", category: "business-research", subcategory: "ai-crypto" },
+      { id: "dune-analytics", name: "Dune Analytics", description: "Blockchain data analysis and visualization", url: "", upvotes: 1432, verified: true, rating: 4.5, icon: "📈", category: "business-research", subcategory: "ai-crypto" },
+      { id: "coingecko", name: "CoinGecko", description: "Comprehensive cryptocurrency data platform", url: "", upvotes: 1298, verified: true, rating: 4.4, icon: "🦎", category: "business-research", subcategory: "ai-crypto" }
+    ],
+    "ai-consulting": [
+      { id: "mckinsey-ai", name: "McKinsey AI Insights", description: "AI-powered business consulting and strategy", url: "", upvotes: 2156, verified: true, rating: 4.8, icon: "🎯", category: "business-research", subcategory: "ai-consulting" },
+      { id: "bcg-gamma", name: "BCG GAMMA", description: "Advanced analytics and AI consulting", url: "", upvotes: 1987, verified: true, rating: 4.7, icon: "💎", category: "business-research", subcategory: "ai-consulting" },
+      { id: "deloitte-ai", name: "Deloitte AI Institute", description: "AI transformation consulting services", url: "", upvotes: 1765, verified: true, rating: 4.6, icon: "🏢", category: "business-research", subcategory: "ai-consulting" },
+      { id: "pwc-ai", name: "PwC AI Services", description: "Enterprise AI consulting and implementation", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "⚙️", category: "business-research", subcategory: "ai-consulting" },
+      { id: "accenture-ai", name: "Accenture Applied Intelligence", description: "AI consulting and technology services", url: "", upvotes: 1432, verified: true, rating: 4.4, icon: "🔬", category: "business-research", subcategory: "ai-consulting" }
+    ],
+    "blockchain": [
+      { id: "etherscan", name: "Etherscan", description: "Ethereum blockchain explorer and analytics", url: "", upvotes: 2345, verified: true, rating: 4.8, icon: "⛓️", category: "business-research", subcategory: "blockchain" },
+      { id: "chainalysis", name: "Chainalysis", description: "Blockchain analytics and compliance platform", url: "", upvotes: 1987, verified: true, rating: 4.7, icon: "🔗", category: "business-research", subcategory: "blockchain" },
+      { id: "moralis", name: "Moralis", description: "Web3 development and blockchain APIs", url: "", upvotes: 1654, verified: true, rating: 4.6, icon: "🌐", category: "business-research", subcategory: "blockchain" },
+      { id: "alchemy", name: "Alchemy", description: "Blockchain development platform and APIs", url: "", upvotes: 1432, verified: true, rating: 4.5, icon: "🧪", category: "business-research", subcategory: "blockchain" },
+      { id: "infura", name: "Infura", description: "Ethereum and IPFS infrastructure provider", url: "", upvotes: 1298, verified: true, rating: 4.4, icon: "🏗️", category: "business-research", subcategory: "blockchain" }
+    ],
+    "ai-business-ideas-generator": [
+      { id: "ideabuddy", name: "IdeaBuddy", description: "AI-powered business idea development platform", url: "", upvotes: 1789, verified: true, rating: 4.7, icon: "💡", category: "business-research", subcategory: "ai-business-ideas-generator" },
+      { id: "strategyzer", name: "Strategyzer", description: "Business model innovation and idea validation", url: "", upvotes: 1567, verified: true, rating: 4.6, icon: "📋", category: "business-research", subcategory: "ai-business-ideas-generator" },
+      { id: "lean-canvas", name: "Lean Canvas", description: "One-page business plan generator", url: "", upvotes: 1432, verified: true, rating: 4.5, icon: "📊", category: "business-research", subcategory: "ai-business-ideas-generator" },
+      { id: "business-model-canvas", name: "Business Model Canvas", description: "Visual business model design tool", url: "", upvotes: 1298, verified: true, rating: 4.4, icon: "🎨", category: "business-research", subcategory: "ai-business-ideas-generator" },
+      { id: "canvanizer", name: "Canvanizer", description: "Online business model canvas tool", url: "", upvotes: 1156, verified: true, rating: 4.3, icon: "🔧", category: "business-research", subcategory: "ai-business-ideas-generator" }
+    ],
+    "web3": [
+      { id: "opensea", name: "OpenSea", description: "Leading NFT marketplace and Web3 platform", url: "", upvotes: 2345, verified: true, rating: 4.8, icon: "🌊", category: "business-research", subcategory: "web3" },
+      { id: "uniswap", name: "Uniswap", description: "Decentralized exchange protocol", url: "", upvotes: 1987, verified: true, rating: 4.7, icon: "🦄", category: "business-research", subcategory: "web3" },
+      { id: "metamask", name: "MetaMask", description: "Web3 wallet and gateway to blockchain apps", url: "", upvotes: 1765, verified: true, rating: 4.6, icon: "🦊", category: "business-research", subcategory: "web3" },
+      { id: "the-graph", name: "The Graph", description: "Decentralized protocol for indexing blockchain data", url: "", upvotes: 1654, verified: true, rating: 4.5, icon: "📊", category: "business-research", subcategory: "web3" },
+      { id: "polygon", name: "Polygon", description: "Multi-chain scaling solution for Ethereum", url: "", upvotes: 1432, verified: true, rating: 4.4, icon: "🔷", category: "business-research", subcategory: "web3" }
+    ],
+    "nfts": [
+      { id: "nft-calendar", name: "NFT Calendar", description: "Track upcoming NFT drops and launches", url: "", upvotes: 1567, verified: true, rating: 4.6, icon: "📅", category: "business-research", subcategory: "nfts" },
+      { id: "rarity-tools", name: "Rarity.tools", description: "NFT rarity rankings and analytics", url: "", upvotes: 1432, verified: true, rating: 4.5, icon: "💎", category: "business-research", subcategory: "nfts" },
+      { id: "nftgo", name: "NFTGo", description: "Comprehensive NFT analytics platform", url: "", upvotes: 1298, verified: true, rating: 4.4, icon: "🚀", category: "business-research", subcategory: "nfts" },
+      { id: "dappradar", name: "DappRadar", description: "NFT and DApp analytics platform", url: "", upvotes: 1156, verified: true, rating: 4.3, icon: "📊", category: "business-research", subcategory: "nfts" },
+      { id: "cryptoslam", name: "CryptoSlam", description: "NFT sales and market data tracker", url: "", upvotes: 987, verified: true, rating: 4.2, icon: "💰", category: "business-research", subcategory: "nfts" }
+    ],
+    "ai-business-name-generator": [
+      { id: "namelix", name: "Namelix", description: "AI-powered business name generator", url: "", upvotes: 1789, verified: true, rating: 4.7, icon: "🏷️", category: "business-research", subcategory: "ai-business-name-generator" },
+      { id: "businessnamegenerator", name: "Business Name Generator", description: "Generate creative business names with AI", url: "", upvotes: 1567, verified: true, rating: 4.6, icon: "🎯", category: "business-research", subcategory: "ai-business-name-generator" },
+      { id: "shopify-business-name", name: "Shopify Business Name Generator", description: "Free business name generator tool", url: "", upvotes: 1432, verified: true, rating: 4.5, icon: "🛒", category: "business-research", subcategory: "ai-business-name-generator" },
+      { id: "brandroot", name: "BrandRoot", description: "Premium brandable business names", url: "", upvotes: 1298, verified: true, rating: 4.4, icon: "🌱", category: "business-research", subcategory: "ai-business-name-generator" },
+      { id: "brandpa", name: "BrandPA", description: "Marketplace for premium business names", url: "", upvotes: 1156, verified: true, rating: 4.3, icon: "👨‍⚕️", category: "business-research", subcategory: "ai-business-name-generator" }
+    ],
+    "ai-domain-name-generator": [
+      { id: "namecheap-generator", name: "Namecheap Domain Generator", description: "AI-powered domain name suggestions", url: "", upvotes: 1654, verified: true, rating: 4.6, icon: "🌐", category: "business-research", subcategory: "ai-domain-name-generator" },
+      { id: "godaddy-generator", name: "GoDaddy Domain Generator", description: "Smart domain name search and suggestions", url: "", upvotes: 1432, verified: true, rating: 4.5, icon: "🏁", category: "business-research", subcategory: "ai-domain-name-generator" },
+      { id: "lean-domain-search", name: "Lean Domain Search", description: "Fast domain name generator and checker", url: "", upvotes: 1298, verified: true, rating: 4.4, icon: "⚡", category: "business-research", subcategory: "ai-domain-name-generator" },
+      { id: "instantdomainsearch", name: "Instant Domain Search", description: "Real-time domain availability checker", url: "", upvotes: 1156, verified: true, rating: 4.3, icon: "🔍", category: "business-research", subcategory: "ai-domain-name-generator" },
+      { id: "domainr", name: "Domainr", description: "Smart domain search across all TLDs", url: "", upvotes: 987, verified: true, rating: 4.2, icon: "🎯", category: "business-research", subcategory: "ai-domain-name-generator" }
+    ],
+    "ai-company-name-generator": [
+      { id: "company-name-generator", name: "Company Name Generator", description: "AI-generated company names with availability", url: "", upvotes: 1432, verified: true, rating: 4.5, icon: "🏢", category: "business-research", subcategory: "ai-company-name-generator" },
+      { id: "looka-name-generator", name: "Looka Name Generator", description: "Company name generator with logo design", url: "", upvotes: 1298, verified: true, rating: 4.4, icon: "🎨", category: "business-research", subcategory: "ai-company-name-generator" },
+      { id: "squadhelp", name: "SquadHelp", description: "Crowdsourced company naming platform", url: "", upvotes: 1156, verified: true, rating: 4.3, icon: "👥", category: "business-research", subcategory: "ai-company-name-generator" },
+      { id: "brandcrowd-names", name: "BrandCrowd Names", description: "Company name generator with branding", url: "", upvotes: 987, verified: true, rating: 4.2, icon: "👑", category: "business-research", subcategory: "ai-company-name-generator" },
+      { id: "novanym", name: "Novanym", description: "Creative company and brand name generator", url: "", upvotes: 876, verified: true, rating: 4.1, icon: "✨", category: "business-research", subcategory: "ai-company-name-generator" }
+    ]
+  },
   "office-productivity": {
     "ai-agent": [
       { id: "jotform-ai-agents", name: "Jotform AI Agents", description: "AI-powered form automation and workflow agents", url: "", upvotes: 1567, verified: true, rating: 4.7, icon: "🤖", category: "office-productivity", subcategory: "ai-agent" },
