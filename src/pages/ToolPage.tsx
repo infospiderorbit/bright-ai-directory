@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
-import { ArrowLeft, ExternalLink, Star, Heart, Bookmark, Facebook, Linkedin, Twitter, MessageCircle, Mail } from "lucide-react";
+import { ArrowLeft, ExternalLink, Star, Heart, Bookmark, Facebook, Linkedin, Twitter, MessageCircle, Mail, Camera } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -8,6 +8,7 @@ import { Separator } from "@/components/ui/separator";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import WebsiteSnapshot from "@/components/WebsiteSnapshot";
 import { toolsData } from "@/data/toolsData";
 import { categoriesData } from "@/data/categoriesData";
 import { toolsProductInfoData } from "@/data/toolsProductInfo";
@@ -346,27 +347,12 @@ const ToolPage = () => {
 
             {/* Right Column - Snapshot/Preview (40% width) */}
             <div className="lg:col-span-2">
-              <div className="relative group cursor-pointer">
-                <div className="aspect-[4/3] bg-muted rounded-lg border border-border overflow-hidden">
-                  <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-background to-muted">
-                    <div className="text-center space-y-2">
-                      <div className="w-12 h-12 bg-primary/20 rounded-lg mx-auto flex items-center justify-center">
-                        {toolData.icon}
-                      </div>
-                      <p className="text-sm text-muted-foreground">Tool Snapshot</p>
-                    </div>
-                  </div>
-                  
-                  {/* Hover Overlay */}
-                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <Button asChild variant="secondary" size="lg">
-                      <a href={toolData.url || `https://www.aitoolsprime.com/tool/${toolData.id}`} target="_blank" rel="noopener noreferrer">
-                        Visit Website
-                        <ExternalLink className="ml-2 h-4 w-4" />
-                      </a>
-                    </Button>
-                  </div>
+              <div className="space-y-3">
+                <div className="flex items-center justify-between">
+                  <h3 className="text-lg font-semibold text-foreground">Website Snapshot</h3>
+                  <Camera className="h-4 w-4 text-muted-foreground" />
                 </div>
+                <WebsiteSnapshot toolUrl={toolData.url} toolName={toolData.name} />
               </div>
             </div>
           </div>

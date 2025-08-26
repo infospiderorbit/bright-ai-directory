@@ -3062,10 +3062,10 @@ export const toolsData: { [key: string]: { [key: string]: Tool[] } } = {
     ],
     "ai-models": [
       { id: "google-ai-developers", name: "Google AI for Developers", description: "Google's AI models and development tools", url: "", upvotes: 3456, verified: true, rating: 4.9, icon: "🔬", category: "other", subcategory: "ai-models" },
-      { id: "civitai", name: "Civitai", description: "Community-driven AI model sharing platform", url: "", upvotes: 2987, verified: true, rating: 4.8, icon: "🎨", category: "other", subcategory: "ai-models" },
+      { id: "civitai", name: "Civitai", description: "Community-driven AI model sharing platform", url: "https://civitai.com", upvotes: 2987, verified: true, rating: 4.8, icon: "🎨", category: "other", subcategory: "ai-models" },
       { id: "heroz", name: "HEROZ", description: "AI game and model development platform", url: "", upvotes: 2345, verified: true, rating: 4.7, icon: "🦸", category: "other", subcategory: "ai-models" },
       { id: "minimax", name: "MiniMax", description: "Advanced AI model development platform", url: "", upvotes: 2156, verified: true, rating: 4.6, icon: "🔄", category: "other", subcategory: "ai-models" },
-      { id: "google-ai-studio", name: "Google AI Studio", description: "Google's AI model development environment", url: "", upvotes: 1987, verified: true, rating: 4.5, icon: "🎬", category: "other", subcategory: "ai-models" }
+      { id: "google-ai-studio", name: "Google AI Studio", description: "Google's AI model development environment", url: "https://aistudio.google.com", upvotes: 1987, verified: true, rating: 4.5, icon: "🎬", category: "other", subcategory: "ai-models" }
     ],
     "ai-poker": [
       { id: "pairrd", name: "Pairrd", description: "AI poker strategy and analysis platform", url: "", upvotes: 1876, verified: true, rating: 4.7, icon: "♠️", category: "other", subcategory: "ai-poker" },
@@ -3089,10 +3089,10 @@ export const toolsData: { [key: string]: { [key: string]: Tool[] } } = {
       { id: "easy-with-ai", name: "Easy With AI", description: "Simple AI tools directory and guides", url: "", upvotes: 1321, verified: true, rating: 4.3, icon: "✨", category: "other", subcategory: "ai-tools-directory" }
     ],
     "large-language-models": [
-      { id: "deepseek", name: "DeepSeek", description: "Advanced large language model platform", url: "", upvotes: 3456, verified: true, rating: 4.9, icon: "🔍", category: "other", subcategory: "large-language-models" },
+      { id: "deepseek", name: "DeepSeek", description: "Advanced large language model platform", url: "https://deepseek.com", upvotes: 3456, verified: true, rating: 4.9, icon: "🔍", category: "other", subcategory: "large-language-models" },
       { id: "minimax-llm", name: "MiniMax", description: "Efficient large language model solution", url: "", upvotes: 3234, verified: true, rating: 4.8, icon: "🔄", category: "other", subcategory: "large-language-models" },
       { id: "offline-chat-llm", name: "Offline Chat: Private AI", description: "Private offline large language model", url: "", upvotes: 2987, verified: true, rating: 4.7, icon: "🔒", category: "other", subcategory: "large-language-models" },
-      { id: "google-gemini-llm", name: "Google Gemini", description: "Google's multimodal large language model", url: "", upvotes: 2765, verified: true, rating: 4.6, icon: "💎", category: "other", subcategory: "large-language-models" },
+      { id: "google-gemini-llm", name: "Google Gemini", description: "Google's multimodal large language model", url: "https://gemini.google.com", upvotes: 2765, verified: true, rating: 4.6, icon: "💎", category: "other", subcategory: "large-language-models" },
       { id: "poe", name: "Poe", description: "Access to multiple language models in one platform", url: "", upvotes: 2543, verified: true, rating: 4.5, icon: "🎭", category: "other", subcategory: "large-language-models" }
     ],
     "minecraft-ai": [
@@ -3110,7 +3110,7 @@ export const toolsData: { [key: string]: { [key: string]: Tool[] } } = {
       { id: "sharesome-ai", name: "Sharesome AI", description: "AI adult content creation and sharing", url: "", upvotes: 3543, verified: true, rating: 4.4, icon: "🔞", category: "other", subcategory: "nsfw" }
     ],
     "open-source-ai-models": [
-      { id: "hugging-face", name: "Hugging Face", description: "Open source AI models and community platform", url: "", upvotes: 4567, verified: true, rating: 4.9, icon: "🤗", category: "other", subcategory: "open-source-ai-models" },
+      { id: "hugging-face", name: "Hugging Face", description: "Open source AI models and community platform", url: "https://huggingface.co", upvotes: 4567, verified: true, rating: 4.9, icon: "🤗", category: "other", subcategory: "open-source-ai-models" },
       { id: "venice-ai", name: "Venice AI", description: "Uncensored open source AI model platform", url: "", upvotes: 3456, verified: true, rating: 4.8, icon: "🏛️", category: "other", subcategory: "open-source-ai-models" },
       { id: "google-ai-developers-os", name: "Google AI for Developers", description: "Google's open source AI development tools", url: "", upvotes: 3234, verified: true, rating: 4.7, icon: "🔬", category: "other", subcategory: "open-source-ai-models" },
       { id: "mimicpc", name: "MimicPC", description: "Open source AI model deployment platform", url: "", upvotes: 2987, verified: true, rating: 4.6, icon: "💻", category: "other", subcategory: "open-source-ai-models" },
