@@ -25,10 +25,15 @@ const WebsiteSnapshot = ({ toolUrl, toolName }: WebsiteSnapshotProps) => {
         setIsLoading(true);
         setHasError(false);
         
-        // Using a screenshot service API
-        const screenshotApiUrl = `https://api.screenshotone.com/take?url=${encodeURIComponent(toolUrl)}&viewport_width=1200&viewport_height=800&device_scale_factor=1&format=jpg&cache=true&cache_ttl=2592000&block_ads=true&block_trackers=true&block_cookie_banners=true&delay=3&timeout=10`;
+        // Using multiple free screenshot services as fallbacks
+        const screenshotServices = [
+          `https://api.urlbox.io/v1/ca482d7e-9417-4569-90fe-80f7c5e1c781/png?url=${encodeURIComponent(toolUrl)}&width=1200&height=800&quality=80&delay=2000`,
+          `https://shot.screenshotapi.net/screenshot?token=free&url=${encodeURIComponent(toolUrl)}&width=1200&height=800&file_type=png&wait_for_event=load`,
+          `https://api.microlink.io/screenshot?url=${encodeURIComponent(toolUrl)}&viewport.width=1200&viewport.height=800&type=png&overlay.background=white`
+        ];
         
-        setScreenshotUrl(screenshotApiUrl);
+        // Try the first service
+        setScreenshotUrl(screenshotServices[0]);
         setIsLoading(false);
       } catch (error) {
         console.error('Failed to generate screenshot:', error);
@@ -37,7 +42,9 @@ const WebsiteSnapshot = ({ toolUrl, toolName }: WebsiteSnapshotProps) => {
       }
     };
 
-    fetchScreenshot();
+    // Add a small delay to improve loading experience
+    const timer = setTimeout(fetchScreenshot, 500);
+    return () => clearTimeout(timer);
   }, [toolUrl]);
 
   if (isLoading) {
@@ -85,7 +92,17 @@ const WebsiteSnapshot = ({ toolUrl, toolName }: WebsiteSnapshotProps) => {
             src={screenshotUrl}
             alt={`${toolName} website screenshot`}
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-            onError={() => setHasError(true)}
+            onError={(e) => {
+              // Try fallback services if the first one fails
+              const currentSrc = e.currentTarget.src;
+              if (currentSrc.includes('urlbox.io')) {
+                e.currentTarget.src = `https://shot.screenshotapi.net/screenshot?token=free&url=${encodeURIComponent(toolUrl!)}&width=1200&height=800&file_type=png&wait_for_event=load`;
+              } else if (currentSrc.includes('screenshotapi.net')) {
+                e.currentTarget.src = `https://api.microlink.io/screenshot?url=${encodeURIComponent(toolUrl!)}&viewport.width=1200&viewport.height=800&type=png&overlay.background=white`;
+              } else {
+                setHasError(true);
+              }
+            }}
             loading="lazy"
           />
           
