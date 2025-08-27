@@ -893,64 +893,17 @@ const FeaturedTools: React.FC<FeaturedToolsProps> = ({ selectedCategory, setSele
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            {
-              name: "ThumbnailCreator.com",
-              description: "AI-powered thumbnail creator for YouTube and social media content",
-              upvotes: 234,
-              verified: true,
-              icon: "🖼️"
-            },
-            {
-              name: "ImgToImg.ai",
-              description: "Advanced AI image-to-image transformation and editing platform",
-              upvotes: 189,
-              verified: true,
-              icon: "🎨"
-            },
-            {
-              name: "Presentation Intelligence",
-              description: "AI assistant for creating smart and engaging presentations",
-              upvotes: 156,
-              verified: false,
-              icon: "📊"
-            },
-            {
-              name: "Astronomer",
-              description: "AI-powered space exploration and astronomy analysis tool",
-              upvotes: 123,
-              verified: true,
-              icon: "🌟"
-            },
-            {
-              name: "Mirage LSD Decart",
-              description: "Advanced AI for creative visual generation and transformation",
-              upvotes: 98,
-              verified: false,
-              icon: "✨"
-            },
-            {
-              name: "Pairaphrase",
-              description: "AI-powered paraphrasing and text rewriting assistant",
-              upvotes: 87,
-              verified: true,
-              icon: "📝"
-            },
-            {
-              name: "Image To Sketch AI",
-              description: "Convert photos to artistic sketches using AI technology",
-              upvotes: 76,
-              verified: true,
-              icon: "🎭"
-            },
-            {
-              name: "BrowserAct",
-              description: "AI automation tool for web browser tasks and workflows",
-              upvotes: 65,
-              verified: false,
-              icon: "🌐"
-            }
+            // Real tools from toolsData
+            { id: "notebook-ai", name: "Notebook.ai", description: "World-building and character development tool", upvotes: 456, verified: true, icon: "📓" },
+            { id: "cowriter", name: "Cowriter", description: "AI writing companion for creative projects", upvotes: 189, verified: false, icon: "✍️" },
+            { id: "sudowrite", name: "Sudowrite", description: "AI writing partner for creative fiction writing", upvotes: 789, verified: true, icon: "✨" },
+            { id: "lyricstudio", name: "LyricStudio", description: "AI-powered songwriting and lyric generation", upvotes: 345, verified: true, icon: "🎵" },
+            { id: "grammarly", name: "Grammarly", description: "AI writing assistant for grammar and style", upvotes: 1234, verified: true, icon: "✍️" },
+            { id: "jasper", name: "Jasper", description: "AI content creation and marketing platform", upvotes: 987, verified: true, icon: "🚀" },
+            { id: "copy-ai", name: "Copy.ai", description: "AI copywriting tool for marketing content", upvotes: 876, verified: true, icon: "📝" },
+            { id: "writesonic", name: "Writesonic", description: "AI writing assistant for blogs and ads", upvotes: 654, verified: true, icon: "🎯" }
           ].map((tool, index) => (
-            <Link key={index} to={`/${tool.name.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '').replace(/\./g, '')}`}>
+            <Link key={tool.id} to={`/${tool.id}`}>
               <Card className="group hover:shadow-hover transition-all duration-300 hover:-translate-y-1 bg-card/50 backdrop-blur-sm border-border/50 h-full">
               <CardHeader className="pb-3">
                 <div className="flex items-start justify-between">
