@@ -8,14 +8,14 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border shadow-sm">
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-2 hover:opacity-80 transition-smooth">
             <div className="p-2 gradient-primary rounded-lg">
               <Sparkles className="h-6 w-6 text-white" />
             </div>
             <span className="text-xl font-bold text-foreground">
               aitoolsprime.com
             </span>
-          </div>
+          </Link>
           
           <nav className="hidden md:flex items-center space-x-8">
             <a href="#" className="text-muted-foreground hover:text-foreground transition-smooth font-medium">
