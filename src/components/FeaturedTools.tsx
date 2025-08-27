@@ -728,8 +728,16 @@ const FeaturedTools: React.FC<FeaturedToolsProps> = ({ selectedCategory, setSele
     setCurrentPage(1);
     
     if (selectedCategory === "All Categories") {
-      // Show featured tools from hardcoded categories
-      return Object.entries(toolCategories);
+      // Build featured sections from real toolsData categories
+      const featuredCategoryNames = [
+        "Writing & Editing",
+        "Image Generation & Editing",
+        "Voice Generation & Conversion",
+        "Office & Productivity"
+      ];
+      return featuredCategoryNames
+        .filter((name) => categoryMapping[name])
+        .map((name) => [name, getToolsForCategory(name)] as [string, any[]]);
     } else {
       // Get all tools from actual data for selected category
       const tools = getToolsForCategory(selectedCategory);
@@ -884,65 +892,6 @@ const FeaturedTools: React.FC<FeaturedToolsProps> = ({ selectedCategory, setSele
         </div>
       </section>
 
-      {/* Latest AI Tools Section */}
-      <section className="py-12 px-4">
-      <div className="max-w-7xl mx-auto">
-        <div className="mb-8">
-          <h2 className="text-3xl font-bold text-foreground mb-4">Latest AI Tools</h2>
-        </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {[
-            // Real tools from toolsData
-            { id: "notebook-ai", name: "Notebook.ai", description: "World-building and character development tool", upvotes: 456, verified: true, icon: "📓" },
-            { id: "cowriter", name: "Cowriter", description: "AI writing companion for creative projects", upvotes: 189, verified: false, icon: "✍️" },
-            { id: "sudowrite", name: "Sudowrite", description: "AI writing partner for creative fiction writing", upvotes: 789, verified: true, icon: "✨" },
-            { id: "lyricstudio", name: "LyricStudio", description: "AI-powered songwriting and lyric generation", upvotes: 345, verified: true, icon: "🎵" },
-            { id: "grammarly", name: "Grammarly", description: "AI writing assistant for grammar and style", upvotes: 1234, verified: true, icon: "✍️" },
-            { id: "jasper", name: "Jasper", description: "AI content creation and marketing platform", upvotes: 987, verified: true, icon: "🚀" },
-            { id: "copy-ai", name: "Copy.ai", description: "AI copywriting tool for marketing content", upvotes: 876, verified: true, icon: "📝" },
-            { id: "writesonic", name: "Writesonic", description: "AI writing assistant for blogs and ads", upvotes: 654, verified: true, icon: "🎯" }
-          ].map((tool, index) => (
-            <Link key={tool.id} to={`/${tool.id}`}>
-              <Card className="group hover:shadow-hover transition-all duration-300 hover:-translate-y-1 bg-card/50 backdrop-blur-sm border-border/50 h-full">
-              <CardHeader className="pb-3">
-                <div className="flex items-start justify-between">
-                  <div className="text-2xl mb-2">{tool.icon}</div>
-                  <div className="flex items-center gap-2">
-                    {tool.verified && (
-                      <Check className="h-4 w-4 text-primary" />
-                    )}
-                    <Button variant="ghost" size="sm" className="h-8 px-2">
-                      <ArrowUp className="h-4 w-4 mr-1" />
-                      {tool.upvotes}
-                    </Button>
-                  </div>
-                </div>
-                <CardTitle className="text-lg leading-6 group-hover:text-primary transition-colors">
-                  {tool.name}
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="pt-0">
-                <CardDescription className="text-sm mb-4 line-clamp-3">
-                  {tool.description}
-                </CardDescription>
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <Badge variant="secondary" className="text-xs">
-                      New
-                    </Badge>
-                  </div>
-                  <Button variant="ghost" size="sm" className="h-8 w-8 p-0">
-                    <ExternalLink className="h-4 w-4" />
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-            </Link>
-          ))}
-        </div>
-      </div>
-    </section>
     </>
   );
 };
