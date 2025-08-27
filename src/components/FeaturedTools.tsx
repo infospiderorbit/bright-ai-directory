@@ -707,7 +707,11 @@ const FeaturedTools = ({ selectedCategory }: FeaturedToolsProps) => {
     mappedCategories.forEach(mappedCategory => {
       if (toolsData[mappedCategory]) {
         Object.values(toolsData[mappedCategory]).forEach(subcategoryTools => {
-          allTools.push(...subcategoryTools);
+          if (Array.isArray(subcategoryTools)) {
+            // Filter out any undefined or null tools
+            const validTools = subcategoryTools.filter(tool => tool && tool.name && tool.id);
+            allTools.push(...validTools);
+          }
         });
       }
     });
@@ -760,7 +764,7 @@ const FeaturedTools = ({ selectedCategory }: FeaturedToolsProps) => {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                {Array.isArray(tools) && tools.map((tool: any) => (
+                {Array.isArray(tools) && tools.filter(tool => tool && tool.name && tool.id).map((tool: any) => (
                   <Link 
                     key={tool.id} 
                     to={`/${tool.name.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '')}`}
