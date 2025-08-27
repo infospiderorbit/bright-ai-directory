@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
+import { toolsData } from "@/data/toolsData";
 
 interface FeaturedToolsProps {
   selectedCategory: string;
@@ -675,13 +676,54 @@ const FeaturedTools = ({ selectedCategory }: FeaturedToolsProps) => {
     ]
   };
 
-  // Filter categories based on selected category
-  const filteredCategories = useMemo(() => {
+  // Category mapping to actual data categories
+  const categoryMapping: { [key: string]: string[] } = {
+    "Writing & Editing": ["writing-editing"],
+    "Image Generation & Editing": ["image-generation-editing"],
+    "Music & Audio": ["voice-generation-conversion"],
+    "Voice Generation & Conversion": ["voice-generation-conversion"],
+    "Art & Creative Design": ["art-creative-design", "interior-architectural-design"],
+    "Social Media": ["social-media"],
+    "AI Detection & Anti-Detection": ["ai-detection-anti-detection"],
+    "Coding & Development": ["coding-development"],
+    "Video & Animation": ["video-animation"],
+    "Daily Life": ["daily-life", "chatbots-virtual-companions"],
+    "Legal & Finance": ["legal-finance"],
+    "Business Management": ["business-management"],
+    "Marketing & Advertising": ["marketing-advertising"],
+    "Health & Wellness": ["health-wellness"],
+    "Business Research": ["business-research"],
+    "Education & Translation": ["education-translation"],
+    "Office & Productivity": ["office-productivity"],
+    "Research & Data Analysis": ["research-data-analysis"],
+    "Other": ["other"]
+  };
+
+  // Get all tools for selected category from actual data
+  const getToolsForCategory = (category: string) => {
+    const mappedCategories = categoryMapping[category] || [];
+    const allTools: any[] = [];
+    
+    mappedCategories.forEach(mappedCategory => {
+      if (toolsData[mappedCategory]) {
+        Object.values(toolsData[mappedCategory]).forEach(subcategoryTools => {
+          allTools.push(...subcategoryTools);
+        });
+      }
+    });
+    
+    return allTools;
+  };
+
+  const filteredData = useMemo(() => {
     if (selectedCategory === "All Categories") {
+      // Show featured tools from hardcoded categories
       return Object.entries(toolCategories);
+    } else {
+      // Get all tools from actual data for selected category
+      const tools = getToolsForCategory(selectedCategory);
+      return tools.length > 0 ? [[selectedCategory, tools] as [string, any[]]] : [];
     }
-    const categoryEntry = Object.entries(toolCategories).find(([name]) => name === selectedCategory);
-    return categoryEntry ? [categoryEntry] : [];
   }, [selectedCategory]);
 
   return (
@@ -700,7 +742,7 @@ const FeaturedTools = ({ selectedCategory }: FeaturedToolsProps) => {
           )}
           
           {/* Featured Tools Categories - Filtered by Selection */}
-          {filteredCategories.map(([categoryName, tools]) => (
+          {filteredData.map(([categoryName, tools]: [string, any[]]) => (
             <div key={categoryName} className="mb-16">
               <div className="mb-8">
                 <div className="flex items-center justify-between">
@@ -718,7 +760,7 @@ const FeaturedTools = ({ selectedCategory }: FeaturedToolsProps) => {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                {tools.map((tool) => (
+                {Array.isArray(tools) && tools.map((tool: any) => (
                   <Link 
                     key={tool.id} 
                     to={`/${tool.name.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '')}`}
