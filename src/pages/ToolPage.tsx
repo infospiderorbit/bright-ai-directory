@@ -123,6 +123,7 @@ const ToolPage = () => {
 
   // Debug logging
   console.log('ToolPage params:', { category, subcategory, tool });
+  console.log('All available tools in toolsData:', Object.keys(toolsData));
 
   // Find the tool data
   let categoryData, subcategoryData, toolData;
@@ -139,15 +140,22 @@ const ToolPage = () => {
     const toolId = tool;
     console.log('Searching for tool ID:', toolId);
     for (const [catKey, catData] of Object.entries(toolsData)) {
+      console.log('Checking category:', catKey, 'data:', catData);
       for (const [subKey, subTools] of Object.entries(catData)) {
-        const foundTool = subTools.find(t => t.id === toolId);
-        if (foundTool) {
-          console.log('Found tool:', foundTool);
-          console.log('In category:', catKey, 'subcategory:', subKey);
-          toolData = foundTool;
-          categoryData = categoriesData[catKey];
-          subcategoryData = categoryData?.subcategories?.[subKey];
-          break;
+        console.log('Checking subcategory:', subKey, 'tools:', subTools);
+        // Ensure subTools is an array before calling find
+        if (Array.isArray(subTools)) {
+          const foundTool = subTools.find(t => t && t.id === toolId);
+          if (foundTool) {
+            console.log('Found tool:', foundTool);
+            console.log('In category:', catKey, 'subcategory:', subKey);
+            toolData = foundTool;
+            categoryData = categoriesData[catKey];
+            subcategoryData = categoryData?.subcategories?.[subKey];
+            break;
+          }
+        } else {
+          console.log('subTools is not an array:', subTools);
         }
       }
       if (toolData) break;
