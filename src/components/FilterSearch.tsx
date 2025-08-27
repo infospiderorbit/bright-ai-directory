@@ -9,12 +9,33 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-const FilterSearch = () => {
+interface FilterSearchProps {
+  selectedCategory: string;
+  onCategoryChange: (category: string) => void;
+}
+
+const FilterSearch = ({ selectedCategory, onCategoryChange }: FilterSearchProps) => {
   const categories = [
-    "3D Model (81)", "AI Agents (96)", "AI Chat & Assistant (40)", "Avatars (59)", 
-    "Business (213)", "Marketing (141)", "Productivity (256)", "Text to Speech (80)", 
-    "Image Generators (221)", "Video Generators (134)", "Code Assistant (89)", 
-    "Writing (167)", "Audio (92)", "Design (156)", "Analytics (78)"
+    "All Categories",
+    "Writing & Editing",
+    "Image Generation & Editing", 
+    "Music & Audio", 
+    "Voice Generation & Conversion", 
+    "Art & Creative Design", 
+    "Social Media", 
+    "AI Detection & Anti-Detection", 
+    "Coding & Development", 
+    "Video & Animation", 
+    "Daily Life", 
+    "Legal & Finance", 
+    "Business Management", 
+    "Marketing & Advertising", 
+    "Health & Wellness", 
+    "Business Research", 
+    "Education & Translation", 
+    "Office & Productivity", 
+    "Research & Data Analysis", 
+    "Other"
   ];
 
   const filterTags = ["Free AI", "Freemium", "Paid", "Free Trial"];
@@ -50,13 +71,17 @@ const FilterSearch = () => {
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="outline" className="rounded-full px-4 py-2 bg-white/80 backdrop-blur-sm">
-                Select a category
+                {selectedCategory}
                 <ChevronDown className="ml-2 h-4 w-4" />
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-56 max-h-64 overflow-y-auto">
+            <DropdownMenuContent className="w-56 max-h-64 overflow-y-auto bg-white/95 backdrop-blur-sm border border-border/50">
               {categories.map((category, index) => (
-                <DropdownMenuItem key={index} className="cursor-pointer">
+                <DropdownMenuItem 
+                  key={index} 
+                  className="cursor-pointer hover:bg-primary/10 focus:bg-primary/10"
+                  onClick={() => onCategoryChange(category)}
+                >
                   {category}
                 </DropdownMenuItem>
               ))}

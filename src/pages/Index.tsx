@@ -5,14 +5,20 @@ import FeaturedTools from "@/components/FeaturedTools";
 import Categories from "@/components/Categories";
 import Stats from "@/components/Stats";
 import Footer from "@/components/Footer";
+import { useState } from "react";
 
 const Index = () => {
+  const [selectedCategory, setSelectedCategory] = useState("All Categories");
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
       <Hero />
-      <FilterSearch />
-      <FeaturedTools />
+      <FilterSearch 
+        selectedCategory={selectedCategory}
+        onCategoryChange={setSelectedCategory}
+      />
+      <FeaturedTools selectedCategory={selectedCategory} />
       <Categories />
       <Stats />
       <Footer />

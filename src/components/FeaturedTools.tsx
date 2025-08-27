@@ -3,11 +3,14 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
 
-const FeaturedTools = () => {
-  const [selectedCategory, setSelectedCategory] = useState("Writing & Editing");
+interface FeaturedToolsProps {
+  selectedCategory: string;
+}
+
+const FeaturedTools = ({ selectedCategory }: FeaturedToolsProps) => {
 
   const toolCategories = {
     "Writing & Editing": [
@@ -672,12 +675,32 @@ const FeaturedTools = () => {
     ]
   };
 
+  // Filter categories based on selected category
+  const filteredCategories = useMemo(() => {
+    if (selectedCategory === "All Categories") {
+      return Object.entries(toolCategories);
+    }
+    const categoryEntry = Object.entries(toolCategories).find(([name]) => name === selectedCategory);
+    return categoryEntry ? [categoryEntry] : [];
+  }, [selectedCategory]);
+
   return (
     <>
       <section className="py-16 bg-gradient-to-b from-background to-secondary/10">
         <div className="container mx-auto px-4">
-          {/* Featured Tools Categories - All Categories Displayed */}
-          {Object.entries(toolCategories).map(([categoryName, tools]) => (
+          {selectedCategory !== "All Categories" && (
+            <div className="mb-8 text-center">
+              <h2 className="text-4xl font-bold text-foreground mb-2">
+                {selectedCategory} Tools
+              </h2>
+              <p className="text-muted-foreground">
+                Discover the best AI tools in {selectedCategory.toLowerCase()}
+              </p>
+            </div>
+          )}
+          
+          {/* Featured Tools Categories - Filtered by Selection */}
+          {filteredCategories.map(([categoryName, tools]) => (
             <div key={categoryName} className="mb-16">
               <div className="mb-8">
                 <div className="flex items-center justify-between">
