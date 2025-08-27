@@ -775,8 +775,8 @@ const FeaturedTools: React.FC<FeaturedToolsProps> = ({ selectedCategory, setSele
           {/* Featured Tools Categories - Filtered by Selection */}
           {filteredData.map(([categoryName, tools]: [string, any[]]) => {
             const validTools = Array.isArray(tools) ? tools.filter(tool => tool && tool.name && tool.id) : [];
-            const paginatedTools = getPaginatedTools(validTools);
-            const totalPages = getTotalPages(validTools);
+            const paginatedTools = selectedCategory === "All Categories" ? validTools.slice(0, 8) : getPaginatedTools(validTools);
+            const totalPages = selectedCategory === "All Categories" ? 1 : getTotalPages(validTools);
             
             return (
               <div key={categoryName} className="mb-16">
@@ -847,7 +847,7 @@ const FeaturedTools: React.FC<FeaturedToolsProps> = ({ selectedCategory, setSele
                   </div>
 
                   {/* Pagination Controls */}
-                  {totalPages > 1 && (
+                  {selectedCategory !== "All Categories" && totalPages > 1 && (
                     <div className="flex items-center justify-center mt-8 space-x-2">
                       <Button
                         variant="outline"
