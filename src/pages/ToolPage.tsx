@@ -114,6 +114,7 @@ const ProductInformation = ({ toolData }: { toolData: any }) => {
 };
 
 const ToolPage = () => {
+  console.log('ToolPage component rendering...');
   const { category, subcategory, tool } = useParams();
   const [saved, setSaved] = useState(false);
   const [likes, setLikes] = useState(false);

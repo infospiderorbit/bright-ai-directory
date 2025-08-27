@@ -794,7 +794,7 @@ const FeaturedTools: React.FC<FeaturedToolsProps> = ({ selectedCategory, setSele
                   {paginatedTools.map((tool: any) => (
                   <Link 
                     key={tool.id} 
-                    to={`/${tool.name.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '')}`}
+                    to={`/${tool.id}`}
                   >
                     <Card className="group hover:shadow-hover transition-all duration-300 hover:-translate-y-1 border bg-white/90 backdrop-blur-sm overflow-hidden h-full"
                     >
@@ -950,7 +950,7 @@ const FeaturedTools: React.FC<FeaturedToolsProps> = ({ selectedCategory, setSele
               icon: "🌐"
             }
           ].map((tool, index) => (
-            <Link key={index} to={`/${tool.name.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '')}`}>
+            <Link key={index} to={`/${tool.name.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '').replace(/\./g, '')}`}>
               <Card className="group hover:shadow-hover transition-all duration-300 hover:-translate-y-1 bg-card/50 backdrop-blur-sm border-border/50 h-full">
               <CardHeader className="pb-3">
                 <div className="flex items-start justify-between">
