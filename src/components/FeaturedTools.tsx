@@ -5,13 +5,17 @@ import { Badge } from "@/components/ui/badge";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { toolsData } from "@/data/toolsData";
 
 interface FeaturedToolsProps {
   selectedCategory: string;
+  setSelectedCategory: (category: string) => void;
 }
 
-const FeaturedTools = ({ selectedCategory }: FeaturedToolsProps) => {
+const FeaturedTools: React.FC<FeaturedToolsProps> = ({ selectedCategory, setSelectedCategory }) => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const TOOLS_PER_PAGE = 12;
 
   const toolCategories = {
     "Writing & Editing": [
@@ -720,6 +724,9 @@ const FeaturedTools = ({ selectedCategory }: FeaturedToolsProps) => {
   };
 
   const filteredData = useMemo(() => {
+    // Reset page when category changes
+    setCurrentPage(1);
+    
     if (selectedCategory === "All Categories") {
       // Show featured tools from hardcoded categories
       return Object.entries(toolCategories);
@@ -729,6 +736,18 @@ const FeaturedTools = ({ selectedCategory }: FeaturedToolsProps) => {
       return tools.length > 0 ? [[selectedCategory, tools] as [string, any[]]] : [];
     }
   }, [selectedCategory]);
+
+  // Get paginated tools for current category
+  const getPaginatedTools = (tools: any[]) => {
+    const startIndex = (currentPage - 1) * TOOLS_PER_PAGE;
+    const endIndex = startIndex + TOOLS_PER_PAGE;
+    return tools.slice(startIndex, endIndex);
+  };
+
+  // Calculate total pages for current category
+  const getTotalPages = (tools: any[]) => {
+    return Math.ceil(tools.length / TOOLS_PER_PAGE);
+  };
 
   return (
     <>
@@ -746,25 +765,33 @@ const FeaturedTools = ({ selectedCategory }: FeaturedToolsProps) => {
           )}
           
           {/* Featured Tools Categories - Filtered by Selection */}
-          {filteredData.map(([categoryName, tools]: [string, any[]]) => (
-            <div key={categoryName} className="mb-16">
-              <div className="mb-8">
-                <div className="flex items-center justify-between">
-                  <h2 className="text-3xl font-bold text-foreground mb-4 flex items-center">
-                    <Star className="h-8 w-8 text-yellow-500 mr-3" />
-                    {categoryName}
-                  </h2>
-                  <Link to={`/category/${categoryName.toLowerCase().replace(/\s+/g, '-').replace(/&/g, '')}`}>
-                    <Button variant="outline" className="mb-4">
-                      More
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </Link>
+          {filteredData.map(([categoryName, tools]: [string, any[]]) => {
+            const validTools = Array.isArray(tools) ? tools.filter(tool => tool && tool.name && tool.id) : [];
+            const paginatedTools = getPaginatedTools(validTools);
+            const totalPages = getTotalPages(validTools);
+            
+            return (
+              <div key={categoryName} className="mb-16">
+                <div className="mb-8">
+                  <div className="flex items-center justify-between">
+                    <h2 className="text-3xl font-bold text-foreground mb-4 flex items-center">
+                      <Star className="h-8 w-8 text-yellow-500 mr-3" />
+                      {categoryName}
+                      <span className="text-lg text-muted-foreground ml-2">({validTools.length} tools)</span>
+                    </h2>
+                    {selectedCategory === "All Categories" && (
+                      <Link to={`/category/${categoryName.toLowerCase().replace(/\s+/g, '-').replace(/&/g, '')}`}>
+                        <Button variant="outline" className="mb-4">
+                          More
+                          <ArrowRight className="ml-2 h-4 w-4" />
+                        </Button>
+                      </Link>
+                    )}
+                  </div>
                 </div>
-              </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                {Array.isArray(tools) && tools.filter(tool => tool && tool.name && tool.id).map((tool: any) => (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                  {paginatedTools.map((tool: any) => (
                   <Link 
                     key={tool.id} 
                     to={`/${tool.name.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '')}`}
@@ -808,10 +835,52 @@ const FeaturedTools = ({ selectedCategory }: FeaturedToolsProps) => {
                     </CardContent>
                     </Card>
                   </Link>
-                ))}
-              </div>
-            </div>
-          ))}
+                    ))}
+                  </div>
+
+                  {/* Pagination Controls */}
+                  {totalPages > 1 && (
+                    <div className="flex items-center justify-center mt-8 space-x-2">
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
+                        disabled={currentPage === 1}
+                        className="flex items-center"
+                      >
+                        <ChevronLeft className="h-4 w-4 mr-1" />
+                        Previous
+                      </Button>
+                      
+                      <div className="flex items-center space-x-1">
+                        {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
+                          <Button
+                            key={page}
+                            variant={currentPage === page ? "default" : "outline"}
+                            size="sm"
+                            onClick={() => setCurrentPage(page)}
+                            className="min-w-[40px]"
+                          >
+                            {page}
+                          </Button>
+                        ))}
+                      </div>
+                      
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
+                        disabled={currentPage === totalPages}
+                        className="flex items-center"
+                      >
+                        Next
+                        <ChevronRight className="h-4 w-4 ml-1" />
+                      </Button>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
         </div>
       </section>
 

@@ -18,7 +18,7 @@ const Index = () => {
         selectedCategory={selectedCategory}
         onCategoryChange={setSelectedCategory}
       />
-      <FeaturedTools selectedCategory={selectedCategory} />
+      <FeaturedTools selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
       <Categories />
       <Stats />
       <Footer />
