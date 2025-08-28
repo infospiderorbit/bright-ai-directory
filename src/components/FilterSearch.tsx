@@ -12,10 +12,9 @@ import {
 
 interface FilterSearchProps {
   selectedCategory: string;
-  onCategoryChange: (category: string) => void;
 }
 
-const FilterSearch = ({ selectedCategory, onCategoryChange }: FilterSearchProps) => {
+const FilterSearch = ({ selectedCategory }: FilterSearchProps) => {
   const navigate = useNavigate();
   
   const categories = [
@@ -84,10 +83,12 @@ const FilterSearch = ({ selectedCategory, onCategoryChange }: FilterSearchProps)
                   key={index} 
                   className="cursor-pointer hover:bg-primary/10 focus:bg-primary/10"
                   onClick={() => {
+                    console.log('Category clicked:', category);
                     if (category === "All Categories") {
                       navigate("/");
                     } else {
                       const categorySlug = category.toLowerCase().replace(/\s+/g, '-').replace(/&/g, '');
+                      console.log('Navigating to:', `/category/${categorySlug}`);
                       navigate(`/category/${categorySlug}`);
                     }
                   }}

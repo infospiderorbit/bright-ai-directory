@@ -16,7 +16,6 @@ const Index = () => {
       <Hero />
       <FilterSearch 
         selectedCategory={selectedCategory}
-        onCategoryChange={setSelectedCategory}
       />
       <FeaturedTools selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
       <Categories />
