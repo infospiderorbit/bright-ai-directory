@@ -2,6 +2,7 @@ import { Search, Twitter, Linkedin, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
+import { useNavigate } from "react-router-dom";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -15,6 +16,8 @@ interface FilterSearchProps {
 }
 
 const FilterSearch = ({ selectedCategory, onCategoryChange }: FilterSearchProps) => {
+  const navigate = useNavigate();
+  
   const categories = [
     "All Categories",
     "Writing & Editing",
@@ -80,7 +83,14 @@ const FilterSearch = ({ selectedCategory, onCategoryChange }: FilterSearchProps)
                 <DropdownMenuItem 
                   key={index} 
                   className="cursor-pointer hover:bg-primary/10 focus:bg-primary/10"
-                  onClick={() => onCategoryChange(category)}
+                  onClick={() => {
+                    if (category === "All Categories") {
+                      navigate("/");
+                    } else {
+                      const categorySlug = category.toLowerCase().replace(/\s+/g, '-').replace(/&/g, '');
+                      navigate(`/category/${categorySlug}`);
+                    }
+                  }}
                 >
                   {category}
                 </DropdownMenuItem>
