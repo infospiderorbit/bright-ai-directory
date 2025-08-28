@@ -83,12 +83,10 @@ const FilterSearch = ({ selectedCategory }: FilterSearchProps) => {
                   key={index} 
                   className="cursor-pointer hover:bg-primary/10 focus:bg-primary/10"
                   onClick={() => {
-                    console.log('Category clicked:', category);
                     if (category === "All Categories") {
                       navigate("/");
                     } else {
-                      const categorySlug = category.toLowerCase().replace(/\s+/g, '-').replace(/&/g, '');
-                      console.log('Navigating to:', `/category/${categorySlug}`);
+                      const categorySlug = category.toLowerCase().replace(/\s*&\s*/g, '').replace(/\s+/g, '-');
                       navigate(`/category/${categorySlug}`);
                     }
                   }}
