@@ -66,7 +66,7 @@ const FilterSearch = ({ selectedCategory }: FilterSearchProps) => {
                 <ChevronDown className="ml-2 h-4 w-4" />
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-56 max-h-64 overflow-y-auto bg-white/95 backdrop-blur-sm border border-border/50">
+            <DropdownMenuContent className="z-50 w-56 max-h-64 overflow-y-auto bg-white/95 backdrop-blur-sm border border-border/50">
               {categories.map((category, index) => (
                 <DropdownMenuItem 
                   key={index} 
@@ -75,7 +75,13 @@ const FilterSearch = ({ selectedCategory }: FilterSearchProps) => {
                     if (category === "All Categories") {
                       navigate("/");
                     } else {
-                      const categorySlug = category.toLowerCase().replace(/\s*&\s*/g, '').replace(/\s+/g, '-');
+                      const categorySlug = category
+                        .toLowerCase()
+                        .replace(/&/g, '-')
+                        .replace(/\s+/g, '-')
+                        .replace(/-+/g, '-')
+                        .replace(/[^a-z0-9-]/g, '')
+                        .replace(/^-+|-+$/g, '');
                       navigate(`/category/${categorySlug}`);
                     }
                   }}

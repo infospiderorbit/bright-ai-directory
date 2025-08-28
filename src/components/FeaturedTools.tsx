@@ -788,7 +788,15 @@ const FeaturedTools: React.FC<FeaturedToolsProps> = ({ selectedCategory, setSele
                       <span className="text-lg text-muted-foreground ml-2">({validTools.length} tools)</span>
                     </h2>
                     {selectedCategory === "All Categories" && (
-                      <Link to={`/category/${categoryName.toLowerCase().replace(/\s+/g, '-').replace(/&/g, '')}`}>
+                      <Link
+                        to={`/category/${categoryName
+                          .toLowerCase()
+                          .replace(/&/g, '-')
+                          .replace(/\s+/g, '-')
+                          .replace(/-+/g, '-')
+                          .replace(/[^a-z0-9-]/g, '')
+                          .replace(/^-+|-+$/g, '')}`}
+                      >
                         <Button variant="outline" className="mb-4">
                           More
                           <ArrowRight className="ml-2 h-4 w-4" />
