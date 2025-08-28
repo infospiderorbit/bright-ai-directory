@@ -23,21 +23,10 @@ const FilterSearch = ({ selectedCategory }: FilterSearchProps) => {
     "Image Generation & Editing", 
     "Music & Audio", 
     "Voice Generation & Conversion", 
-    "Art & Creative Design", 
     "Social Media", 
     "AI Detection & Anti-Detection", 
     "Coding & Development", 
-    "Video & Animation", 
-    "Daily Life", 
-    "Legal & Finance", 
-    "Business Management", 
-    "Marketing & Advertising", 
-    "Health & Wellness", 
-    "Business Research", 
-    "Education & Translation", 
-    "Office & Productivity", 
-    "Research & Data Analysis", 
-    "Other"
+    "Video & Animation"
   ];
 
   const filterTags = ["Free AI", "Freemium", "Paid", "Free Trial"];
