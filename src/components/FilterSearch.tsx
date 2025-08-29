@@ -75,7 +75,10 @@ const FilterSearch = ({ selectedCategory }: FilterSearchProps) => {
                     if (category === "All Categories") {
                       navigate("/");
                     } else {
-                      const categorySlug = category
+                      const slugOverrides: Record<string, string> = {
+                        "Music & Audio": "voice-generation-conversion",
+                      };
+                      const categorySlug = slugOverrides[category] ?? category
                         .toLowerCase()
                         .replace(/&/g, '-')
                         .replace(/\s+/g, '-')
