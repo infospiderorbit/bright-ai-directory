@@ -147,7 +147,12 @@ const SubmitToolPage = () => {
                   </ul>
                 </div>
                 
-                <Button className="w-full mt-8 h-12 text-base font-semibold gradient-primary hover:opacity-90 transition-smooth">Submit your website</Button>
+                <Button 
+                  className="w-full mt-8 h-12 text-base font-semibold gradient-primary hover:opacity-90 transition-smooth"
+                  onClick={(e) => e.preventDefault()}
+                >
+                  Submit your website
+                </Button>
               </CardContent>
             </Card>
 
@@ -182,7 +187,12 @@ const SubmitToolPage = () => {
                   </ul>
                 </div>
                 
-                <Button className="w-full mt-8 h-12 text-base font-semibold gradient-primary hover:opacity-90 transition-smooth">Submit your website</Button>
+                <Button 
+                  className="w-full mt-8 h-12 text-base font-semibold gradient-primary hover:opacity-90 transition-smooth"
+                  onClick={(e) => e.preventDefault()}
+                >
+                  Submit your website
+                </Button>
               </CardContent>
             </Card>
 
@@ -209,7 +219,12 @@ const SubmitToolPage = () => {
                   </ul>
                 </div>
                 
-                <Button className="w-full mt-8 h-12 text-base font-semibold gradient-primary hover:opacity-90 transition-smooth">Book a place</Button>
+                <Button 
+                  className="w-full mt-8 h-12 text-base font-semibold gradient-primary hover:opacity-90 transition-smooth"
+                  onClick={(e) => e.preventDefault()}
+                >
+                  Book a place
+                </Button>
               </CardContent>
             </Card>
           </div>
