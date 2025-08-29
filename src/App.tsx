@@ -8,6 +8,7 @@ import CategoryPage from "./pages/CategoryPage";
 import CategoriesPage from "./pages/CategoriesPage";
 import SubcategoryPage from "./pages/SubcategoryPage";
 import ToolPage from "./pages/ToolPage";
+import SubmitToolPage from "./pages/SubmitToolPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/category/:category" element={<CategoryPage />} />
           <Route path="/category/:category/:subcategory" element={<SubcategoryPage />} />
           <Route path="/category/:category/:subcategory/:tool" element={<ToolPage />} />
+          <Route path="/submit-tool" element={<SubmitToolPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="/:tool" element={<ToolPage />} />
           <Route path="*" element={<NotFound />} />
