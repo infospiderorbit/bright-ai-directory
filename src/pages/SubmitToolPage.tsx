@@ -11,15 +11,65 @@ const SubmitToolPage = () => {
     <div className="min-h-screen bg-background">
       <Header />
       
-      {/* Hero Section with Gradient Background */}
-      <section className="gradient-hero py-20 mb-16">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
-            🌐 Submit Your AI Tool
-          </h1>
-          <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto animate-fade-in">
-            Get your AI tool in front of thousands of users. Choose the plan that works best for you.
-          </p>
+      {/* Hero / Banner Section (Dark Background) */}
+      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-20 mb-16">
+        <div className="container mx-auto px-4">
+          {/* Top Label */}
+          <div className="text-center mb-8">
+            <span className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white/90 text-sm font-medium animate-fade-in">
+              ✨ AItoolsprime
+            </span>
+          </div>
+          
+          {/* Main Content */}
+          <div className="text-center mb-16">
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
+              Reach a Premium Audience of AI Professionals
+            </h1>
+            <h2 className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed animate-fade-in">
+              Connect with over 100,000+ AI professionals and users who trust our platform for discovering top-quality AI tools.
+            </h2>
+          </div>
+
+          {/* Key Stats - 4-column grid */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12 animate-scale-in">
+            <div className="text-center p-6 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 hover:bg-white/10 transition-smooth">
+              <div className="text-3xl md:text-4xl font-bold text-blue-400 mb-2">100,000+</div>
+              <div className="text-gray-300 text-sm">visitors per month</div>
+            </div>
+            
+            <div className="text-center p-6 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 hover:bg-white/10 transition-smooth">
+              <div className="text-3xl md:text-4xl font-bold text-blue-400 mb-2">4x</div>
+              <div className="text-gray-300 text-sm">AItoolsprime traffic growth in 6 months</div>
+            </div>
+            
+            <div className="text-center p-6 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 hover:bg-white/10 transition-smooth">
+              <div className="text-3xl md:text-4xl font-bold text-blue-400 mb-2">54%</div>
+              <div className="text-gray-300 text-sm">of visitors use desktop</div>
+            </div>
+            
+            <div className="text-center p-6 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 hover:bg-white/10 transition-smooth">
+              <div className="text-3xl md:text-4xl font-bold text-blue-400 mb-2">200+</div>
+              <div className="text-gray-300 text-sm">countries reached by our visitors</div>
+            </div>
+          </div>
+
+          {/* Supporting Line */}
+          <div className="text-center mb-10">
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto animate-fade-in">
+              By joining AItoolsprime, you can present your tool to a global audience of AI professionals and real users.
+            </p>
+          </div>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-scale-in">
+            <Button className="px-8 py-4 text-lg font-semibold bg-blue-600 hover:bg-blue-700 text-white border-0 shadow-lg hover:shadow-xl transition-smooth">
+              Submit Your Tool
+            </Button>
+            <Button variant="outline" className="px-8 py-4 text-lg font-semibold border-white/30 text-white hover:bg-white/10 hover:border-white/50 transition-smooth">
+              View Pricing
+            </Button>
+          </div>
         </div>
       </section>
       
