@@ -140,7 +140,7 @@ const SubmitToolPage = () => {
                   <h4 className="font-semibold text-foreground mb-4">Listing includes</h4>
                   <ul className="text-sm text-muted-foreground space-y-2">
                     <li className="flex items-start gap-2"><CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />Listed in "Latest AI" on homepage + Full AI List</li>
-                    <li className="flex items-start gap-2"><CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />30 days in "AIxploria Selection" on Homepage</li>
+                    <li className="flex items-start gap-2"><CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />30 days in "Aitoolsprime Selection" on Homepage</li>
                     <li className="flex items-start gap-2"><CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />Description of up to 165 characters</li>
                     <li className="flex items-start gap-2"><CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />An extra link to your product page</li>
                     <li className="flex items-start gap-2"><CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />Indexed on Google</li>
@@ -178,7 +178,7 @@ const SubmitToolPage = () => {
                     <li className="flex items-start gap-2"><CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />3 extra links to your product page</li>
                     <li className="flex items-start gap-2"><CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />Write up to 1000 words</li>
                     <li className="flex items-start gap-2"><CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />Add media: videos, audio, images</li>
-                    <li className="flex items-start gap-2"><CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />60 days in "AItoolsprime Selection" on Homepage</li>
+                    <li className="flex items-start gap-2"><CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />60 days in "Aitoolsprime Selection" on Homepage</li>
                   </ul>
                 </div>
                 
