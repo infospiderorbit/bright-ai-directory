@@ -31,9 +31,9 @@ const Header = () => {
               asChild 
               className="gradient-primary text-white font-semibold px-6 py-2 rounded-full hover:scale-105 transition-all"
             >
-              <a href="https://aitoolsprime.com/submit-tool" target="_blank" rel="noopener noreferrer">
+              <Link to="/submit-tool">
                 Submit Tool
-              </a>
+              </Link>
             </Button>
           </nav>
           
@@ -56,9 +56,9 @@ const Header = () => {
                     asChild 
                     className="w-full gradient-primary text-white font-semibold"
                   >
-                    <a href="https://aitoolsprime.com/submit-tool" target="_blank" rel="noopener noreferrer">
+                    <Link to="/submit-tool">
                       Submit Tool
-                    </a>
+                    </Link>
                   </Button>
                 </nav>
               </SheetContent>
