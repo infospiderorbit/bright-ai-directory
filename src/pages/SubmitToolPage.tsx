@@ -60,16 +60,6 @@ const SubmitToolPage = () => {
               By joining AItoolsprime, you can present your tool to a global audience of AI professionals and real users.
             </p>
           </div>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-scale-in">
-            <Button className="px-8 py-4 text-lg font-semibold bg-blue-600 hover:bg-blue-700 text-white border-0 shadow-lg hover:shadow-xl transition-smooth">
-              Submit Your Tool
-            </Button>
-            <Button variant="outline" className="px-8 py-4 text-lg font-semibold border-white/30 text-white hover:bg-white/10 hover:border-white/50 transition-smooth">
-              View Pricing
-            </Button>
-          </div>
         </div>
       </section>
       
