@@ -9,6 +9,7 @@ import { useState } from "react";
 
 const Index = () => {
   const [selectedCategory, setSelectedCategory] = useState("All Categories");
+  const [searchQuery, setSearchQuery] = useState("");
 
   return (
     <div className="min-h-screen bg-background">
@@ -16,8 +17,10 @@ const Index = () => {
       <Hero />
       <FilterSearch 
         selectedCategory={selectedCategory}
+        searchQuery={searchQuery}
+        onSearchQueryChange={setSearchQuery}
       />
-      <FeaturedTools selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
+      <FeaturedTools selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} searchQuery={searchQuery} />
       <Categories />
       <Stats />
       <Footer />

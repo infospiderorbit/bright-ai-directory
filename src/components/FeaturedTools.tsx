@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { toolsData } from "@/data/toolsData";
@@ -11,11 +11,16 @@ import { toolsData } from "@/data/toolsData";
 interface FeaturedToolsProps {
   selectedCategory: string;
   setSelectedCategory: (category: string) => void;
+  searchQuery?: string;
 }
 
-const FeaturedTools: React.FC<FeaturedToolsProps> = ({ selectedCategory, setSelectedCategory }) => {
+const FeaturedTools: React.FC<FeaturedToolsProps> = ({ selectedCategory, setSelectedCategory, searchQuery = "" }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const TOOLS_PER_PAGE = 12;
+
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [selectedCategory, searchQuery]);
 
   const toolCategories = {
     "Writing & Editing": [
@@ -775,8 +780,16 @@ const FeaturedTools: React.FC<FeaturedToolsProps> = ({ selectedCategory, setSele
           {/* Featured Tools Categories - Filtered by Selection */}
           {filteredData.map(([categoryName, tools]: [string, any[]]) => {
             const validTools = Array.isArray(tools) ? tools.filter(tool => tool && tool.name && tool.id) : [];
-            const paginatedTools = selectedCategory === "All Categories" ? validTools.slice(0, 8) : getPaginatedTools(validTools);
-            const totalPages = selectedCategory === "All Categories" ? 1 : getTotalPages(validTools);
+            const query = searchQuery.trim().toLowerCase();
+            const searchedTools = query
+              ? validTools.filter((tool: any) => {
+                  const name = String(tool.name || "").toLowerCase();
+                  const desc = String(tool.description || "").toLowerCase();
+                  return name.includes(query) || desc.includes(query);
+                })
+              : validTools;
+            const paginatedTools = selectedCategory === "All Categories" ? searchedTools.slice(0, 8) : getPaginatedTools(searchedTools);
+            const totalPages = selectedCategory === "All Categories" ? 1 : getTotalPages(searchedTools);
             
             return (
               <div key={categoryName} className="mb-16">
@@ -785,7 +798,7 @@ const FeaturedTools: React.FC<FeaturedToolsProps> = ({ selectedCategory, setSele
                     <h2 className="text-3xl font-bold text-foreground mb-4 flex items-center">
                       <Star className="h-8 w-8 text-yellow-500 mr-3" />
                       {categoryName}
-                      <span className="text-lg text-muted-foreground ml-2">({validTools.length} tools)</span>
+                      <span className="text-lg text-muted-foreground ml-2">({searchedTools.length} tools)</span>
                     </h2>
                     {selectedCategory === "All Categories" && (
                       <Link
