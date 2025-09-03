@@ -6,15 +6,12 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, Star, CheckCircle, Zap, Crown } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { ProtectedRoute } from "@/components/auth/ProtectedRoute";
 import { ToolPublishForm } from "@/components/publish/ToolPublishForm";
-import { useAuth } from "@/components/auth/AuthProvider";
 
 const PublishToolPage = () => {
   const [searchParams] = useSearchParams();
   const selectedPlan = (searchParams.get('plan') as 'fast' | 'verified' | 'featured') || 'fast';
   const [showForm, setShowForm] = useState(false);
-  const { user, logout } = useAuth();
 
   const planDetails = {
     fast: {
@@ -69,7 +66,7 @@ const PublishToolPage = () => {
       <Header />
       
       <main className="container mx-auto px-4 py-16">
-        {/* Header with User Info */}
+        {/* Header */}
         <div className="flex items-center justify-between mb-8">
           <div className="flex items-center gap-4">
             <Link to="/submit-tool">
@@ -82,16 +79,6 @@ const PublishToolPage = () => {
               <h1 className="text-3xl font-bold">Publish Your AI Tool</h1>
               <p className="text-muted-foreground">Submit your tool to reach 100,000+ AI professionals</p>
             </div>
-          </div>
-          
-          <div className="flex items-center gap-4">
-            <div className="text-right">
-              <p className="text-sm text-muted-foreground">Welcome back,</p>
-              <p className="font-semibold">{user?.name}</p>
-            </div>
-            <Button variant="outline" size="sm" onClick={logout}>
-              Logout
-            </Button>
           </div>
         </div>
 
@@ -213,11 +200,7 @@ const PublishToolPage = () => {
     );
   }
 
-  return (
-    <ProtectedRoute fallback={<PlanSelection />}>
-      <PlanSelection />
-    </ProtectedRoute>
-  );
+  return <PlanSelection />;
 };
 
 export default PublishToolPage;
