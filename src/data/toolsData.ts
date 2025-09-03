@@ -1012,7 +1012,7 @@ export const toolsData: { [key: string]: { [key: string]: Tool[] } } = {
   "writing-editing": {
     "ai-blog-generator": [
       { id: "junia-ai", name: "Junia AI", description: "AI-powered blog content generator with SEO optimization", url: "", upvotes: 245, verified: true, rating: 4.6, icon: "📝", category: "writing-editing", subcategory: "ai-blog-generator" },
-      { id: "writesonic", name: "Writesonic", description: "AI writing tool for blogs, ads, and marketing copy", url: "", upvotes: 623, verified: true, rating: 4.4, icon: "🚀", category: "writing-editing", subcategory: "ai-blog-generator" },
+      { id: "writesonic", name: "Writesonic", description: "AI writing tool for blogs, ads, and marketing copy", url: "https://writesonic.com/", upvotes: 623, verified: true, rating: 4.4, icon: "🚀", category: "writing-editing", subcategory: "ai-blog-generator" },
       { id: "aiktp", name: "Aiktp", description: "Advanced AI content creation platform for bloggers", url: "", upvotes: 156, verified: true, rating: 4.3, icon: "✨", category: "writing-editing", subcategory: "ai-blog-generator" },
       { id: "durable", name: "Durable", description: "AI website and blog builder with automated content generation", url: "", upvotes: 189, verified: true, rating: 4.5, icon: "🔧", category: "writing-editing", subcategory: "ai-blog-generator" },
       { id: "gravitywrite", name: "GravityWrite", description: "AI writing assistant for high-quality blog content", url: "", upvotes: 312, verified: true, rating: 4.7, icon: "🌟", category: "writing-editing", subcategory: "ai-blog-generator" }
