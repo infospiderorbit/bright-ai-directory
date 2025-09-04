@@ -72,13 +72,15 @@ const SubmitToolPage = () => {
           <div className="grid md:grid-cols-3 gap-8">
             
             {/* Submit AI */}
-            <Card className="relative overflow-hidden shadow-card hover:shadow-hover transition-smooth group cursor-pointer animate-scale-in">
-              <div className="absolute inset-0 gradient-secondary opacity-0 group-hover:opacity-100 transition-smooth"></div>
+            <Card className="relative overflow-hidden shadow-card hover:shadow-hover transition-smooth group cursor-pointer animate-scale-in border-2 border-primary/20">
+              <div className="absolute inset-0 gradient-primary opacity-5 group-hover:opacity-10 transition-smooth"></div>
               <CardHeader className="text-center pb-8 relative z-10">
                 <div className="w-20 h-20 gradient-primary rounded-full flex items-center justify-center mx-auto mb-6 animate-float group-hover:scale-110 transition-smooth">
                   <Zap className="h-10 w-10 text-white" />
                 </div>
-                <CardTitle className="text-2xl mb-3">Submit AI</CardTitle>
+                <CardTitle className="text-2xl mb-3 flex items-center justify-center gap-2">
+                  Submit AI <Star className="h-6 w-6 text-yellow-500" />
+                </CardTitle>
                 <CardDescription className="text-base leading-relaxed">
                   List your AI tools and get direct traffic
                 </CardDescription>
@@ -86,15 +88,13 @@ const SubmitToolPage = () => {
             </Card>
 
             {/* Advertise AI */}
-            <Card className="relative overflow-hidden shadow-card hover:shadow-hover transition-smooth group cursor-pointer animate-scale-in border-2 border-primary/20">
-              <div className="absolute inset-0 gradient-primary opacity-5 group-hover:opacity-10 transition-smooth"></div>
+            <Card className="relative overflow-hidden shadow-card hover:shadow-hover transition-smooth group cursor-pointer animate-scale-in">
+              <div className="absolute inset-0 gradient-secondary opacity-0 group-hover:opacity-100 transition-smooth"></div>
               <CardHeader className="text-center pb-8 relative z-10">
                 <div className="w-20 h-20 gradient-primary rounded-full flex items-center justify-center mx-auto mb-6 animate-float group-hover:scale-110 transition-smooth">
                   <Star className="h-10 w-10 text-white" />
                 </div>
-                <CardTitle className="text-2xl mb-3 flex items-center justify-center gap-2">
-                  Advertise AI <Star className="h-6 w-6 text-yellow-500" />
-                </CardTitle>
+                <CardTitle className="text-2xl mb-3">Advertise AI</CardTitle>
                 <CardDescription className="text-base leading-relaxed">
                   Featured and highlighted across the site
                 </CardDescription>
