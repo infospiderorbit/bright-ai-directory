@@ -11,6 +11,10 @@ import SubcategoryPage from "./pages/SubcategoryPage";
 import ToolPage from "./pages/ToolPage";
 import SubmitToolPage from "./pages/SubmitToolPage";
 import PublishToolPage from "./pages/PublishToolPage";
+import HelpCenter from "./pages/HelpCenter";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
+import AboutUs from "./pages/AboutUs";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +34,10 @@ const App = () => (
             <Route path="/category/:category/:subcategory/:tool" element={<ToolPage />} />
             <Route path="/submit" element={<SubmitToolPage />} />
             <Route path="/publish-tool" element={<PublishToolPage />} />
+            <Route path="/help" element={<HelpCenter />} />
+            <Route path="/privacy" element={<PrivacyPolicy />} />
+            <Route path="/terms" element={<TermsOfService />} />
+            <Route path="/about" element={<AboutUs />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="/:tool" element={<ToolPage />} />
             <Route path="*" element={<NotFound />} />

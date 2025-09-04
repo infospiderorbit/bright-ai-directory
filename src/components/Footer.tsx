@@ -1,4 +1,5 @@
 import { Sparkles, Github, Twitter, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -36,10 +37,10 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2 text-muted-foreground">
-              <li><a href="#" className="hover:text-primary transition-smooth">Browse Tools</a></li>
-              <li><a href="#" className="hover:text-primary transition-smooth">Categories</a></li>
-              <li><a href="#" className="hover:text-primary transition-smooth">Submit</a></li>
-              <li><a href="#" className="hover:text-primary transition-smooth">API</a></li>
+              <li><Link to="/" className="hover:text-primary transition-smooth">Browse Tools</Link></li>
+              <li><Link to="/categories" className="hover:text-primary transition-smooth">Categories</Link></li>
+              <li><Link to="/submit" className="hover:text-primary transition-smooth">Submit</Link></li>
+              <li><Link to="/about" className="hover:text-primary transition-smooth">About</Link></li>
             </ul>
           </div>
           
@@ -47,10 +48,10 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">Support</h3>
             <ul className="space-y-2 text-muted-foreground">
-              <li><a href="#" className="hover:text-primary transition-smooth">Help Center</a></li>
-              <li><a href="#" className="hover:text-primary transition-smooth">Contact Us</a></li>
-              <li><a href="#" className="hover:text-primary transition-smooth">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-primary transition-smooth">Terms of Service</a></li>
+              <li><Link to="/help" className="hover:text-primary transition-smooth">Help Center</Link></li>
+              <li><a href="mailto:support@aitoolsprime.com" className="hover:text-primary transition-smooth">Contact Us</a></li>
+              <li><Link to="/privacy" className="hover:text-primary transition-smooth">Privacy Policy</Link></li>
+              <li><Link to="/terms" className="hover:text-primary transition-smooth">Terms of Service</Link></li>
             </ul>
           </div>
         </div>
