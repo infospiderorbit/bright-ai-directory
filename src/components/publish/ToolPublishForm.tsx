@@ -360,7 +360,7 @@ export const ToolPublishForm = ({ selectedPlan, onClose }: ToolPublishFormProps)
             className="bg-gradient-to-r from-primary to-primary/80 hover:opacity-90"
           >
             {isSubmitting && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-            Submit Tool ({plan.price})
+            Submit ({plan.price})
           </Button>
         </div>
       </form>

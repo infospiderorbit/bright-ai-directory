@@ -31,8 +31,8 @@ const Header = () => {
               asChild 
               className="gradient-primary text-white font-semibold px-6 py-2 rounded-full hover:scale-105 transition-all"
             >
-              <Link to="/submit-tool">
-                Submit Tool
+              <Link to="/submit">
+                Submit
               </Link>
             </Button>
           </nav>
@@ -56,8 +56,8 @@ const Header = () => {
                     asChild 
                     className="w-full gradient-primary text-white font-semibold"
                   >
-                    <Link to="/submit-tool">
-                      Submit Tool
+                    <Link to="/submit">
+                      Submit
                     </Link>
                   </Button>
                 </nav>
