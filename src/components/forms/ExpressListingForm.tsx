@@ -7,51 +7,103 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Checkbox } from "@/components/ui/checkbox";
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { z } from "zod";
 import { useToast } from "@/hooks/use-toast";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const formSchema = z.object({
-  websiteName: z.string().min(1, "Website name is required"),
-  websiteLink: z.string().url("Please enter a valid URL"),
-  email: z.string().email("Please enter a valid email address"),
-  shortDescription: z.string().min(1, "Description is required").max(300, "Description must be under 300 characters"),
-  priceType: z.enum(["free", "freemium", "free-trial", "paid"], {
-    required_error: "Please select a price type",
-  }),
-  assets: z.string().optional(),
-  robotCheck: z.boolean().refine(val => val === true, "Please verify you are not a robot"),
-});
+interface FormData {
+  websiteName: string;
+  websiteLink: string;
+  email: string;
+  shortDescription: string;
+  priceType: string;
+  assets: string;
+  robotCheck: boolean;
+}
 
-type FormData = z.infer<typeof formSchema>;
+interface FormErrors {
+  websiteName?: string;
+  websiteLink?: string;
+  email?: string;
+  shortDescription?: string;
+  priceType?: string;
+  robotCheck?: string;
+}
 
 const ExpressListingForm = () => {
   const navigate = useNavigate();
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const form = useForm<FormData>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      websiteName: "",
-      websiteLink: "",
-      email: "",
-      shortDescription: "",
-      priceType: undefined,
-      assets: "",
-      robotCheck: false,
-    },
+  const [formData, setFormData] = useState<FormData>({
+    websiteName: "",
+    websiteLink: "",
+    email: "",
+    shortDescription: "",
+    priceType: "",
+    assets: "",
+    robotCheck: false,
   });
+  const [errors, setErrors] = useState<FormErrors>({});
 
-  const onSubmit = async (data: FormData) => {
+  const validateForm = (): boolean => {
+    const newErrors: FormErrors = {};
+
+    if (!formData.websiteName.trim()) {
+      newErrors.websiteName = "Website name is required";
+    }
+
+    if (!formData.websiteLink.trim()) {
+      newErrors.websiteLink = "Website link is required";
+    } else {
+      try {
+        new URL(formData.websiteLink);
+      } catch {
+        newErrors.websiteLink = "Please enter a valid URL";
+      }
+    }
+
+    if (!formData.email.trim()) {
+      newErrors.email = "Email is required";
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      newErrors.email = "Please enter a valid email address";
+    }
+
+    if (!formData.shortDescription.trim()) {
+      newErrors.shortDescription = "Description is required";
+    } else if (formData.shortDescription.length > 300) {
+      newErrors.shortDescription = "Description must be under 300 characters";
+    }
+
+    if (!formData.priceType) {
+      newErrors.priceType = "Please select a price type";
+    }
+
+    if (!formData.robotCheck) {
+      newErrors.robotCheck = "Please verify you are not a robot";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleInputChange = (field: keyof FormData, value: string | boolean) => {
+    setFormData(prev => ({ ...prev, [field]: value }));
+    if (errors[field as keyof FormErrors]) {
+      setErrors(prev => ({ ...prev, [field]: undefined }));
+    }
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!validateForm()) {
+      return;
+    }
+
     setIsSubmitting(true);
     try {
       // Here you would typically send the data to your backend
-      console.log("Form data:", data);
+      console.log("Form data:", formData);
       
       // Simulate API call
       await new Promise(resolve => setTimeout(resolve, 1000));
@@ -99,163 +151,137 @@ const ExpressListingForm = () => {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                  
-                  {/* Website Name */}
-                  <FormField
-                    control={form.control}
-                    name="websiteName"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Website Name *</FormLabel>
-                        <FormControl>
-                          <Input placeholder="Enter your website/tool name" {...field} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
+              <form onSubmit={handleSubmit} className="space-y-6">
+                
+                {/* Website Name */}
+                <div className="space-y-2">
+                  <Label htmlFor="websiteName">Website Name *</Label>
+                  <Input
+                    id="websiteName"
+                    placeholder="Enter your website/tool name"
+                    value={formData.websiteName}
+                    onChange={(e) => handleInputChange('websiteName', e.target.value)}
                   />
+                  {errors.websiteName && (
+                    <p className="text-sm font-medium text-destructive">{errors.websiteName}</p>
+                  )}
+                </div>
 
-                  {/* Website Link */}
-                  <FormField
-                    control={form.control}
-                    name="websiteLink"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Website Link (URL) *</FormLabel>
-                        <FormControl>
-                          <Input placeholder="https://example.com" {...field} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
+                {/* Website Link */}
+                <div className="space-y-2">
+                  <Label htmlFor="websiteLink">Website Link (URL) *</Label>
+                  <Input
+                    id="websiteLink"
+                    placeholder="https://example.com"
+                    value={formData.websiteLink}
+                    onChange={(e) => handleInputChange('websiteLink', e.target.value)}
                   />
+                  {errors.websiteLink && (
+                    <p className="text-sm font-medium text-destructive">{errors.websiteLink}</p>
+                  )}
+                </div>
 
-                  {/* Email */}
-                  <FormField
-                    control={form.control}
-                    name="email"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Email *</FormLabel>
-                        <FormControl>
-                          <Input type="email" placeholder="your@email.com" {...field} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
+                {/* Email */}
+                <div className="space-y-2">
+                  <Label htmlFor="email">Email *</Label>
+                  <Input
+                    id="email"
+                    type="email"
+                    placeholder="your@email.com"
+                    value={formData.email}
+                    onChange={(e) => handleInputChange('email', e.target.value)}
                   />
+                  {errors.email && (
+                    <p className="text-sm font-medium text-destructive">{errors.email}</p>
+                  )}
+                </div>
 
-                  {/* Short Description */}
-                  <FormField
-                    control={form.control}
-                    name="shortDescription"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Short Description *</FormLabel>
-                        <FormControl>
-                          <Textarea 
-                            placeholder="Describe your AI tool in a few sentences (max 300 characters)"
-                            className="min-h-[100px]"
-                            {...field}
-                          />
-                        </FormControl>
-                        <div className="text-sm text-muted-foreground text-right">
-                          {field.value?.length || 0}/300 characters
-                        </div>
-                        <FormMessage />
-                      </FormItem>
-                    )}
+                {/* Short Description */}
+                <div className="space-y-2">
+                  <Label htmlFor="shortDescription">Short Description *</Label>
+                  <Textarea
+                    id="shortDescription"
+                    placeholder="Describe your AI tool in a few sentences (max 300 characters)"
+                    className="min-h-[100px]"
+                    value={formData.shortDescription}
+                    onChange={(e) => handleInputChange('shortDescription', e.target.value)}
                   />
-
-                  {/* Price Type */}
-                  <FormField
-                    control={form.control}
-                    name="priceType"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Price Type *</FormLabel>
-                        <FormControl>
-                          <RadioGroup
-                            onValueChange={field.onChange}
-                            value={field.value}
-                            className="flex flex-col space-y-2"
-                          >
-                            <div className="flex items-center space-x-2">
-                              <RadioGroupItem value="free" id="free" />
-                              <Label htmlFor="free">Free</Label>
-                            </div>
-                            <div className="flex items-center space-x-2">
-                              <RadioGroupItem value="freemium" id="freemium" />
-                              <Label htmlFor="freemium">Freemium</Label>
-                            </div>
-                            <div className="flex items-center space-x-2">
-                              <RadioGroupItem value="free-trial" id="free-trial" />
-                              <Label htmlFor="free-trial">Free Trial</Label>
-                            </div>
-                            <div className="flex items-center space-x-2">
-                              <RadioGroupItem value="paid" id="paid" />
-                              <Label htmlFor="paid">Paid</Label>
-                            </div>
-                          </RadioGroup>
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-
-                  {/* Provide Assets */}
-                  <FormField
-                    control={form.control}
-                    name="assets"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Provide Assets (Optional)</FormLabel>
-                        <FormControl>
-                          <Textarea 
-                            placeholder="YouTube video URL, logo/icon URL, screenshots, etc."
-                            className="min-h-[80px]"
-                            {...field}
-                          />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-
-                  {/* reCAPTCHA / Robot Check */}
-                  <FormField
-                    control={form.control}
-                    name="robotCheck"
-                    render={({ field }) => (
-                      <FormItem className="flex flex-row items-start space-x-3 space-y-0">
-                        <FormControl>
-                          <Checkbox
-                            checked={field.value}
-                            onCheckedChange={field.onChange}
-                          />
-                        </FormControl>
-                        <div className="space-y-1 leading-none">
-                          <FormLabel>I am not a robot *</FormLabel>
-                        </div>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-
-                  {/* Submit Button */}
-                  <div className="pt-6">
-                    <Button 
-                      type="submit" 
-                      className="w-full h-12 text-lg font-semibold gradient-primary hover:opacity-90 transition-smooth"
-                      disabled={isSubmitting}
-                    >
-                      {isSubmitting ? "Processing..." : "Continue to Payment"}
-                    </Button>
+                  <div className="text-sm text-muted-foreground text-right">
+                    {formData.shortDescription.length}/300 characters
                   </div>
-                </form>
-              </Form>
+                  {errors.shortDescription && (
+                    <p className="text-sm font-medium text-destructive">{errors.shortDescription}</p>
+                  )}
+                </div>
+
+                {/* Price Type */}
+                <div className="space-y-2">
+                  <Label>Price Type *</Label>
+                  <RadioGroup
+                    value={formData.priceType}
+                    onValueChange={(value) => handleInputChange('priceType', value)}
+                    className="flex flex-col space-y-2"
+                  >
+                    <div className="flex items-center space-x-2">
+                      <RadioGroupItem value="free" id="free" />
+                      <Label htmlFor="free">Free</Label>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <RadioGroupItem value="freemium" id="freemium" />
+                      <Label htmlFor="freemium">Freemium</Label>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <RadioGroupItem value="free-trial" id="free-trial" />
+                      <Label htmlFor="free-trial">Free Trial</Label>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <RadioGroupItem value="paid" id="paid" />
+                      <Label htmlFor="paid">Paid</Label>
+                    </div>
+                  </RadioGroup>
+                  {errors.priceType && (
+                    <p className="text-sm font-medium text-destructive">{errors.priceType}</p>
+                  )}
+                </div>
+
+                {/* Provide Assets */}
+                <div className="space-y-2">
+                  <Label htmlFor="assets">Provide Assets (Optional)</Label>
+                  <Textarea
+                    id="assets"
+                    placeholder="YouTube video URL, logo/icon URL, screenshots, etc."
+                    className="min-h-[80px]"
+                    value={formData.assets}
+                    onChange={(e) => handleInputChange('assets', e.target.value)}
+                  />
+                </div>
+
+                {/* reCAPTCHA / Robot Check */}
+                <div className="flex items-start space-x-3 space-y-0">
+                  <Checkbox
+                    id="robotCheck"
+                    checked={formData.robotCheck}
+                    onCheckedChange={(checked) => handleInputChange('robotCheck', !!checked)}
+                  />
+                  <div className="space-y-1 leading-none">
+                    <Label htmlFor="robotCheck">I am not a robot *</Label>
+                  </div>
+                </div>
+                {errors.robotCheck && (
+                  <p className="text-sm font-medium text-destructive">{errors.robotCheck}</p>
+                )}
+
+                {/* Submit Button */}
+                <div className="pt-6">
+                  <Button 
+                    type="submit" 
+                    className="w-full h-12 text-lg font-semibold gradient-primary hover:opacity-90 transition-smooth"
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? "Processing..." : "Continue to Payment"}
+                  </Button>
+                </div>
+              </form>
             </CardContent>
           </Card>
           
