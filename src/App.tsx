@@ -12,6 +12,7 @@ import ToolPage from "./pages/ToolPage";
 import SubmitToolPage from "./pages/SubmitToolPage";
 import PublishToolPage from "./pages/PublishToolPage";
 import ExpressListingForm from "./components/forms/ExpressListingForm";
+import VerifiedListingForm from "./components/forms/VerifiedListingForm";
 import HelpCenter from "./pages/HelpCenter";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
@@ -36,6 +37,7 @@ const App = () => (
             <Route path="/category/:category/:subcategory/:tool" element={<ToolPage />} />
             <Route path="/submit" element={<SubmitToolPage />} />
             <Route path="/submit/express" element={<ExpressListingForm />} />
+            <Route path="/submit/verified" element={<VerifiedListingForm />} />
             <Route path="/publish-tool" element={<PublishToolPage />} />
             <Route path="/help" element={<HelpCenter />} />
             <Route path="/privacy" element={<PrivacyPolicy />} />
