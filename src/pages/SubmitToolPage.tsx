@@ -198,7 +198,7 @@ const SubmitToolPage = () => {
                 
                 <Button 
                   className="w-full mt-8 h-12 text-base font-semibold gradient-primary hover:opacity-90 transition-smooth"
-                  onClick={() => navigate("/submit/express")}
+                  onClick={() => navigate("/submit/verified")}
                 >
                   Submit your website
                 </Button>
