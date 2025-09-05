@@ -126,7 +126,7 @@ const SubmitToolPage = () => {
             <Card className="relative shadow-card hover:shadow-hover transition-smooth group animate-scale-in">
               <div className="absolute inset-0 gradient-secondary opacity-0 group-hover:opacity-100 transition-smooth"></div>
               <CardHeader className="relative z-10 pb-4">
-                <CardTitle className="text-3xl text-white font-bold mb-2 px-6 py-3 rounded-lg" style={{background: 'var(--gradient-primary)'}}>
+                <CardTitle className="text-3xl text-white font-bold mb-2 px-6 py-3 rounded-lg text-center" style={{background: 'var(--gradient-primary)'}}>
                   <div>🟦 Express Listing</div>
                   <div className="text-sm font-normal opacity-90">(fast approval & go live quickly)</div>
                 </CardTitle>
@@ -167,7 +167,7 @@ const SubmitToolPage = () => {
               </div>
               <div className="absolute inset-0 gradient-primary opacity-5 group-hover:opacity-10 transition-smooth"></div>
               <CardHeader className="pt-10 relative z-10">
-                <CardTitle className="text-3xl text-white font-bold mb-2 px-6 py-3 rounded-lg" style={{background: 'var(--gradient-primary)'}}>
+                <CardTitle className="text-3xl text-white font-bold mb-2 px-6 py-3 rounded-lg text-center" style={{background: 'var(--gradient-primary)'}}>
                   <div>🟦 Verified Listing</div>
                   <div className="text-sm font-normal opacity-90">(trust badge + higher credibility)</div>
                 </CardTitle>
@@ -207,8 +207,8 @@ const SubmitToolPage = () => {
             <Card className="relative shadow-card hover:shadow-hover transition-smooth group animate-scale-in">
               <div className="absolute inset-0 gradient-secondary opacity-0 group-hover:opacity-100 transition-smooth"></div>
               <CardHeader className="relative z-10 pb-4">
-                <CardTitle className="text-3xl text-white font-bold mb-2 px-6 py-3 rounded-lg" style={{background: 'var(--gradient-primary)'}}>
-                  <div className="flex items-center gap-2">🟦 Premium Featured Listing <Crown className="h-8 w-8 text-yellow-300 animate-float" /></div>
+                <CardTitle className="text-3xl text-white font-bold mb-2 px-6 py-3 rounded-lg text-center" style={{background: 'var(--gradient-primary)'}}>
+                  <div className="flex items-center justify-center gap-2">🟦 Premium Featured Listing <Crown className="h-8 w-8 text-yellow-300 animate-float" /></div>
                   <div className="text-sm font-normal opacity-90">(maximum visibility + top placement)</div>
                 </CardTitle>
                 <div className="text-5xl font-bold text-foreground mb-2">$249</div>
