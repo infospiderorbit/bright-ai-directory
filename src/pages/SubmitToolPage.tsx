@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -8,6 +8,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const SubmitToolPage = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -153,7 +155,7 @@ const SubmitToolPage = () => {
                 
                 <Button 
                   className="w-full mt-8 h-12 text-base font-semibold gradient-primary hover:opacity-90 transition-smooth"
-                  onClick={(e) => e.preventDefault()}
+                  onClick={() => navigate("/submit/express")}
                 >
                   Submit your website
                 </Button>
@@ -196,7 +198,7 @@ const SubmitToolPage = () => {
                 
                 <Button 
                   className="w-full mt-8 h-12 text-base font-semibold gradient-primary hover:opacity-90 transition-smooth"
-                  onClick={(e) => e.preventDefault()}
+                  onClick={() => navigate("/submit/express")}
                 >
                   Submit your website
                 </Button>
