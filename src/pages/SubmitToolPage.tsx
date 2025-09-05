@@ -126,7 +126,7 @@ const SubmitToolPage = () => {
             <Card className="relative shadow-card hover:shadow-hover transition-smooth group animate-scale-in">
               <div className="absolute inset-0 gradient-secondary opacity-0 group-hover:opacity-100 transition-smooth"></div>
               <CardHeader className="relative z-10 pb-4">
-                <CardTitle className="text-3xl gradient-primary bg-clip-text text-transparent mb-2">🟦 Fast Listing</CardTitle>
+                <CardTitle className="text-3xl gradient-primary bg-clip-text text-transparent mb-2">🟦 Express Listing (fast approval & go live quickly)</CardTitle>
                 <div className="text-5xl font-bold text-foreground mb-2">$49</div>
                 <CardDescription className="text-base">(one-time fee)</CardDescription>
               </CardHeader>
@@ -164,7 +164,7 @@ const SubmitToolPage = () => {
               </div>
               <div className="absolute inset-0 gradient-primary opacity-5 group-hover:opacity-10 transition-smooth"></div>
               <CardHeader className="pt-10 relative z-10">
-                <CardTitle className="text-3xl gradient-primary bg-clip-text text-transparent mb-2">🟦 Verified Listing</CardTitle>
+                <CardTitle className="text-3xl gradient-primary bg-clip-text text-transparent mb-2">🟦 Verified Listing (trust badge + higher credibility)</CardTitle>
                 <div className="text-5xl font-bold text-foreground mb-2">$149</div>
                 <CardDescription className="text-base">(one-time fee)</CardDescription>
               </CardHeader>
@@ -202,7 +202,7 @@ const SubmitToolPage = () => {
               <div className="absolute inset-0 gradient-secondary opacity-0 group-hover:opacity-100 transition-smooth"></div>
               <CardHeader className="relative z-10 pb-4">
                 <CardTitle className="text-3xl gradient-primary bg-clip-text text-transparent flex items-center gap-2 mb-2">
-                  🟦 Featured Ads <Crown className="h-8 w-8 text-yellow-500 animate-float" />
+                  🟦 Premium Featured Listing (maximum visibility + top placement) <Crown className="h-8 w-8 text-yellow-500 animate-float" />
                 </CardTitle>
                 <div className="text-5xl font-bold text-foreground mb-2">$249</div>
                 <CardDescription className="text-base">AI tool displayed almost everywhere</CardDescription>

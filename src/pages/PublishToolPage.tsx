@@ -15,7 +15,7 @@ const PublishToolPage = () => {
 
   const planDetails = {
     fast: {
-      name: "Fast Listing",
+      name: "Express Listing (fast approval & go live quickly)",
       price: "$49",
       icon: "🟦",
       color: "bg-blue-50 border-blue-200",
@@ -29,7 +29,7 @@ const PublishToolPage = () => {
       ]
     },
     verified: {
-      name: "Verified Listing", 
+      name: "Verified Listing (trust badge + higher credibility)", 
       price: "$149",
       icon: "🟦",
       color: "bg-green-50 border-green-200",
@@ -44,7 +44,7 @@ const PublishToolPage = () => {
       ]
     },
     featured: {
-      name: "Featured Ads",
+      name: "Premium Featured Listing (maximum visibility + top placement)",
       price: "$249", 
       icon: "🟦",
       color: "bg-purple-50 border-purple-200",

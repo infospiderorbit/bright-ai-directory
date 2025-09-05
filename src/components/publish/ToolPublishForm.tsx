@@ -17,19 +17,19 @@ interface ToolPublishFormProps {
 
 const planDetails = {
   fast: {
-    name: "Fast Listing",
+    name: "Express Listing (fast approval & go live quickly)",
     price: "$49",
     icon: "🟦",
     features: ["Published within 3 days", "Listed in Latest AI", "30 days in AItoolsprime Selection"]
   },
   verified: {
-    name: "Verified Listing", 
+    name: "Verified Listing (trust badge + higher credibility)", 
     price: "$149",
     icon: "🟦",
     features: ["Published within 2 business days", "Verified blue check mark", "60 days in AItoolsprime Selection"]
   },
   featured: {
-    name: "Featured Ads",
+    name: "Premium Featured Listing (maximum visibility + top placement)",
     price: "$249", 
     icon: "🟦",
     features: ["Published within 24 hours", "Gold checkmark", "3 days featured everywhere"]
