@@ -236,11 +236,11 @@ const WebsiteSnapshot = ({ toolUrl, toolName }: WebsiteSnapshotProps) => {
   return (
     <div className="space-y-3">
       <div className="relative group cursor-pointer">
-        <div className="aspect-[4/3] bg-muted rounded-lg border border-border overflow-hidden">
+        <div className="aspect-[4/3] bg-white rounded-lg border border-border overflow-hidden">
           <img
             src={screenshotUrl}
             alt={`${toolName} website screenshot`}
-            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+            className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
             onError={() => {
               console.log(`Screenshot failed for ${toolName}`);
               setHasError(true);
