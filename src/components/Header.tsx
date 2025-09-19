@@ -1,20 +1,20 @@
-import { Sparkles, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Link } from "react-router-dom";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border shadow-sm">
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center space-x-2 hover:opacity-80 transition-smooth">
-            <div className="p-2 gradient-primary rounded-lg">
-              <Sparkles className="h-6 w-6 text-white" />
-            </div>
-            <span className="text-xl font-bold text-foreground">
-              aitoolsprime.com
-            </span>
+          <Link to="/" className="flex items-center hover:opacity-80 transition-smooth">
+            <img 
+              src={logo} 
+              alt="AI Tools Prime" 
+              className="h-10 w-auto"
+            />
           </Link>
           
           <nav className="hidden md:flex items-center space-x-8">
