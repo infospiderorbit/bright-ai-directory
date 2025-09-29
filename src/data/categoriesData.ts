@@ -243,6 +243,21 @@ export const categoriesData = {
       "ai-art-detector": { title: "AI Art Detector", count: 12 }
     }
   },
+  "chatbots-virtual-companions": {
+    title: "Chatbots & Virtual Companions",
+    totalCount: 624,
+    subcategories: {
+      "ai-anime-girlfriend": { title: "AI Anime Girlfriend", count: 66 },
+      "ai-boyfriend": { title: "AI Boyfriend", count: 72 },
+      "ai-character": { title: "AI Character", count: 90 },
+      "ai-chatbot": { title: "AI Chatbot", count: 96 },
+      "ai-dating-assistant": { title: "AI Dating Assistant", count: 60 },
+      "ai-girlfriend": { title: "AI Girlfriend", count: 84 },
+      "ai-joke": { title: "AI Joke", count: 54 },
+      "ai-roleplay": { title: "AI Roleplay", count: 72 },
+      "dirty-talking-ai": { title: "Dirty Talking AI", count: 30 }
+    }
+  },
   "coding-development": {
     title: "Coding & Development",
     totalCount: 75,
@@ -529,6 +544,7 @@ export const getCategoryIcon = (categoryKey: string): string => {
     "art-creative-design": "🎨",
     "social-media": "📱",
     "ai-detection-anti-detection": "🔍",
+    "chatbots-virtual-companions": "🤖",
     "coding-development": "💻",
     "video-animation": "🎬",
     "daily-life": "🏠",
