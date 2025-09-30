@@ -272,6 +272,35 @@ export const categoriesData = {
       "image-to-prompt": { title: "Image to Prompt", count: 42 }
     }
   },
+  "music-audio": {
+    title: "Music & Audio",
+    totalCount: 1150,
+    subcategories: {
+      "ai-audio-editing": { title: "AI Audio Editing", count: 48 },
+      "ai-audio-enhancer": { title: "AI Audio Enhancer", count: 52 },
+      "ai-audio-splitter": { title: "AI Audio Splitter", count: 46 },
+      "ai-beat-generator": { title: "AI Beat Generator", count: 50 },
+      "ai-instrumental-generator": { title: "AI Instrumental Generator", count: 44 },
+      "ai-lyrics-generator": { title: "AI Lyrics Generator", count: 54 },
+      "ai-mastering": { title: "AI Mastering", count: 48 },
+      "ai-melody-generator": { title: "AI Melody Generator", count: 42 },
+      "ai-midi-generator": { title: "AI Midi Generator", count: 46 },
+      "ai-music-generator": { title: "AI Music Generator", count: 62 },
+      "ai-noise-cancellation": { title: "AI Noise Cancellation", count: 50 },
+      "ai-rap-generator": { title: "AI Rap Generator", count: 44 },
+      "ai-rap-lyrics-generator": { title: "AI Rap Lyrics Generator", count: 40 },
+      "ai-singing-generator": { title: "AI Singing Generator", count: 48 },
+      "ai-song-cover": { title: "AI Song Cover", count: 52 },
+      "ai-song-generator": { title: "AI Song Generator", count: 58 },
+      "ai-song-remixer": { title: "AI Song Remixer", count: 46 },
+      "ai-sound-effect-generator": { title: "AI Sound Effect Generator", count: 50 },
+      "ai-splitter": { title: "AI Splitter", count: 42 },
+      "ai-stems-splitter": { title: "AI Stems Splitter", count: 54 },
+      "ai-text-to-music": { title: "AI Text-to-Music", count: 48 },
+      "ai-vocal-remover": { title: "AI Vocal Remover", count: 56 },
+      "chord-ai": { title: "Chord AI", count: 46 }
+    }
+  },
   "coding-development": {
     title: "Coding & Development",
     totalCount: 75,
@@ -560,6 +589,7 @@ export const getCategoryIcon = (categoryKey: string): string => {
     "ai-detection-anti-detection": "🔍",
     "chatbots-virtual-companions": "🤖",
     "image-analysis": "🔎",
+    "music-audio": "🎵",
     "coding-development": "💻",
     "video-animation": "🎬",
     "daily-life": "🏠",
