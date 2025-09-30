@@ -695,6 +695,7 @@ const FeaturedTools: React.FC<FeaturedToolsProps> = ({ selectedCategory, setSele
     "Social Media": ["social-media"],
     "AI Detection & Anti-Detection": ["ai-detection-anti-detection"],
     "Chatbots & Virtual Companions": ["chatbots-virtual-companions"],
+    "Image Analysis": ["image-analysis"],
     "Coding & Development": ["coding-development"],
     "Video & Animation": ["video-animation"],
     "Daily Life": ["daily-life"],

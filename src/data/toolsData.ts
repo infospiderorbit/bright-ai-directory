@@ -2941,6 +2941,65 @@ export const toolsData: { [key: string]: { [key: string]: Tool[] } } = {
     ]
   },
 
+  "image-analysis": {
+    "ai-describe-image": [
+      { id: "image-describer", name: "Image Describer", description: "AI-powered image description generator", url: "", upvotes: 2876, verified: true, rating: 4.7, icon: "🖼️", category: "image-analysis", subcategory: "ai-describe-image" },
+      { id: "framed-ai", name: "Framed - AI Art Audio Guide", description: "AI audio descriptions for artwork", url: "", upvotes: 2543, verified: true, rating: 4.6, icon: "🎨", category: "image-analysis", subcategory: "ai-describe-image" },
+      { id: "ai-scientific-figure", name: "AI-Driven scientific figure understanding", description: "AI analysis of scientific figures and diagrams", url: "", upvotes: 2321, verified: true, rating: 4.5, icon: "🔬", category: "image-analysis", subcategory: "ai-describe-image" },
+      { id: "craion-kids", name: "crAion: Kids Drawings Analysis", description: "AI analysis of children's drawings", url: "", upvotes: 1987, verified: true, rating: 4.4, icon: "🖍️", category: "image-analysis", subcategory: "ai-describe-image" },
+      { id: "image-describer-2", name: "Image Describer", description: "Advanced AI image description tool", url: "", upvotes: 1765, verified: true, rating: 4.3, icon: "📝", category: "image-analysis", subcategory: "ai-describe-image" }
+    ],
+    "ai-face-analyzer": [
+      { id: "youcam-app", name: "YouCam App Provider", description: "AI face analysis and beauty app", url: "", upvotes: 3124, verified: true, rating: 4.8, icon: "📸", category: "image-analysis", subcategory: "ai-face-analyzer" },
+      { id: "faceflow", name: "FaceFlow", description: "AI facial feature analysis platform", url: "", upvotes: 2876, verified: true, rating: 4.7, icon: "😊", category: "image-analysis", subcategory: "ai-face-analyzer" },
+      { id: "facesymai", name: "FaceSymAI", description: "AI facial symmetry analysis tool", url: "", upvotes: 2543, verified: true, rating: 4.6, icon: "🎭", category: "image-analysis", subcategory: "ai-face-analyzer" },
+      { id: "face-age-ai", name: "Face Age AI", description: "AI age detection from facial features", url: "", upvotes: 2321, verified: true, rating: 4.5, icon: "👴", category: "image-analysis", subcategory: "ai-face-analyzer" },
+      { id: "eye-shape-ai", name: "Eye Shape AI", description: "AI eye shape analysis and classification", url: "", upvotes: 1987, verified: true, rating: 4.4, icon: "👁️", category: "image-analysis", subcategory: "ai-face-analyzer" }
+    ],
+    "ai-face-recognition": [
+      { id: "clickworker", name: "clickworker", description: "AI face recognition and annotation platform", url: "", upvotes: 2876, verified: true, rating: 4.7, icon: "👥", category: "image-analysis", subcategory: "ai-face-recognition" },
+      { id: "lenso-ai", name: "Lenso.ai", description: "AI reverse image search and face recognition", url: "", upvotes: 2543, verified: true, rating: 4.6, icon: "🔍", category: "image-analysis", subcategory: "ai-face-recognition" },
+      { id: "onfido", name: "Onfido", description: "AI identity verification and face recognition", url: "", upvotes: 2321, verified: true, rating: 4.5, icon: "🔐", category: "image-analysis", subcategory: "ai-face-recognition" },
+      { id: "shufti", name: "Shufti", description: "AI KYC verification with face recognition", url: "", upvotes: 1987, verified: true, rating: 4.4, icon: "✅", category: "image-analysis", subcategory: "ai-face-recognition" },
+      { id: "facesymai-recognition", name: "FaceSymAI", description: "AI facial recognition technology", url: "", upvotes: 1765, verified: true, rating: 4.3, icon: "🤖", category: "image-analysis", subcategory: "ai-face-recognition" }
+    ],
+    "ai-image-recognition": [
+      { id: "ultralytics", name: "Ultralytics", description: "AI computer vision and object detection", url: "", upvotes: 3456, verified: true, rating: 4.8, icon: "🤖", category: "image-analysis", subcategory: "ai-image-recognition" },
+      { id: "plantnet", name: "Pl@ntNet", description: "AI plant identification from images", url: "", upvotes: 3124, verified: true, rating: 4.7, icon: "🌿", category: "image-analysis", subcategory: "ai-image-recognition" },
+      { id: "plantin", name: "PlantIn", description: "AI plant care and identification app", url: "", upvotes: 2876, verified: true, rating: 4.6, icon: "🪴", category: "image-analysis", subcategory: "ai-image-recognition" },
+      { id: "driver-i-ai", name: "Driver•i AI Fleet Camera System", description: "AI dash cam for fleet management", url: "", upvotes: 2543, verified: true, rating: 4.5, icon: "🚗", category: "image-analysis", subcategory: "ai-image-recognition" },
+      { id: "frigate-nvr", name: "Frigate NVR", description: "AI object detection for security cameras", url: "", upvotes: 2321, verified: true, rating: 4.4, icon: "📹", category: "image-analysis", subcategory: "ai-image-recognition" }
+    ],
+    "ai-image-scanning": [
+      { id: "allerwell", name: "Allerwell", description: "AI food label scanner for allergies", url: "", upvotes: 2543, verified: true, rating: 4.6, icon: "🏷️", category: "image-analysis", subcategory: "ai-image-scanning" },
+      { id: "loti-ai", name: "Loti AI", description: "AI image scanning for content protection", url: "", upvotes: 2321, verified: true, rating: 4.5, icon: "🛡️", category: "image-analysis", subcategory: "ai-image-scanning" },
+      { id: "breed-dog", name: "Breed.dog", description: "AI dog breed identification from photos", url: "", upvotes: 1987, verified: true, rating: 4.4, icon: "🐕", category: "image-analysis", subcategory: "ai-image-scanning" },
+      { id: "mealsnap", name: "MealSnap: AI meal log journal", description: "AI food photo recognition and logging", url: "", upvotes: 1765, verified: true, rating: 4.3, icon: "🍽️", category: "image-analysis", subcategory: "ai-image-scanning" },
+      { id: "caralyze", name: "Caralyze", description: "AI vehicle damage assessment scanner", url: "", upvotes: 1543, verified: true, rating: 4.2, icon: "🚙", category: "image-analysis", subcategory: "ai-image-scanning" }
+    ],
+    "ai-image-segmentation": [
+      { id: "meta-sam2", name: "Meta Segment Anything Model 2", description: "Advanced AI image segmentation model", url: "", upvotes: 3789, verified: true, rating: 4.9, icon: "🎯", category: "image-analysis", subcategory: "ai-image-segmentation" },
+      { id: "segment-anything-meta", name: "Segment Anything | Meta AI", description: "Meta's AI segmentation technology", url: "", upvotes: 3456, verified: true, rating: 4.8, icon: "✂️", category: "image-analysis", subcategory: "ai-image-segmentation" },
+      { id: "flypix-ai", name: "FlyPix AI", description: "AI aerial image segmentation platform", url: "", upvotes: 2876, verified: true, rating: 4.7, icon: "🛸", category: "image-analysis", subcategory: "ai-image-segmentation" },
+      { id: "rsip-vision", name: "RSIP Vision", description: "AI medical image segmentation", url: "", upvotes: 2543, verified: true, rating: 4.6, icon: "🏥", category: "image-analysis", subcategory: "ai-image-segmentation" },
+      { id: "segment-anything-sam", name: "Segment Anything Model (SAM)", description: "Open-source AI segmentation model", url: "", upvotes: 2321, verified: true, rating: 4.5, icon: "🔪", category: "image-analysis", subcategory: "ai-image-segmentation" }
+    ],
+    "ai-ocr": [
+      { id: "imagetotext-info", name: "ImageToText.info", description: "AI OCR image to text converter", url: "", upvotes: 2876, verified: true, rating: 4.7, icon: "📄", category: "image-analysis", subcategory: "ai-ocr" },
+      { id: "image-to-text-converter", name: "Image to Text converter", description: "Free AI OCR tool for text extraction", url: "", upvotes: 2543, verified: true, rating: 4.6, icon: "🔤", category: "image-analysis", subcategory: "ai-ocr" },
+      { id: "pdnob-translator", name: "PDNob Image Translator", description: "AI OCR with translation capabilities", url: "", upvotes: 2321, verified: true, rating: 4.5, icon: "🌐", category: "image-analysis", subcategory: "ai-ocr" },
+      { id: "jpgtotext", name: "jpgtotext.com", description: "Simple AI OCR for JPG to text", url: "", upvotes: 1987, verified: true, rating: 4.4, icon: "🖼️", category: "image-analysis", subcategory: "ai-ocr" },
+      { id: "lightpdf", name: "LightPDF", description: "AI PDF OCR and document conversion", url: "", upvotes: 1765, verified: true, rating: 4.3, icon: "📑", category: "image-analysis", subcategory: "ai-ocr" }
+    ],
+    "image-to-prompt": [
+      { id: "imageprompt-org", name: "ImagePrompt.org", description: "AI reverse prompt engineering from images", url: "", upvotes: 2654, verified: true, rating: 4.7, icon: "💭", category: "image-analysis", subcategory: "image-to-prompt" },
+      { id: "midjourneysref", name: "Midjourneysref", description: "AI prompt generator for Midjourney images", url: "", upvotes: 2432, verified: true, rating: 4.6, icon: "🎨", category: "image-analysis", subcategory: "image-to-prompt" },
+      { id: "describe-image-picture", name: "Describe Image & Picture - AI Image Description, Markdown, and Text Converter", description: "Comprehensive AI image to prompt converter", url: "", upvotes: 2198, verified: true, rating: 4.5, icon: "📝", category: "image-analysis", subcategory: "image-to-prompt" },
+      { id: "copycoder", name: "CopyCoder", description: "AI image to code and prompt generator", url: "", upvotes: 1876, verified: true, rating: 4.4, icon: "💻", category: "image-analysis", subcategory: "image-to-prompt" },
+      { id: "image-to-prompt-pro", name: "Image to Prompt Pro", description: "Professional AI image prompt extraction", url: "", upvotes: 1654, verified: true, rating: 4.3, icon: "⚡", category: "image-analysis", subcategory: "image-to-prompt" }
+    ]
+  },
+
   "interior-architectural-design": {
     "ai-backyard-design": [
       { id: "neighborbrite", name: "Neighborbrite", description: "AI-powered backyard design and landscaping tool", url: "", upvotes: 1432, verified: true, rating: 4.6, icon: "🏡", category: "interior-architectural-design", subcategory: "ai-backyard-design" },

@@ -258,6 +258,20 @@ export const categoriesData = {
       "dirty-talking-ai": { title: "Dirty Talking AI", count: 30 }
     }
   },
+  "image-analysis": {
+    title: "Image Analysis",
+    totalCount: 408,
+    subcategories: {
+      "ai-describe-image": { title: "AI Describe Image", count: 60 },
+      "ai-face-analyzer": { title: "AI Face Analyzer", count: 50 },
+      "ai-face-recognition": { title: "AI Face Recognition", count: 52 },
+      "ai-image-recognition": { title: "AI Image Recognition", count: 54 },
+      "ai-image-scanning": { title: "AI Image Scanning", count: 48 },
+      "ai-image-segmentation": { title: "AI Image Segmentation", count: 56 },
+      "ai-ocr": { title: "AI OCR", count: 46 },
+      "image-to-prompt": { title: "Image to Prompt", count: 42 }
+    }
+  },
   "coding-development": {
     title: "Coding & Development",
     totalCount: 75,
@@ -545,6 +559,7 @@ export const getCategoryIcon = (categoryKey: string): string => {
     "social-media": "📱",
     "ai-detection-anti-detection": "🔍",
     "chatbots-virtual-companions": "🤖",
+    "image-analysis": "🔎",
     "coding-development": "💻",
     "video-animation": "🎬",
     "daily-life": "🏠",
