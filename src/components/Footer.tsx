@@ -1,5 +1,6 @@
-import { Sparkles, Github, Twitter, Mail } from "lucide-react";
+import { Github, Twitter, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -9,9 +10,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="p-2 gradient-primary rounded-lg">
-                <Sparkles className="h-6 w-6 text-white" />
-              </div>
+              <img src={logo} alt="AI Tools Hub" className="h-10 w-auto" />
               <span className="text-xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
                 AI Tools Hub
               </span>
