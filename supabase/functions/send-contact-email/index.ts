@@ -60,7 +60,7 @@ serve(async (req) => {
           </div>
           <hr>
           <p style="color: #666; font-size: 12px;">
-            This email was sent from the AI Tools Hub contact form.
+            This email was sent from the AI TOOLS PRIME contact form.
           </p>
         `,
         reply_to: email,

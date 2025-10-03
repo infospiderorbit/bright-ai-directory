@@ -10,9 +10,9 @@ const Footer = () => {
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <img src={logo} alt="AI Tools Hub" className="h-10 w-auto" />
+              <img src={logo} alt="AI TOOLS PRIME" className="h-10 w-auto" />
               <span className="text-xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
-                AI Tools Hub
+                AI TOOLS PRIME
               </span>
             </div>
             <p className="text-muted-foreground mb-4 max-w-md">
@@ -56,7 +56,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t mt-8 pt-8 text-center text-muted-foreground">
-          <p>&copy; 2024 AI Tools Hub. All rights reserved.</p>
+          <p>&copy; 2024 AI TOOLS PRIME. All rights reserved.</p>
         </div>
       </div>
     </footer>

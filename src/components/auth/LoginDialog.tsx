@@ -95,7 +95,7 @@ export const LoginDialog = ({ open, onOpenChange, onSuccess }: LoginDialogProps)
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold text-center bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
-            Welcome to AI Tools Hub
+            Welcome to AI TOOLS PRIME
           </DialogTitle>
           <DialogDescription className="text-center">
             Sign in to submit and manage your AI tools
