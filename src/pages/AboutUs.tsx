@@ -215,11 +215,15 @@ const AboutUs = () => {
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button className="gradient-primary text-white">
-                  Submit Your Tool
+                <Button asChild className="gradient-primary text-white">
+                  <a href="https://www.aitoolsprime.com/submit" target="_blank" rel="noopener noreferrer">
+                    Submit Your Tool
+                  </a>
                 </Button>
-                <Button variant="outline">
-                  Contact Us
+                <Button asChild variant="outline">
+                  <a href="https://www.aitoolsprime.com/contact" target="_blank" rel="noopener noreferrer">
+                    Contact Us
+                  </a>
                 </Button>
               </div>
               <p className="text-sm text-muted-foreground">
