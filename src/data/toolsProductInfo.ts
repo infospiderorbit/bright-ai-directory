@@ -82,6 +82,140 @@ export const toolsProductInfoData: { [key: string]: any } = {
       }
     ]
   },
+  "hyperwrite": {
+    whatIs: "HyperWrite is one of the most powerful AI writing tools created to improve productivity by helping students, professionals and content creators. It combines the power of real-time data analysis with the capabilities of AI-powered applications that give you personalised phrase completions, paragraph-building suggestions that are aware of context. HyperWrite lets you create precise, clear and engaging content in a variety of formats such as email, research papers, essays and creative writing.",
+    features: [
+      "Personalized Sentence Completions - suggestions are contextually aware and adapt to your style of writing",
+      "Automated Paragraph Generator - production of precise paragraphs based on simple instructions",
+      "Email Automation - speedy and professional response to emails",
+      "AI Document Editor - collaboration in real-time with AI to increase accuracy and clarity",
+      "Real-Time Research - access to scholarly research that provides citation-based insights",
+      "Personal AI Personas - customized tone and design of AI to your specifications",
+      "Platform Integration - integrates with Gmail, Google Docs, and various other productivity tools"
+    ],
+    howToUse: {
+      title: "How to Use HyperWrite",
+      description: "Get started with HyperWrite in simple steps",
+      steps: [
+        {
+          title: "Getting Started",
+          description: "Sign up to gain access to HyperWrite's user-friendly platform that provides a range of writing tools powered by AI."
+        },
+        {
+          title: "Writing Using HyperWrite",
+          description: "Choose a topic to start content creation. Use AutoWrite to create coherent paragraphs, TypeAhead for real-time personalized sentence suggestions, Email Response feature for professional replies, and the AI Document Editor for collaborative editing."
+        },
+        {
+          title: "Customize AI Behavior",
+          description: "Create individual personas tailored to various writing styles to match your specific needs and tone preferences."
+        },
+        {
+          title: "Integration",
+          description: "HyperWrite integrates seamlessly with popular platforms like Gmail and Google Docs, facilitating smooth workflow integration of writing and communication tasks."
+        }
+      ]
+    },
+    coreFeatures: [
+      {
+        title: "Personalized Sentence Completions",
+        description: "Contextually aware suggestions that adapt to your writing style"
+      },
+      {
+        title: "Automated Paragraph Generator",
+        description: "Create precise paragraphs based on simple instructions"
+      },
+      {
+        title: "Email Automation",
+        description: "Professional and timely email responses"
+      },
+      {
+        title: "AI Document Editor",
+        description: "Real-time collaboration with AI for enhanced accuracy and clarity"
+      },
+      {
+        title: "Real-Time Research",
+        description: "Access to scholarly research with citation-based insights"
+      },
+      {
+        title: "Custom AI Personas",
+        description: "Tailor the tone and style of AI to your specifications"
+      },
+      {
+        title: "Specialized Tools",
+        description: "Summarization, speech writing, rewriting, and more"
+      },
+      {
+        title: "Platform Integration",
+        description: "Seamless integration with Gmail, Google Docs, and productivity tools"
+      }
+    ],
+    useCases: [
+      {
+        title: "Professional Communication",
+        description: "Improve the quality of business emails and reports"
+      },
+      {
+        title: "Academic Writing",
+        description: "Condense research writing using citations and scholarly resources"
+      },
+      {
+        title: "Content Creation",
+        description: "Create blogs, articles, and marketing materials quickly"
+      },
+      {
+        title: "Creative Writing",
+        description: "Help with idea generation and storytelling"
+      },
+      {
+        title: "Speech Writing",
+        description: "Create quick speeches and presentations"
+      },
+      {
+        title: "Customer Support",
+        description: "Improve response speed using AI-generated emails"
+      }
+    ],
+    pricing: {
+      basic: "250 AI messages per month, 3 custom personas, access to hundreds of AI tools, and real-time references",
+      ultra: "Unlimited AI messages, up to 10 customized character profiles, endless typeahead suggestions, and early access to upcoming features"
+    },
+    faqs: [
+      {
+        question: "Is HyperWrite appropriate for academic research?",
+        answer: "Yes, it gives instant access to scholarly resources and also manages citations for academic writing."
+      },
+      {
+        question: "Can I alter the tone of the AI?",
+        answer: "Yes, you can build personalized AI personas that reflect different tones and styles."
+      },
+      {
+        question: "Does it work with email services?",
+        answer: "Yes, it is integrated with Gmail for professional, automated email responses."
+      },
+      {
+        question: "What kinds of content can HyperWrite assist with?",
+        answer: "Essays, emails, articles, speeches, creative writing, and more."
+      },
+      {
+        question: "Is there a trial period?",
+        answer: "Trial information is available on HyperWrite's official website."
+      }
+    ],
+    prosAndCons: {
+      pros: [
+        "Speeds up the writing process dramatically",
+        "Enhances the quality of content using contextually aware AI",
+        "Supports academic writing with citations",
+        "Customizable AI personas for diverse needs",
+        "Simple integration with productivity tools"
+      ],
+      cons: [
+        "Adjustment period in accordance with AI's style of writing",
+        "Might require manual editing for extremely creative work",
+        "Advanced features require a subscription"
+      ]
+    }
+  },
   "default": {
     whatIs: "This AI tool helps users accomplish their tasks more efficiently with intelligent automation and advanced features.",
     features: [

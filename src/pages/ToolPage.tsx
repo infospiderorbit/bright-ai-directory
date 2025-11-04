@@ -109,6 +109,88 @@ const ProductInformation = ({ toolData }: { toolData: any }) => {
           ))}
         </div>
       </div>
+
+      {/* Pros and Cons */}
+      {productInfo.prosAndCons && (
+        <>
+          <Separator />
+          <div className="space-y-6">
+            <div className="text-center">
+              <h3 className="text-2xl font-bold text-foreground mb-2">Pros & Cons</h3>
+            </div>
+            <div className="grid gap-6 md:grid-cols-2">
+              <div className="space-y-3">
+                <h4 className="font-semibold text-foreground text-lg">Pros</h4>
+                <ul className="space-y-2">
+                  {productInfo.prosAndCons.pros.map((pro: string, index: number) => (
+                    <li key={index} className="flex items-start text-muted-foreground">
+                      <span className="text-green-500 mr-2">✓</span>
+                      {pro}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="space-y-3">
+                <h4 className="font-semibold text-foreground text-lg">Cons</h4>
+                <ul className="space-y-2">
+                  {productInfo.prosAndCons.cons.map((con: string, index: number) => (
+                    <li key={index} className="flex items-start text-muted-foreground">
+                      <span className="text-red-500 mr-2">✗</span>
+                      {con}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </>
+      )}
+
+      {/* Pricing */}
+      {productInfo.pricing && (
+        <>
+          <Separator />
+          <div className="space-y-6">
+            <div className="text-center">
+              <h3 className="text-2xl font-bold text-foreground mb-2">Pricing</h3>
+              <p className="text-muted-foreground">{toolData.name} offers various pricing plans to meet different needs</p>
+            </div>
+            <div className="grid gap-4 md:grid-cols-2">
+              <div className="p-5 rounded-lg border border-border bg-card">
+                <h4 className="font-semibold text-foreground mb-3 text-lg">Basic Plan</h4>
+                <p className="text-muted-foreground">{productInfo.pricing.basic}</p>
+              </div>
+              <div className="p-5 rounded-lg border border-border bg-card">
+                <h4 className="font-semibold text-foreground mb-3 text-lg">Ultra Plan</h4>
+                <p className="text-muted-foreground">{productInfo.pricing.ultra}</p>
+              </div>
+            </div>
+            <p className="text-sm text-muted-foreground text-center">
+              For current, detailed pricing information, visit the {toolData.name} official website.
+            </p>
+          </div>
+        </>
+      )}
+
+      {/* FAQs */}
+      {productInfo.faqs && (
+        <>
+          <Separator />
+          <div className="space-y-6">
+            <div className="text-center">
+              <h3 className="text-2xl font-bold text-foreground mb-2">Frequently Asked Questions (FAQs)</h3>
+            </div>
+            <div className="space-y-4">
+              {productInfo.faqs.map((faq: any, index: number) => (
+                <div key={index} className="p-4 rounded-lg border border-border bg-card">
+                  <h4 className="font-semibold text-foreground mb-2">{faq.question}</h4>
+                  <p className="text-sm text-muted-foreground">{faq.answer}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 };
