@@ -1,8 +1,8 @@
-
 import { useState, useEffect } from "react";
 import { ExternalLink, Loader2, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
+import hyperwriteSnapshot from "@/assets/hyperwrite-snapshot.png";
 
 interface WebsiteSnapshotProps {
   toolUrl?: string;
@@ -123,7 +123,7 @@ const WebsiteSnapshot = ({ toolUrl, toolName }: WebsiteSnapshotProps) => {
     "The HS Code": { siteUrl: "https://thehscode.com", snapshotUrl: "https://i.ibb.co/fVz9ctVr/image.png" },
     "ChatPulse": { siteUrl: "https://chatpulse.ai", snapshotUrl: "https://i.ibb.co/n83Ly19V/image.png" },
     "Venice AI": { siteUrl: "https://venice.ai", snapshotUrl: "https://i.ibb.co/prRTRScY/image.png" },
-    "HyperWrite": { siteUrl: "https://hyperwriteai.com", snapshotUrl: "https://i.ibb.co/1G7dhSkb/image.png" },
+    "HyperWrite": { siteUrl: "https://hyperwriteai.com", snapshotUrl: hyperwriteSnapshot },
     "Toolsaday": { siteUrl: "https://toolsaday.com", snapshotUrl: "https://i.ibb.co/VWSjgNxr/image.png" },
     "Structurely": { siteUrl: "https://structurely.com", snapshotUrl: "https://i.ibb.co/DPDCvZYs/image.png" },
     "Mtalkz": { siteUrl: "https://mtalkz.com", snapshotUrl: "https://i.ibb.co/JjFxnPy2/image.png" },
