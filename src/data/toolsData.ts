@@ -1336,7 +1336,7 @@ export const toolsData: { [key: string]: { [key: string]: Tool[] } } = {
       { id: "perchance-text", name: "Perchance", description: "Random text and content generator", url: "", upvotes: 1567, verified: true, rating: 4.6, icon: "🎲", category: "writing-editing", subcategory: "ai-text-generator" },
       { id: "venice-ai", name: "Venice AI", description: "AI text generation platform", url: "", upvotes: 1234, verified: true, rating: 4.5, icon: "🏛️", category: "writing-editing", subcategory: "ai-text-generator" },
       { id: "ai-photocaption-text", name: "AI PhotoCaption—Text Generator", description: "AI text generation for photos and captions", url: "", upvotes: 987, verified: true, rating: 4.7, icon: "📸", category: "writing-editing", subcategory: "ai-text-generator" },
-      { id: "hyperwrite", name: "HyperWrite", description: "AI-powered writing assistant that generates and improves content for emails, articles, and blog posts instantly.", url: "", upvotes: 789, verified: true, rating: 4.4, icon: "⚡", category: "writing-editing", subcategory: "ai-text-generator" },
+      { id: "hyperwrite", name: "HyperWrite", description: "AI-powered writing assistant that generates and improves content for emails, articles, and blog posts instantly.", url: "https://www.hyperwriteai.com/", upvotes: 789, verified: true, rating: 4.4, icon: "⚡", category: "writing-editing", subcategory: "ai-text-generator", addedDate: "Nov 04, 2025" },
       { id: "toolsaday", name: "Toolsaday", description: "Daily AI tools including text generation", url: "", upvotes: 567, verified: false, rating: 4.3, icon: "🔧", category: "writing-editing", subcategory: "ai-text-generator" }
     ],
     "ai-text-message-generator": [
