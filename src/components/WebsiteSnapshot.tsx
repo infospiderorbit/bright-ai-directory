@@ -3,6 +3,7 @@ import { ExternalLink, Loader2, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import hyperwriteSnapshot from "@/assets/hyperwrite-snapshot.png";
+import chatupAiSnapshot from "@/assets/chatup-ai-snapshot.png";
 
 interface WebsiteSnapshotProps {
   toolUrl?: string;
@@ -157,7 +158,8 @@ const WebsiteSnapshot = ({ toolUrl, toolName }: WebsiteSnapshotProps) => {
     "ResumeBuilder.com": { siteUrl: "https://resumebuilder.com", snapshotUrl: "https://i.ibb.co/Jjyqh6KQ/image.png" },
     "Careerflow": { siteUrl: "https://careerflow.ai", snapshotUrl: "https://i.ibb.co/by8kZKC/image.png" },
     "VMock": { siteUrl: "https://vmock.com", snapshotUrl: "https://i.ibb.co/tpPwLZrg/image.png" },
-    "Swooped": { siteUrl: "https://swooped.co", snapshotUrl: "https://i.ibb.co/9ksVH6Mk/image.png" }
+    "Swooped": { siteUrl: "https://swooped.co", snapshotUrl: "https://i.ibb.co/9ksVH6Mk/image.png" },
+    "ChatUp AI": { siteUrl: "https://aichattings.com/", snapshotUrl: chatupAiSnapshot }
   };
 
   useEffect(() => {
