@@ -102,7 +102,7 @@ export const toolsProductInfoData: { [key: string]: any } = {
       ]
     },
     pricing: {
-      description: "Vmate AI operates on a freemium model",
+      description: "Vmate AI operates on a freemium model. Free plan provides the possibility of up to 100 messages on chat per day and gives accessibility to AI animation art creator. Premium plans can be used to remove chat restrictions, allow for advanced images and character generation capabilities, and offer ongoing enhancements to the memory of conversations and immersion. Vmate AI is a standout as a flexible and innovative AI-centric chat application ideal for those who are looking for emotional interactions, fantasy-filled fulfillment and creative anime art creation.",
       plans: [
         {
           name: "Free Plan",
