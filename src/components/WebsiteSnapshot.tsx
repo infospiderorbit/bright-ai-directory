@@ -159,7 +159,7 @@ const WebsiteSnapshot = ({ toolUrl, toolName }: WebsiteSnapshotProps) => {
     "Careerflow": { siteUrl: "https://careerflow.ai", snapshotUrl: "https://i.ibb.co/by8kZKC/image.png" },
     "VMock": { siteUrl: "https://vmock.com", snapshotUrl: "https://i.ibb.co/tpPwLZrg/image.png" },
     "Swooped": { siteUrl: "https://swooped.co", snapshotUrl: "https://i.ibb.co/9ksVH6Mk/image.png" },
-    "ChatUp AI": { siteUrl: "https://aichattings.com/", snapshotUrl: chatupAiSnapshot }
+    "ChatUp AI": { siteUrl: "https://aichattings.com/", snapshotUrl: "https://i.postimg.cc/vgHf1BmG/image.png" }
   };
 
   useEffect(() => {
