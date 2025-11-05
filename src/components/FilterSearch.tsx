@@ -28,7 +28,8 @@ const FilterSearch = ({ selectedCategory, searchQuery, onSearchQueryChange }: Fi
     "Social Media", 
     "AI Detection & Anti-Detection", 
     "Coding & Development", 
-    "Video & Animation"
+    "Video & Animation",
+    "Chatbots & Virtual Companions"
   ];
 
   const filterTags = ["Free AI", "Freemium", "Paid", "Free Trial"];
