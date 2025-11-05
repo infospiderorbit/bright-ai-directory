@@ -740,7 +740,8 @@ const FeaturedTools: React.FC<FeaturedToolsProps> = ({ selectedCategory, setSele
         "Writing & Editing",
         "Image Generation & Editing",
         "Voice Generation & Conversion",
-        "Office & Productivity"
+        "Office & Productivity",
+        "Chatbots & Virtual Companions"
       ];
       return featuredCategoryNames
         .filter((name) => categoryMapping[name])
