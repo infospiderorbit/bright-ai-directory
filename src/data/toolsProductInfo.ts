@@ -516,7 +516,29 @@ export const toolsProductInfoData: { [key: string]: any } = {
         "The focus is on entertainment, not professional content creation"
       ]
     },
-    pricing: "ChatUp AI is based on an open model of freemium: Free tier gives you unlimited access to chat images and basic video features without requiring a sign-up. Premium plans include advanced video creation, unlimited NSFW characters, speedier processing, and higher media limits. Subscription choices like annual, monthly, or premium packages available.",
+    pricing: {
+      plans: [
+        {
+          name: "Free",
+          features: [
+            "Unlimited access to chat images",
+            "Basic video features",
+            "No sign-up required",
+            "Instant access to platform"
+          ]
+        },
+        {
+          name: "Premium",
+          features: [
+            "Advanced video creation capabilities",
+            "Unlimited NSFW characters",
+            "Speedier processing",
+            "Higher media limits",
+            "Flexible subscription options (annual, monthly, or premium packages)"
+          ]
+        }
+      ]
+    },
     faqs: [
       {
         question: "Is ChatUp AI available for free use?",
