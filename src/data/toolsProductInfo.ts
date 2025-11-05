@@ -262,5 +262,135 @@ export const toolsProductInfoData: { [key: string]: any } = {
         description: "Streamline operations and improve efficiency"
       }
     ]
+  },
+  "chatup-ai": {
+    whatIs: "ChatUp AI is an online entertainment service made for adults, offering uncensored AI chat as well as image generation and video creation tools. It lets users interact with virtual friends and create digital artwork that is explicit and swap faces between videos and photos, and play with various adult-themed scenarios, all without login requirements or filters. The platform provides a diverse blend of mature AI roleplay, a variety of creative and unfiltered content, and customized experiences.",
+    features: [
+      "Free and uncensored NSFW AI Chat to have adult-themed conversations as well as customized role-play",
+      "A virtual assistant and artificial intelligence 'girlfriend' chats for immersive interactions",
+      "NSFW Image Generator for unlimited digital art, which includes anime and fantasy",
+      "AI Video Generator/faceswap Tool for seamless face swapping both in video and images",
+      "No sign-up requirement, and you can get free access to basic features to ensure the highest level of security",
+      "A custom AI selection of characters, as well as the addition of new characters regularly",
+      "Multilingual support, so that users can communicate in the language they prefer",
+      "Additional tools for creativity include poem generators, paraphrasing tools, and content writing alternatives"
+    ],
+    howToUse: {
+      title: "How to Use ChatUp AI",
+      description: "Get started with ChatUp AI in simple steps",
+      steps: [
+        {
+          title: "Getting Started",
+          description: "Sign up to the platform. A user account and no registration is required to use the majority of features."
+        },
+        {
+          title: "Select a Service",
+          description: "Choose from AI chat, image generator, face swap, or video services."
+        },
+        {
+          title: "Chat & Create",
+          description: "For chat: Choose an AI character, begin conversations, and create personalized scenarios for roleplay. For video or image generation, simply enter a message and upload images if required, and let the AI take care of your request."
+        },
+        {
+          title: "Save Your Work",
+          description: "Download or save your creations directly via the platform."
+        }
+      ]
+    },
+    coreFeatures: [
+      {
+        title: "Uncensored AI Chat",
+        description: "Free NSFW AI chat with adult-themed conversations and customized roleplay"
+      },
+      {
+        title: "Virtual Companion",
+        description: "AI girlfriend chats for immersive and personalized interactions"
+      },
+      {
+        title: "NSFW Image Generator",
+        description: "Create unlimited digital art including anime and fantasy content"
+      },
+      {
+        title: "AI Video Generator",
+        description: "Face swap tool for seamless editing in videos and images"
+      },
+      {
+        title: "No Registration Required",
+        description: "Access basic features instantly without sign-up for maximum privacy"
+      },
+      {
+        title: "Custom AI Characters",
+        description: "Wide selection of characters with regular new additions"
+      },
+      {
+        title: "Multilingual Support",
+        description: "Communicate in your preferred language with global support"
+      },
+      {
+        title: "Creative Tools",
+        description: "Additional features including poem generators and content writing tools"
+      }
+    ],
+    useCases: [
+      {
+        title: "Adult Roleplay",
+        description: "Deep companionship conversations and adult roleplay scenarios"
+      },
+      {
+        title: "Digital Art Creation",
+        description: "Create explicit or fantasy digital art and AI-generated pictures"
+      },
+      {
+        title: "Face Swapping",
+        description: "Face swap in videos and photos for enjoyable adult projects"
+      },
+      {
+        title: "Anonymous Exploration",
+        description: "Instant anonymized exploration of various AI tools without sharing personal information"
+      },
+      {
+        title: "Multilingual Entertainment",
+        description: "Adult chats, creative writing, and entertainment using AI chatbots in multiple languages"
+      }
+    ],
+    prosAndCons: {
+      pros: [
+        "Completely uncensored, artistic freedom",
+        "Instant access, typically there is no registration required",
+        "A variety of options for customizable chat, image and video tools",
+        "Variety of AI scenarios, including roleplay and companionship",
+        "Multilingual and accessible from any device"
+      ],
+      cons: [
+        "Not suitable for the workplace or general audiences",
+        "It may have to be unavailable in areas where there are restrictions on adult content",
+        "Advanced features might require a subscription fee",
+        "Some features are based on prompts from users",
+        "The focus is on entertainment, not professional content creation"
+      ]
+    },
+    pricing: "ChatUp AI is based on an open model of freemium: Free tier gives you unlimited access to chat images and basic video features without requiring a sign-up. Premium plans include advanced video creation, unlimited NSFW characters, speedier processing, and higher media limits. Subscription choices like annual, monthly, or premium packages available.",
+    faqs: [
+      {
+        question: "Is ChatUp AI available for free use?",
+        answer: "The platform gives access to the majority of features for free, and premium tiers that offer more capabilities."
+      },
+      {
+        question: "Do I need to set up accounts?",
+        answer: "The majority of features don't require registration for instant, private, and secure access."
+      },
+      {
+        question: "Can I interact in different languages?",
+        answer: "Sure, ChatUp AI can support several languages to allow seamless communication."
+      },
+      {
+        question: "Do you allow adult content?",
+        answer: "The platform offers uncensored adult chat as well as the production of content. However, users are required to adhere to local laws and the terms of service."
+      },
+      {
+        question: "Can I personalize an AI character?",
+        answer: "The platform allows characters and is adding additional options to customize the character often."
+      }
+    ]
   }
 };

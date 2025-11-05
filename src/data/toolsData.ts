@@ -2898,6 +2898,21 @@ export const toolsData: { [key: string]: { [key: string]: Tool[] } } = {
       { id: "caveduck", name: "Caveduck", description: "AI character interactions and stories", url: "", upvotes: 2321, verified: true, rating: 4.4, icon: "🦆", category: "chatbots-virtual-companions", subcategory: "ai-character" }
     ],
     "ai-chatbot": [
+      { 
+        id: "chatup-ai", 
+        name: "ChatUp AI", 
+        description: "Free AI chatbot, writing assistant, and character chat — all in one powerful platform.", 
+        url: "https://aichattings.com/", 
+        upvotes: 3245, 
+        verified: true, 
+        rating: 4.7, 
+        reviewsCount: 856,
+        savedCount: 1234,
+        addedDate: "Nov 05, 2025",
+        icon: "💬", 
+        category: "chatbots-virtual-companions", 
+        subcategory: "ai-chatbot" 
+      },
       { id: "spicychat-ai", name: "SPICYCHAT.AI", description: "AI chatbot with adult conversation capabilities", url: "", upvotes: 4567, verified: true, rating: 4.8, icon: "🌶️", category: "chatbots-virtual-companions", subcategory: "ai-chatbot" },
       { id: "chatgpt", name: "ChatGPT", description: "Advanced AI chatbot for conversations and assistance", url: "", upvotes: 5432, verified: true, rating: 4.9, icon: "🤖", category: "chatbots-virtual-companions", subcategory: "ai-chatbot" },
       { id: "google-gemini", name: "Google Gemini", description: "Google's AI chatbot with multimodal capabilities", url: "", upvotes: 4123, verified: true, rating: 4.7, icon: "🔮", category: "chatbots-virtual-companions", subcategory: "ai-chatbot" },
