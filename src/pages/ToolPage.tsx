@@ -150,45 +150,85 @@ const ProductInformation = ({ toolData }: { toolData: any }) => {
       {productInfo.pricing && (
         <>
           <Separator />
-          <div className="space-y-6">
-            <div className="text-center">
-              <h3 className="text-2xl font-bold text-foreground mb-2">Pricing</h3>
+          <div className="space-y-8">
+            <div className="text-center space-y-3">
+              <h3 className="text-3xl font-bold text-foreground">Pricing Plans</h3>
               {productInfo.pricing.description && (
-                <p className="text-muted-foreground max-w-3xl mx-auto">{productInfo.pricing.description}</p>
+                <p className="text-muted-foreground max-w-3xl mx-auto text-lg leading-relaxed">
+                  {productInfo.pricing.description}
+                </p>
               )}
             </div>
             {productInfo.pricing.plans && (
-              <div className="grid gap-4 md:grid-cols-2">
+              <div className="grid gap-6 md:grid-cols-2 max-w-5xl mx-auto">
                 {productInfo.pricing.plans.map((plan: any, index: number) => (
-                  <div key={index} className="p-5 rounded-lg border border-border bg-card">
-                    <h4 className="font-semibold text-foreground mb-3 text-lg">{plan.name}</h4>
-                    <ul className="space-y-2">
-                      {plan.features.map((feature: string, featureIndex: number) => (
-                        <li key={featureIndex} className="flex items-start text-muted-foreground">
-                          <span className="text-primary mr-2">•</span>
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
+                  <div 
+                    key={index} 
+                    className={`relative p-8 rounded-2xl border-2 transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] ${
+                      index === 1 
+                        ? 'border-primary bg-gradient-to-br from-primary/5 via-card to-card shadow-xl' 
+                        : 'border-border bg-card hover:border-primary/50'
+                    }`}
+                  >
+                    {index === 1 && (
+                      <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                        <Badge className="bg-primary text-primary-foreground px-4 py-1 text-sm font-semibold">
+                          Popular
+                        </Badge>
+                      </div>
+                    )}
+                    <div className="space-y-6">
+                      <div className="text-center">
+                        <h4 className="text-2xl font-bold text-foreground mb-2">{plan.name}</h4>
+                        <div className="h-1 w-16 bg-primary/60 rounded-full mx-auto"></div>
+                      </div>
+                      <ul className="space-y-4">
+                        {plan.features.map((feature: string, featureIndex: number) => (
+                          <li key={featureIndex} className="flex items-start gap-3">
+                            <div className="flex-shrink-0 w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
+                              <div className="w-2 h-2 rounded-full bg-primary"></div>
+                            </div>
+                            <span className="text-foreground leading-relaxed">{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
                 ))}
               </div>
             )}
             {productInfo.pricing.basic && (
-              <div className="grid gap-4 md:grid-cols-2">
-                <div className="p-5 rounded-lg border border-border bg-card">
-                  <h4 className="font-semibold text-foreground mb-3 text-lg">Basic Plan</h4>
-                  <p className="text-muted-foreground">{productInfo.pricing.basic}</p>
+              <div className="grid gap-6 md:grid-cols-2 max-w-5xl mx-auto">
+                <div className="p-8 rounded-2xl border-2 border-border bg-card hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:scale-[1.02]">
+                  <div className="space-y-4">
+                    <div className="text-center">
+                      <h4 className="text-2xl font-bold text-foreground mb-2">Basic Plan</h4>
+                      <div className="h-1 w-16 bg-primary/60 rounded-full mx-auto"></div>
+                    </div>
+                    <p className="text-foreground leading-relaxed">{productInfo.pricing.basic}</p>
+                  </div>
                 </div>
-                <div className="p-5 rounded-lg border border-border bg-card">
-                  <h4 className="font-semibold text-foreground mb-3 text-lg">Ultra Plan</h4>
-                  <p className="text-muted-foreground">{productInfo.pricing.ultra}</p>
+                <div className="relative p-8 rounded-2xl border-2 border-primary bg-gradient-to-br from-primary/5 via-card to-card shadow-xl transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                    <Badge className="bg-primary text-primary-foreground px-4 py-1 text-sm font-semibold">
+                      Popular
+                    </Badge>
+                  </div>
+                  <div className="space-y-4">
+                    <div className="text-center">
+                      <h4 className="text-2xl font-bold text-foreground mb-2">Ultra Plan</h4>
+                      <div className="h-1 w-16 bg-primary/60 rounded-full mx-auto"></div>
+                    </div>
+                    <p className="text-foreground leading-relaxed">{productInfo.pricing.ultra}</p>
+                  </div>
                 </div>
               </div>
             )}
-            <p className="text-sm text-muted-foreground text-center">
-              For current, detailed pricing information, visit the {toolData.name} official website.
-            </p>
+            <div className="text-center pt-6">
+              <p className="text-sm text-muted-foreground">
+                For current, detailed pricing information, visit the {toolData.name} official website.
+              </p>
+            </div>
           </div>
         </>
       )}
