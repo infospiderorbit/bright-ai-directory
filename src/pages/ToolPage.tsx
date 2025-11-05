@@ -153,18 +153,39 @@ const ProductInformation = ({ toolData }: { toolData: any }) => {
           <div className="space-y-6">
             <div className="text-center">
               <h3 className="text-2xl font-bold text-foreground mb-2">Pricing</h3>
-              <p className="text-muted-foreground">{toolData.name} offers various pricing plans to meet different needs</p>
+              {productInfo.pricing.description && (
+                <p className="text-muted-foreground max-w-3xl mx-auto">{productInfo.pricing.description}</p>
+              )}
             </div>
-            <div className="grid gap-4 md:grid-cols-2">
-              <div className="p-5 rounded-lg border border-border bg-card">
-                <h4 className="font-semibold text-foreground mb-3 text-lg">Basic Plan</h4>
-                <p className="text-muted-foreground">{productInfo.pricing.basic}</p>
+            {productInfo.pricing.plans && (
+              <div className="grid gap-4 md:grid-cols-2">
+                {productInfo.pricing.plans.map((plan: any, index: number) => (
+                  <div key={index} className="p-5 rounded-lg border border-border bg-card">
+                    <h4 className="font-semibold text-foreground mb-3 text-lg">{plan.name}</h4>
+                    <ul className="space-y-2">
+                      {plan.features.map((feature: string, featureIndex: number) => (
+                        <li key={featureIndex} className="flex items-start text-muted-foreground">
+                          <span className="text-primary mr-2">•</span>
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
               </div>
-              <div className="p-5 rounded-lg border border-border bg-card">
-                <h4 className="font-semibold text-foreground mb-3 text-lg">Ultra Plan</h4>
-                <p className="text-muted-foreground">{productInfo.pricing.ultra}</p>
+            )}
+            {productInfo.pricing.basic && (
+              <div className="grid gap-4 md:grid-cols-2">
+                <div className="p-5 rounded-lg border border-border bg-card">
+                  <h4 className="font-semibold text-foreground mb-3 text-lg">Basic Plan</h4>
+                  <p className="text-muted-foreground">{productInfo.pricing.basic}</p>
+                </div>
+                <div className="p-5 rounded-lg border border-border bg-card">
+                  <h4 className="font-semibold text-foreground mb-3 text-lg">Ultra Plan</h4>
+                  <p className="text-muted-foreground">{productInfo.pricing.ultra}</p>
+                </div>
               </div>
-            </div>
+            )}
             <p className="text-sm text-muted-foreground text-center">
               For current, detailed pricing information, visit the {toolData.name} official website.
             </p>
