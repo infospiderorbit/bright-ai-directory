@@ -1,4 +1,151 @@
 export const toolsProductInfoData: { [key: string]: any } = {
+  "vmate-ai": {
+    whatIs: "Vmate AI can be described as an engaging AI chatbot platform that is designed specifically for adults. It focuses on uncensored NSFW chats with high-quality, customized virtual avatars. Users can build or choose from a wide range that includes anime-inspired, fantasy, or real-world AI companions, and engage in role-play scenarios, romantic chats, or chats with adult themes. The platform functions as an AI for conversation and also as an anime art generator, bringing distinct characters and imaginative images to life in every conversation.",
+    features: [
+      "Uncensored NSFW chat without filters on content for the most creative freedom",
+      "Personal AI creation of characters - allows users to upload pictures and specify the style of dialogue character, personality, and greetings",
+      "Huge library of pre-made characters that include AI girls, waifus, romantic partners, and boyfriends",
+      "Integrated AI anime art generator that allows creating original artwork right in the conversation",
+      "Ability to request pictures of characters and create visual content using chat commands",
+      "Recognition of emotion in text - AI characters change mood and background visuals in accordance with the situation",
+      "Chat history that is permanent for every AI with support to various languages",
+      "Privacy of the user and their anonymity are guaranteed by using a secure, no-login chat"
+    ],
+    howToUse: {
+      title: "How to Use Vmate AI",
+      description: "Start chatting with AI characters in simple steps",
+      steps: [
+        {
+          title: "Visit the Website",
+          description: "Visit the Vmate AI website. There is no need to sign up for any features."
+        },
+        {
+          title: "Choose or Create Character",
+          description: "Pick from thousands of pre-made AI characters or design one of your own using photos and defining the traits of their personalities."
+        },
+        {
+          title: "Select Chat Mode",
+          description: "Choose your preferred chat mode, which includes fully uncensored NSFW roleplay as well as standard casual conversation."
+        },
+        {
+          title: "Start Chatting",
+          description: "Participate in real-time and immersive text chats. Utilize commands to change the background colors, request AI-generated photos of characters or change between fantasy settings."
+        },
+        {
+          title: "Explore Creative Options",
+          description: "Explore other creative possibilities like making AI anime art or story backgrounds."
+        }
+      ]
+    },
+    coreFeatures: [
+      {
+        title: "Uncensored NSFW Chat",
+        description: "Content without filters for the most creative freedom"
+      },
+      {
+        title: "Custom Character Creation",
+        description: "Upload pictures and define personality, dialogue style, and greetings"
+      },
+      {
+        title: "Extensive Character Library",
+        description: "Thousands of pre-made AI characters including anime, fantasy, and realistic"
+      },
+      {
+        title: "AI Anime Art Generator",
+        description: "Create original artwork and character images in conversation"
+      },
+      {
+        title: "Emotional AI Responses",
+        description: "Characters adapt mood and visuals based on conversation context"
+      },
+      {
+        title: "Privacy & Anonymity",
+        description: "Secure, no-login chat with guaranteed user privacy"
+      }
+    ],
+    useCases: [
+      {
+        title: "Personalized Roleplay",
+        description: "Customized roleplay experiences and romantic conversation with fantasy or anime characters"
+      },
+      {
+        title: "Adult Entertainment",
+        description: "Exploring adult fantasies and discovering emotional peace with lifelike AI friends"
+      },
+      {
+        title: "Creative Art Generation",
+        description: "Making unique NSFW anime artwork and visual content"
+      },
+      {
+        title: "Anonymous Chatting",
+        description: "Engaging in private, anonymous chats for entertainment or to relax"
+      },
+      {
+        title: "Continuous Storytelling",
+        description: "Customizing AI chatbots for continuous play and imaginative scenarios"
+      }
+    ],
+    prosAndCons: {
+      pros: [
+        "Completely uncensored, providing the most unique flexibility",
+        "Free tier with daily chat and creative use",
+        "Variety of character customization options",
+        "Fully immersive experience with emotional interactions",
+        "Included AI anime art as well as visual content generation"
+      ],
+      cons: [
+        "Not suitable for minors or for all audiences",
+        "Limits on daily usage may limit heavy users",
+        "There is no mobile app that has been developed",
+        "Certain advanced features could require a fee",
+        "Conversations can be lost over the course of time"
+      ]
+    },
+    pricing: {
+      description: "Vmate AI operates on a freemium model",
+      plans: [
+        {
+          name: "Free Plan",
+          features: [
+            "Up to 100 messages per day",
+            "Access to AI anime art creator",
+            "Basic character interactions"
+          ]
+        },
+        {
+          name: "Premium Plans",
+          features: [
+            "Remove chat restrictions",
+            "Advanced image and character generation capabilities",
+            "Ongoing enhancements to conversation memory",
+            "Enhanced immersion features"
+          ]
+        }
+      ]
+    },
+    faqs: [
+      {
+        question: "Is Vmate AI free to use?",
+        answer: "Yes, there's a free plan that includes the majority of features, but with premium tiers that offer higher usage or additional tools."
+      },
+      {
+        question: "Can I design an individual character?",
+        answer: "Yes, you are able to fully personalize AI character avatars by uploading pictures and setting their personalities as well as their style and dialect."
+      },
+      {
+        question: "Does my privacy get protected?",
+        answer: "All chats are secure and many features do not require registration or any personal data."
+      },
+      {
+        question: "Can I change between NSFW and non-NSFW modes?",
+        answer: "Users can effortlessly switch between completely uncensored chats and more conventional chats that are not NSFW at any point."
+      },
+      {
+        question: "Do you have mobile applications?",
+        answer: "Presently, Vmate AI is web-only; the app is mobile-friendly, but a native app is being developed."
+      }
+    ]
+  },
   "junia-ai": {
     whatIs: "Junia AI is an AI-powered content creation platform that enables users to quickly produce high-quality, original, SEO-optimized content in minutes. From blogs and emails to ad copy and social posts, Junia AI makes producing engaging copy easier with built-in AI image generation, SEO research tools, and a smart editor with summarization, paraphrasing, translation, and citation options.",
     features: [
