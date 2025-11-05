@@ -151,13 +151,8 @@ const ProductInformation = ({ toolData }: { toolData: any }) => {
         <>
           <Separator />
           <div className="space-y-8">
-            <div className="text-center space-y-3">
+            <div className="text-center">
               <h3 className="text-3xl font-bold text-foreground">Pricing Plans</h3>
-              {productInfo.pricing.description && (
-                <p className="text-muted-foreground max-w-3xl mx-auto text-lg leading-relaxed">
-                  {productInfo.pricing.description}
-                </p>
-              )}
             </div>
             {productInfo.pricing.plans && (
               <div className="grid gap-6 md:grid-cols-2 max-w-5xl mx-auto">
