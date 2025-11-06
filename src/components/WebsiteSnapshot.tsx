@@ -5,6 +5,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import hyperwriteSnapshot from "@/assets/hyperwrite-snapshot.png";
 import chatupAiSnapshot from "@/assets/chatup-ai-snapshot.png";
 import vmateAiSnapshot from "@/assets/vmate-ai-snapshot.png";
+import haiperAiSnapshot from "@/assets/haiper-ai-snapshot.png";
 
 interface WebsiteSnapshotProps {
   toolUrl?: string;
@@ -161,7 +162,8 @@ const WebsiteSnapshot = ({ toolUrl, toolName }: WebsiteSnapshotProps) => {
     "VMock": { siteUrl: "https://vmock.com", snapshotUrl: "https://i.ibb.co/tpPwLZrg/image.png" },
     "Swooped": { siteUrl: "https://swooped.co", snapshotUrl: "https://i.ibb.co/9ksVH6Mk/image.png" },
     "ChatUp AI": { siteUrl: "https://aichattings.com/", snapshotUrl: chatupAiSnapshot },
-    "Vmate AI": { siteUrl: "https://vmateai.com/", snapshotUrl: vmateAiSnapshot }
+    "Vmate AI": { siteUrl: "https://vmateai.com/", snapshotUrl: vmateAiSnapshot },
+    "Haiper AI": { siteUrl: "https://haiper.ai/", snapshotUrl: haiperAiSnapshot }
   };
 
   useEffect(() => {

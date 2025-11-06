@@ -2896,6 +2896,7 @@ export const toolsData: { [key: string]: { [key: string]: Tool[] } } = {
       { id: "talkie-ai-character", name: "Talkie AI", description: "AI character conversations and roleplay", url: "", upvotes: 2876, verified: true, rating: 4.6, icon: "🗣️", category: "chatbots-virtual-companions", subcategory: "ai-character" },
       { id: "vmate-ai", name: "Vmate AI", description: "Your Personal AI chatbot for realistic role-play and open-ended conversations", url: "https://vmateai.com/", upvotes: 2650, verified: true, rating: 4.55, icon: "💬", category: "chatbots-virtual-companions", subcategory: "ai-character", addedDate: "Nov 05, 2025" },
       { id: "dippy", name: "Dippy", description: "AI character creation and chat platform", url: "", upvotes: 2543, verified: true, rating: 4.5, icon: "🎭", category: "chatbots-virtual-companions", subcategory: "ai-character" },
+      { id: "haiper-ai", name: "Haiper AI", description: "AI-powered video-making platform that transforms images and text into high-quality video.", url: "https://haiper.ai/", upvotes: 2400, verified: true, rating: 4.5, icon: "🎬", category: "chatbots-virtual-companions", subcategory: "ai-character", addedDate: "Nov 06, 2025" },
       { id: "caveduck", name: "Caveduck", description: "AI character interactions and stories", url: "", upvotes: 2321, verified: true, rating: 4.4, icon: "🦆", category: "chatbots-virtual-companions", subcategory: "ai-character" }
     ],
     "ai-chatbot": [

@@ -1,4 +1,147 @@
 export const toolsProductInfoData: { [key: string]: any } = {
+  "haiper-ai": {
+    whatIs: "Haiper AI is an AI video generator tool that converts texts based description and images into high-quality videos. Haiper AI uses the latest artificial intelligence technology to create visually stunning videos. It's a very useful tool for social media influencers, marketers, educators and content creators. It can also be very useful for hobbyists looking for professional video production tools at a cheaper price. You don't require any technical expertise to use it, just follow the instructions, and produce the desired videos.",
+    features: [
+      "Text-to-Video Conversion: Rapidly convert text prompts into lively videos",
+      "Image-to-Video Animation: Animation of static images by adding motion layers and transitions",
+      "High-Quality Output: Create professional-quality videos with HD resolution support",
+      "Rapid Processing: Speed is optimized for rapid content distribution or marketing campaigns",
+      "User Interface for the Intuitive: Designed for easy navigation without extensive learning curve",
+      "Options for Customization: Adjust visual styles, effects, transitions, and more",
+      "Flexible Use: Perfect for marketing videos, explainer videos, tutorials, and social media content"
+    ],
+    howToUse: {
+      title: "How to Use Haiper AI",
+      description: "Create stunning videos from text and images in simple steps",
+      steps: [
+        {
+          title: "Create a Detailed Request or Upload Images",
+          description: "Provide the detailed description of the scene, so you can get desired output."
+        },
+        {
+          title: "Choose the Style You Prefer",
+          description: "As per your project's requirement, you can choose the style."
+        },
+        {
+          title: "Create Videos",
+          description: "Hit the 'Create button' and allow the Haiper AI process your input. You will get the results and can make changes if you would like to make."
+        },
+        {
+          title: "Download or Share",
+          description: "Once you are satisfied with your final output, download it on your system or share it directly on desired platforms."
+        }
+      ]
+    },
+    coreFeatures: [
+      {
+        title: "Text-to-Video Conversion",
+        description: "Rapidly convert text prompts into lively videos that are ideal for educational, marketing, or entertainment"
+      },
+      {
+        title: "Image-to-Video Animation",
+        description: "Animation of static images by adding motion layers and transitions to create captivating visual stories"
+      },
+      {
+        title: "High-Quality Output",
+        description: "Create professional-quality videos using options to create realistic or stylized looks with HD resolution support"
+      },
+      {
+        title: "Rapid Processing",
+        description: "Speed is optimized and allows for rapid video creation that is suitable for rapid content distribution or marketing campaigns"
+      },
+      {
+        title: "Intuitive User Interface",
+        description: "Designed for easy navigation, it allows users of all levels to produce videos without having an extensive learning curve"
+      },
+      {
+        title: "Customization Options",
+        description: "Adjust visual styles and effects, transitions, and more, to match your vision of creativity"
+      }
+    ],
+    useCases: [
+      {
+        title: "Content Creation",
+        description: "Easily produce engaging videos for websites, social media or even presentations"
+      },
+      {
+        title: "Marketing and Advertising",
+        description: "Create promotional videos in a short time for product launches or for campaigns"
+      },
+      {
+        title: "Education Content",
+        description: "Make explainer video tutorials, instructional videos, or other training materials in a matter of minutes"
+      },
+      {
+        title: "Personal Projects",
+        description: "Bring travel vlogs personal stories, personal experiences or innovative ideas to life through images"
+      },
+      {
+        title: "Creative Experiments",
+        description: "Flex your imagination through the transformation of concepts into stunning visual stories"
+      }
+    ],
+    prosAndCons: {
+      pros: [
+        "Easy to use, no technical knowledge needed",
+        "Video production speedy and high-quality outcomes",
+        "Supports realistic and stylized images",
+        "It is suitable for many applications, including education, marketing, and entertainment",
+        "Web-based platform that is accessible on any device"
+      ],
+      cons: [
+        "Certain features may be restricted in the free version",
+        "Basic customization is limited to basic plans",
+        "Subscription required for advanced features",
+        "The quality of the input is dependent on the input prompts, and could require editing",
+        "The dependence on network connections for speedy processing"
+      ]
+    },
+    pricing: {
+      plans: [
+        {
+          name: "Free Plan",
+          features: [
+            "Limited number of videos",
+            "Basic features",
+            "Watermarks included",
+            "Standard processing speed"
+          ]
+        },
+        {
+          name: "Premium Plans",
+          features: [
+            "Removal of watermarks",
+            "HD resolution output",
+            "Faster processing",
+            "Unlimited video creation",
+            "Flexible subscription options (annual or monthly)"
+          ]
+        }
+      ]
+    },
+    faqs: [
+      {
+        question: "Is Haiper AI available for free to make use of?",
+        answer: "Haiper AI indeed offers a free version that allows for basic conversions of text to video and images with the option of upgrading to gain additional options."
+      },
+      {
+        question: "Which kind of videos could I create?",
+        answer: "You can make realistic or stylized video clips from text descriptions as well as animated static images."
+      },
+      {
+        question: "How long will it take to make an online video?",
+        answer: "The processing times are optimized to ensure speed. The results usually appear in a matter of minutes based on the quality of the video."
+      },
+      {
+        question: "Do I have the ability to alter the appearance or style?",
+        answer: "Yes, users are able to select various visual styles as well as apply their own effects that match their vision."
+      },
+      {
+        question: "Do you have any subscription plans?",
+        answer: "Premium subscriptions allow high-resolution videos, outputs without watermarks, more speedy processing, and options for customization."
+      }
+    ]
+  },
   "vmate-ai": {
     whatIs: "Vmate AI can be described as an engaging AI chatbot platform that is designed specifically for adults. It focuses on uncensored NSFW chats with high-quality, customized virtual avatars. Users can build or choose from a wide range that includes anime-inspired, fantasy, or real-world AI companions, and engage in role-play scenarios, romantic chats, or chats with adult themes. The platform functions as an AI for conversation and also as an anime art generator, bringing distinct characters and imaginative images to life in every conversation.",
     features: [
