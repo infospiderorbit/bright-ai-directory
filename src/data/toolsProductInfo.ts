@@ -1,6 +1,6 @@
 export const toolsProductInfoData: { [key: string]: any } = {
   "haiper-ai": {
-    whatIs: "Haiper AI is an AI video generator tool that converts texts based description and images into high-quality videos. Haiper AI uses the latest artificial intelligence technology to create visually stunning videos. It's a very useful tool for social media influencers, marketers, educators and content creators. It can also be very useful for hobbyists looking for professional video production tools at a cheaper price. You don't require any technical expertise to use it, just follow the instructions, and produce the desired videos.",
+    whatIs: "Haiper AI is an AI video generator tool that converts text-based description and images into high-quality videos. Haiper AI uses the latest artificial intelligence technology to create visually stunning videos. It's a very useful tool for social media influencers, marketers, educators and content creators. It can also be very useful for hobbyists looking for professional video production tools at a cheaper price. You don't require any technical expertise to use it, just follow the instructions, and produce the desired videos.",
     features: [
       "Text-to-Video Conversion: Rapidly convert text prompts into lively videos",
       "Image-to-Video Animation: Animation of static images by adding motion layers and transitions",
