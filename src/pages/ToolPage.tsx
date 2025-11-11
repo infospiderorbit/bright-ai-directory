@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { ArrowLeft, ExternalLink, Star, Heart, Bookmark, Facebook, Linkedin, Twitter, MessageCircle, Mail, Camera } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -347,6 +348,13 @@ const ToolPage = () => {
 
   const shareUrl = `https://www.aitoolsprime.com/${toolData.id}`;
   const shareText = `Check out ${toolData.name} - ${toolData.description}`;
+  
+  // SEO meta information
+  const pageTitle = `${toolData.name} - AI Tool | AI TOOLS PRIME`;
+  const pageDescription = toolData.description.length > 160 
+    ? toolData.description.substring(0, 157) + "..." 
+    : toolData.description;
+  const ogImage = toolData.snapshot || "https://www.aitoolsprime.com/src/assets/logo.png";
 
   const shareLinks = {
     facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`,
@@ -358,6 +366,28 @@ const ToolPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={shareUrl} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:image" content={ogImage} />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content={shareUrl} />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDescription} />
+        <meta name="twitter:image" content={ogImage} />
+        
+        {/* Canonical URL */}
+        <link rel="canonical" href={shareUrl} />
+      </Helmet>
+      
       <Header />
       
       <main className="container mx-auto px-4 py-8 max-w-7xl">
