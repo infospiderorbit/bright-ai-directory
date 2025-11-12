@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -69,6 +70,16 @@ const ContactUs = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Contact Us - AI TOOLS PRIME | Get in Touch</title>
+        <meta name="description" content="Have questions about AI tools? Contact AI Tools Prime support team. We're here to help you find the right AI solutions for your needs." />
+        <meta property="og:title" content="Contact Us - AI TOOLS PRIME" />
+        <meta property="og:description" content="Have questions about AI tools? Contact AI Tools Prime support team. We're here to help you find the right AI solutions for your needs." />
+        <meta property="og:url" content="https://www.aitoolsprime.com/contact" />
+        <meta name="twitter:title" content="Contact Us - AI TOOLS PRIME" />
+        <meta name="twitter:description" content="Have questions about AI tools? Contact AI Tools Prime support team." />
+        <link rel="canonical" href="https://www.aitoolsprime.com/contact" />
+      </Helmet>
       <Header />
       
       <main className="container mx-auto px-4 py-12">

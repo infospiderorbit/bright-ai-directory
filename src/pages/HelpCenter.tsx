@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Sparkles, Search, MessageCircle, Book, ExternalLink } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -45,6 +46,16 @@ const HelpCenter = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Help Center - AI TOOLS PRIME | Find Support & Resources</title>
+        <meta name="description" content="Get help with AI Tools Prime. Find answers to common questions, browse our guides, and learn how to discover and submit AI tools." />
+        <meta property="og:title" content="Help Center - AI TOOLS PRIME" />
+        <meta property="og:description" content="Get help with AI Tools Prime. Find answers to common questions, browse our guides, and learn how to discover and submit AI tools." />
+        <meta property="og:url" content="https://www.aitoolsprime.com/help" />
+        <meta name="twitter:title" content="Help Center - AI TOOLS PRIME" />
+        <meta name="twitter:description" content="Get help with AI Tools Prime. Find answers to common questions, browse our guides, and learn how to discover and submit AI tools." />
+        <link rel="canonical" href="https://www.aitoolsprime.com/help" />
+      </Helmet>
       <Header />
       
       {/* Hero Section */}

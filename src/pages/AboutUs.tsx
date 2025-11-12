@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Sparkles, Target, Users, Zap, Globe, TrendingUp } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -32,6 +33,16 @@ const AboutUs = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>About Us - AI TOOLS PRIME | Our Mission & Team</title>
+        <meta name="description" content="Learn about AI Tools Prime mission to democratize AI access. Meet our team building the world's most comprehensive AI tools directory with 2,500+ tools." />
+        <meta property="og:title" content="About Us - AI TOOLS PRIME" />
+        <meta property="og:description" content="Learn about AI Tools Prime mission to democratize AI access. Meet our team building the world's most comprehensive AI tools directory." />
+        <meta property="og:url" content="https://www.aitoolsprime.com/about" />
+        <meta name="twitter:title" content="About Us - AI TOOLS PRIME" />
+        <meta name="twitter:description" content="Learn about AI Tools Prime mission to democratize AI access." />
+        <link rel="canonical" href="https://www.aitoolsprime.com/about" />
+      </Helmet>
       <Header />
       
       {/* Hero Section */}

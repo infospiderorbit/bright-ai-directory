@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { FileText, Scale, Users, AlertTriangle } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Header from "@/components/Header";
@@ -6,6 +7,16 @@ import Footer from "@/components/Footer";
 const TermsOfService = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Terms of Service - AI TOOLS PRIME | User Agreement</title>
+        <meta name="description" content="Read AI Tools Prime terms of service. Learn about our user agreement, guidelines for using our AI tools directory, and tool submission policies." />
+        <meta property="og:title" content="Terms of Service - AI TOOLS PRIME" />
+        <meta property="og:description" content="Read AI Tools Prime terms of service and user agreement." />
+        <meta property="og:url" content="https://www.aitoolsprime.com/terms" />
+        <meta name="twitter:title" content="Terms of Service - AI TOOLS PRIME" />
+        <meta name="twitter:description" content="Read AI Tools Prime terms of service and user agreement." />
+        <link rel="canonical" href="https://www.aitoolsprime.com/terms" />
+      </Helmet>
       <Header />
       
       {/* Hero Section */}

@@ -1,5 +1,6 @@
 import { useEffect, useMemo } from "react";
 import { useParams, Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { ArrowLeft, ExternalLink, Star, ArrowUp, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -14,12 +15,6 @@ const CategoryPage = () => {
   const categoryKey = (category || "").toLowerCase();
 
   const categoryInfo = categoriesData[categoryKey as keyof typeof categoriesData];
-
-  useEffect(() => {
-    if (categoryInfo?.title) {
-      document.title = `${categoryInfo.title} AI Tools | AI Tools Prime`;
-    }
-  }, [categoryInfo?.title]);
 
   // Aggregate all tools from toolsData for this category
   const tools: Tool[] = useMemo(() => {
@@ -53,8 +48,21 @@ const CategoryPage = () => {
     );
   }
 
+  const pageTitle = `${categoryInfo.title} AI Tools - Top ${categoryInfo.title} Solutions | AI TOOLS PRIME`;
+  const pageDescription = `Discover the best ${categoryInfo.title} AI tools. Compare features, pricing, and reviews of ${tools.length}+ AI solutions for ${categoryInfo.title.toLowerCase()}.`;
+
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:url" content={`https://www.aitoolsprime.com/category/${categoryKey}`} />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDescription} />
+        <link rel="canonical" href={`https://www.aitoolsprime.com/category/${categoryKey}`} />
+      </Helmet>
       <Header />
       <div className="container mx-auto px-4 py-8">
         <div className="mb-8">

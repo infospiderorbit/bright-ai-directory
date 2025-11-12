@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Shield, Eye, Lock, UserCheck } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Header from "@/components/Header";
@@ -6,6 +7,16 @@ import Footer from "@/components/Footer";
 const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Privacy Policy - AI TOOLS PRIME | Data Protection & Privacy</title>
+        <meta name="description" content="Learn how AI Tools Prime collects, uses, and protects your personal information. Read our comprehensive privacy policy and data protection practices." />
+        <meta property="og:title" content="Privacy Policy - AI TOOLS PRIME" />
+        <meta property="og:description" content="Learn how AI Tools Prime collects, uses, and protects your personal information." />
+        <meta property="og:url" content="https://www.aitoolsprime.com/privacy" />
+        <meta name="twitter:title" content="Privacy Policy - AI TOOLS PRIME" />
+        <meta name="twitter:description" content="Learn how AI Tools Prime protects your data and privacy." />
+        <link rel="canonical" href="https://www.aitoolsprime.com/privacy" />
+      </Helmet>
       <Header />
       
       {/* Hero Section */}

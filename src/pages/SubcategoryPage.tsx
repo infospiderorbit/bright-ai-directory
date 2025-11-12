@@ -1,4 +1,5 @@
 import { useParams, Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { ArrowLeft, ExternalLink, Star, ArrowUp, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -35,8 +36,21 @@ const SubcategoryPage = () => {
     );
   }
 
+  const pageTitle = `${subcategoryData.title} AI Tools - Best ${subcategoryData.title} Solutions | AI TOOLS PRIME`;
+  const pageDescription = `Explore ${subcategoryData.count} ${subcategoryData.title} AI tools. Find the perfect AI solution for ${subcategoryData.title.toLowerCase()} with detailed reviews and comparisons.`;
+
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:url" content={`https://www.aitoolsprime.com/category/${category}/${subcategory}`} />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDescription} />
+        <link rel="canonical" href={`https://www.aitoolsprime.com/category/${category}/${subcategory}`} />
+      </Helmet>
       <Header />
       <div className="container mx-auto px-4 py-8">
         <div className="mb-8">

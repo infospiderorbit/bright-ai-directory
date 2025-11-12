@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Header from "@/components/Header";
@@ -8,6 +9,16 @@ import { categoriesData, getCategoryIcon } from "@/data/categoriesData";
 const CategoriesPage = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>AI Tool Categories - Browse All AI Solutions | AI TOOLS PRIME</title>
+        <meta name="description" content="Browse AI tools by category. Explore writing, image generation, coding, video, audio, marketing, and more AI categories with thousands of tools." />
+        <meta property="og:title" content="AI Tool Categories - AI TOOLS PRIME" />
+        <meta property="og:description" content="Browse AI tools by category. Explore writing, image generation, coding, video, audio, marketing, and more." />
+        <meta property="og:url" content="https://www.aitoolsprime.com/categories" />
+        <meta name="twitter:title" content="AI Tool Categories - AI TOOLS PRIME" />
+        <meta name="twitter:description" content="Browse AI tools by category." />
+        <link rel="canonical" href="https://www.aitoolsprime.com/categories" />
+      </Helmet>
       <Header />
       <div className="container mx-auto px-4 py-8">
         <div className="mb-8">
