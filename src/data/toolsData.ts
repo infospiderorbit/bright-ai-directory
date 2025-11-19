@@ -2929,6 +2929,7 @@ export const toolsData: { [key: string]: { [key: string]: Tool[] } } = {
       { id: "wingmanx", name: "WingmanX", description: "AI wingman for dating conversations", url: "", upvotes: 2321, verified: true, rating: 4.3, icon: "🕊️", category: "chatbots-virtual-companions", subcategory: "ai-dating-assistant" }
     ],
     "ai-girlfriend": [
+      { id: "candy-ai", name: "Candy AI", description: "AI companion for chat, video, voice, and character creation", url: "https://candy.ai", upvotes: 3980, verified: true, rating: 4.8, icon: "🍬", category: "chatbots-virtual-companions", subcategory: "ai-girlfriend", addedDate: "Nov 19, 2025" },
       { id: "lovescape", name: "LOVESCAPE", description: "AI girlfriend with immersive experiences", url: "", upvotes: 3789, verified: true, rating: 4.8, icon: "💖", category: "chatbots-virtual-companions", subcategory: "ai-girlfriend" },
       { id: "juicychat-ai", name: "JuicyChat.AI", description: "AI girlfriend chat with premium features", url: "", upvotes: 3456, verified: true, rating: 4.7, icon: "🍑", category: "chatbots-virtual-companions", subcategory: "ai-girlfriend" },
       { id: "girlfriendgpt", name: "GirlfriendGPT", description: "AI girlfriend powered by advanced language models", url: "", upvotes: 3124, verified: true, rating: 4.6, icon: "💕", category: "chatbots-virtual-companions", subcategory: "ai-girlfriend" },
