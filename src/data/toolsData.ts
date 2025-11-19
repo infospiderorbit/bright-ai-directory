@@ -2885,7 +2885,6 @@ export const toolsData: { [key: string]: { [key: string]: Tool[] } } = {
       { id: "gpt-personal-companion", name: "GPT Personal Companion", description: "AI personal companion with anime personality", url: "", upvotes: 1765, verified: true, rating: 4.3, icon: "🤖", category: "chatbots-virtual-companions", subcategory: "ai-anime-girlfriend" }
     ],
     "ai-boyfriend": [
-      { id: "candy-ai", name: "Candy AI", description: "AI boyfriend companion with realistic conversations", url: "", upvotes: 3124, verified: true, rating: 4.8, icon: "🍭", category: "chatbots-virtual-companions", subcategory: "ai-boyfriend" },
       { id: "nomi-ai", name: "Nomi.ai", description: "AI boyfriend with emotional intelligence", url: "", upvotes: 2876, verified: true, rating: 4.7, icon: "💙", category: "chatbots-virtual-companions", subcategory: "ai-boyfriend" },
       { id: "secret-desires", name: "Secret Desires", description: "AI intimate boyfriend chat companion", url: "", upvotes: 2543, verified: true, rating: 4.6, icon: "🔥", category: "chatbots-virtual-companions", subcategory: "ai-boyfriend" },
       { id: "rubii-ai", name: "Rubii: AI Character Community", description: "AI boyfriend characters and community", url: "", upvotes: 2321, verified: true, rating: 4.5, icon: "💎", category: "chatbots-virtual-companions", subcategory: "ai-boyfriend" },
