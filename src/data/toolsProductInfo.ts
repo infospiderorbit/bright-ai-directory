@@ -1,4 +1,137 @@
 export const toolsProductInfoData: { [key: string]: any } = {
+  "candy-ai": {
+    whatIs: "Candy AI is an advanced AI character interaction platform that lets users to interact with custom-built personalities. Candy's dashboard features character maker tool, behavioural controls, and configurable dialogue mechanics designed to simulate structured, personality-based conversations. The best thing is Candy AI operates entirely on the browser and offers a vast interface of pre-made characters alongside tools for users to develop personalised AI personas. Candy AI is based on LLM to create responses that follow preset traits, communication styles, and scenario inputs. The platform's design focuses on personalisation, tone adjustment, memory, behaviour depth, and response dynamics based on their chosen character.",
+    features: [
+      "Character Library: A collection of AI characters categorised by theme, personality type, and style",
+      "Custom Persona Creator: Tools that allow the creation of personalised characters with user-defined traits",
+      "Behavioural Controls: Settings that regulate tone, response intensity, emotional depth, and style",
+      "Memory & Context Options: Adjustable memory behaviour for improved long-term consistency",
+      "Scenario Configuration: Options for defining environmental context and relationship roles",
+      "Web-Based Access: No installation required; functions entirely through the browser",
+      "Saved Characters & Chat Logs: Store characters, maintain chat histories, and refine configurations"
+    ],
+    howToUse: {
+      title: "How to Use Candy AI",
+      description: "Get started with Candy AI in simple steps",
+      steps: [
+        {
+          title: "Getting Started",
+          description: "Visit the official Candy AI website and create a personal account to unlock key features. Select from the available character list or begin building a new persona."
+        },
+        {
+          title: "Chatting with Candy AI",
+          description: "Choose a predefined character profile, initiate a chat session using the dedicated panel, and adjust behaviour and tone settings. Configure interaction style based on preferred character traits."
+        },
+        {
+          title: "Custom Character Creation",
+          description: "Use the persona builder to define name and avatar, personality attributes, communication tone, background details, conversation guidelines, and example dialogues. These inputs determine how the AI responds within a session."
+        }
+      ]
+    },
+    coreFeatures: [
+      {
+        title: "Character Library",
+        description: "A collection of AI characters categorised by theme, personality type, and style for immediate interaction"
+      },
+      {
+        title: "Custom Persona Creator",
+        description: "Tools that allow the creation of personalised characters with user-defined traits and detailed behaviour instructions"
+      },
+      {
+        title: "Behavioural Controls",
+        description: "Settings that regulate tone, response intensity, emotional depth, and conversational style for consistent experiences"
+      },
+      {
+        title: "Memory & Context Options",
+        description: "Adjustable memory behaviour for improved long-term character consistency across multiple sessions"
+      },
+      {
+        title: "Scenario Configuration",
+        description: "Options for defining environmental context, relationship roles, and specific conditions that influence dialogue"
+      },
+      {
+        title: "Web-Based Platform",
+        description: "No installation required; the platform functions entirely through the browser for easy access anywhere"
+      }
+    ],
+    useCases: [
+      {
+        title: "Character-Based Role-Play",
+        description: "Supports structured, persona-driven role-play environments for immersive storytelling experiences"
+      },
+      {
+        title: "Creative Writing Support",
+        description: "Writers use the platform to test dialogue flow and character behaviour for their creative projects"
+      },
+      {
+        title: "Idea & Scenario Generation",
+        description: "Helps produce narrative concepts or scenario variations for various creative applications"
+      },
+      {
+        title: "Prototype Character Development",
+        description: "Useful for storytellers, designers, and content developers who require character modelling and testing"
+      },
+      {
+        title: "Personalised AI Interaction",
+        description: "Enables consistent conversational experiences based on user-built personas with customizable traits"
+      }
+    ],
+    prosAndCons: {
+      pros: [
+        "Wide selection of predefined AI characters",
+        "Ability to build highly personalised personas",
+        "Clear interface and web-based accessibility",
+        "Suitable for creative or character development purposes",
+        "Customisable behaviour for consistent response patterns"
+      ],
+      cons: [
+        "Free plan limitations may restrict message usage",
+        "Behavioural drift may occur in extended sessions",
+        "Advanced tools typically locked behind premium plans",
+        "Some features dependent on user configuration quality"
+      ]
+    },
+    pricing: [
+      {
+        name: "Free Plan",
+        price: "Free",
+        features: [
+          "Limited daily or monthly messages",
+          "Basic access to characters",
+          "Restricted editing features"
+        ]
+      },
+      {
+        name: "Premium Plans",
+        price: "Varies",
+        features: [
+          "Higher or unlimited message allocations",
+          "Extended memory and behavioural features",
+          "Full access to character builder",
+          "Higher-quality AI responses",
+          "Additional persona storage slots"
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: "Can Candy AI characters be customised?",
+        answer: "Yes. The platform includes detailed persona creation tools that allow you to define character traits, personality, communication style, and behaviour patterns."
+      },
+      {
+        question: "Is the platform browser-based?",
+        answer: "Yes. No installation or external software is required. Candy AI operates entirely through your web browser."
+      },
+      {
+        question: "Does Candy AI offer different interaction modes?",
+        answer: "Yes. Interaction mode availability depends on the user's region and the platform's policy."
+      },
+      {
+        question: "Does Candy AI support long-term memory?",
+        answer: "Memory capability varies by plan and settings within the character configuration. Premium plans typically offer enhanced memory features."
+      }
+    ]
+  },
   "haiper-ai": {
     whatIs: "Haiper AI is an AI video generator tool that converts text-based description and images into high-quality videos. Haiper AI uses the latest artificial intelligence technology to create visually stunning videos. It's a very useful tool for social media influencers, marketers, educators and content creators. It can also be very useful for hobbyists looking for professional video production tools at a cheaper price. You don't require any technical expertise to use it, just follow the instructions, and produce the desired videos.",
     features: [
