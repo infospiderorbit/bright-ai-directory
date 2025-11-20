@@ -1,4 +1,130 @@
 export const toolsProductInfoData: { [key: string]: any } = {
+  "pephop-ai": {
+    whatIs: "PepHop AI is a browser-based AI chat platform allows users to create custom character along with chatting. The tool suppors pre-defined characters and users can create custom AI personalities as per their desire. Also, users may set the platform between NSFW and SFW as per their preference. The best thing is tool is completely browser based and do not require to download any application.",
+    features: [
+      "Extensive Character Library: Thousands of ready-to-use AI personas covering multiple genres",
+      "Custom Character Builder: Users can create unique chatbots by defining traits, scenarios and dialogues",
+      "Dual Modes (SFW / NSFW): The platform supports both family-friendly and adult content modes (subject to local regulation)",
+      "Tag-Based Search & Discovery: Characters are filtered by tags like anime, hero, villain, non-human",
+      "Message Quotas & Premium Tiers: Free and paid plans differentiate by number of messages, chat memory and premium features"
+    ],
+    howToUse: {
+      title: "How to Use PepHop AI",
+      description: "Get started with PepHop AI in simple steps",
+      steps: [
+        {
+          title: "Getting Started",
+          description: "Visit the PepHop AI website and register for a free account. Choose a pre-built character or access the custom character builder to define a new persona. Select mode (SFW or NSFW) if applicable in your region or use case."
+        },
+        {
+          title: "Writing / Chatting Using PepHop AI",
+          description: "Browse categories or use tags to find characters by genre (e.g., anime, detective, villain). Select a character and begin a chat session; the AI responds based on character definition and scenario."
+        },
+        {
+          title: "Custom Character Creation",
+          description: "If custom creation is chosen: Define the character's name, avatar image, introduction, persona traits, scenario context. Set example dialogues to shape how the character responds. Use the built-in tools to save, edit or refine character behaviour or adjust the scenario."
+        },
+        {
+          title: "Integration",
+          description: "PepHop AI is primarily browser-based and does not require installation. There are no mentions of extensive third-party integrations such as Gmail or Google Docs. Users access the service directly from web."
+        }
+      ]
+    },
+    coreFeatures: [
+      {
+        title: "Extensive Character Library",
+        description: "Thousands of ready-to-use AI personas covering multiple genres for immediate interaction"
+      },
+      {
+        title: "Custom Character Builder",
+        description: "Users can create unique chatbots by defining traits, scenarios and dialogues with high flexibility"
+      },
+      {
+        title: "Dual Modes (SFW / NSFW)",
+        description: "The platform supports both family-friendly and adult content modes (subject to local regulation)"
+      },
+      {
+        title: "Tag-Based Search & Discovery",
+        description: "Characters are filtered by tags like anime, hero, villain, non-human for easy discovery"
+      },
+      {
+        title: "Message Quotas & Premium Tiers",
+        description: "Free and paid plans differentiate by number of messages, chat memory and premium features"
+      }
+    ],
+    useCases: [
+      {
+        title: "Role-play and storytelling",
+        description: "Users develop narratives with AI characters, test dialogues and scenes"
+      },
+      {
+        title: "Creative writing aid",
+        description: "Writers use the platform to explore character voice, responses and interaction flows"
+      },
+      {
+        title: "Entertainment & social chat",
+        description: "Users engage in casual conversation with AI personalities for fun or companionship"
+      },
+      {
+        title: "Character design for game or media concepts",
+        description: "Designers prototype chat behaviour via the platform"
+      }
+    ],
+    prosAndCons: {
+      pros: [
+        "Broad selection of characters for varied use-cases (role-play, creative writing, companionship)",
+        "Ability to customise characters gives high flexibility",
+        "Browser-based access simplifies usage without app download"
+      ],
+      cons: [
+        "Free plan message limits may restrict extended conversation sessions",
+        "AI character memory and consistency may degrade in long sessions (reports of tone drift)",
+        "NSFW content raises moderation & privacy concerns; users should exercise caution"
+      ]
+    },
+    pricing: {
+      plans: [
+        {
+          name: "Free Plan",
+          price: "Free",
+          features: [
+            "Limited messages monthly",
+            "Access to basic character library",
+            "Standard response quality"
+          ]
+        },
+        {
+          name: "Premium Plan",
+          price: "$29.99/month",
+          features: [
+            "16,000 messages per month",
+            "High-quality responses",
+            "Enhanced chat memory",
+            "Access to all premium characters",
+            "Priority support"
+          ]
+        }
+      ]
+    },
+    faqs: [
+      {
+        question: "Can PepHop AI support academic or professional writing?",
+        answer: "The primary focus is on character-based chat interactions rather than structured professional or academic content."
+      },
+      {
+        question: "Are the NSFW features available universally?",
+        answer: "Availability may vary depending on local regulations and platform policy. Users should verify age and region compliance."
+      },
+      {
+        question: "Can tone and style of responses be customised?",
+        answer: "Yes. Custom characters allow adjustment of persona traits, scenario context and dialogue examples to shape response style."
+      },
+      {
+        question: "Is a free trial available?",
+        answer: "Yes. A free tier exists with limited messages. Paid plans offer expanded usage."
+      }
+    ]
+  },
   "candy-ai": {
     whatIs: "Candy AI is an advanced AI character interaction platform that lets users to interact with custom-built personalities. Candy's dashboard features character maker tool, behavioural controls, and configurable dialogue mechanics designed to simulate structured, personality-based conversations. The best thing is Candy AI operates entirely on the browser and offers a vast interface of pre-made characters alongside tools for users to develop personalised AI personas. Candy AI is based on LLM to create responses that follow preset traits, communication styles, and scenario inputs. The platform's design focuses on personalisation, tone adjustment, memory, behaviour depth, and response dynamics based on their chosen character.",
     features: [

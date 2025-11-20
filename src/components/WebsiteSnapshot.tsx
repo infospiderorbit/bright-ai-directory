@@ -20,6 +20,7 @@ const WebsiteSnapshot = ({ toolUrl, toolName }: WebsiteSnapshotProps) => {
   // Tool data mapping with site URLs and snapshot images
   const toolDataMapping: Record<string, { siteUrl: string; snapshotUrl: string }> = {
     "Candy AI": { siteUrl: "https://candy.ai", snapshotUrl: "https://iili.io/fdWADFV.png" },
+    "Pephop AI": { siteUrl: "https://pephop.ai/", snapshotUrl: "https://i.postimg.cc/23zqx4jY/image.png" },
     "NolanAI": { siteUrl: "https://nolanai.app", snapshotUrl: "https://i.ibb.co/XZgtWMqD/image.png" },
     "filmassistant.io": { siteUrl: "https://filmassistant.io", snapshotUrl: "https://i.ibb.co/BHFqnN1Q/image.png" },
     "AIScreenwriter": { siteUrl: "https://aiscreenwriter.com", snapshotUrl: "https://i.ibb.co/QFQ9tSNy/image.png" },
