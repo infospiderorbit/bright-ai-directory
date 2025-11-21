@@ -6,6 +6,7 @@ import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbP
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import HorizontalToolCard from "@/components/HorizontalToolCard";
+import WebsiteSnapshot from "@/components/WebsiteSnapshot";
 import { toolsData } from "@/data/toolsData";
 import { categoriesData } from "@/data/categoriesData";
 
@@ -106,14 +107,44 @@ const AlternativesPage = () => {
           </BreadcrumbList>
         </Breadcrumb>
 
-        {/* Page Header */}
-        <div className="mb-8">
-          <h1 className="text-4xl font-bold text-foreground mb-4">
-            Top {toolData.name} Alternatives
-          </h1>
-          <p className="text-lg text-muted-foreground">
-            Explore {alternativeTools.length} alternative{alternativeTools.length !== 1 ? 's' : ''} to {toolData.name} in the {subcategoryData?.title || 'AI'} category
-          </p>
+        {/* Hero Box with 65/35 Layout */}
+        <div className="bg-card rounded-lg border border-border shadow-lg p-8 mb-8">
+          <div className="flex flex-col lg:flex-row gap-8 items-start">
+            {/* Left Side - 65% - Text Content */}
+            <div className="flex-1 lg:w-[65%] space-y-4">
+              {/* Main Heading */}
+              <h1 className="text-4xl font-bold text-foreground">
+                Top {toolData.name} Alternatives
+              </h1>
+              
+              {/* Tool Intro - 2 lines */}
+              <p className="text-base text-foreground/90 line-clamp-2">
+                {toolData.description}
+              </p>
+              
+              {/* Alternatives Intro - 2-3 lines */}
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                If you're exploring other options similar to {toolData.name}, here are some of the best {subcategoryData?.title || 'AI'} tools. These alternatives offer different pricing, features, and levels of customization to help you find the perfect match for your needs.
+              </p>
+            </div>
+
+            {/* Right Side - 35% - Snapshot Image */}
+            <div className="lg:w-[35%] flex-shrink-0">
+              <div className="rounded-lg overflow-hidden border border-border shadow-md">
+                <WebsiteSnapshot toolName={toolData.name} toolUrl={toolData.url} />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Section Heading with Count */}
+        <div className="mb-6">
+          <h2 className="text-2xl font-bold text-foreground">
+            {toolData.name} Alternatives 
+            <span className="text-muted-foreground font-normal ml-2">
+              ({alternativeTools.length} tool{alternativeTools.length !== 1 ? 's' : ''} listed)
+            </span>
+          </h2>
         </div>
 
         {/* Alternatives Grid */}
@@ -127,6 +158,10 @@ const AlternativesPage = () => {
                 logo={tool.icon}
                 url={tool.url || `https://www.aitoolsprime.com/${tool.id}`}
                 toolSlug={tool.id}
+                rating={tool.rating}
+                reviewsCount={tool.reviewsCount}
+                category={subcategoryData?.title || 'AI Tools'}
+                showAlternativesLink={true}
               />
             ))}
           </div>
