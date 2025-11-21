@@ -1,4 +1,144 @@
 export const toolsProductInfoData: { [key: string]: any } = {
+  "joi-ai": {
+    whatIs: "Joi AI is new generation's AI chatting platform where users can create their own girlfriend to simulate natural conversations. It supports multiple AI characters, custom personas, and flexible interaction modes, allowing users to engage in creative dialogue, role-play environments, idea exploration, and personalised chat experiences. The platform focuses on providing realistic character behaviour through advanced learning language modelling, enabling structured conversations that follow set traits, personality profiles, and scenario-based inputs. Joi AI can be used directly through the browser and does not require any application or software installation.",
+    features: [
+      "Extensive Character Library: Access to multiple AI characters across different genres, personalities, and themes",
+      "Custom Character Creator: Ability to build unique characters through defined traits, scenario descriptions, behaviour settings, and sample dialogue patterns",
+      "Advanced Behaviour Control: Users can refine personality depth, emotional tone, communication style, and conversation patterns",
+      "Flexible Chat Modes: Support for general chat, creative role-play, scenario simulation, and narrative development",
+      "Personalised Interaction Settings: Users may adjust character memory, message length, and response detail level according to preferences",
+      "Browser-Based Platform: No installation required; accessible from standard devices with internet connection",
+      "Safe & Restricted Modes: Depending on platform policy and user region, Joi AI may provide both safe-for-work (SFW) and restricted modes",
+      "Bookmarking and Character Management: Users can save favourite characters, manage personal creations, and maintain chat logs for reference"
+    ],
+    howToUse: {
+      title: "How to Use Joi AI",
+      description: "Getting started with Joi AI is simple and straightforward",
+      steps: [
+        {
+          title: "Getting Started",
+          description: "Visit the Joi AI website and create an account to gain access to all available characters and creation features. Choose from the existing character library or use the custom persona builder to develop a personalised AI character. The interface provides an organised panel for browsing characters, adjusting settings, and launching chat sessions."
+        },
+        {
+          title: "Chatting with Joi AI",
+          description: "Joi AI supports multiple forms of AI-driven conversation. Select a pre-configured character, enter a custom prompt to initiate a chat, create scenario conditions that control the flow of responses, and modify personality attributes to shape how the character replies."
+        },
+        {
+          title: "Custom Character Creation",
+          description: "Custom characters can be built by defining: Name and visual avatar, Personality traits, Behavioural rules, Background context, Response guidelines, and Starter messages or example dialogues. These elements ensure the character maintains consistency throughout the conversation."
+        }
+      ]
+    },
+    coreFeatures: [
+      {
+        title: "Extensive Character Library",
+        description: "Access to multiple AI characters across different genres, personalities, and themes for immediate interaction"
+      },
+      {
+        title: "Custom Character Creator",
+        description: "Ability to build unique characters through defined traits, scenario descriptions, behaviour settings, and sample dialogue patterns"
+      },
+      {
+        title: "Advanced Behaviour Control",
+        description: "Users can refine personality depth, emotional tone, communication style, and conversation patterns"
+      },
+      {
+        title: "Flexible Chat Modes",
+        description: "Support for general chat, creative role-play, scenario simulation, and narrative development"
+      },
+      {
+        title: "Browser-Based Platform",
+        description: "No installation required; accessible from standard devices with internet connection"
+      },
+      {
+        title: "Bookmarking and Character Management",
+        description: "Users can save favourite characters, manage personal creations, and maintain chat logs for reference"
+      }
+    ],
+    useCases: [
+      {
+        title: "Creative Writing Support",
+        description: "Writers use the tool for dialogue testing, character exploration, and narrative idea generation"
+      },
+      {
+        title: "Role-Play Interaction",
+        description: "Users engage in structured role-play scenarios with predefined or custom-designed characters"
+      },
+      {
+        title: "Companion-Style Conversations",
+        description: "AI characters provide consistent personality-driven chat experiences"
+      },
+      {
+        title: "Character Prototyping",
+        description: "Game designers and storytellers use Joi AI to model potential character behaviours"
+      },
+      {
+        title: "Scenario Simulation",
+        description: "Users simulate conversations for training, fictional scenes, or behavioural testing"
+      }
+    ],
+    prosAndCons: {
+      pros: [
+        "Wide variation of characters for creative or entertainment use",
+        "Supports detailed personality customisation",
+        "Browser-based with quick setup",
+        "Suitable for role-play, writing assistance, and idea generation",
+        "No technical skills required to build characters"
+      ],
+      cons: [
+        "Free plan may include message limitations",
+        "Long chats may cause character drift if memory is not configured",
+        "Some features vary depending on subscription plan",
+        "Restricted content settings may differ by geographic region"
+      ]
+    },
+    pricing: {
+      plans: [
+        {
+          name: "Free Plan",
+          price: "Free",
+          features: [
+            "Limited number of messages",
+            "Basic character interaction",
+            "Access to a reduced set of features"
+          ]
+        },
+        {
+          name: "Premium Plans",
+          price: "Starting from $12.99/month",
+          features: [
+            "Higher message limits",
+            "Enhanced AI response quality",
+            "Extended character memory",
+            "Advanced creation tools",
+            "Additional customisation capabilities"
+          ]
+        }
+      ]
+    },
+    faqs: [
+      {
+        question: "Can Joi AI characters be customised?",
+        answer: "Yes. The platform includes a full persona builder to create custom characters with unique traits and behaviours."
+      },
+      {
+        question: "Does Joi AI support different styles or tones?",
+        answer: "Yes. Character tone, formality, and emotional expression can be adjusted within the persona settings."
+      },
+      {
+        question: "Is the platform safe for all users?",
+        answer: "Joi AI may include selectable SFW or restricted content modes depending on user age and local regulations."
+      },
+      {
+        question: "Does Joi AI require installation?",
+        answer: "No. It is fully browser-based."
+      },
+      {
+        question: "Is there a free plan available?",
+        answer: "Yes. Free usage is available but may have message limits. Subscription plans provide extended features."
+      }
+    ]
+  },
   "pephop-ai": {
     whatIs: "PepHop AI is a browser-based AI chat platform allows users to create custom character along with chatting. The tool suppors pre-defined characters and users can create custom AI personalities as per their desire. Also, users may set the platform between NSFW and SFW as per their preference. The best thing is tool is completely browser based and do not require to download any application.",
     features: [

@@ -165,7 +165,8 @@ const WebsiteSnapshot = ({ toolUrl, toolName }: WebsiteSnapshotProps) => {
     "Swooped": { siteUrl: "https://swooped.co", snapshotUrl: "https://i.ibb.co/9ksVH6Mk/image.png" },
     "ChatUp AI": { siteUrl: "https://aichattings.com/", snapshotUrl: chatupAiSnapshot },
     "Vmate AI": { siteUrl: "https://vmateai.com/", snapshotUrl: vmateAiSnapshot },
-    "Haiper AI": { siteUrl: "https://haiper.ai/", snapshotUrl: haiperAiSnapshot }
+    "Haiper AI": { siteUrl: "https://haiper.ai/", snapshotUrl: haiperAiSnapshot },
+    "Joi AI": { siteUrl: "https://joi.com/", snapshotUrl: "https://i.postimg.cc/mkV0nWYm/joi-ai.jpg" }
   };
 
   useEffect(() => {
