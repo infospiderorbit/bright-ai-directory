@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import HorizontalToolCard from "./HorizontalToolCard";
 import { toolsData } from "@/data/toolsData";
+import { categoriesData } from "@/data/categoriesData";
 
 interface SimilarToolsProps {
   currentToolId: string;
@@ -18,6 +19,9 @@ const SimilarTools = ({ currentToolId, category, subcategory, toolName }: Simila
   const similarTools = tools
     .filter(tool => tool.id !== currentToolId)
     .slice(0, 4);
+
+  // Get subcategory title for category display
+  const subcategoryData = categoriesData[category]?.subcategories?.[subcategory];
 
   // Don't render if there are no similar tools
   if (similarTools.length === 0) {
@@ -47,6 +51,10 @@ const SimilarTools = ({ currentToolId, category, subcategory, toolName }: Simila
             logo={tool.icon}
             url={tool.url || `https://www.aitoolsprime.com/${tool.id}`}
             toolSlug={tool.id}
+            rating={tool.rating}
+            reviewsCount={tool.reviewsCount}
+            category={subcategoryData?.title || 'AI Tools'}
+            showAlternativesLink={false}
           />
         ))}
       </div>
