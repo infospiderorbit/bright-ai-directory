@@ -26,13 +26,16 @@ const HorizontalToolCard = ({
   category,
   showAlternativesLink = false
 }: HorizontalToolCardProps) => {
-  // Truncate description to approximately 2-3 sentences (around 350 characters)
-  const truncatedDescription = description.length > 350 
-    ? description.substring(0, 347) + "..." 
-    : description;
-
   // Get pricing info from toolsProductInfo
   const productInfo = toolsProductInfoData[toolSlug];
+  
+  // Use the longer introduction from productInfo if available, otherwise use short description
+  const fullDescription = productInfo?.introduction || productInfo?.whatIs || description;
+  
+  // Truncate description to approximately 2-3 sentences (around 350 characters)
+  const truncatedDescription = fullDescription.length > 350 
+    ? fullDescription.substring(0, 347) + "..." 
+    : fullDescription;
   const pricingPlans = productInfo?.pricing?.plans || [];
   
   // Determine pricing display
