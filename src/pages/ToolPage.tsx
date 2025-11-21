@@ -10,6 +10,7 @@ import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbP
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WebsiteSnapshot from "@/components/WebsiteSnapshot";
+import SimilarTools from "@/components/SimilarTools";
 import { toolsData } from "@/data/toolsData";
 import { categoriesData } from "@/data/categoriesData";
 import { toolsProductInfoData } from "@/data/toolsProductInfo";
@@ -539,6 +540,14 @@ const ToolPage = () => {
         <div className="max-w-6xl mx-auto bg-card rounded-lg shadow-lg border border-border p-8">
           <ProductInformation toolData={toolData} />
         </div>
+
+        {/* Similar Tools Section */}
+        <SimilarTools 
+          currentToolId={toolData.id}
+          category={toolData.category}
+          subcategory={toolData.subcategory}
+          toolName={toolData.name}
+        />
       </main>
 
       <Footer />
