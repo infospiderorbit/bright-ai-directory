@@ -26,9 +26,9 @@ const HorizontalToolCard = ({
   category,
   showAlternativesLink = false
 }: HorizontalToolCardProps) => {
-  // Truncate description to approximately 3-4 lines (around 200 characters)
-  const truncatedDescription = description.length > 200 
-    ? description.substring(0, 197) + "..." 
+  // Truncate description to approximately 2-3 sentences (around 350 characters)
+  const truncatedDescription = description.length > 350 
+    ? description.substring(0, 347) + "..." 
     : description;
 
   // Get pricing info from toolsProductInfo
@@ -118,7 +118,7 @@ const HorizontalToolCard = ({
             <span className="text-muted-foreground">{pricingText}</span>
           </div>
           
-          <p className="text-muted-foreground text-sm leading-relaxed line-clamp-3">
+          <p className="text-muted-foreground text-sm leading-relaxed line-clamp-4">
             {truncatedDescription}
           </p>
 
