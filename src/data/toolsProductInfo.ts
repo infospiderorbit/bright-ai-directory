@@ -1103,5 +1103,122 @@ export const toolsProductInfoData: { [key: string]: any } = {
         answer: "The platform allows characters and is adding additional options to customize the character often."
       }
     ]
+  },
+  "yodayo-ai": {
+    introduction: "Unlock limitless roleplay — craft stories, explore worlds, and chat with millions of anime characters",
+    whatIs: "If your creative work revolves around anime-style visuals, Yodayo AI sits right in that sweet spot. It's not a general-purpose art generator; instead, it focuses almost entirely on anime aesthetics—letting you produce stylised characters, scenes, short videos and even chat with anime-inspired personalities. That narrow focus makes it very appealing to anime fans and illustrators, but less relevant for teams needing broad, multi-style design output.",
+    features: [
+      "Anime-style image generation (characters, scenes)",
+      "Short video generation in anime style",
+      "Role-play chat with AI anime characters",
+      "Model hub: browse/select different styles and community models",
+      "Gallery/community for inspiration and sharing"
+    ],
+    howToUse: {
+      title: "How to Use Yodayo AI",
+      description: "Users sign up, choose between image, video or chat mode",
+      steps: [
+        {
+          title: "Choose Your Mode",
+          description: "For images/videos: enter prompt, select style/model, adjust settings, generate. For chat: pick a character persona and converse."
+        },
+        {
+          title: "Generate Content",
+          description: "Interface is visually oriented and intuitive; however advanced customization or professional-grade output may require some experimentation with settings."
+        },
+        {
+          title: "Explore Community",
+          description: "Browse the gallery for inspiration and share your creations with the community."
+        }
+      ]
+    },
+    coreFeatures: [
+      {
+        title: "Anime Art Generation",
+        description: "Create stylized anime characters and scenes with AI-powered generation tools"
+      },
+      {
+        title: "Video Generation",
+        description: "Generate short anime-style video clips from text prompts"
+      },
+      {
+        title: "AI Character Chat",
+        description: "Engage in role-play conversations with AI anime characters"
+      },
+      {
+        title: "Model Hub",
+        description: "Access different anime art styles and community-created models"
+      },
+      {
+        title: "Community Gallery",
+        description: "Share your creations and get inspired by other artists"
+      }
+    ],
+    useCases: [
+      {
+        title: "Anime/Manga Artists",
+        description: "Generate concepts and visual inspiration for anime and manga projects"
+      },
+      {
+        title: "Avatar Creation",
+        description: "Create custom anime-style avatars and role-play scenes for fans"
+      },
+      {
+        title: "Video Creators",
+        description: "Produce stylized short clips in anime style for content creation"
+      }
+    ],
+    prosAndCons: {
+      pros: [
+        "Distinct anime focus and strong style options",
+        "Multi-modal: image, video, chat",
+        "Good for creative/hobbyist uses",
+        "Active community for inspiration"
+      ],
+      cons: [
+        "Niche focus limits appeal for general use",
+        "Chat memory/context is weak",
+        "Licensing and pricing for commercial use unclear",
+        "May not match high-end commercial production standards"
+      ]
+    },
+    pricing: {
+      description: "Detailed pricing was not clearly public at the time of review. Free or trial tier likely exists but commercial-use restrictions should be checked before heavy use.",
+      plans: [
+        {
+          name: "Free Tier",
+          price: "Unknown",
+          features: [
+            "Basic anime image generation",
+            "Limited chat access",
+            "Community gallery access"
+          ]
+        },
+        {
+          name: "Premium",
+          price: "Contact for pricing",
+          features: [
+            "Advanced generation features",
+            "Video generation",
+            "Extended chat capabilities",
+            "Commercial use (verify terms)"
+          ]
+        }
+      ]
+    },
+    faqs: [
+      {
+        question: "Can I use generated art commercially?",
+        answer: "Licensing is not clearly defined publicly — you should check terms before commercial use."
+      },
+      {
+        question: "Does the chat remember long story arcs?",
+        answer: "The memory is limited; continuity might break in longer sessions."
+      },
+      {
+        question: "Can I choose styles beyond anime?",
+        answer: "The tool is optimized for anime styles; options for non-anime styles are limited."
+      }
+    ]
   }
 };
