@@ -1409,29 +1409,34 @@ export const toolsProductInfoData: { [key: string]: any } = {
   "vidqu-ai": {
     introduction: "Vidqu FaceSwap lets you swap faces in photos and videos, instantly turning you into anyone you want",
     whatIs: "Vidqu AI is built for people who care more about speed and eye-catching effects than deep, frame-by-frame editing. It's the kind of tool you reach for when you want a viral-style clip, face-swap meme, or quick promotional short without learning a complex video editor. That makes it attractive to creators and marketers, but less suitable as a standalone solution for full-scale video production.",
-    features: "Vidqu AI offers face swap functionality for photos and videos, image to animated video conversion, AI image generation with varied styles, and a credit-based pricing model for flexible use.",
-    howToUse: [
-      {
-        step: 1,
-        title: "Upload Media",
-        description: "Upload your source face image and target photo or video to the platform."
-      },
-      {
-        step: 2,
-        title: "Select Mode",
-        description: "Choose from face swap, image-to-video, or AI image generation mode."
-      },
-      {
-        step: 3,
-        title: "Configure Settings",
-        description: "Set your preferred resolution, quality, and model settings for optimal results."
-      },
-      {
-        step: 4,
-        title: "Generate & Download",
-        description: "Process your content and download the generated output for immediate use."
-      }
+    features: [
+      "Face swap on photos and videos (upload face + target media)",
+      "Image to animated video conversion",
+      "AI image generation with varied styles",
+      "Credit-based pricing model for flexible use"
     ],
+    howToUse: {
+      title: "How to Use Vidqu AI",
+      description: "Create face-swapped content and animated videos with simple steps",
+      steps: [
+        {
+          title: "Upload Media",
+          description: "Upload your source face image and target photo or video to the platform."
+        },
+        {
+          title: "Select Mode",
+          description: "Choose from face swap, image-to-video, or AI image generation mode."
+        },
+        {
+          title: "Configure Settings",
+          description: "Set your preferred resolution, quality, and model settings for optimal results."
+        },
+        {
+          title: "Generate & Download",
+          description: "Process your content and download the generated output for immediate use."
+        }
+      ]
+    },
     coreFeatures: [
       {
         name: "Photo Face Swap",
