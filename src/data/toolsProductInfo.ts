@@ -1107,31 +1107,216 @@ export const toolsProductInfoData: { [key: string]: any } = {
   "yodayo-ai": {
     introduction: "Unlock limitless roleplay — craft stories, explore worlds, and chat with millions of anime characters",
     whatIs: "If your creative work revolves around anime-style visuals, Yodayo AI sits right in that sweet spot. It's not a general-purpose art generator; instead, it focuses almost entirely on anime aesthetics—letting you produce stylised characters, scenes, short videos and even chat with anime-inspired personalities. That narrow focus makes it very appealing to anime fans and illustrators, but less relevant for teams needing broad, multi-style design output.",
-    features: [
-      "Anime-style image generation (characters, scenes)",
-      "Short video generation in anime style",
-      "Role-play chat with AI anime characters",
-      "Model hub: browse/select different styles and community models",
-      "Gallery/community for inspiration and sharing"
+    features: "Yodayo AI offers anime-style image generation for characters and scenes, short video generation in anime style, role-play chat with AI anime characters, a model hub to browse and select different styles and community models, and a gallery/community for inspiration and sharing.",
+    howToUse: [
+      {
+        step: 1,
+        title: "Sign Up",
+        description: "Create an account on Yodayo AI platform to access all features."
+      },
+      {
+        step: 2,
+        title: "Choose Mode",
+        description: "Select between image, video or chat mode based on your creative needs."
+      },
+      {
+        step: 3,
+        title: "Generate Content",
+        description: "For images/videos: enter prompt, select style/model, adjust settings, and generate. For chat: pick a character persona and start conversing."
+      },
+      {
+        step: 4,
+        title: "Refine & Share",
+        description: "Experiment with settings to refine your output and share your creations with the community."
+      }
     ],
-    howToUse: {
-      title: "How to Use Yodayo AI",
-      description: "Users sign up, choose between image, video or chat mode",
-      steps: [
+    coreFeatures: [
+      {
+        name: "Anime-Style Image Generation",
+        description: "Create stylized anime characters and scenes with advanced AI models",
+        icon: "🎨"
+      },
+      {
+        name: "Short Video Generation",
+        description: "Produce anime-style short video clips and animations",
+        icon: "🎬"
+      },
+      {
+        name: "AI Character Chat",
+        description: "Role-play and converse with AI-powered anime character personalities",
+        icon: "💬"
+      },
+      {
+        name: "Model Hub",
+        description: "Browse and select from various anime styles and community-created models",
+        icon: "🎭"
+      },
+      {
+        name: "Community Gallery",
+        description: "Share your creations and find inspiration from other artists",
+        icon: "🖼️"
+      }
+    ],
+    useCases: [
+      {
+        title: "Anime Concept Art",
+        description: "Anime and manga artists can quickly generate character concepts and scene ideas for their projects."
+      },
+      {
+        title: "Avatar Creation",
+        description: "Fans can create personalized anime-style avatars and role-play scenes for social media and gaming."
+      },
+      {
+        title: "Stylized Video Content",
+        description: "Content creators can produce anime-style short clips and promotional materials without traditional animation skills."
+      }
+    ],
+    prosAndCons: {
+      pros: [
+        "Strong focus on anime aesthetics with specialized style options",
+        "Multi-modal capabilities: image, video, and chat features",
+        "Intuitive interface suitable for creative and hobbyist uses",
+        "Active community for inspiration and model sharing"
+      ],
+      cons: [
+        "Niche focus limits appeal for general-purpose design work",
+        "Chat memory and context handling is limited for long conversations",
+        "Licensing and pricing for commercial use not clearly defined",
+        "Output quality may not meet high-end commercial production standards"
+      ]
+    },
+    pricing: {
+      description: "Yodayo AI offers a freemium model with basic features available for free. Detailed pricing for premium tiers was not clearly public at the time of review. Users should check the platform for current commercial licensing terms and subscription options.",
+      plans: []
+    },
+    faqs: [
+      {
+        question: "Can I use generated art commercially?",
+        answer: "Licensing terms are not clearly defined publicly. You should review the platform's terms of service before using generated content for commercial purposes."
+      },
+      {
+        question: "Does the chat feature remember long story arcs?",
+        answer: "The chat memory is limited, and continuity might break during longer conversation sessions."
+      },
+      {
+        question: "Can I choose styles beyond anime?",
+        answer: "The tool is optimized specifically for anime styles. Options for non-anime art styles are limited or not available."
+      }
+    ]
+  },
+  "vidqu-ai": {
+    introduction: "Vidqu FaceSwap lets you swap faces in photos and videos, instantly turning you into anyone you want",
+    whatIs: "Vidqu AI is built for people who care more about speed and eye-catching effects than deep, frame-by-frame editing. It's the kind of tool you reach for when you want a viral-style clip, face-swap meme, or quick promotional short without learning a complex video editor. That makes it attractive to creators and marketers, but less suitable as a standalone solution for full-scale video production.",
+    features: "Vidqu AI offers face swap functionality for photos and videos, image to animated video conversion, AI image generation with varied styles, and a credit-based pricing model for flexible use.",
+    howToUse: [
+      {
+        step: 1,
+        title: "Upload Media",
+        description: "Upload your source face image and target photo or video to the platform."
+      },
+      {
+        step: 2,
+        title: "Select Mode",
+        description: "Choose from face swap, image-to-video, or AI image generation mode."
+      },
+      {
+        step: 3,
+        title: "Configure Settings",
+        description: "Set your preferred resolution, quality, and model settings for optimal results."
+      },
+      {
+        step: 4,
+        title: "Generate & Download",
+        description: "Process your content and download the generated output for immediate use."
+      }
+    ],
+    coreFeatures: [
+      {
+        name: "Photo Face Swap",
+        description: "Seamlessly swap faces in still images with high-quality results",
+        icon: "📸"
+      },
+      {
+        name: "Video Face Swap",
+        description: "Replace faces in video footage for viral content and creative projects",
+        icon: "🎥"
+      },
+      {
+        name: "Image to Video",
+        description: "Convert static images into animated video clips with AI-powered motion",
+        icon: "🎬"
+      },
+      {
+        name: "AI Image Generation",
+        description: "Create original images using various AI art styles and models",
+        icon: "🎨"
+      },
+      {
+        name: "Credit System",
+        description: "Flexible credit-based pricing for pay-as-you-go content creation",
+        icon: "💳"
+      }
+    ],
+    useCases: [
+      {
+        title: "Social Media Content",
+        description: "Create engaging reels, face-swap memes, and viral-style clips for social media platforms."
+      },
+      {
+        title: "Marketing Campaigns",
+        description: "Produce quick promotional shorts and localized content by swapping faces or adapting footage for different regions."
+      },
+      {
+        title: "Creative Experiments",
+        description: "Generate concept visuals and experimental content for rapid prototyping and creative exploration."
+      }
+    ],
+    prosAndCons: {
+      pros: [
+        "Fast processing with minimal learning curve required",
+        "Versatile creative modes including face swap and image-to-video",
+        "Excellent value for social media and quick content creation",
+        "Streamlined UI designed for rapid results"
+      ],
+      cons: [
+        "Limited post-generation editing and refinement options",
+        "Not suitable for professional long-form video production",
+        "Commercial licensing terms may require verification",
+        "Costs can scale significantly for high-volume usage"
+      ]
+    },
+    pricing: {
+      description: "Vidqu AI uses a credit-based pricing system. For example, 960 credits cost approximately $29.99. This flexible model allows users to pay for what they use, though heavy usage may result in significant costs.",
+      plans: [
         {
-          title: "Choose Your Mode",
-          description: "For images/videos: enter prompt, select style/model, adjust settings, generate. For chat: pick a character persona and converse."
-        },
-        {
-          title: "Generate Content",
-          description: "Interface is visually oriented and intuitive; however advanced customization or professional-grade output may require some experimentation with settings."
-        },
-        {
-          title: "Explore Community",
-          description: "Browse the gallery for inspiration and share your creations with the community."
+          name: "Credit Package",
+          price: "$29.99",
+          credits: "960 credits",
+          features: [
+            "Face swap for photos",
+            "Face swap for videos",
+            "Image to video conversion",
+            "AI image generation",
+            "Flexible usage"
+          ]
         }
       ]
     },
+    faqs: [
+      {
+        question: "Can I edit the output after generation?",
+        answer: "Post-generation editing options are limited within the platform. For major changes, you may need to regenerate the content with different settings."
+      },
+      {
+        question: "Are there subscription plans instead of credits?",
+        answer: "The primary pricing model is credit-based. Check the platform for any available subscription options that may be introduced."
+      },
+      {
+        question: "Is commercial use allowed?",
+        answer: "Commercial use is generally permitted, but you should verify the specific licensing terms, especially for client work or large-scale commercial projects."
+      }
+    ]
+  },
     coreFeatures: [
       {
         title: "Anime Art Generation",
@@ -1218,6 +1403,119 @@ export const toolsProductInfoData: { [key: string]: any } = {
       {
         question: "Can I choose styles beyond anime?",
         answer: "The tool is optimized for anime styles; options for non-anime styles are limited."
+      }
+    ]
+  },
+  "vidqu-ai": {
+    introduction: "Vidqu FaceSwap lets you swap faces in photos and videos, instantly turning you into anyone you want",
+    whatIs: "Vidqu AI is built for people who care more about speed and eye-catching effects than deep, frame-by-frame editing. It's the kind of tool you reach for when you want a viral-style clip, face-swap meme, or quick promotional short without learning a complex video editor. That makes it attractive to creators and marketers, but less suitable as a standalone solution for full-scale video production.",
+    features: "Vidqu AI offers face swap functionality for photos and videos, image to animated video conversion, AI image generation with varied styles, and a credit-based pricing model for flexible use.",
+    howToUse: [
+      {
+        step: 1,
+        title: "Upload Media",
+        description: "Upload your source face image and target photo or video to the platform."
+      },
+      {
+        step: 2,
+        title: "Select Mode",
+        description: "Choose from face swap, image-to-video, or AI image generation mode."
+      },
+      {
+        step: 3,
+        title: "Configure Settings",
+        description: "Set your preferred resolution, quality, and model settings for optimal results."
+      },
+      {
+        step: 4,
+        title: "Generate & Download",
+        description: "Process your content and download the generated output for immediate use."
+      }
+    ],
+    coreFeatures: [
+      {
+        name: "Photo Face Swap",
+        description: "Seamlessly swap faces in still images with high-quality results",
+        icon: "📸"
+      },
+      {
+        name: "Video Face Swap",
+        description: "Replace faces in video footage for viral content and creative projects",
+        icon: "🎥"
+      },
+      {
+        name: "Image to Video",
+        description: "Convert static images into animated video clips with AI-powered motion",
+        icon: "🎬"
+      },
+      {
+        name: "AI Image Generation",
+        description: "Create original images using various AI art styles and models",
+        icon: "🎨"
+      },
+      {
+        name: "Credit System",
+        description: "Flexible credit-based pricing for pay-as-you-go content creation",
+        icon: "💳"
+      }
+    ],
+    useCases: [
+      {
+        title: "Social Media Content",
+        description: "Create engaging reels, face-swap memes, and viral-style clips for social media platforms."
+      },
+      {
+        title: "Marketing Campaigns",
+        description: "Produce quick promotional shorts and localized content by swapping faces or adapting footage for different regions."
+      },
+      {
+        title: "Creative Experiments",
+        description: "Generate concept visuals and experimental content for rapid prototyping and creative exploration."
+      }
+    ],
+    prosAndCons: {
+      pros: [
+        "Fast processing with minimal learning curve required",
+        "Versatile creative modes including face swap and image-to-video",
+        "Excellent value for social media and quick content creation",
+        "Streamlined UI designed for rapid results"
+      ],
+      cons: [
+        "Limited post-generation editing and refinement options",
+        "Not suitable for professional long-form video production",
+        "Commercial licensing terms may require verification",
+        "Costs can scale significantly for high-volume usage"
+      ]
+    },
+    pricing: {
+      description: "Vidqu AI uses a credit-based pricing system. For example, 960 credits cost approximately $29.99. This flexible model allows users to pay for what they use, though heavy usage may result in significant costs.",
+      plans: [
+        {
+          name: "Credit Package",
+          price: "$29.99",
+          credits: "960 credits",
+          features: [
+            "Face swap for photos",
+            "Face swap for videos",
+            "Image to video conversion",
+            "AI image generation",
+            "Flexible usage"
+          ]
+        }
+      ]
+    },
+    faqs: [
+      {
+        question: "Can I edit the output after generation?",
+        answer: "Post-generation editing options are limited within the platform. For major changes, you may need to regenerate the content with different settings."
+      },
+      {
+        question: "Are there subscription plans instead of credits?",
+        answer: "The primary pricing model is credit-based. Check the platform for any available subscription options that may be introduced."
+      },
+      {
+        question: "Is commercial use allowed?",
+        answer: "Commercial use is generally permitted, but you should verify the specific licensing terms, especially for client work or large-scale commercial projects."
       }
     ]
   }

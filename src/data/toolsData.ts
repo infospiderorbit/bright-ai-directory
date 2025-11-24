@@ -783,7 +783,8 @@ export const toolsData: { [key: string]: { [key: string]: Tool[] } } = {
       { id: "pixnova-ai", name: "PixNova AI", description: "Advanced AI image generation and face swap", url: "", upvotes: 789, verified: true, rating: 4.6, icon: "✨", category: "image-generation-editing", subcategory: "ai-face-swap-generator" },
       { id: "faceswapper", name: "FaceSwapper", description: "Easy-to-use face swapping application", url: "", upvotes: 567, verified: true, rating: 4.5, icon: "👥", category: "image-generation-editing", subcategory: "ai-face-swap-generator" },
       { id: "dreamvid", name: "DreamVid", description: "AI video and face swap generation", url: "", upvotes: 432, verified: true, rating: 4.4, icon: "🎬", category: "image-generation-editing", subcategory: "ai-face-swap-generator" },
-      { id: "deepfake-maker", name: "Deepfake Maker", description: "AI deepfake and face swap creator", url: "", upvotes: 345, verified: false, rating: 4.3, icon: "🎭", category: "image-generation-editing", subcategory: "ai-face-swap-generator" }
+      { id: "deepfake-maker", name: "Deepfake Maker", description: "AI deepfake and face swap creator", url: "", upvotes: 345, verified: false, rating: 4.3, icon: "🎭", category: "image-generation-editing", subcategory: "ai-face-swap-generator" },
+      { id: "vidqu-ai", name: "Vidqu AI", description: "Vidqu FaceSwap lets you swap faces in photos and videos, instantly turning you into anyone you want", url: "https://www.vidqu.ai/", upvotes: 892, verified: true, rating: 4.5, icon: "🎭", category: "image-generation-editing", subcategory: "ai-face-swap-generator", addedDate: "Nov 24, 2025" }
     ],
     "ai-headshot-generator": [
       { id: "vidnoz-ai-headshot", name: "Vidnoz AI", description: "Professional AI headshot generator", url: "", upvotes: 987, verified: true, rating: 4.7, icon: "📸", category: "image-generation-editing", subcategory: "ai-headshot-generator" },
