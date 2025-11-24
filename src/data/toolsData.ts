@@ -1431,7 +1431,8 @@ export const toolsData: { [key: string]: { [key: string]: Tool[] } } = {
       { id: "pixai-art", name: "PixAI", description: "Versatile AI art creation tool", url: "", upvotes: 1890, verified: true, rating: 4.8, icon: "🎌", category: "art-creative-design", subcategory: "ai-art-generator" },
       { id: "pica-ai", name: "Pica AI", description: "Professional AI art generator", url: "", upvotes: 1567, verified: true, rating: 4.7, icon: "🖼️", category: "art-creative-design", subcategory: "ai-art-generator" },
       { id: "nightcafe-creator", name: "NightCafe Creator", description: "AI art creation community", url: "", upvotes: 1234, verified: true, rating: 4.6, icon: "🌙", category: "art-creative-design", subcategory: "ai-art-generator" },
-      { id: "artguru-ai", name: "Artguru AI", description: "Easy-to-use AI art generator", url: "", upvotes: 1098, verified: true, rating: 4.5, icon: "🎭", category: "art-creative-design", subcategory: "ai-art-generator" }
+      { id: "artguru-ai", name: "Artguru AI", description: "Easy-to-use AI art generator", url: "", upvotes: 1098, verified: true, rating: 4.5, icon: "🎭", category: "art-creative-design", subcategory: "ai-art-generator" },
+      { id: "yodayo-ai", name: "Yodayo AI", description: "Unlock limitless roleplay — craft stories, explore worlds, and chat with millions of anime characters", url: "https://yodayo.com/", upvotes: 987, verified: true, rating: 4.6, icon: "🎌", category: "art-creative-design", subcategory: "ai-art-generator", addedDate: "Nov 24, 2025" }
     ],
     "ai-banner-generator": [
       { id: "creatopy", name: "Creatopy", description: "AI-powered banner design platform", url: "", upvotes: 1234, verified: true, rating: 4.7, icon: "🎨", category: "art-creative-design", subcategory: "ai-banner-generator" },
