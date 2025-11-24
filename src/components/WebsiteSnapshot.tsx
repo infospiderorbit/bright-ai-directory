@@ -3,6 +3,7 @@ import { ExternalLink, Loader2, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import yodayoAiSnapshot from "@/assets/yodayo-ai-snapshot.jpg";
+import vidquAiSnapshot from "@/assets/vidqu-ai-snapshot.jpg";
 import hyperwriteSnapshot from "@/assets/hyperwrite-snapshot.png";
 import chatupAiSnapshot from "@/assets/chatup-ai-snapshot.png";
 import vmateAiSnapshot from "@/assets/vmate-ai-snapshot.png";
@@ -168,7 +169,8 @@ const WebsiteSnapshot = ({ toolUrl, toolName }: WebsiteSnapshotProps) => {
     "Vmate AI": { siteUrl: "https://vmateai.com/", snapshotUrl: vmateAiSnapshot },
     "Haiper AI": { siteUrl: "https://haiper.ai/", snapshotUrl: haiperAiSnapshot },
     "Joi AI": { siteUrl: "https://joi.com/", snapshotUrl: "https://i.postimg.cc/mkV0nWYm/joi-ai.jpg" },
-    "Yodayo AI": { siteUrl: "https://yodayo.com/", snapshotUrl: yodayoAiSnapshot }
+    "Yodayo AI": { siteUrl: "https://yodayo.com/", snapshotUrl: yodayoAiSnapshot },
+    "Vidqu AI": { siteUrl: "https://www.vidqu.ai/", snapshotUrl: vidquAiSnapshot }
   };
 
   useEffect(() => {
